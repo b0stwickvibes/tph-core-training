@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Training Accountability - Three Points Hospitality</title>
+    <title>Training Accountability — Three Points Hospitality</title>
     <?!= include('styles.html'); ?>
 </head>
 <body>
@@ -14,18 +14,19 @@
         </div>
 
         <form id="accountabilityForm">
-            <!-- Basic Information Section -->
+
+            <!-- ============================================================ -->
+            <!-- SECTION 1: Training Session Information                      -->
+            <!-- ============================================================ -->
             <div class="section">
                 <h3>Training Session Information</h3>
-                
+
                 <div class="form-row">
                     <div class="form-group">
                         <label for="location">Location <span class="required">*</span></label>
                         <select id="location" name="location">
                             <option value="">Select Location</option>
-                            <option value="Cantina Añejo">Cantina Añejo</option>
-                            <option value="Original American Kitchen">Original American Kitchen</option>
-                            <option value="White Buffalo">White Buffalo</option>
+                            <!-- Populated dynamically from getTrainerRoster() -->
                         </select>
                     </div>
 
@@ -40,7 +41,7 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="trainee">Trainee Name <span class="required">*</span></label>
-                        <input type="text" id="trainee" name="trainee" placeholder="Enter trainee name">
+                        <input type="text" id="trainee" name="trainee" placeholder="Enter trainee's full name">
                     </div>
 
                     <div class="form-group">
@@ -68,7 +69,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="shift">Shift <span class="required">*</span></label>
+                        <label for="shift">Shift</label>
                         <select id="shift" name="shift">
                             <option value="">Select Shift</option>
                             <option value="Morning">Morning</option>
@@ -79,251 +80,264 @@
                 </div>
             </div>
 
-            <!-- Performance Evaluation Section -->
+            <!-- ============================================================ -->
+            <!-- SECTION 2: Performance Evaluation (5 categories, 1-5 scale)  -->
+            <!-- ============================================================ -->
             <div class="section">
                 <h3>Performance Evaluation</h3>
 
                 <!-- Knowledge & Understanding -->
                 <div class="question-block" data-question="knowledge">
-                    <div class="question-title">Knowledge & Understanding of Role <span class="required">*</span></div>
+                    <div class="question-title">Knowledge &amp; Understanding of Role <span class="required">*</span></div>
+                    <p class="question-desc">Menu knowledge, policies, procedures, role responsibilities</p>
                     <div class="rating-group">
                         <div class="rating-option">
                             <input type="radio" id="knowledge_1" name="knowledge" value="1">
-                            <label for="knowledge_1">
-                                <div class="score">1</div>
-                                <div class="label">Poor</div>
-                            </label>
+                            <label for="knowledge_1"><div class="score">1</div><div class="label">Poor</div></label>
                         </div>
                         <div class="rating-option">
                             <input type="radio" id="knowledge_2" name="knowledge" value="2">
-                            <label for="knowledge_2">
-                                <div class="score">2</div>
-                                <div class="label">Below Average</div>
-                            </label>
+                            <label for="knowledge_2"><div class="score">2</div><div class="label">Below Avg</div></label>
                         </div>
                         <div class="rating-option">
                             <input type="radio" id="knowledge_3" name="knowledge" value="3">
-                            <label for="knowledge_3">
-                                <div class="score">3</div>
-                                <div class="label">Average</div>
-                            </label>
+                            <label for="knowledge_3"><div class="score">3</div><div class="label">Average</div></label>
                         </div>
                         <div class="rating-option">
                             <input type="radio" id="knowledge_4" name="knowledge" value="4">
-                            <label for="knowledge_4">
-                                <div class="score">4</div>
-                                <div class="label">Good</div>
-                            </label>
+                            <label for="knowledge_4"><div class="score">4</div><div class="label">Good</div></label>
                         </div>
                         <div class="rating-option">
                             <input type="radio" id="knowledge_5" name="knowledge" value="5">
-                            <label for="knowledge_5">
-                                <div class="score">5</div>
-                                <div class="label">Excellent</div>
-                            </label>
+                            <label for="knowledge_5"><div class="score">5</div><div class="label">Excellent</div></label>
                         </div>
                     </div>
                 </div>
 
                 <!-- Technical Skills -->
                 <div class="question-block" data-question="technical">
-                    <div class="question-title">Technical Skills & Execution <span class="required">*</span></div>
+                    <div class="question-title">Technical Skills &amp; Execution <span class="required">*</span></div>
+                    <p class="question-desc">POS proficiency, drink builds, table maintenance, station setup</p>
                     <div class="rating-group">
                         <div class="rating-option">
                             <input type="radio" id="technical_1" name="technical" value="1">
-                            <label for="technical_1">
-                                <div class="score">1</div>
-                                <div class="label">Poor</div>
-                            </label>
+                            <label for="technical_1"><div class="score">1</div><div class="label">Poor</div></label>
                         </div>
                         <div class="rating-option">
                             <input type="radio" id="technical_2" name="technical" value="2">
-                            <label for="technical_2">
-                                <div class="score">2</div>
-                                <div class="label">Below Average</div>
-                            </label>
+                            <label for="technical_2"><div class="score">2</div><div class="label">Below Avg</div></label>
                         </div>
                         <div class="rating-option">
                             <input type="radio" id="technical_3" name="technical" value="3">
-                            <label for="technical_3">
-                                <div class="score">3</div>
-                                <div class="label">Average</div>
-                            </label>
+                            <label for="technical_3"><div class="score">3</div><div class="label">Average</div></label>
                         </div>
                         <div class="rating-option">
                             <input type="radio" id="technical_4" name="technical" value="4">
-                            <label for="technical_4">
-                                <div class="score">4</div>
-                                <div class="label">Good</div>
-                            </label>
+                            <label for="technical_4"><div class="score">4</div><div class="label">Good</div></label>
                         </div>
                         <div class="rating-option">
                             <input type="radio" id="technical_5" name="technical" value="5">
-                            <label for="technical_5">
-                                <div class="score">5</div>
-                                <div class="label">Excellent</div>
-                            </label>
+                            <label for="technical_5"><div class="score">5</div><div class="label">Excellent</div></label>
                         </div>
                     </div>
                 </div>
 
                 <!-- Customer Service -->
                 <div class="question-block" data-question="service">
-                    <div class="question-title">Customer Service & Communication <span class="required">*</span></div>
+                    <div class="question-title">Customer Service &amp; Communication <span class="required">*</span></div>
+                    <p class="question-desc">Guest interaction, upselling, tone, handling requests</p>
                     <div class="rating-group">
                         <div class="rating-option">
                             <input type="radio" id="service_1" name="service" value="1">
-                            <label for="service_1">
-                                <div class="score">1</div>
-                                <div class="label">Poor</div>
-                            </label>
+                            <label for="service_1"><div class="score">1</div><div class="label">Poor</div></label>
                         </div>
                         <div class="rating-option">
                             <input type="radio" id="service_2" name="service" value="2">
-                            <label for="service_2">
-                                <div class="score">2</div>
-                                <div class="label">Below Average</div>
-                            </label>
+                            <label for="service_2"><div class="score">2</div><div class="label">Below Avg</div></label>
                         </div>
                         <div class="rating-option">
                             <input type="radio" id="service_3" name="service" value="3">
-                            <label for="service_3">
-                                <div class="score">3</div>
-                                <div class="label">Average</div>
-                            </label>
+                            <label for="service_3"><div class="score">3</div><div class="label">Average</div></label>
                         </div>
                         <div class="rating-option">
                             <input type="radio" id="service_4" name="service" value="4">
-                            <label for="service_4">
-                                <div class="score">4</div>
-                                <div class="label">Good</div>
-                            </label>
+                            <label for="service_4"><div class="score">4</div><div class="label">Good</div></label>
                         </div>
                         <div class="rating-option">
                             <input type="radio" id="service_5" name="service" value="5">
-                            <label for="service_5">
-                                <div class="score">5</div>
-                                <div class="label">Excellent</div>
-                            </label>
+                            <label for="service_5"><div class="score">5</div><div class="label">Excellent</div></label>
                         </div>
                     </div>
                 </div>
 
                 <!-- Teamwork -->
                 <div class="question-block" data-question="teamwork">
-                    <div class="question-title">Teamwork & Collaboration <span class="required">*</span></div>
+                    <div class="question-title">Teamwork &amp; Collaboration <span class="required">*</span></div>
+                    <p class="question-desc">Communication with team, willingness to help, floor awareness</p>
                     <div class="rating-group">
                         <div class="rating-option">
                             <input type="radio" id="teamwork_1" name="teamwork" value="1">
-                            <label for="teamwork_1">
-                                <div class="score">1</div>
-                                <div class="label">Poor</div>
-                            </label>
+                            <label for="teamwork_1"><div class="score">1</div><div class="label">Poor</div></label>
                         </div>
                         <div class="rating-option">
                             <input type="radio" id="teamwork_2" name="teamwork" value="2">
-                            <label for="teamwork_2">
-                                <div class="score">2</div>
-                                <div class="label">Below Average</div>
-                            </label>
+                            <label for="teamwork_2"><div class="score">2</div><div class="label">Below Avg</div></label>
                         </div>
                         <div class="rating-option">
                             <input type="radio" id="teamwork_3" name="teamwork" value="3">
-                            <label for="teamwork_3">
-                                <div class="score">3</div>
-                                <div class="label">Average</div>
-                            </label>
+                            <label for="teamwork_3"><div class="score">3</div><div class="label">Average</div></label>
                         </div>
                         <div class="rating-option">
                             <input type="radio" id="teamwork_4" name="teamwork" value="4">
-                            <label for="teamwork_4">
-                                <div class="score">4</div>
-                                <div class="label">Good</div>
-                            </label>
+                            <label for="teamwork_4"><div class="score">4</div><div class="label">Good</div></label>
                         </div>
                         <div class="rating-option">
                             <input type="radio" id="teamwork_5" name="teamwork" value="5">
-                            <label for="teamwork_5">
-                                <div class="score">5</div>
-                                <div class="label">Excellent</div>
-                            </label>
+                            <label for="teamwork_5"><div class="score">5</div><div class="label">Excellent</div></label>
                         </div>
                     </div>
                 </div>
 
                 <!-- Professionalism -->
                 <div class="question-block" data-question="professionalism">
-                    <div class="question-title">Professionalism & Attitude <span class="required">*</span></div>
+                    <div class="question-title">Professionalism &amp; Attitude <span class="required">*</span></div>
+                    <p class="question-desc">Punctuality, appearance, attitude, coachability, energy</p>
                     <div class="rating-group">
                         <div class="rating-option">
                             <input type="radio" id="professionalism_1" name="professionalism" value="1">
-                            <label for="professionalism_1">
-                                <div class="score">1</div>
-                                <div class="label">Poor</div>
-                            </label>
+                            <label for="professionalism_1"><div class="score">1</div><div class="label">Poor</div></label>
                         </div>
                         <div class="rating-option">
                             <input type="radio" id="professionalism_2" name="professionalism" value="2">
-                            <label for="professionalism_2">
-                                <div class="score">2</div>
-                                <div class="label">Below Average</div>
-                            </label>
+                            <label for="professionalism_2"><div class="score">2</div><div class="label">Below Avg</div></label>
                         </div>
                         <div class="rating-option">
                             <input type="radio" id="professionalism_3" name="professionalism" value="3">
-                            <label for="professionalism_3">
-                                <div class="score">3</div>
-                                <div class="label">Average</div>
-                            </label>
+                            <label for="professionalism_3"><div class="score">3</div><div class="label">Average</div></label>
                         </div>
                         <div class="rating-option">
                             <input type="radio" id="professionalism_4" name="professionalism" value="4">
-                            <label for="professionalism_4">
-                                <div class="score">4</div>
-                                <div class="label">Good</div>
-                            </label>
+                            <label for="professionalism_4"><div class="score">4</div><div class="label">Good</div></label>
                         </div>
                         <div class="rating-option">
                             <input type="radio" id="professionalism_5" name="professionalism" value="5">
-                            <label for="professionalism_5">
-                                <div class="score">5</div>
-                                <div class="label">Excellent</div>
-                            </label>
+                            <label for="professionalism_5"><div class="score">5</div><div class="label">Excellent</div></label>
                         </div>
                     </div>
                 </div>
 
-                <!-- Overall Assessment -->
-                <div class="question-block" data-question="overallNotes">
-                    <div class="question-title">Overall Performance Assessment <span class="required">*</span></div>
-                    <div class="form-group">
-                        <textarea name="overallNotes" placeholder="Overall comments, areas for improvement, and recommendations for next training session..." rows="4"></textarea>
-                    </div>
-                </div>
-
-                <!-- Score Summary -->
+                <!-- Score Summary (live-calculated) -->
                 <div id="scoreSummary" class="score-summary" style="display: none;">
                     <div class="total-score" id="totalScore">0</div>
                     <div class="performance-level" id="performanceLevel"></div>
                     <div class="score-breakdown">
-                        <div>Knowledge: <span id="knowledgeScore">0</span>/5</div>
-                        <div>Technical Skills: <span id="technicalScore">0</span>/5</div>
-                        <div>Customer Service: <span id="serviceScore">0</span>/5</div>
-                        <div>Teamwork: <span id="teamworkScore">0</span>/5</div>
-                        <div>Professionalism: <span id="professionalismScore">0</span>/5</div>
+                        <div>Knowledge: <span id="knowledgeScoreDisplay">0</span>/5</div>
+                        <div>Technical: <span id="technicalScoreDisplay">0</span>/5</div>
+                        <div>Service: <span id="serviceScoreDisplay">0</span>/5</div>
+                        <div>Teamwork: <span id="teamworkScoreDisplay">0</span>/5</div>
+                        <div>Professionalism: <span id="professionalismScoreDisplay">0</span>/5</div>
                     </div>
                 </div>
             </div>
 
+            <!-- ============================================================ -->
+            <!-- SECTION 3: Accountability Questions                          -->
+            <!-- Three questions from CORE_Program_Outline.md Section 2       -->
+            <!-- ============================================================ -->
+            <div class="section">
+                <h3>Trainer Accountability</h3>
+
+                <div class="form-group">
+                    <label for="whatCovered">What did you cover today? <span class="required">*</span></label>
+                    <p class="question-desc">List the specific topics, stations, or skills you worked on this shift.</p>
+                    <textarea id="whatCovered" name="whatCovered" rows="3" minlength="20" placeholder="e.g. Covered bar well setup, cocktail builds for 5 signature drinks, POS modifier training..."></textarea>
+                    <span class="char-count" id="whatCoveredCount">0 characters (min 20)</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="whereStruggling">Where is this trainee struggling? <span class="required">*</span></label>
+                    <p class="question-desc">Be specific — what gaps did you notice that need focused attention?</p>
+                    <textarea id="whereStruggling" name="whereStruggling" rows="3" minlength="20" placeholder="e.g. Still hesitant on modifier ring-ins, needs more reps on wine pours..."></textarea>
+                    <span class="char-count" id="whereStrugglingCount">0 characters (min 20)</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="planForward">What is your plan for the next shift? <span class="required">*</span></label>
+                    <p class="question-desc">What will you focus on tomorrow based on today's gaps?</p>
+                    <textarea id="planForward" name="planForward" rows="3" minlength="20" placeholder="e.g. Start with a POS quiz, then shadow during peak to build speed..."></textarea>
+                    <span class="char-count" id="planForwardCount">0 characters (min 20)</span>
+                </div>
+            </div>
+
+            <!-- ============================================================ -->
+            <!-- SECTION 4: End-of-Shift Recap                                -->
+            <!-- ============================================================ -->
+            <div class="section">
+                <h3>End-of-Shift Recap</h3>
+                <p class="question-desc">Did you sit down with the trainee for a 5-minute recap at the end of the shift?</p>
+
+                <div class="recap-toggle">
+                    <label class="toggle-option">
+                        <input type="radio" name="recapCompleted" value="Yes" id="recapYes">
+                        <span class="toggle-label">✅ Yes — Recap completed</span>
+                    </label>
+                    <label class="toggle-option">
+                        <input type="radio" name="recapCompleted" value="No" id="recapNo">
+                        <span class="toggle-label">❌ No — Recap was not completed</span>
+                    </label>
+                </div>
+
+                <div class="follow-up-field" id="recapMissedReasonField" style="display: none;">
+                    <label for="recapMissedReason">Why was the recap missed? <span class="required">*</span></label>
+                    <textarea id="recapMissedReason" name="recapMissedReason" rows="2" placeholder="e.g. Trainee had to leave early, shift ran late and didn't have time..."></textarea>
+                </div>
+            </div>
+
+            <!-- ============================================================ -->
+            <!-- SECTION 5: Checklist Photo Upload                            -->
+            <!-- ============================================================ -->
+            <div class="section">
+                <h3>Daily Floor Checklist Photo</h3>
+                <p class="question-desc">Upload a photo of the signed daily floor checklist. This is required for trainer incentive validation.</p>
+
+                <div class="photo-upload-area" id="photoUploadArea">
+                    <input type="file" id="checklistPhoto" accept="image/jpeg,image/png,image/heic" style="display: none;">
+                    <div id="photoPlaceholder" class="photo-placeholder">
+                        <span class="upload-icon">📷</span>
+                        <span>Tap to upload checklist photo</span>
+                        <span class="upload-hint">JPG, PNG, or HEIC — max 10 MB</span>
+                    </div>
+                    <div id="photoPreview" class="photo-preview" style="display: none;">
+                        <img id="photoPreviewImg" src="" alt="Checklist preview">
+                        <button type="button" class="remove-photo" id="removePhotoBtn">✕ Remove</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================================ -->
+            <!-- SECTION 6: Overall Notes (optional)                          -->
+            <!-- ============================================================ -->
+            <div class="section">
+                <h3>Overall Notes <span style="font-weight:400;color:#888;">(Optional)</span></h3>
+                <div class="form-group">
+                    <textarea id="overallNotes" name="overallNotes" rows="3" placeholder="Any additional comments, context, or recommendations..."></textarea>
+                </div>
+            </div>
+
+            <!-- Submit -->
             <div class="submit-section">
                 <button type="submit" class="submit-btn" id="submitBtn">Submit Training Assessment</button>
             </div>
         </form>
 
+        <!-- Success state -->
         <div id="successMessage" style="display: none;">
-            <h3>Assessment Submitted Successfully!</h3>
-            <p>The training accountability record has been saved to the system.</p>
-            <button onclick="window.location.reload()">Submit Another Assessment</button>
+            <div class="success-content">
+                <h3>✅ Assessment Submitted</h3>
+                <p>Record saved to the system.</p>
+                <p class="record-id" id="submittedRecordId"></p>
+                <button onclick="window.location.reload()" class="submit-btn">Submit Another Assessment</button>
+            </div>
         </div>
     </div>
 
