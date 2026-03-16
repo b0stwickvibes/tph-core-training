@@ -349,6 +349,14 @@ _______________________________________________
 - ☐ No Action Required — solid performance
 - ☐ Trainer / Incentive Eligible
 
+**Specific Training Needs (check all that apply):**
+
+| | | |
+|---|---|---|
+| ☐ Recipe / Pour Training | ☐ POS System | ☐ Service Standards |
+| ☐ Product Knowledge | ☐ Teamwork / Communication | ☐ Speed / Efficiency |
+| ☐ Upsell / Consultative Selling | ☐ Service Recovery (LEAST) | ☐ Closing / Side Work |
+
 ---
 
 ## SECTION 6: SCORING + OUTCOME
