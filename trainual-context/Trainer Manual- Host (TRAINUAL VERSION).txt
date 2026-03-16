@@ -1,0 +1,1367 @@
+# 📕**TRAINER MANUAL HOST C O R E TRAINING PROGRAM**
+
+## ℹ️Introduction
+
+---
+
+### 👋**Welcome**
+
+## **![bulb emoji][image1] Objective:**
+
+Ensure that trainees demonstrate proficiency in managing reservations and guest interactions. Trainees have 10 days from their first training shift to complete and pass their test, covering the material outlined in the training program. They may take the test as early as day one if they feel confident with all the material. Successfully completing this test within the 10-day window is required before trainees are placed on the regular schedule.
+
+## ![beginner emoji][image2] **Overview:**
+
+As a host trainer, your role is crucial in equipping new hires with the skills and knowledge needed to excel as hosts at our fine establishments. Over the **next five days**, you will guide the trainees through each aspect of hosting, ensuring they gain confidence and competence in their new role. Your expertise and support will help them thrive and integrate smoothly into our team. During the training period, use this program as a structured reference for each shift.
+
+### 👉**Your Responsibilities**
+
+# **Your Role as a Trainer**
+
+#### **![one emoji][image3] Provide Clear Instructions**
+
+Ensure the trainees understand each task and concept by providing clear and detailed explanations.
+
+#### ![two emoji][image4] **Demonstrating Techniques**
+
+Show the trainees how to perform each task, demonstrating proper techniques and best practices.
+
+#### ![three emoji][image5] **Hands-On Practice**
+
+Allow the trainees to practice under your supervision, providing constructive feedback and guidance.
+
+#### ![four emoji][image6] **Assessing Progress**
+
+Continuously assess the trainees' progress and understanding, offering additional support and instruction as needed.
+
+#### ![five emoji][image7] **Encouraging Questions**
+
+Create an open environment where trainees feel comfortable asking questions and seeking clarification.
+
+#### **As a trainer at Three Points Hospitality, you play a vital role in shaping the next generation of professionals. Your commitment to excellence and dedication to developing our team ensures we maintain the highest standards of service. Through your mentorship, you're not just teaching skills—you're building the foundation for our continued success.**
+
+### ✅**Accountability**
+
+At the end of the day, you’re not just here to show someone how to do the job—you’re responsible for how they walk away from this program. That means being fully accountable for what gets taught, what gets skipped, and how well your trainee is actually retaining the information.
+
+#### **Here's what's expected of you:**
+
+* **You are accountable for the trainee’s success.** Their performance is a reflection of your coaching, attention to detail, and ability to lead by example.  
+* **Before each shift, it's your responsibility to confirm exactly what the trainee has completed.** That includes every required module and knowledge check up to that point.  
+  * If they fall behind and it isn’t caught—it’s on you. That’s part of being a trainer: stay sharp, stay involved, and keep them on track.  
+* **You are responsible for documenting daily progress** using the **\[[Accountability App](https://script.google.com/a/macros/threepointshospitality.com/s/AKfycbz36pBsWivlouyIgotQFHFu_Pzbh9wsZ1brT42124PM8pF4T6Z0LpQPH8DvemU9sSk/exec)\]** provided—this tracks development, identifies gaps, and supports your trainer incentive package.  
+* **If a trainee falls behind,** it's your role to pause training, realign them with the required material, and note this clearly in the Accountability Sheet.
+
+Every shift matters. Strong trainers build strong teams. If you’re not holding them accountable, you’re not doing your job. Lead like it matters—because it does.
+
+## 1️⃣Day 1 Training \- Orientation
+
+---
+
+### 💡**Objective & Overview**
+
+**![rocket emoji][image8] Objective:** Orientation to Company, Introduction to Hosting, Operational Knowledge & Guest Service Fundamentals
+
+![mag\_right emoji][image9] **Overview:** Focus on helping the trainee understand the unique atmosphere of our restaurant and what makes us special. Guide them through a comprehensive tour of the venue, highlighting key areas such as entrances, exits, restrooms, and staff areas. Emphasize the importance of understanding the layout for efficient reservation management and guest seating. Reinforce the significance of a welcoming demeanor as the first impression of our restaurant.
+
+### 📋**Trainee's Checklist**
+
+On Day 1 of the training program at Three Points Hospitality, the orientation phase sets the tone for the trainee's journey ahead. As the trainer, your primary task is to provide a clear and concise introduction to the tasks that the trainee will be expected to complete during this initial phase. This introduction is crucial in helping the trainee understand what is expected of them and how they can navigate through the training program successfully.
+
+#### **Trainee's Day 1 Checklist:**
+
+* 1\. Arrival  
+* 2\. Welcome and Introduction  
+* 3\. Company Policies and Procedures  
+* 4\. Uniforms, Personal Hygiene, Health and Safety Regulations, Serving Alcohol  
+* 5\. Payrolls and Scheduling  
+  * (Reading) Host Handbook Overview Tasks 6-9  
+* 6\. Customer Interaction and Experience  
+* 7\. Host Operational Procedures  
+* 8\. Event and Reservation Management  
+* 9\. Administrative and General Information  
+* 10\. The Grand Tour  
+* 11\. Opening Procedures  
+* 12\. Table Management  
+* 13\. Guest Interaction  
+* 14\. To-Go Orders  
+* 15\. Server Rotation & Seating Process  
+* 16\. Reservations  
+* 17\. Notes Section  
+* 18\. Familiarization  
+* 19\. End of Shift
+
+| The Trainee's Checklist serves as a roadmap for the trainee to follow during their orientation phase. It outlines the specific tasks and responsibilities that need to be accomplished within this phase. |
+| :---- |
+
+### 👉**Trainee Accountability Check**
+
+Before beginning Day 1 hands-on training, confirm the trainee has completed **all assigned digital pre-training modules** within Trainual.
+
+### **Instructions:**
+
+#### **![mag emoji][image10] Review Completion**
+
+Ask the trainee to confirm the following were completed:
+
+* **“READ ME: Welcome to Trainual”** module  
+* **Employee Handbook Review \+ Verification Test**  
+* **Role-Specific Manual** for their position (e.g., server, barback, bartender)  
+* **Core Materials** covering procedures, service expectations, and safety
+
+**Specifically Ask:**
+
+“Have you completed the Welcome module, Employee Handbook verification, and your role-specific guide before coming in today?”
+
+#### ![x emoji][image11] **If Incomplete:**
+
+* Proceed with scheduled practical training, however:  
+  * DEMONSTRATE the Trainual platform interface and assist them in locating their required training materials.  
+* Document any training postponements or adjustments in the [**Trainer Accountability Sheet**](https://docs.google.com/spreadsheets/d/1TaISn56AcpvmPwvY08IuFdXIdYtBvlhVDvLA8dz8mnE/edit?usp=sharing) for follow-up.
+
+[Three Points Hospitality Accountability Sheet](https://docs.google.com/spreadsheets/d/1TaISn56AcpvmPwvY08IuFdXIdYtBvlhVDvLA8dz8mnE/edit?usp=sharing)
+
+### ✴️**Tasks 1 \- 5**
+
+## **1\. Trainee Topic: Arrival**
+
+**Trainee Task:** Arrive promptly and find the manager on duty to give your paperwork, clock-in, and get acclimated.
+
+**Trainer Instructions:**
+
+* **Preparation and Planning:** Ensure the trainee arrives on time and is ready to start.  
+* **Welcome and Introduction:** Introduce the trainee to the manager and other team members.  
+* **Overview:** Present an overview of the foundational 5-day training program, including on-site and off-site expectations. Tailor additional location-specific training based on venue requirements.
+
+## **2\. Trainee Topic: Employee Handbook Overview**
+
+**Trainee Task:** Review Employee Handbook starting with the company’s practice (Mission, Vision, Core), employment policies, attendance, required uniform, and training outline.
+
+**Trainer Instructions:**
+
+* **Overview:** Emphasize the importance of understanding company policies and procedures.  
+  * Example: "This handbook is your guide to navigating our policies effectively."  
+* **Q\&A:** Facilitate an open floor for questions regarding any policies that may seem ambiguous.  
+* **Feedback and Coaching:** Provide insights into the importance of adherence to company policies for personal and team success.
+
+## **3\. Trainee Topic: Uniforms, Personal Hygiene, Health and Safety Regulations, Serving Alcohol**
+
+**Trainee Task:** Understand the importance of personal appearance and hygiene practices, alcohol agreement & training.
+
+**Trainer Instructions:**
+
+* **Overview:** Explain the significance of maintaining a professional appearance and good hygiene in the hospitality industry.  
+* **Health and Safety Standards:** Review health and safety regulations, including the alcohol agreement and training.  
+* **Demonstration:** Show examples of appropriate uniforms and hygiene standards.  
+* **Feedback and Coaching:** Provide tips on how to maintain high standards of personal appearance and hygiene.
+
+## **4\. Trainee Topic: Payrolls and Scheduling**
+
+**Trainee Task:** Understand payroll processes, tip distribution, and scheduling.
+
+**Trainer Instructions:**
+
+* **Overview:** Discuss how paychecks, direct deposit, and tips are acquired.  
+* **Demonstration:** Walk through the 7Shifts app to illustrate how to view schedules and tips; how to efficiently use 7-Shifts, and request time off.  
+* **Feedback:** Discuss common challenges servers face regarding scheduling, how to pick up, drop, and swap shifts.
+
+**Branch Portal:**
+
+* **Explain:** Tipped employees will receive their non-cash tips through the Branch portal, allowing direct payment into their Branch card that can be utilized at any location or transferred to their bank account. Typically, most staff will receive their non-cash tips on a weekly basis, while some will receive them after the close of each shift they worked.
+
+## **5\. Trainee Topic: Host Handbook Overview**
+
+**Trainee Task:** Review key policies and procedures.
+
+**Trainer Instructions:**
+
+* **Overview:** Emphasize the host handbook’s role in establishing a foundation for their responsibilities.  
+  * Example: "This handbook provides you with the necessary information to excel in your role."  
+* **Q\&A:** Facilitate an open floor for questions regarding any policies or procedures.
+
+**Feedback and Coaching:** Provide insights into the importance of adherence to host-specific policies for personal and team success.
+
+### ✴️**Tasks 6 \- 10**
+
+## **6\. Trainee Topic: Customer Interaction and Experience**
+
+**Trainee Task:** Understand the importance of a host, procedures for seating guests, waiting list, and phone scripts.
+
+**Trainer Instructions:**
+
+* **Overview:** Explain the critical role of the host in creating a positive first impression and overall guest experience.  
+  * Example: "As the first point of contact, your demeanor sets the tone for the guest's experience."  
+* **Demonstration:** Show the procedures for seating guests, managing the waiting list, and handling phone interactions.  
+* **Feedback and Coaching:** Provide tips on effective customer interaction and managing guest expectations.
+
+## **7\. Trainee Topic: Host Operational Procedures**
+
+**Trainee Task:** Review all responsibilities, overview of making reservations, To-Go Orders, and paying over the phone.
+
+**Trainer Instructions:**
+
+* **Overview:** Discuss the key responsibilities of a host and the importance of each task.  
+  * Example: "Understanding your responsibilities ensures smooth operations and guest satisfaction."  
+* **Demonstration:** Show how to make reservations, handle To-Go Orders, and process payments over the phone.  
+* **Feedback and Coaching:** Provide guidance on how to efficiently manage these tasks.
+
+## **8\. Trainee Topic: Event and Reservation Management**
+
+**Trainee Task:** Overview of large parties and events, graduation & birthday reservations, and confirming, editing, or canceling reservations.
+
+**Trainer Instructions:**
+
+* **Overview:** Explain the importance of managing events and reservations effectively.  
+  * Example: "Proper management of events and reservations ensures a seamless experience for large parties."  
+* **Demonstration:** Show how to confirm, edit, and cancel reservations.  
+* **Feedback and Coaching:** Provide tips on managing large parties and special events.
+
+## **9\. Trainee Topic: Administrative and General Information**
+
+**Trainee Task:** Overview of uniform standards, restaurant information, accepting and handling applications, gift cards, and hours of operation.
+
+**Trainer Instructions:**
+
+* **Overview:** Discuss the importance of adhering to uniform standards and being knowledgeable about restaurant information.  
+  * Example: "Maintaining uniform standards and understanding restaurant policies contribute to a professional image."  
+* **Demonstration:** Show how to accept and handle applications, process gift cards, and understand hours of operation.  
+* **Feedback and Coaching:** Provide guidance on these administrative tasks.
+
+## **10\. Trainee Topic: The Grand Tour**
+
+**Trainee Task:** Familiarize with Front of House (FOH) and Back of House (BOH) areas.
+
+**Trainer Instructions:**
+
+* **Introduction to FOH Layout:** Start by guiding the trainee through the Front of House (FOH) area. Show them key locations such as the bar area, guest bathrooms, inside/outside dining areas, and any private dining spaces. Explain the importance of knowing these areas for efficient guest service and flow of operations.  
+* **Tour of FOH:** Walk the trainee through each FOH location, emphasizing how each area contributes to the guest experience. For example, discuss the significance of the bar area as a focal point for service, the layout of dining spaces for smooth service flow, and the location of guest bathrooms for guest convenience.  
+* **BOH Layout Introduction:** Next, guide the trainee through the Back of House (BOH) areas. Highlight important locations such as the drink station, employee lockers, bathrooms, manager's office (including supplies, backup menus, and keys for bathroom toiletries), kitchen/dish pit, dry storage for supplies like toilet paper and paper towels, and any back entryways.  
+* **Tour of BOH:** Walk the trainee through each BOH location, explaining how each area is crucial to daily operations. For instance, discuss how the drink station is set up for efficient service, the importance of knowing where supplies are stored, and how the layout of the kitchen and dish pit affects the workflow.
+
+**Memory Reinforcement:** Periodically ask the trainee to recall and point out specific locations in both the FOH and BOH, reinforcing their familiarity with the layout. This will help solidify their understanding and ensure they can navigate the space efficiently during their shifts.
+
+### ✴️**Tasks 11 \- 14**
+
+## **11\. Trainee Topic: Opening Procedures**
+
+**Trainee Task:** Go through the opening checklist using the Jolt app with your trainer.
+
+**Trainer Instructions:**
+
+* **Preparation and Planning:** Explain the importance of following the opening checklist for a smooth start to the shift.  
+  * Example: "A thorough opening ensures that everything is set up for a successful service."  
+* **Demonstration:** Guide the trainee through the opening checklist, explaining each task’s purpose.  
+* **Feedback and Coaching:** Provide feedback on their performance and ensure they understand the importance of each step.
+
+## **12\. Trainee Topic: Table Management**
+
+**Trainee Task:** Learn table numbers and locations.
+
+**Trainer Instructions:**
+
+* **Overview:** Explain the importance of knowing table numbers and locations for efficient seating.  
+  * Example: "Knowing table locations helps you seat guests quickly and efficiently."  
+* **Demonstration:** Show the trainee the table layout and review table numbers.  
+* **Feedback and Coaching:** Test the trainee's knowledge of table locations and provide tips for remembering them.
+
+## **13\. Trainee Topic: Guest Interaction**
+
+**Trainee Task:** Observe and analyze professional techniques for guest greetings and phone interactions.
+
+**Trainer Instructions:**
+
+* **Overview:** Emphasize the importance of professional and courteous guest interactions.  
+  * Example: "How you greet guests sets the tone for their entire dining experience."  
+* **Demonstration:** Show examples of professional greetings and phone interactions.  
+* **Feedback and Coaching:** Provide tips on improving guest interactions and phone etiquette.
+
+## **14\. Trainee Topic: To-Go Orders**
+
+**Trainee Task:** Learn how to place to-go orders and handle remote payments over the phone.
+
+**Trainer Instructions:**
+
+* **Overview:** Explain the importance of accuracy and efficiency in handling to-go orders.  
+  * Example: "Accurate and efficient handling of to-go orders ensures guest satisfaction."  
+* **Demonstration:** Show how to take to-go orders and process remote payments.
+
+**Feedback and Coaching:** Provide tips on ensuring order accuracy and efficiency.
+
+### ✴️**Tasks 15 \- 19**
+
+## **15\. Trainee Topic: Server Rotation & Seating Process**
+
+**Trainee Task:** Understand the process of server rotation. Listen, learn, and practice as your trainer goes over the process for seating guests: From welcoming them, taking them to their table, advising the server of their table, and informing the kitchen on how many active covers sat.
+
+**Trainer Instructions:**
+
+* **Overview:** Discuss the importance of server rotation and efficient seating processes.  
+  * Example: "Effective server rotation and seating processes ensure balanced workloads and prompt service."  
+* **Demonstration:** Show the trainee how to manage server rotation and seat guests.  
+* **Feedback and Coaching:** Provide tips on improving seating efficiency and server communication.
+
+## **16\. Trainee Topic: Reservations**
+
+**Trainee Task:** Learn how to make reservations using the Resy app on the iPad.
+
+**Trainer Instructions:**
+
+* **Overview:** Explain the importance of accurate reservation management.  
+  * Example: "Accurate reservations help us manage guest expectations and seating efficiently."  
+* **Demonstration:** Show how to use the Resy app to make and manage reservations.  
+* **Feedback and Coaching:** Provide tips on ensuring reservation accuracy and efficiency.
+
+## **17\. Trainee Topic: Notes Section**
+
+**Trainee Task:** Familiarize yourself with the Notes section of the iPad.
+
+**Trainer Instructions:**
+
+* **Overview:** Discuss the importance of using the Notes section for effective communication.  
+  * Example: "Using the Notes section helps us communicate important information to the team."  
+* **Demonstration:** Show how to access and use the Notes section on the iPad.  
+* **Feedback and Coaching:** Provide tips on effective note-taking and communication.
+
+## **18\. Trainee Topic: Familiarization**
+
+**Trainee Task:** Take notice of how things are operating and ask questions.
+
+**Trainer Instructions:**
+
+* **Observation:** Encourage the trainee to observe operations and ask questions.
+
+**Feedback and Coaching:** Provide answers to their questions and offer additional insights.
+
+### 🏁**Shift Wrap-Up**
+
+Focus was on helping the trainee understand the unique atmosphere of the restaurant and what makes it special. The trainee was guided through a comprehensive tour of the venue, highlighting key areas such as entrances, exits, restrooms, and staff areas. Emphasis was placed on understanding the layout for efficient reservation management and guest seating, as well as the significance of a welcoming demeanor as the first impression of the restaurant.
+
+### ![white\_check\_mark emoji][image12] **Trainer to Trainee: Check for Understanding**
+
+**Ask the trainee:**
+
+* “Why is the host’s greeting so critical to the guest experience?”  
+* “Can you show me how to make a reservation and add a note in Resy?”  
+* “What does proper host attire and grooming look like for a shift?”
+
+Provide feedback on both technical knowledge and hospitality mindset.
+
+### ![bulb emoji][image13] **Pro Tips to Share During Session**
+
+* **First impressions last** — smile, make eye contact, and speak with warmth.  
+* **Stay aware of the floor** — understanding table status helps avoid guest bottlenecks.  
+* **Use the Notes section in Resy** — special occasions, allergies, and pacing notes help the whole team succeed.
+
+### ![dart emoji][image14] **Performance Targets for Day 1**
+
+* **Venue Knowledge:** Identify table numbers, key guest areas, and back-of-house locations.  
+* **Reservation & Seating Procedures:** Accurately take, confirm, and execute reservations.  
+* **To-Go Order Accuracy:** Take and repeat back orders clearly and process payments.  
+* **Guest Engagement:** Demonstrate polite and confident greetings and phone etiquette.
+
+### ![point\_right emoji][image15] **Do you agree all targets were hit?**
+
+### **![point\_right emoji][image16] Review with trainee any you may have missed**
+
+### **![envelope\_with\_arrow emoji][image17] Communicate Next Steps to the Trainee**
+
+* Review the Host Handbook in more detail before your next shift.  
+* Practice walking the floor to memorize table numbers and section layout.  
+* Familiarize yourself further with Resy interface and guest note-taking best practices.
+
+| Relay to the trainee they MUST complete DAY 1 Training Session & Knowledge Check before arriving for Day 2 Training. |
+| :---- |
+
+### 👉**DO: Accountability Sheet**
+
+| IMPORTANT: EVERYONE MUST FILL THIS OUT AT THE END OF EVERY TRAINER SHIFT |
+| :---: |
+
+## **You can submit the form directly below, or click the link to open it in a new tab.**
+
+#### **Instructions:**
+
+1. Fill out **all required fields** accurately  
+2. Be **specific** when assessing your trainee’s performance — clarity helps us coach smarter and grow stronger teams.  
+3. Submit before ending your shift. Timely completion ensures smooth operations and helps us identify any training areas that need improvement.
+
+[Three Points Hospitality Accountability App](https://script.google.com/a/macros/threepointshospitality.com/s/AKfycbz36pBsWivlouyIgotQFHFu_Pzbh9wsZ1brT42124PM8pF4T6Z0LpQPH8DvemU9sSk/exec)
+
+## 2️⃣Day 2 Training – Opening/Mid-Shift
+
+---
+
+### 💡**Objective & Overview**
+
+**![rocket emoji][image18] Objective:** Hosting Fundamentals, Greeting Guests, Managing Reservations, & Seating Arrangements
+
+![mag\_right emoji][image19] **Overview:** Focus on diving into the core responsibilities that make our hosting team exceptional. Practice greeting guests with a smile, managing the reservation system, and arranging seating to optimize the dining experience. By the end of the day, ensure the trainee is familiar with handling phone inquiries and using the Resy App for reservations. Emphasize effective communication and a friendly attitude as key components of a successful host.
+
+### 📋**Trainee's Checklist**
+
+On Day 2, the focus shifts to mastering the responsibilities and skills required for a seamless guest experience. As the trainer, your primary task is to guide the trainee through independent opening procedures, reservation management, and effective team coordination. This day is essential for developing the expertise needed to handle high guest volumes efficiently and ensure smooth operations.
+
+#### 
+
+#### **Trainee's Day 2 Checklist:**
+
+* 1\. Independent Opening  
+* 2\. Reservation Expertise  
+* 3\. Answering Calls & Making Reservations  
+* 4\. Strategic Seating  
+* 5\. Order Management  
+* 6\. Seating Guests  
+* 7\. Team Coordination  
+* 8\. Technology Utilization  
+* 9\. End of Shift  
+* 10\. Shift Wrap-Up
+
+| By the end of Day 2, trainees should have a solid foundation in reservation management, teamwork, and using technology to improve guest experiences. This training prepares them to handle tasks independently and support operational efficiency. The skills acquired today will be crucial for their ongoing development and success in the hosting team at Three Points Hospitality. |
+| :---- |
+
+### 👉**Trainee Accountability Check**
+
+### **Before proceeding with today's training, verify the trainee has successfully completed all previous assignments, the Knowledge Checks, and reviewed all required materials.**
+
+#### **Trainer Instructions:**
+
+* **Review Completion:** Confirm with the trainee that they've finished their assigned training session and Knowledge Check from the previous day: "Have you completed the Day 1 Knowledge Check and reviewed all handbook sections as instructed?"  
+* **Verify Understanding:** Ask targeted questions or request a summary of key concepts from yesterday's training to confirm retention: "Please demonstrate where to find the Branch portal in 7Shifts. What are your key responsibilities as a server during peak service hours?"  
+* **If Incomplete:**  
+  * **Pause training progression** and instruct the trainee to complete their previous days knowledge checks and training material.  
+  * **Guide the trainee** to complete their previous knowledge checks via their Trainee Portal and assigned materials.  
+  * **Log the incomplete status** in the Accountability Sheet and remind the trainee that timely completion directly impacts training advancement and tip eligibility.
+
+#### **Emphasize:**
+
+*"Completing your training on schedule ensures you're properly prepared for success on the floor. If you fall behind, we'll need to pause and help you catch up—remember that consistent accountability is essential to your professional development and contributes directly to our team's overall performance."*
+
+### ✴️**Tasks 1 \- 4**
+
+## **1\. Trainee Topic: Independent Opening**
+
+**Trainee Task:** Execute opening procedures using the Jolt app with your trainer shadowing you to observe your work and provide guidance.
+
+**Trainer Instructions:**
+
+* **Preparation and Planning:** Ensure the trainee understands the importance of a thorough opening.  
+* **Demonstration:** Guide the trainee through the opening procedures using the Jolt app.  
+* **Feedback and Coaching:** Provide feedback on their performance and ensure they understand each step.
+
+## **2\. Trainee Topic: Reservation Expertise**
+
+**Trainee Task:** Master the Resy app for efficient and accurate reservation management.
+
+**Trainer Instructions:**
+
+* **Overview:** Explain the importance of mastering the reservation system for smooth operations.  
+  * Example: "Efficient reservation management helps us maintain a smooth flow of guests."  
+* **Demonstration:** Show how to use the Resy app for managing reservations.  
+* **Feedback and Coaching:** Provide tips on ensuring reservation accuracy and efficiency.
+
+## **3\. Trainee Topic: Answering Calls & Making Reservations**
+
+**Trainee Task:** Always be polite and professional while gathering all necessary details including telephone numbers, first and last names, and associated email addresses for reservation requests.
+
+**Trainer Instructions:**
+
+* **Overview:** Emphasize the importance of professionalism in phone interactions.  
+  * Example: "Polite and professional phone interactions create a positive impression of our restaurant."  
+* **Demonstration:** Show how to gather necessary details for reservation requests.  
+* **Feedback and Coaching:** Provide tips on effective phone etiquette and information gathering.
+
+## **4\. Trainee Topic: Strategic Seating**
+
+**Trainee Task:** Implement effective seating strategies to maximize restaurant capacity.
+
+**Trainer Instructions:**
+
+* **Overview:** Explain the importance of strategic seating for optimizing capacity.  
+  * Example: "Effective seating strategies help us accommodate more guests efficiently."  
+* **Demonstration:** Show how to implement seating strategies.
+
+**Feedback and Coaching:** Provide tips on maximizing restaurant capacity through strategic seating.
+
+### 📝**Task 5: Order Management**
+
+## **5\. Trainee Topic: Order Management**
+
+**Trainee Task:** Handle to-go orders with precision by collecting each guest's name and telephone number, and repeating the complete order back to them before ending the call. Following these procedures ensures accuracy and enhances customer satisfaction.
+
+**Trainer Instructions:**
+
+* **Overview:** Emphasize the critical importance of accuracy in handling to-go orders. The precision with which orders are taken directly impacts guest experience and perception of our establishment. Even minor errors can lead to significant customer dissatisfaction, affecting our reputation and repeat business.
+
+**Example:** Share this illustration to reinforce the concept:
+
+*"Accurate order handling is essential for customer satisfaction. When a guest receives an incorrect to-go order, it creates frustration for them and additional work for our team. By carefully collecting contact information and confirming order details through repetition, you minimize errors, enhance their experience, and increase the likelihood of return visits."*
+
+### **Demonstration:**
+
+**Conduct a role-play exercise demonstrating proper to-go order handling:**
+
+1. **Answering the Call:** Greet guests professionally and enthusiastically, setting a positive tone for the interaction.  
+2. **Collecting Information:** Politely request and accurately record the guest's name and telephone number, ensuring clarity through confirmation.  
+3. **Order Entry:** Enter orders into the system with precision, paying special attention to modifications, special requests, and accurate item selection.  
+4. **Repeating the Order:** Methodically repeat each item back to the guest to verify all details are correct, addressing any discrepancies immediately.  
+5. **Finalizing the Order:** End calls by confirming pick-up times and expressing genuine appreciation for their business.
+
+### **Feedback and Coaching:**
+
+**Provide structured practice opportunities, observing performance and offering targeted feedback:**
+
+1. **Praise and Correction:** Acknowledge strengths in communication and accuracy while providing specific, actionable guidance for improvement areas.  
+2. **Efficiency Tips:** Share practical strategies for managing multiple orders during busy periods, including organization techniques and clear communication under pressure.  
+3. **Follow-Up Practice:** Schedule additional practice sessions until the trainee demonstrates consistent accuracy and confidence, providing ongoing support as needed.
+
+**Q\&A:** Conclude by addressing any questions about the process. Ensure complete understanding of each step and build confidence in the trainee's ability to handle orders efficiently.
+
+### 🪑**Task 6: Seating Guests**
+
+## **6\. Trainee Topic: Seating Guests**
+
+**Trainee Task:** Seat guests at their reserved tables or accommodate walk-ins at available tables.
+
+**Trainer Instructions:**
+
+* **Overview:** Explain how efficient seating directly impacts the guest dining experience.  
+* Example: "Efficient seating creates a smooth dining experience and sets a positive tone from the moment guests arrive."
+
+**Demonstration, Pointers & Tips:**
+
+**1\. Greet Guests Warmly:**
+
+* **First Impressions Matter:** A genuine greeting sets the tone for the entire dining experience. Smile, make eye contact, and offer a sincere welcome.  
+* **Acknowledge Immediately:** Even when busy, acknowledge arriving guests with "I'll be right with you" to ensure they feel noticed and valued.
+
+**2\. Assess the Situation:**
+
+* **Reservation Check:** Confirm reservation details including name and party size. For walk-ins, quickly assess availability and provide accurate wait times.  
+* **Special Requests:** Inquire about seating preferences (booth, table, patio, quiet area) and accommodate when possible to enhance guest comfort.
+
+**3\. Manage the Seating Flow:**
+
+* **Balancing Sections:** Distribute guests evenly across server sections to ensure consistent service quality throughout the restaurant.  
+* **Timing is Key:** Pace the seating to prevent overwhelming servers and kitchen staff, maintaining service quality during busy periods.
+
+**4\. Escort Guests with Confidence:**
+
+* **Lead the Way:** Walk at a comfortable pace, clearly directing guests with phrases like "Right this way" or "Follow me, please."  
+* **Engage in Light Conversation:** Create a welcoming atmosphere with brief, friendly conversation about their day or occasion while escorting them to their table.
+
+**5\. Seat Guests Gracefully:**
+
+* **Assist When Appropriate:** Offer chair assistance for elderly guests, children, or those with mobility challenges.  
+* **Present Menus Professionally:** Place menus with the logo facing guests and inform them their server will arrive shortly.
+
+**6\. Inform the Guests:**
+
+* **Introduce the Server:** Share the server's name when possible, creating a personal connection and setting service expectations.  
+* **Highlight Specials:** Briefly mention daily specials and any potential wait times if the kitchen is experiencing high volume.
+
+**7\. Offer Additional Assistance:**
+
+* **Address Immediate Needs:** Proactively ask about requirements for high chairs, booster seats, or other accommodations.  
+* **Ensure Table Readiness:** Verify the table is clean, stable, and properly set before seating guests.
+
+**8\. Maintain a Positive Attitude:**
+
+* **Stay Calm Under Pressure:** Project confidence and composure during busy periods to maintain a pleasant atmosphere for guests and staff.  
+* **Handle Issues Proactively:** Address seating problems with a sincere apology, offer alternatives, and provide clear timelines for resolution.
+
+**9\. Maintain Continuous Awareness:**
+
+* **Monitor Table Status:** Track tables approaching the end of their meal to prepare for efficient turnover and minimize wait times.  
+* **Remain Visible:** Stay near the host stand or entrance to promptly assist arriving guests and manage the waiting area.
+
+**10\. Bid Farewell:**
+
+* **Express Gratitude:** Thank departing guests with "Thank you for dining with us; we hope to see you again soon" to create a lasting positive impression.  
+* **Seek Feedback:** When appropriate, inquire about their experience to demonstrate care for their satisfaction and gather valuable insights for improvement.
+
+### ✴️**Tasks 7 \- 9**
+
+## **7\. Trainee Topic: Team Coordination**
+
+## **Trainee Task: Execute the server rotation system to maintain fair table distribution.**
+
+**Trainer Instructions:**
+
+* **Overview:** Discuss the importance of maintaining fair table distribution through server rotation.  
+  * Example: "Fair table distribution ensures balanced workloads for servers."  
+* **Demonstration:** Show how to manage the server rotation system.  
+* **Feedback and Coaching:** Provide tips on maintaining fair table distribution.
+
+## **8\. Trainee Topic: Technology Utilization**
+
+**Trainee Task:** Leverage the iPad system to enhance operational efficiency.
+
+**Trainer Instructions:**
+
+* **Overview:** Explain the importance of using technology to improve efficiency.  
+  * Example: "Using the iPad system helps us manage operations smoothly and efficiently."  
+* **Demonstration:** Show how to use the iPad system for various tasks.  
+* **Feedback and Coaching:** Provide tips on effectively utilizing technology.
+
+## **9\. Trainee Topic: End of Shift**
+
+**Trainee Task:** At 9 PM, find the Manager on Duty (MOD) and see if there is any additional work needed. If all duties are met, an evaluation of your current progress will be conducted before you clock out.
+
+**Trainer Instructions:**
+
+* **Final Review and Wrap-Up:** Review the day’s activities and key learnings with the trainee.  
+  * Example: "Reflecting on your shift helps you understand what went well and areas for improvement."  
+* **Feedback and Coaching:** Provide feedback on their overall performance.  
+* **Q\&A:** Address any remaining questions or concerns they may have.
+
+### 🏁**Shift Wrap-Up**
+
+Focus was on diving into core responsibilities that make the hosting team exceptional. The trainee practiced greeting guests, managing the reservation system, and arranging seating to optimize the dining experience. By the end of the day, the trainee was familiar with handling phone inquiries and using the Resy app for reservations, with an emphasis on effective communication and maintaining a friendly attitude.
+
+### ![white\_check\_mark emoji][image20] **Trainer to Trainee: Check for Understanding**
+
+**Ask the trainee:**
+
+* “What do you say when answering the phone for a reservation request?”  
+* “How do you prioritize seating when walk-ins and reservations arrive at the same time?”  
+* “Can you walk me through how to modify a reservation in Resy?”
+
+Provide scenario-based coaching to test both technical and interpersonal responses.
+
+### ![bulb emoji][image21] **Pro Tips to Share During Session**
+
+* **Voice \= First Impression** — speak clearly, smile while talking, and always confirm reservation details.  
+* **Resy is your control panel** — use it to pace the floor, avoid double-seating, and flag special guests.  
+* **Stay calm, stay kind** — even during busy hours, your tone should reflect hospitality.
+
+### ![dart emoji][image22] **Performance Targets for Day 2**
+
+* **Reservation Accuracy:** Confidently create and manage bookings in Resy.  
+* **Guest Communication:** Answer calls clearly and collect complete reservation details.  
+* **Seating Flow Management:** Execute seating strategy while balancing reservations and walk-ins.  
+* **To-Go Order Clarity:** Confirm and input orders without error.
+
+### ![point\_right emoji][image23] **Do you agree all targets were hit?**
+
+### **![point\_right emoji][image24] Review with trainee any you may have missed**
+
+### **![envelope\_with\_arrow emoji][image25] Communicate Next Steps to the Trainee**
+
+* Continue practicing Resy navigation, especially during live service hours.  
+* Work on refining tone and pacing when answering the phone or managing simultaneous tasks.  
+* Shadow a lead host (if available) during a peak hour to observe flow and communication style.
+
+| Relay to the trainee they MUST complete DAY 2 Training Session & Knowledge Check before arriving for Day 3 Training. |
+| :---- |
+
+### 👉**DO: Accountability Sheet**
+
+| IMPORTANT: EVERYONE MUST FILL THIS OUT AT THE END OF EVERY TRAINER SHIFT |
+| :---: |
+
+## **You can submit the form directly below, or click the link to open it in a new tab.**
+
+#### **Instructions:**
+
+1. Fill out **all required fields** accurately  
+2. Be **specific** when assessing your trainee’s performance — clarity helps us coach smarter and grow stronger teams.  
+3. Submit before ending your shift. Timely completion ensures smooth operations and helps us identify any training areas that need improvement.
+
+[Three Points Hospitality Accountability App](https://script.google.com/a/macros/threepointshospitality.com/s/AKfycbz36pBsWivlouyIgotQFHFu_Pzbh9wsZ1brT42124PM8pF4T6Z0LpQPH8DvemU9sSk/exec)
+
+## 3️⃣Day 3 Training – Opening/Closing Shift
+
+---
+
+### 💡**Objective & Overview**
+
+**![rocket emoji][image26] Objective:** Customer Service & Communication, Upselling, High Volume & High Stress
+
+![mag\_right emoji][image27] **Overview:** Focus on refining the trainee's interaction skills. Teach them how to handle special requests, manage waitlists, and address any guest concerns with poise and professionalism. Go over various scenarios and rebuttals to ensure they are prepared for anything. Emphasize making every guest feel valued and cared for from the moment they walk in. Engage them in a cross-training session with servers and food runners to give a well-rounded view of each role’s contribution to a smooth operation.
+
+### 📋**Trainee's Checklist**
+
+On Day 3 of the host training program at Three Points Hospitality, the focus is on refining the trainee's ability to manage host duties effectively, handle special requests, and ensure smooth operations throughout the shift. As the trainer, your primary task is to guide the trainee through advanced hosting responsibilities, problem resolution, and closing procedures. This day is critical in preparing the trainee to address various guest needs and maintain a high level of service.
+
+#### **Trainee's Day 3 Checklist:**
+
+* 1\. Host Duties  
+* 2\. Guidance  
+* 3\. Handling Special Requests, Managing Waitlists, and Addressing Guest Concerns  
+* 4\. Problem Resolution  
+  * 4A. Common Rebuttals  
+* Cross-Training Expo Session \#1  
+* 5\. Shift Handover  
+* 6\. Late Service Management  
+* 7\. Venue Security  
+* 8\. Closing Checklist  
+* 9\. End of Shift
+
+| By the end of Day 3, trainees will have a solid grasp of advanced host duties, problem-solving, and closing procedures. This training prepares them to handle guest interactions, special requests, and contribute to venue security and efficiency. |
+| :---- |
+
+### 👉**Trainee Accountability Check**
+
+### **Before proceeding with today's training, verify the trainee has successfully completed all previous assignments, the Knowledge Checks, and reviewed all required materials.**
+
+#### **Trainer Instructions:**
+
+* **Review Completion:** Confirm with the trainee that they've finished their assigned training session and Knowledge Check from the previous day: "Have you completed the Day 2 Knowledge Check and reviewed all handbook sections as instructed?"  
+* **Verify Understanding:** Ask targeted questions or request a summary of key concepts from yesterday's training to confirm retention.  
+* **If Incomplete:**  
+  * **Pause training progression** and instruct the trainee to complete their previous days knowledge checks and training material.  
+  * **Guide the trainee** to complete their previous knowledge checks via their Trainee Portal and assigned materials.  
+  * **Log the incomplete status** in the Accountability Sheet and remind the trainee that timely completion directly impacts training advancement and tip eligibility.
+
+#### **Emphasize:**
+
+*"Completing your training on schedule ensures you're properly prepared for success on the floor. If you fall behind, we'll need to pause and help you catch up—remember that consistent accountability is essential to your professional development and contributes directly to our team's overall performance."*
+
+### ✴️**Tasks 1 \- 4**
+
+## **1\. Trainee Topic: Host Duties**
+
+**Trainee Task:** Arrive promptly to your shift, clock-in, and begin working with your trainer in all host-related tasks and responsibilities including: Answering phone calls, reservations, take-out orders, seating guests, and handling any issues pertaining to your role.
+
+**Trainer Instructions:**
+
+* **Preparation and Planning:** Ensure the trainee arrives on time, prepared, and ready to start the shift. Discuss the importance of punctuality and how it sets the tone for a professional work environment.  
+* **Demonstration:** Thoroughly demonstrate each host-related task, explaining the nuances of each responsibility, such as the tone of voice when answering calls or the importance of confirming reservations.  
+* **Feedback and Coaching:** Provide real-time feedback on their performance, focusing on both strengths and areas needing improvement. Encourage the trainee to ask questions and reflect on their experiences after each task.
+
+## **2\. Trainee Topic: Guidance**
+
+**Trainee Task:** Ask your trainer for any help or guidance if you feel you need it. It is better to do it right with help than do it wrong on your own.
+
+**Trainer Instructions:**
+
+* **Encouragement:** Actively encourage the trainee to ask for help whenever needed, emphasizing that seeking guidance is a sign of responsibility and commitment to learning.  
+* **Support:** Be readily available to provide guidance and support as they perform their tasks. Ensure the trainee feels comfortable approaching you with any questions or concerns.  
+* **Feedback and Coaching:** Provide reassurance and constructive feedback, helping the trainee build confidence in their abilities while reinforcing the importance of asking for help when necessary.
+
+## **3\. Trainee Topic: Handling Special Requests, Managing Waitlists, and Addressing Guest Concerns**
+
+**Trainee Task:** Work with your trainer on handling multiple scenarios (e.g., dietary restrictions, guests arriving without reservations during peak hours, unhappy seating arrangements, significant wait times with large parties and seat requests).
+
+**Trainer Instructions:**
+
+* **Role-Playing:** Engage the trainee in role-playing exercises that simulate handling special requests, managing waitlists, and addressing guest concerns. These scenarios should reflect common challenges they are likely to encounter.  
+* **Problem-Solving:** Discuss effective strategies for resolving these issues, emphasizing the importance of empathy, communication, and quick thinking in providing solutions that satisfy the guest.  
+* **Feedback and Coaching:** Offer practical tips and feedback on how the trainee can handle these situations effectively, focusing on improving their problem-solving abilities and guest interaction skills.
+
+## **4\. Trainee Topic: Problem Resolution**
+
+**Trainee Task:** Effectively address and resolve guest concerns as they arise.
+
+**Trainer Instructions:**
+
+* **Overview:** Explain the critical importance of resolving guest concerns promptly and effectively. Highlight how proactive problem resolution can enhance guest satisfaction and loyalty.  
+* **Example:** Use specific examples, such as "Addressing concerns efficiently can turn a negative experience into a positive one," to illustrate how effective problem resolution can impact the guest's perception of the service.  
+* **Demonstration:** Show techniques for addressing and resolving guest concerns, such as active listening, offering sincere apologies, and providing immediate solutions. Demonstrate how to de-escalate situations and maintain a calm demeanor.
+
+**Feedback and Coaching:** Provide detailed tips on improving problem resolution skills, focusing on areas like communication, empathy, and assertiveness. Offer constructive feedback after observing the trainee in action, helping them refine their approach to resolving guest issues.
+
+### **In the Next Step, go over the common rebuttals as featured in the Host Manual.**
+
+### 📃**Task 5: Common Rebuttals**
+
+## **5\. Trainee Topic: Common Rebuttals**
+
+**Trainee Task:** Train the trainee to effectively address and resolve guest concerns using common rebuttals.
+
+**Trainer Instructions:**
+
+* **Introduction to Common Rebuttals:**  
+  * Start by explaining the significance of using common rebuttals to handle guest concerns effectively. Highlight how these rebuttals, when used correctly, can help diffuse difficult situations and ensure a positive guest experience.  
+  * **Example:** "When a guest expresses dissatisfaction, using a well-prepared rebuttal can help reassure them that their concerns are being taken seriously and addressed appropriately."  
+* **Review of Common Rebuttals:**  
+  * Go over the most common rebuttals mentioned in the Host Manual. Discuss the context in which each rebuttal should be used and how to deliver it confidently.  
+  * **Example:** "Review with the trainee how to respond when a guest complains about wait times: "Our goal is to provide each guest with an exceptional dining experience, which sometimes requires a little extra time. We appreciate your patience and are doing our best to accommodate everyone as quickly as possible.""  
+* **Demonstration:**  
+  * Role-play scenarios with the trainee where they must use these rebuttals. Show how to maintain a calm and polite demeanor while addressing guest concerns.  
+  * **Example:** "Demonstrate a situation where a guest is unhappy with their seating arrangement and how to effectively use a rebuttal to resolve the issue without escalating the situation."  
+* **Hands-On Practice:**  
+  * Allow the trainee to practice using the rebuttals in various scenarios under your supervision. Provide feedback on their delivery and help refine their approach.  
+  * **Example:** "Have the trainee respond to a simulated guest complaint about a menu item. Observe their response and offer constructive feedback on how to improve their handling of the situation."  
+* **Reinforcement:**  
+  * Remind the trainee that effective problem resolution relies on both the content of the rebuttal and the delivery. Encourage consistent practice and remind them to always approach each situation with empathy.  
+  * **Example:** "Reiterate the importance of listening carefully to the guest's concern and responding with genuine understanding, as this can greatly influence the outcome of the interaction."
+
+### 🔄**Cross-Training Expo Session \#1**
+
+## **Trainee Topic: Cross-Training Expo Session \#1**
+
+**Trainee Task:** Shadow the expo line in the kitchen.
+
+**Trainer Instructions:** At one point during the shift once you’ve gone over the previous tasks during the shift, get with the M.O.D. to have the trainee shadow the expo line. Refer to Expo Training Manual for more information.
+
+### ✴️**Tasks 5 \- 8**
+
+## **6\. Trainee Topic: Shift Handover**
+
+**Trainee Task:**  
+Learn how to provide a comprehensive briefing to management on evening operations.
+
+**Trainer Instructions:**
+
+* **Overview:** Explain the critical importance of a thorough shift handover to ensure smooth operations and continuity. Highlight how effective communication during this handover can prevent misunderstandings and ensure that any ongoing issues are properly managed by the incoming team.  
+* **Example:** Use an example like, "A detailed shift handover ensures continuity and smooth transitions between shifts," to illustrate the impact of a well-executed briefing on overall operations.  
+* **Demonstration:** Show the trainee how to provide a comprehensive briefing to management, covering all aspects of evening operations, including any notable events, unresolved issues, or specific instructions for the next shift.  
+* **Feedback and Coaching:** Provide practical tips on how to communicate effectively during shift handovers, emphasizing clarity, completeness, and the importance of addressing any potential concerns that may arise during the next shift.
+
+## **7\. Trainee Topic: Late Service Management**
+
+**Trainee Task:**  
+Maintain high service standards during slower evening hours.
+
+**Trainer Instructions:**
+
+* **Overview:** Emphasize the importance of maintaining consistent service standards throughout the entire shift, even during slower periods. Explain that the quality of service during these times is just as crucial as during peak hours, as it contributes to the overall guest experience.  
+* **Example:** Provide an example such as, "Consistent service quality ensures guest satisfaction at all times," to reinforce the idea that guests should always receive the best possible service, regardless of the time of day.  
+* **Demonstration:** Show the trainee how to maintain high service standards during slower periods by staying attentive, anticipating guest needs, and ensuring that all areas of the venue remain clean and organized.  
+* **Feedback and Coaching:** Offer tips on staying focused and efficient during late service hours, such as finding productive tasks to keep busy and maintaining a positive attitude even when the pace slows down.
+
+## **8\. Trainee Topic: Venue Security**
+
+**Trainee Task:**  
+Conduct a thorough final walk-through, ensuring the restaurant is secured.
+
+**Trainer Instructions:**
+
+* **Overview:** Explain the vital importance of securing the venue at the end of the shift to ensure the safety of the restaurant, its assets, and the employees. Discuss how a thorough walk-through can prevent potential security breaches and address any overlooked issues before leaving the premises.  
+* **Example:** Use an example like, "A thorough walk-through ensures the safety and security of the restaurant," to highlight how this task helps prevent incidents such as theft, accidents, or damage.  
+* **Demonstration:** Guide the trainee through a step-by-step process of conducting a final walk-through, including checking all doors, windows, and entry points, ensuring that equipment is turned off, and verifying that the venue is secure.  
+* **Feedback and Coaching:** Provide detailed tips on what to look for during the walk-through, such as unusual noises, unlocked doors, or any signs of tampering, to ensure that the trainee knows how to effectively secure the venue.
+
+## **9\. Trainee Topic: Closing Checklist**
+
+**Trainee Task:**  
+Perform the closing checklist using the Jolt app, which can begin around 30 minutes before the venue stops seating.
+
+**Trainer Instructions:**
+
+* **Preparation and Planning:** Explain the significance of meticulously following the closing checklist for a smooth and efficient end to the shift. Discuss how this process helps set up the venue for the next day’s operations and ensures nothing is overlooked.  
+* **Example:** Provide an example like, "A thorough closing ensures everything is set up for the next day," to emphasize the importance of completing each task on the checklist accurately and completely.  
+* **Demonstration:** Walk the trainee through the closing checklist using the Jolt app, demonstrating how to properly log each task, identify areas that need extra attention, and ensure that all responsibilities are completed before the shift ends.  
+* **Feedback and Coaching:** Offer feedback on the trainee’s performance during the checklist process, ensuring they understand each step and are confident in their ability to complete it independently. Reinforce the importance of accuracy and thoroughness in this task.
+
+### 🏁**Shift Wrap-Up**
+
+Focus was on refining the trainee's interaction skills, teaching them how to handle special requests, manage waitlists, and address any guest concerns with poise and professionalism. The trainee went through various scenarios and rebuttals to ensure they were prepared for anything, with an emphasis on making every guest feel valued and cared for from the moment they walked in.
+
+### ![white\_check\_mark emoji][image28] **Trainer to Trainee: Check for Understanding**
+
+**Ask the trainee:**
+
+* “What steps do you take when a guest has a special seating request but the section is full?”  
+* “How would you handle a frustrated walk-in who’s been waiting longer than expected?”  
+* “Can you walk me through what to include in a shift handover to the MOD?”
+
+Reinforce responses that show empathy, clear communication, and logical decision-making.
+
+### ![bulb emoji][image29] **Pro Tips to Share During Session**
+
+* **Always acknowledge the guest** — even if you can’t fulfill a request, show that you care.  
+* **Waitlist etiquette matters** — keep guests informed and follow up when wait times change.  
+* **Your energy sets the tone** — remain calm and collected when solving problems.
+
+### ![dart emoji][image30] **Performance Targets for Day 3**
+
+* **Guest Conflict Resolution:** Respond to concerns with confidence, professionalism, and empathy.  
+* **Waitlist Management:** Accurately place and monitor walk-ins using estimated wait times.  
+* **Communication Proficiency:** Demonstrate calm, clear responses to guest objections.  
+* **Closing Reliability:** Fully complete your shift handoff and closing checklist.
+
+### ![point\_right emoji][image31] **Do you agree all targets were hit?**
+
+### **![point\_right emoji][image32] Review with trainee any you may have missed**
+
+### **![envelope\_with\_arrow emoji][image33] Communicate Next Steps to the Trainee**
+
+* Continue practicing how to handle special guest requests and challenging conversations calmly and confidently.  
+* Begin thinking like a shift leader: What would you want to know walking into the next shift?  
+* Review your notes from today’s scenarios and rehearse similar ones aloud before Day 4\.
+
+| Relay to the trainee they MUST complete DAY 3 Training Session & Knowledge Check before arriving for Day 4 Training. |
+| :---- |
+
+### 👉**DO: Accountability Sheet**
+
+| IMPORTANT: EVERYONE MUST FILL THIS OUT AT THE END OF EVERY TRAINER SHIFT |
+| :---: |
+
+## **You can submit the form directly below, or click the link to open it in a new tab.**
+
+#### **Instructions:**
+
+1. Fill out **all required fields** accurately  
+2. Be **specific** when assessing your trainee’s performance — clarity helps us coach smarter and grow stronger teams.  
+3. Submit before ending your shift. Timely completion ensures smooth operations and helps us identify any training areas that need improvement.
+
+[Three Points Hospitality Accountability App](https://script.google.com/a/macros/threepointshospitality.com/s/AKfycbz36pBsWivlouyIgotQFHFu_Pzbh9wsZ1brT42124PM8pF4T6Z0LpQPH8DvemU9sSk/exec)
+
+## 4️⃣Day 4 Training – Closing/Brunch Shift
+
+---
+
+### 💡**Objective & Overview**
+
+**![rocket emoji][image34] Objective:** Importance of Teamwork, Demonstration of Effective Collaboration With Other Staff, & Cross-Training
+
+![mag\_right emoji][image35] **Overview:** Focus on teaching the importance of teamwork, effective collaboration with other staff, and cross-training. Emphasize that hosts are the linchpin of the dining experience, coordinating seamlessly with servers, kitchen staff, and management. Guide the trainee through the flow of service and how to communicate effectively with colleagues.
+
+### 📋**Trainee's Checklist**
+
+On Day 4, the focus is on accelerating the trainee's proficiency in essential host duties and enhancing their ability to manage multiple tasks efficiently. As the trainer, your primary task is to guide the trainee through advanced setup procedures, optimize queue management, and facilitate cross-functional communication. This day is crucial for developing the skills needed to handle complex situations and ensure seamless service. Additionally, the trainee will engage in their second cross-training session to further educate their understanding of other roles, followed by a debrief and service analysis to reinforce learning and address any challenges encountered.
+
+#### **Trainee's Day 4 Checklist:**
+
+* 1\. Accelerated Setup  
+* 2\. Mastering Host Duties  
+* 3\. Queue Optimization  
+* 4\. Multitask Mastery  
+* 5\. Cross-Functional Communication  
+* 6\. Cross-Training Session \#2  
+* 7\. Shift Wrap-Up & Checklist
+
+| As Day 4 concludes, ensure the trainee has advanced their skills in setup efficiency, queue management, and multitasking. Your support will help them handle dynamic hosting duties and contribute effectively to the overall service experience. |
+| :---- |
+
+### 👉**Trainee Accountability Check**
+
+### **Before proceeding with today's training, verify the trainee has successfully completed all previous assignments, the Knowledge Checks, and reviewed all required materials.**
+
+#### **Trainer Instructions:**
+
+* **Review Completion:** Confirm with the trainee that they've finished their assigned training session and Knowledge Check from the previous day: "Have you completed the Day 3 Knowledge Check and reviewed all handbook sections as instructed?"  
+* **Verify Understanding:** Ask targeted questions or request a summary of key concepts from yesterday's training to confirm retention.  
+* **If Incomplete:**  
+  * **Pause training progression** and instruct the trainee to complete their previous days knowledge checks and training material.  
+  * **Guide the trainee** to complete their previous knowledge checks via their Trainee Portal and assigned materials.  
+  * **Log the incomplete status** in the Accountability Sheet and remind the trainee that timely completion directly impacts training advancement and tip eligibility.
+
+#### **Emphasize:**
+
+*"Completing your training on schedule ensures you're properly prepared for success on the floor. If you fall behind, we'll need to pause and help you catch up—remember that consistent accountability is essential to your professional development and contributes directly to our team's overall performance."*
+
+### ✴️**Tasks 1 \- 5**
+
+## **1\. Trainee Topic: Accelerated Setup**
+
+**Trainee Task:**  
+Execute an efficient opening routine in preparation for guest volume, performing the opening checklist using the Jolt app.
+
+**Trainer Instructions:**
+
+* **Preparation and Planning:** Ensure the trainee understands the critical importance of a thorough and efficient opening routine. Discuss how proper setup directly impacts the smooth operation of the shift and guest satisfaction.  
+* **Demonstration:** Guide the trainee through the accelerated setup process, showing them how to efficiently perform the opening checklist using the Jolt app. Emphasize key tasks that need special attention during the opening.  
+* **Feedback and Coaching:** Provide detailed feedback on their performance during the setup, ensuring they understand each step of the process. Offer tips on how to complete tasks more efficiently and identify any areas needing improvement.
+
+## **2\. Trainee Topic: Mastering Host Duties**
+
+**Trainee Task:**  
+Arrive promptly to your shift, clock-in, and begin working with your trainer on all host-related tasks and responsibilities including answering phone calls, managing reservations, handling take-out orders, seating guests, and addressing any issues related to your role.
+
+**Trainer Instructions:**
+
+* **Preparation and Planning:** Ensure the trainee arrives on time, prepared, and ready to start their shift. Discuss the importance of punctuality and being prepared to handle the various responsibilities of the host role.  
+* **Demonstration:** Thoroughly demonstrate each host-related task, including the nuances of answering phone calls, managing reservations, taking to-go orders, and seating guests. Explain how each task contributes to the overall guest experience.  
+* **Feedback and Coaching:** Provide real-time feedback on the trainee’s performance, focusing on both strengths and areas that need improvement. Encourage them to ask questions and reflect on their experiences after each task.
+
+## **3\. Trainee Topic: Queue Optimization**
+
+**Trainee Task:**  
+Overview and implementation of effective strategies for managing wait times and guest expectations.
+
+**Trainer Instructions:**
+
+* **Overview:** Explain the importance of efficiently managing wait times and guest expectations to maintain a positive dining experience. Discuss how proper queue management can reduce guest frustration and enhance satisfaction.  
+* **Example:** Use an example like, "Effective queue management ensures a positive guest experience," to illustrate how managing the flow of guests can significantly impact their overall perception of the restaurant.  
+* **Demonstration:** Show the trainee effective strategies for managing wait times, such as clear communication, accurate wait time estimates, and managing guest expectations. Demonstrate how to keep the waiting area organized and how to update guests on their table status.  
+* **Feedback and Coaching:** Provide tips on optimizing queue management, focusing on how to balance guest expectations with the restaurant’s capacity. Offer constructive feedback on how to improve their approach to managing waitlists and guest flow.
+
+## **4\. Trainee Topic: Multitask Mastery**
+
+**Trainee Task:**  
+Learn how to efficiently balance seating, phone calls, and to-go orders simultaneously.
+
+**Trainer Instructions:**
+
+* **Overview:** Emphasize the importance of multitasking in a busy restaurant environment, explaining how it is essential to maintaining smooth operations and guest satisfaction.  
+* **Example:** Use an example like, "Efficient multitasking helps us maintain smooth operations and guest satisfaction," to reinforce how the ability to handle multiple tasks at once is crucial in a fast-paced setting.  
+* **Demonstration:** Show the trainee techniques for balancing multiple tasks simultaneously, such as prioritizing urgent tasks, managing time effectively, and using tools like checklists or reminders. Demonstrate how to switch between tasks without losing focus or dropping in quality.  
+* **Feedback and Coaching:** Provide tips on improving multitasking skills, such as staying organized, managing stress, and maintaining attention to detail. Offer feedback after observing the trainee in action, helping them refine their approach to handling multiple responsibilities.
+
+## **5\. Trainee Topic: Cross-Functional Communication**
+
+**Trainee Task:**  
+Proper ways to maintain clear, concise communication with all departments.
+
+**Trainer Instructions:**
+
+* **Overview:** Explain the critical importance of clear and concise communication with all departments to ensure smooth coordination and high service quality. Discuss how miscommunication can lead to errors, delays, and a poor guest experience.  
+* **Example:** Use an example like, "Effective communication ensures smooth coordination and service quality," to highlight how clear communication can prevent misunderstandings and improve teamwork.  
+* **Demonstration:** Show the trainee how to communicate clearly and concisely with different departments, including the kitchen, bar, and management. Demonstrate best practices for relaying information, confirming understanding, and following up on requests.
+
+**Feedback and Coaching:** Provide tips on improving communication skills, such as active listening, clarity in messaging, and ensuring all parties are on the same page. Offer constructive feedback after observing the trainee’s communication efforts, helping them enhance their ability to interact effectively with other departments
+
+### 🔄**Cross-Training Expo Session \#2**
+
+## **Trainee Topic: Cross-Training Expo Session \#2**
+
+**Trainee Task:** Shadow the expo line in the kitchen.
+
+**Trainer Instructions:** The trainee will get with you or the MOD to initiate their final cross-training expo session in the kitchen. This session will last one hour, at which point you will continue with training them behind the bar.
+
+### ✴️**Debrief & Service Analysis**
+
+## **7\. Trainee Topic: Debrief and Service Analysis**
+
+**Trainee Task:** Find your manager and let them know you are done. Conduct a detailed review of brunch service challenges and solutions before clocking out.
+
+**Trainer Instructions:**
+
+* **Final Review and Wrap-Up:** Review the day’s activities and key learnings with the trainee.  
+  * Example: "Reflecting on your shift helps you understand what went well and areas for improvement."  
+* **Feedback and Coaching:** Provide feedback on their overall performance.
+
+**Q\&A:** Address any remaining questions or concerns they may have.
+
+### 🏁**Shift Wrap-Up**
+
+Focus was on teaching the importance of teamwork, effective collaboration with other staff, and cross-training. The trainee was engaged in a cross-training session to gain a well-rounded view of each role’s contribution to a smooth operation. Emphasis was placed on the host's role as the linchpin of the dining experience, coordinating seamlessly with servers, kitchen staff, and management.
+
+### ![white\_check\_mark emoji][image36] **Trainer to Trainee: Check for Understanding**
+
+**Ask the trainee:**
+
+* “What do you do when you're on the phone and a to-go guest walks in at the same time?”  
+* “How would you communicate a 45-minute wait time while maintaining a positive guest experience?”  
+* “Why is it important to coordinate table status updates with the server team?”
+
+Coach them on clear prioritization, guest-facing tone, and timely internal communication.
+
+### ![bulb emoji][image37] **Pro Tips to Share During Session**
+
+* **You are the communication hub** — don’t assume, confirm with servers and managers.  
+* **Own the flow** — your control of the waitlist affects the entire dining room.  
+* **Multitasking \= prioritization** — not speed, but doing the right task at the right time.
+
+### ![dart emoji][image38] **Performance Targets for Day 4**
+
+* **Setup Efficiency:** Complete opening checklist independently and on time.  
+* **Multitasking Confidence:** Balance hosting duties without compromising service quality.  
+* **Team Communication:** Show confidence and clarity in your cross-functional communication.  
+* **Expo Knowledge:** Demonstrate understanding of kitchen-to-dining coordination and its importa
+
+### ![point\_right emoji][image39] **Do you agree all targets were hit?**
+
+### **![point\_right emoji][image40] Review with trainee any you may have missed**
+
+### **![envelope\_with\_arrow emoji][image41] Communicate Next Steps to the Trainee**
+
+* Continue refining your multitasking abilities by observing high-volume shifts and role-playing time-sensitive scenarios.  
+* Focus on becoming a strong communicator across departments—anticipate, confirm, and inform.  
+* Prepare mentally for Day 5 by reflecting on the host’s impact on the full guest journey.
+
+| Relay to the trainee they MUST complete DAY 4 Training Session & Knowledge Check before arriving for Day 5 Training. |
+| :---- |
+
+### 👉**DO: Accountability Sheet**
+
+| IMPORTANT: EVERYONE MUST FILL THIS OUT AT THE END OF EVERY TRAINER SHIFT |
+| :---: |
+
+## **You can submit the form directly below, or click the link to open it in a new tab.**
+
+#### **Instructions:**
+
+1. Fill out **all required fields** accurately  
+2. Be **specific** when assessing your trainee’s performance — clarity helps us coach smarter and grow stronger teams.  
+3. Submit before ending your shift. Timely completion ensures smooth operations and helps us identify any training areas that need improvement.
+
+[Three Points Hospitality Accountability App](https://script.google.com/a/macros/threepointshospitality.com/s/AKfycbz36pBsWivlouyIgotQFHFu_Pzbh9wsZ1brT42124PM8pF4T6Z0LpQPH8DvemU9sSk/exec)
+
+## 5️⃣Day 5 Training – Closing/Brunch Shift
+
+---
+
+### 💡**Objective & Overview**
+
+**![rocket emoji][image42] Objective:** Refine Your Service Skills & Demonstrate The Readiness To Perform Host Duties Independently
+
+![mag\_right emoji][image43] **Overview:** Today is the final day of training, focusing on refining the trainee's service skills and demonstrating their readiness to perform host duties independently. Review everything they've learned and address any remaining questions. Conduct a second cross-training session and a final evaluation, including role-playing scenarios to demonstrate their skills. Emphasize continuous improvement and maintaining a positive attitude.
+
+### 📋**Trainee's Checklist**
+
+On Day 5 of the host training program at Three Points Hospitality, the focus is on empowering the trainee to take on their role with greater autonomy and confidence. As the trainer, your primary task is to guide the trainee through advanced guest relations, strategic reservation management, and efficient close-down procedures. This day is crucial for preparing the trainee for certification and ensuring they are ready to handle their responsibilities independently.
+
+#### **Trainee's Day 5 Checklist:**
+
+* 1\. Autonomous Opening  
+* 2\. Advanced Guest Relations  
+* 3\. Strategic Reservation Management  
+* 4\. Team Synergy  
+* 5\. Efficient Close-Down  
+* 6\. Comprehensive Evaluation  
+* 7\. Shift Wrap-Up & Checklist
+
+| As Day 5 concludes, the trainee should be capable of handling their role with increased autonomy and confidence. They will be well-prepared for certification and ready to contribute effectively to the team and overall guest experience at Three Points Hospitality. |
+| :---- |
+
+### 👉**Trainee Accountability Check**
+
+### **Before proceeding with today's training, verify the trainee has successfully completed all previous assignments, the Knowledge Checks, and reviewed all required materials.**
+
+#### **Trainer Instructions:**
+
+* **Review Completion:** Confirm with the trainee that they've finished their assigned training session and Knowledge Check from the previous day: "Have you completed the Day 4 Knowledge Check and reviewed all handbook sections as instructed?"  
+* **Verify Understanding:** Ask targeted questions or request a summary of key concepts from yesterday's training to confirm retention.  
+* **If Incomplete:**  
+  * **Pause training progression** and instruct the trainee to complete their previous days knowledge checks and training material.  
+  * **Guide the trainee** to complete their previous knowledge checks via their Trainee Portal and assigned materials.  
+  * **Log the incomplete status** in the Accountability Sheet and remind the trainee that timely completion directly impacts training advancement and tip eligibility.
+
+#### **Emphasize:**
+
+*"Completing your training on schedule ensures you're properly prepared for success on the floor. If you fall behind, we'll need to pause and help you catch up—remember that consistent accountability is essential to your professional development and contributes directly to our team's overall performance."*
+
+### ✴️**Tasks 1 \- 4**
+
+## **1\. Trainee Topic: Autonomous Opening**
+
+**Trainee Task:**  
+Independently execute all pre-service tasks to exacting standards.
+
+**Trainer Instructions:**
+
+* **Preparation and Planning:** Ensure the trainee understands the critical importance of executing pre-service tasks independently, emphasizing that their ability to do so is vital to the smooth operation of the restaurant.  
+* **Demonstration:** Guide the trainee through the autonomous opening process, showing them how to complete each task with precision and attention to detail. Emphasize areas that require special focus during the opening routine.  
+* **Feedback and Coaching:** Provide detailed feedback on their performance, ensuring they understand each step and feel confident in executing the opening tasks on their own. Highlight areas for improvement and offer tips for increased efficiency.
+
+## **2\. Trainee Topic: Advanced Guest Relations**
+
+**Trainee Task:**  
+Handle complex requests and potential issues with professional poise.
+
+**Trainer Instructions:**
+
+* **Overview:** Explain the importance of handling complex requests and issues with professionalism, highlighting how these situations require tact, empathy, and effective communication to ensure guest satisfaction.  
+* **Example:** Provide an example like, "Professionalism in handling requests and issues ensures guest satisfaction," to illustrate how a calm and composed approach can positively impact the guest experience.  
+* **Demonstration:** Show the trainee techniques for addressing and resolving complex requests and issues, such as handling special accommodations, managing complaints, or resolving conflicts. Demonstrate how to maintain a professional demeanor throughout.  
+* **Feedback and Coaching:** Provide tips on improving guest relations skills, focusing on active listening, empathy, and problem-solving. Offer constructive feedback after observing the trainee’s interactions, helping them refine their approach to complex situations.
+
+## **3\. Trainee Topic: Strategic Reservation Management**
+
+**Trainee Task:**  
+Optimize seating by balancing walk-ins with reservations.
+
+**Trainer Instructions:**
+
+* **Overview:** Discuss the importance of strategic reservation management, explaining how optimizing seating by balancing walk-ins with reservations can maximize efficiency and guest satisfaction.  
+* **Example:** Use an example like, "Balancing walk-ins with reservations ensures efficient seating and guest satisfaction," to show the trainee how effective management of reservations contributes to a seamless dining experience.  
+* **Demonstration:** Show the trainee how to manage reservations and walk-ins effectively, demonstrating techniques for estimating wait times, managing guest expectations, and ensuring that the seating flow remains balanced.  
+* **Feedback and Coaching:** Provide tips on optimizing reservation management, such as anticipating peak times, adjusting seating plans on the fly, and communicating effectively with guests. Offer feedback on their decision-making and suggest improvements where necessary.
+
+## **4\. Trainee Topic: Team Synergy**
+
+**Trainee Task:**  
+Coordinate seamlessly with the front and back of the house to ensure smooth service.
+
+**Trainer Instructions:**
+
+* **Overview:** Emphasize the importance of team synergy in ensuring smooth service, explaining how effective coordination between the front and back of house is essential for maintaining service quality and efficiency.  
+* **Example:** Provide an example like, "Effective coordination with all departments ensures seamless service," to highlight how collaboration and communication across departments lead to a better guest experience.  
+* **Demonstration:** Show the trainee techniques for coordinating with front and back of house teams, such as clear communication, timely updates, and anticipating the needs of each department. Demonstrate how to relay information effectively to prevent bottlenecks and ensure a smooth workflow.
+
+**Feedback and Coaching:** Provide tips on improving team synergy and communication, focusing on building rapport with team members, understanding the roles of other departments, and fostering a collaborative work environment. Offer feedback on their interactions and suggest ways to enhance cooperation
+
+### ✴️**Tasks 5 \- 7**
+
+## **5\. Trainee Topic: Efficient Close-Down**
+
+**Trainee Task:**  
+Lead post-shift closing procedures effectively.
+
+**Trainer Instructions:**
+
+* **Preparation and Planning:** Ensure the trainee understands the importance of an efficient close-down, explaining how thorough closing procedures set the stage for a smooth opening the next day and help maintain the restaurant’s standards.  
+* **Demonstration:** Guide the trainee through the post-shift closing procedures, demonstrating each task step-by-step, from cleaning and organizing to securing the venue. Highlight key areas that require special attention during the close-down.  
+* **Feedback and Coaching:** Provide feedback on their performance, ensuring they understand each step and can lead the closing procedures confidently. Offer tips on how to improve efficiency and accuracy during the close-down process.
+
+## **6\. Trainee Topic: Comprehensive Evaluation**
+
+**Trainee Task:**  
+Participate in a thorough performance review with management.
+
+**Trainer Instructions:**
+
+* **Final Review and Wrap-Up:** Conduct a comprehensive performance review with the trainee, discussing their progress throughout the training period and identifying strengths and areas for improvement. Highlight key achievements and provide guidance on areas that may need further development.  
+* **Example:** Use an example like, "Reflecting on your training helps you understand what went well and areas for improvement," to encourage the trainee to take an active role in their self-assessment and continuous growth.  
+* **Feedback and Coaching:** Provide detailed feedback on their overall performance, focusing on their readiness for solo shifts. Offer constructive criticism where needed and outline next steps for continued success.  
+* **Q\&A:** Address any remaining questions or concerns the trainee may have, ensuring they feel supported and confident as they transition into their role independently.
+
+## **7\. Trainee Topic: Certification Preparation**
+
+**Trainee Task:**  
+Identify key areas for focus in preparation for the final assessment.
+
+**Trainer Instructions:**
+
+* **Overview:** Discuss the key areas that the trainee should focus on in preparation for their final assessment, emphasizing the importance of thorough preparation to ensure success. Highlight any areas that were identified as needing improvement during their training.  
+* **Example:** Provide an example like, "Identifying key areas for focus helps you prepare effectively for your final assessment," to reinforce the importance of targeted study and practice.  
+* **Feedback and Coaching:** Provide tips on how to prepare for the final assessment, such as reviewing notes, practicing key tasks, and seeking clarification on any remaining uncertainties. Offer encouragement and ensure the trainee feels ready and confident.  
+* **Q\&A:** Address any final questions or concerns they may have, providing reassurance and support as they approach their assessment.
+
+### 🏁**Shift Wrap-Up**
+
+Today focused on refining the trainee's service skills and demonstrating their readiness to perform host duties independently. The trainee reviewed everything they had learned, addressed any remaining questions, and participated in a final evaluation, including role-playing scenarios to demonstrate their skills. Emphasis was placed on continuous improvement and maintaining a positive attitude.
+
+### ![white\_check\_mark emoji][image44] **Trainer to Trainee: Check for Understanding**
+
+**Ask the trainee:**
+
+* “What’s your process for handling a walk-in during peak hours when every reservation slot is full?”  
+* “How do you maintain a positive guest experience during extended wait times?”  
+* “If you’re running point alone, what are your top priorities during the first 10 minutes of service?”
+
+Coach the trainee to respond with clarity, prioritization, and confidence.
+
+### ![bulb emoji][image45] **Pro Tips to Share During Session**
+
+* **Independent doesn’t mean alone** — ask for help when needed, but take ownership of your role.  
+* **Every shift is a reset** — start clean, stay organized, and pace yourself with intention.  
+* **Stay gracious, not defensive** — how you handle tough moments defines the guest’s memory.
+
+### ![dart emoji][image46] **Performance Targets for Day 5**
+
+* **Full-Service Execution:** Demonstrate independence in hosting duties from open to close.  
+* **Guest Interaction Excellence:** Handle complex requests and regular guest expectations with confidence.  
+* **Reservation Flow Mastery:** Use Resy to manage reservations and walk-ins strategically.  
+* **Leadership in Closure:** Execute closing duties accurately and support the team's end-of-shift flow.
+
+### ![point\_right emoji][image47] **Do you agree all targets were hit?**
+
+### **![point\_right emoji][image48] Review with trainee any you may have missed**
+
+### **![envelope\_with\_arrow emoji][image49] Communicate Next Steps to the Trainee**
+
+* Review your **final evaluation notes** and focus on the top 1–2 improvement goals.  
+* Ask questions or request shadow time if any tasks still feel unclear.  
+* You will be there as a needed mentor  
+* Relay to the trainee they MUST complete DAY 5 Training Session & Knowledge Check before arriving for their first solo shift.
+
+# **WISH THEM GOOD LUCK\!**
+
+### 👉**DO: Accountability Sheet**
+
+| IMPORTANT: EVERYONE MUST FILL THIS OUT AT THE END OF EVERY TRAINER SHIFT |
+| :---: |
+
+## **You can submit the form directly below, or click the link to open it in a new tab.**
+
+#### **Instructions:**
+
+1. Fill out **all required fields** accurately  
+2. Be **specific** when assessing your trainee’s performance — clarity helps us coach smarter and grow stronger teams.  
+3. Submit before ending your shift. Timely completion ensures smooth operations and helps us identify any training areas that need improvement.
+
+[Three Points Hospitality Accountability App](https://script.google.com/a/macros/threepointshospitality.com/s/AKfycbz36pBsWivlouyIgotQFHFu_Pzbh9wsZ1brT42124PM8pF4T6Z0LpQPH8DvemU9sSk/exec)
+
+[image1]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAADyklEQVR4AYyVS28bVRiG3zMzHsdxJm5IW1pKqCCpkNKgCjWLil3X7LpEiB8AqlSBuASo5HaRXTfwBwpsKkVEiFQgsaELJEQpRQErVIBiEjXX1rexPbdz4zt2qzaJb9F5fb7zXd5nfCLbFvr8FQp5t7T8wfOl3z95rXL38ltGJg4oZ2p9xtETUL7z4QsnGT5OZ8ZvZg4d+yH9zMT19PjEdRMryk1QzfT0gnQF+HfeO5zKZq85IyfmUrmXz9je6awzOsMcb4bZ3jTFp86kssfnnOzItU3q7QbpCNA6b+lM9lLKO3HB9qZcKzMJe3gS1mNlpmCb3MhLLkEuZNPeJTPTCdIRULmbzLiZsYv28IuWlX4OVvoIrNQYLGeUlIPtjoOlj8MamiDoScvO5C6amYEBzpD7pj387ChzD5MhmVoZMMslpR4pDcvx0IK6R+Fkj42amYEAxR/zQ5aTOsdS9JTGmKUAZgNgADSJFmNgzAJjaTAnS6BDsBz3nJml6p5l7TnRIecNpZmdytEEQCaPLNE2Nyf1JGYUgl7oAZjt5MysyTytA4Cx3EbEFCrQnDwF9SpoLSkmKQFNMjWtOLSmekscSumKmaWBPesAgJ36PNaa39JJDVpGgIoBnZCZ2Y2idl7TrgKKG1DcB6S4ZWb3uNPhAIByaNTVVyIsb2lehhJNMjFmbYhWFOsQSgYAGSvqkVF5S3LrSzO7Xx0BR89eXpVx86qMNrkWZQI06AlD2s07IhlzUYMSJahwmyseXs29Mlfcb27OHQGMQYuwcUNEpUUZbSvNK2RWB2RIomvhdWoo0+3tKJlUFkWzccPMGMP96ggwTWOv5qsqDj6T0e6mpGvQwicI3bcIWruk/5GKy5umx/SamU7qCjDNv21Ht5H4S2QEZQzpzmVSp5hAsQ8dN5daPaa5i3oCzp/PCx4FiyrxIeMGRFyHpFgQRPIGuEgWTU8X71a6J8B0JFKshc0gSUIfPKy2lIQ1xEGTs1ismZ5e6gtYlxMbt+8NlX01iYBNQbinEdvT+HPNk7+ue/QB6GWP3j847dGzvBa4QSPOQCAHbY8hFMOgnB81jiTtnu6vfd/B7OysiCLx39r6fdzf2ML27m5rD2Jx7/U3/ql1t25X+gKoTUuNKOEClaqPh6WqOUBy5S0sTDOq91yDANAMw+8flEpJGEWo+XWUK1WeCLm6srKie7pTcSDA7sPKwvJy4Yulm9/Fi998K376+ZevH2zsvJvP5813N9l0XwMB5ufnd/7+949Pi8Xi26vF1XcKhb/e/+jKlfXutk8q/wMAAP//v5Of/gAAAAZJREFUAwBMiw4zq5M0EgAAAABJRU5ErkJggg==>
+
+[image2]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAFAElEQVR4AYyUX2hURxTGv7n7p0mWkE3QqDGlNJYUq9hoaSGNkqTGPKjUNBokFKpQtCL41D9IEZpCEZRCKXkpbS2UvArii0KbWJdtaSmWFLTUVgpCE63RNZt1s3t3752Zfueuu5vVBnqZc2fu5Jzfd87M2TioPmp09I1NR48e7Ro6eDAOQOH/P2pgYKDp5b4dXVu39j/PsEpsRYDgmON45xrj4W/XrWg9c+jQkZGhoSERov/yY2BkpGlb3+DejOt9mTXZbzJu/vyxY683liMqAqFQKB4JF9t7X7y1YnNXZnjV6ubPn+pYNzG8f/+WsvOj846dO7vyd+5/vejlvshuzO1TO8zKSEy1pdNOJTGnHGSMCSlrnHiTi+FXLfbvSzWt77S7NzzbkXzz0JFTBw4cXtfX1xcW2759V8e2/sGTGTf3faY1uyc3XIyjPwonrqAcOEzWKXMrC621MrCAVbBa4+knNfbsSuOV3lTDls2xt1evjZ9dv2HTuwjXvZPT+bPZ5ux7mRcWY952C9UaZhz+89IqApDH0s9asBqaj4ZoEV3PZbB7YDbU89JcV1tbbMzUmw8XNmU253uKIdPBoIiSIC44GM93zagVwEO49mF8DcNZaw91kRy2rJ/DYO/V6IPBhajpJCMKsGTAWJoBNI3JKephyVMjQFcYUwX7vgdd9OF7HopuAU+EsojEGCKOAhGYmKxpivtLPrkD0DuYSy86WGaiBewX4Yt5RXhFj0Yh3y/5OXQMccloxVmFFBTXj9DogNotGxyRDjL2PQKZuUfzgyp8aE0wfZSjAIFGABVWgUGEHK4Vah7RrW4wXi5Yy9mzipKIz0p8aJ89xuMDIQJzBM4LdmiKTeRQyCFN+HVVIrhV/QoqCI5IgJpQzmxZgcvdQC6REQJUAow4KM0KihWIMJSqArlyaNURVECwQGmGYoFZdgiPBjQBKTkeMWauAjADOTtkB/wlJdQI0E2SZHsadpOBZQtayZom8OAICFKMEnAA4zcIDrIsz8FH6UXX0qL8tsxW7sEaCnANwvnjBqQHWQFI5UDACvbAR1IrVRnsc6c8agUERrDh8diH2VvuiYiwpQoVQAkUcfrID0xp4shX8h04Vs+oItDQ0CBNaH3PQASkCjFLkKWozIZrEbEUtbwfsLNAf0tTNBQNu0aZaDRKOYpyVATC4XB6MecvzN7WyC5koNn/AhERw/Y0UlWQAqCYqaUZCliP6RdoaRf2Lxd1TjTb1ta2gIdPReD06dMP5hfcjy79tPLeZAJ2djaNfC5fbVVmrCkCggUO3wIeGzvnA38vInzZtfrnaKqxofnk8ePHHxcQwVh9/Wd3U+7h5PTay+cn1+jpq8B8KotiQf5taEg1cjygCJi5uu/CmXYRmnRM5EZLoqVx5Vvt7e3jwipbpQLZuHjxYqG/v/98oeCN3rgZfT9xpSM19eMazM5k4eZdaP7Cgwt3fYRnclDfGUSmY/fjetWJlpaW0e7u7nPj4+MFYZWtRkA2x8bGzNTU1J2enp6PZ26lX7t+szV56Zdu99r1OqTnC7CpPELTBZjJOrf+XvyH1ubVw729vacuXLjwj8QKY6k9JlD+ozgnEonk3Nzc3pnbhRPTf278/cq1Z4yZsjZ8tfGPpnDzB52dncOsOiG+5bhH52UFyo7JZPJuJpP59N68O/Lrb9EzuB37qrmxZSSXy30yMTExV/Zbbv4XAAD//0qZENIAAAAGSURBVAMACz+2ddykwk8AAAAASUVORK5CYII=>
+
+[image3]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAACDUlEQVR4AZySu2sUURjFz95kTUxWcNc/wUIwWBpBmwjBYhEbHxDSWdjZuF0KS7WQVIJoJxhBSCNICjtrsTLYCxISkux7HrlzH/nO5FHM3iGPhcPuzJ7fb7659yrIZ7H19vrTl+8/P3/zqd1aXtEvlr+cmJb02CdHXjRQ/FGrX/kzd/vW4sKD+fqj5t3q4+bciWGPfXLk6VG1y/WlmZlrqtG4hG6coDOMTx32yZGnR12YnGpOX5zEdi/BVic+c8iRp0dVxsZqu32N7W4STLufoGoiTPsYvUG4Q54e5ZzFMM0QFTJMNCag8eTOVSzcm8XD+VlMVMdHeuTI06OctXDWwBbSmBrHs/s3AVXFZjtCRbaLQLHHa/JOPLnMGgtXiFIVrP/bwcfvv0U2EBXkgaM9cjlPGc3WZDCFbOx0sfpzHXtaw3uXy/j0Yo/X5OnJJ3PyisWYzMAaA9733h/LeB2OhfIC0OpsJmA4/mgy2axQz8ow9CgrBY5pRFoWfzyZkeUYDXl6FK1MePTD13QHa1bW431GedkFx8hkriQ6yxCnGrasJ/fpkcmslIyE3+F8/fELS+9W8X+zXdI74JV3dphPJmvHQxmKluORpHsiMgj9T54ebsCaNVp2UoqyK+4cIS8bsKYyHb9KooE4RCYL7c4YnkXy9KhvH17/TaLujTjqraRxv5PGg+z06XfIkadnHwAA//8ph6T8AAAABklEQVQDAOv5s9xNhIaMAAAAAElFTkSuQmCC>
+
+[image4]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAACn0lEQVR4AZySS0xTQRSGfwZoETECJkJAYoIKQlWKL95JFQgBDStdGHbs3cjGuDCulETDwo3BjTEBN7qAhcSVK4kkRo1i8BEfMYIVQfugvb29d2bqOTfWvhaATb90Hv//z5kzFaDP0MiNxuHLtybOj979PTI2aV0Yu7cuI6RjPfvYTzEQPCgp2zHva28ZOjfYU3Zm4ETh2QHfurCO9exjP+eIktKySx5PvSgv34agEUMgYmwY1rOP/ZwjXEXFA1u3FGElFMNywNg07GM/54i8/PySX2ELK8FYBqsUHo0aqC6WOFBR6PzynNezteznHKG1QsS0Ec2iutSN4T4vutu8qN9Ti562Zgz3NaFquytHy37OEVopaCWhsvAd2g2RX4Dxhy9w/f5TTD6eh8vlQmvDLkiZqWe/phwnTEkFnQYlY+6dH9Ozb7H0MwTeX1wOwiZNkdtNc5mh530nzKlI2nRaCsu2MbfwFc/fL8KmsaT9I7WlcBcW4NUnP7RKaXlP0b6imzmVaRrkQtVS6bze2bAT3cc9ePPlB2Zff6Yw3qPqMnwKIvH3/ppOywZawuepwKnOJnxcXMXEo2eImSaydYpCOUcoek0uk5uajqJDer016O86jJcflnB76gnMuEXtkDmwn3MEpzJ8nX9QD0631qG3oxlx6tm3734c21eJ9v1VaKmrBJVG39Q12c+IhNMXBU2VJFG01ri3BqZlA8hDX4cXgyePOvR3NSORyNRr0nMOVaag6M6KFpLw5uidGVy8+SCHK+NTsOI2ediXRDpzkdAqwmb+B6djxuNOs7nhmcSRrnPGVAjn8APMKGlBU3X/C/vpAWaEbRlXY9E1ypF0ot40/Ors5xwxPX5tIRYNHjSioUnTCAdMY83eOOEA+9jPOX8AAAD//xLoOssAAAAGSURBVAMAAg193AFHqfIAAAAASUVORK5CYII=>
+
+[image5]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAACvklEQVR4AZSSTUhUURiG345pOqOMP4mVVJqlpsxkRomiNFKiuIiIWoi0ce8mdxVBQT+LcpMV5crQdlK2sMCWLSZwlWALCVokJOP8ODP33pl77znT9121rlqoAw/3/Lzve75zvhGgX//Q44aBOy/GBx+NRYeGJ8wbw2+2ZYh0rGcf+ykGggeFJWVzwbaW/r5LF0uu9nbmXusNbgvrWM8+9nOOKCwuudnYWCdKS4sQ1w3EUvqOYT372M85Ii/f0+styEd4xcBSTN817GM/54g9OTmFkYSJcNzYwDKFG5qGw14Jf0UuDnlsaJoOXt+sZT/nCKUkUmkL2iaOlRdgoKcZ588FUFNdha7WJgx0N6GyeN8WLfs5RygpoaQN6YLnHf4qKAiMTM3iyeQXvP70FXl5uTh9/CBse6teUY4TJm0J5YLnYzNzePo2hHAs5eyFI0k6UMFWoLlN/PWw3glzKrItOm0j4VgSsYQGf6UH7bXF6AvWwzAlZmYXKNTeoJfk5xynMkVX/DcSgfoqnA3UYX+pDws/fiJrpfE/rciu3V9Ji0Rr8EmEZZkYfR/C/bEZjEx+RqD2KK53n8EeappbL6kYzhGSNrhMftR1fJ69uNJag2DjAWQVvQ+Jfy3HoRkZlJf54PPm0jX5qquwn3MEpzLu0uMpAydPVKO7oxntDZWoqfCi89QRFHnzEVnREIlTU+iAdQ/7GZGlliqGrqvWyKQzmPgYQkLL4PKFFgz29aCrrQlRChr/EEImk8G61vmSn3OoMul0R9KCm/nvi7j76h1uP5/EvdEp3Hq2+v1G627d6timDAmRVTLlVEZvx/9iN6ZpIRpPYnEpingiBZ679/+MqRDO4QZMS9uEcr3BbsfspwZMC8vUHxhakvw2lFK7RtI7s59zxNTLh/OGFvfr2spEWk/E0nrS2jmJGPvYzzm/AQAA///Q1Zn4AAAABklEQVQDAEN8edwTsFHJAAAAAElFTkSuQmCC>
+
+[image6]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAChElEQVR4AZSST0hUURjFz1zR0XEMRyWilWQQZC0kyaiN2p+FCzcaEtIm2gaRRFDgslqEu6iWQdqqP0JILiKQCKtNOtQiCwo3pdiM47w/znv3Pr9zBdHRQWfgN9x33znnfvf7noL8BoceHL0y/OjZtftP/w+NjBZujIztypDoqKePfomB4iKZakx3nu4YvNR7LtXf01V5sadzV6ijnj76maOS9anbra1HVENDHbKuh0ze3TPU00c/c1RVdaKntqYai8se/mXcsqGPfuaoWEVFcilXwGLW25ElOSSuXdRGLhLCUm67jn7mKGM08n4ApwQnmusxcP4k+oW+7nYUAr1NSz9zlNEaRofQxYQhUjUKHceakf69AH814MBEp4WtevqN5NgwHWqYIlSk0XfmsATEMPllDlEUyRqiC4WteutnmK0oDBAW0XaoEQf3N+H5u1lkc44N4h/1xVotXu7byoxccTO1lRE621rw528Gc/MLMHIqgwjXpki//qyhIukNU40OxERCXGhvwb5kAm8+pBFXERKVMeYgFouhLi5rI1fd0Ae2h8xRWqbJMkMJJTzlQFPKGq/2nsKty2dxc7AbNfEqKKVwfaALDXVxaUu4Af3MUVpKJgwhfDE5/Q1jbz/j5fuvlvGpWWgT2SG8nppBNufKLVjdOvQTFUk/DJHKjKCF2R/z+Dgzt8F0+icc14fjreJT+hfyjoSJjnqL+JkjlWl7Zy0bpfD9AoYfv8Kdhy8k0Bc9PZsJ7Z6KjM7byqR3/IpL4fmrIDtqpRDmcAATOixs6YGRPpYD/TKACRUU3LuesyLeEMaYsmGP6WeOGn9y77vnZI+7zvKo7+YyvrsS7J1chj76mbMGAAD//8dq6fAAAAAGSURBVAMAeI573LDs61UAAAAASUVORK5CYII=>
+
+[image7]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAACoUlEQVR4AZyTX0gUURTGv73+Qdct3BUhEsosCNyil1RIIyMhsoiK9iF86z2kfKuIKKig8C0qLELQ3kQUWnsIegksIwiKEnyQ/gi7be7/nVln7r3bObvtts4GagM/5jLzfd+cc88dAboGhu61n7/2YOzCndHo0PC4dWn42ZoMkY717GM/xUDwwuNt+th7oGvg3Mk+79n+wzWB/t41YR3r2cd+zhGeRu9lv3+38Pk2IW6YiKWNdcN69rGfc0Rtnbu/ob4OkYSJcMzYMOxjP+cIV1WVZzlpIRI3V5GlKhtgwomwjVU69rGfc4TWCumsjYyDbVt8CPR1VtDhb6vQs59zhFYKWkkoB3U1AlJpPJ75gOGJNyWmZhcq9OzXlJMPU1JBO6ivraYPaEQTaVimCbliIpUu4NTm/RymuCJpQzpwU5jLBQR6duFioJvoweCZTrQ111doFXk5J1+ZpsBy+KWg45y1JOZ/xPFweg6Tr7/ATVM/dXAPql3UicOjubKclNSOhFZ2iZyWePp8DtefvMDLd/P4FvqFt58W8T0UQ5N3M1p8npKWfYqCOUcomiZXIim0iKL1ic5WHO/YDldOU1v8QRtKWvzXQOrCs796ekc5glMZTelFJK0bG33o7dqHo/t3YkezG93tLWjd2oxwNInFpZ9UGXdTgP2MyFGvmqFq9B+45MlX76mtKA51+DE4cAynj3TRb2ZiLDgLa8VCUZu/k59zqDIFTlX0oJwIVXB3dAZX7k/gxsg0rtL95sgUFr6GSM+ecngbFEROq3S+MuqZT3E5No08kcpgKbxM5y0Fy6Ih/UPHfs7hAQQVbaymffpf2K+0CgrbMm6ZmRTlSGia0kbhybOfc8TUo9ufzUx8r5FJjGeNZCxrpOz1k4yxj/2c8xsAAP//UKACeQAAAAZJREFUAwDluXPcFjurMQAAAABJRU5ErkJggg==>
+
+[image8]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACrUlEQVR4AZyRX0iTURjGn30TzanpXOqGzUUWI1ilTkpsF5VRQRF1o0ZGYZgRFl6YQVe70AuhCyO0NCEpiplmoRE1hm6ks7nQyTddumlTc+6vc266LZ1r30AD0ZIOPJzznnN+D885L4H/GGKxOFJc94YdQmnbNghBRGtbe2fzh+7gd95lP3Hg1KyopNG7LYPWhqbSXdKugLz45nnfzDSu8F04mZ2AKY/v3wk+y7pUii99T6vNVtQvziPPNA7RIT6C+j5Yzaavf03Q0tKi+aEzHmmTy2GeNEAcGwd6USFmTEZIP8kQY/t2a0uDmnS+cXjnscPahQXcFwohyxKiQCmHfdGJUCIoe1VLDq1Mt25AcjnZi8wEuyV6h1nB2BEkbz/iSVUkRqKywb1TirR3EljdcxgcGgnB/dBPT+8OdQFhAz2bnZS66ldH+eZZvhVfyisiGoM/naBHRCBjXyqcDD5MYzIMaIahVPZDpR4omyJJ57pB+iW6hXnCC78IIPlANzsTe9ksnBZwsYeUYvTZE9x77YBCoURPr/qxgdTUUTAlwvuQ1YwzHhryIuHPhaSWfa42t7AAIh4Do1XFsMuleO9YwoTegA61/cK4dvAuBa6JcJ8lyoiLLhquu+juJFRZ4xPLe97WQV2Uh+pJPRosXmSqZZApm44GDNLONXBtJpIFNg9VuJ8TNWk3KrRDLxMhsE6hhBOAEg5nn+4jGi0kMpbRT93bqPAn2qpQHiviVQAcSCo1qHwQFWxg8UU5HjATgkAEbSP2pyaoJYOBq7R4HlZoRuTkO8DmxjAlx3UdLKyG2xSKeI26t5nCBpECTlbAMIpfUslCjES7Pz1/woUk2hw9GvCt4mDoNS82g6k9olMIhk0xW2RXzqaMtdt4yfUwUAfLgSht3BxobEBL1VvpNwAAAP//mI5IggAAAAZJREFUAwD5qhfUHd54rgAAAABJRU5ErkJggg==>
+
+[image9]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACwElEQVR4AZSRW0iUQRTHz8y3i3mpFTUqNM1SQsVSUKFaHyKt3Vral5KejDDt4qWwhUW7sC+9hKFJZmm69pD1lA+JSFj5kklWSrre8ZKb7EXd1tW9zvdN820gmm3QYQ5n+M/8f3OGg+EfMTDnjB618V8+zDiFtl4j1b+dXG7sHMtfbwkIsK64X9vmho2zfd1xiWGefnlC8KesGDCav7Y3PWjrX6WUIhH0V8DYzHxlz/t3qqy0lM9HsrOHw0LDVkLDZO64uDhr2bUrvTvJd9fD9mFHQIDTvnQ3Iz11HCHOiSlPAbGkhIqvYU4qKE/mjiwPdgQ/77GcFTURtJZ6vX7P+NAQbJPJrDzvBYEnVPD6gCc+AMFHgXhAyiAKxYkpiURSvwlgmJiQewlPqUCZlwChFASgwPMUiJcAxphyHEDs7l32bWCL3ARwOBxOk/EHYn0j8VBMhBBgtkHMSAhBmBLwuN1BEUFensmwIY5lZ7d/7OuFVQ8fIognggCU5wH5K1P8laJvhpH4LRzfvQmQl5fndRHBV32vKo1iqYQxxHGxjuB3RQitekg4b58PXfL5zmwAKBSn92fIj9PikhKpy2zEd27qDtmdPhlwUkwxh7mgEInRZIl/8awpVaB809H09J9rAKVanbwvJX00JzcHrpbeALNzGUbGBl2XCy8crNBWymtq6uW6iorD+rr7MSHBXIH6XMFFYOEHKJXq5L0JaYbIqHB41doCbrsJ+gaGoOtNZ2hmZobU5XPkLppnT+2I2bq9qvYxOl9U1sy8/oVVKlV0fNIBQxQzv2xpgAWrBdjkoKz8eqJ4Q6fTkebG5q7auroOjUa3IGrrE8+bFqYiI2TQqm8AKzOzr4JWeyupvLh4cv3FQHtsWzS3PH1UDRaLCTiOg3Lt7SSNpnQ0kOFPHU9PT18CKjwRWOQXFcZW/odZhP0CAAD//6cVBesAAAAGSURBVAMA4R1GvzGiO44AAAAASUVORK5CYII=>
+
+[image10]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAADuklEQVR4AZSTe0xTVxjAzz20tx0UcYDJLC0IKzOzFbdJJbS1LVisbgy2zJEYx0iWJVv2x2IcC2SZ02WLqPORjT3/INGYJZ0LWWw3LKuyTYgMpaCmoKgURNpC6cvelvb23t7ruUQN0Jroyffl3O/1u+ec7xwIFo32M0PiU//c/OBU91CXyWa/aelzOC5e95y47CR2/DEcXLkoNe3nI9gPZodGyGNHp4etP8Xco6pVeDyTH/fm/2/r3BmaHPx9Q4FgpNcxX5iW8sC5AOuwjWvigXFLTsJNNu5sGGzc1XBNq6oYN+i1Yx++/95lSYH4Rv95y6rnVoQHB5yRDQ9qUybY0TcnJiOBP6UreaTRsOVWfl7ufAbDJJNJiqFpmoEQUhKxeFarUY+et5pzBXRwH8uyWAoJOSBOR+pnRnqyVZs2TkGMoSmSZEmKAokEpwk0JwCLhkiUdU9WUuIdG7n6eo/9dgmqTRGYiPrfeEFWElqRlRlnGQaVsVxxSiKGYaxCoXDNuu5A37TzzZQE5ICQia0tLpKGGZZhkf1YQdtlcYEALZqi5yZuvZguEfKYOJmkKF664HIfOipIRKKYzzWZsTzG2VAIYvbJqak8tI2FznLOdMowDOb1h3KmJib5gKIupcuB+Vl884jjmpAgCO5Spu0SV5hkWP5Zq7UwEvT71q0vMnG+5Qplqwv/LpU86/3vwgUZCorQCpcCMQwkWYx/cWCoaKC/T1T8fOnEF+2mfL1eL0T5SwRK5fLApopylePKQLTj5MmyMBFZIxAInsFxIY+HC/mhCJl34ldT2S8/f1+QKRIBd5DYKJEUX/UTyX8NBkPOYtrCOZUpDc4ardo473dZjx87LPn64MHyQ0ePln++/0vlnj27Fee6zFR2Jj5stw+zfb29sFS2Rri9trYiSuMmo/Ht3IfABRhnVNc22D/b11b/6uZX5KtFcC8bnTudQQZPl0rzdlfpdWvHJjy7vB5PIuh1gR5bF6ATMVCp1mwLRUOdanVdNsd4BOMMDF3M6vrGsY8+2du2/8Cxpm+O/9jYdvjb75qbm31q5Q6nRqe7hLoKZtzTwNL5G2CoGKg2bteF44H+urq67CUwDvg4bW//mFS+pHitvLLSjJ4J8HpnQPdfZ0Ak5MO21GyVzwTnDzwxjPtJS0sLoazSvVup0nYjIOt23QU2qwUE/bMgGQ+rnwrGAQ+1tt5bL9/8VlXN1iEGvUDP9F1w1twJAr5A61PDOOCRI59GX1as00qkRV/x+LweAc7f1tT0zrn7AAAA//+8lYfnAAAABklEQVQDAJALp90eU+FsAAAAAElFTkSuQmCC>
+
+[image11]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAACkUlEQVR4AYyUz2sTQRzFX9eESg/eCiWHQI65BA8KHgQvinjwVBspLVorahE8+JcIFqS1WKukiKL/Q/HgQXtRDNQUNDS0mkQCQtRkdybje9NuTEwtXXbynfl+P+/Nj91NAF5uYuKIGRu7H6ZS1zk89C1eOuklCtSJ1tcf2Gr1jqtWF0wud8kBQzjgUt1z5KWTXj5Bc23tni2Xb3acQ8fahCkWC610+soBXlBdnHjppJdPsFGvvw+dM5wNagSG3c7O0u9UanY/Q+VV9xwBaaSXT3ASePQamAyBdodF34xJ2lpt8Vc2e5mw37Kixsp3WPcceemkl49/ABeBVx+BWyxEMURBwpRKK61MZooa/GTUWPmYES+d9GK8GTvuNPCkBMwR6G7ZWXs0rFSWf4yOPraMGnOF/jjEiZdOejbEZurjFLD8FphuA614dq4k2anXZ3wkpbzq4sQz1b37zJS9ALz4ANzgzH+3zIJM1JRXXRzTffeAGU/bnQUKzZGRVYn/bcqrLq7PiYMBM57J0PdMZvpYGE6x78+nNyrfYJ05+tGh5x4wa2SzebO1taQzomDATPmQdXE9Pr7bZ/aNL2q0uVnQU4u3x8OOKsCKYpxTXZx477L34824gqGv6fRV1GoLzpjEXg0R0NoAZk8A1xQ1jmueIy+d9Mp7s0YuN97Z3l60xiTj2fnUzDtg5hywKlBRY+VjxvPUSS8m0FLbxeIzWDushBpXEJX5RYwDz3nKnBj6G3EaKx9Bi8buRZ308gm+VKvH+dF2t2aA9ie+Z2f4Au/S/b/Kqy4urkgvn6Bi7V2+hA81PQHzhl/AeeBpDO4XVRcnXjrp5RPkAdsEbn8G5tnmJoGXNBDD8N/biRPPNi99HrB/AAAA///9i46mAAAABklEQVQDAPq6rXzVahnYAAAAAElFTkSuQmCC>
+
+[image12]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAADyUlEQVR4AZyTXWgUVxTHf3OTbHaNyeajycbYmCah9EEaC+IHplK6WqoUhGJTKSTQt1AqbZFgfNCsoRQJ+FArLUgEX22llNTYEtQHH4p9FQSRYrJJNq2mu5tNVtfZj5npPTtpPlo3bpzhz9w5557fOeeeGYVcp5s2MBTYZ5xtHNnwTUu08ts2s/K79vVJx0isMISFMDVb5RfV1he+Bu+VPdt2HPpgz6G67je7ynvWKYmRWGEIC80UtsKf3l1WW9a3f+vems62HTS/tIm66mpq/f51SWIkVhjCKtNMYSu8JZ83NTbU+Co9zFgzhDOTTKTDRStsTjL1dJppUTqSZwhLmMJWhtfpxGszlYnwwJxYlwTeZAU46AlyoDzIJqeBsDmVZwlT2IpSe2PCSTCZnmbSXJ9S2ad8VH+YD1ve552mt5kiwrgZRljCFLZyyJK0k8xmo8zmilc0G+M97346arailOJaYoyf4tdchmYJ09Fs/Zna2HYWy85gWcUqzevqVT7b0osqUfpYxxmc/ArTeuIyNEuYYKNwLFzl9LM4VTgeBpr6qd9YT0bDToe/zB/Nao7LVauNz0+gdEEHK/bxVmAvjr7H5sb4Jf5rgeIs6SCnnVmtHBV42K2202nsZKfxBpWOV9tdH47sy1Gnqvg40IPf4yem5zD85zBzenYs+pefbpzuwNYQkYXHKOXT1k/4cfsVftj2PV1Vh1GOof1uu+jqD/jeJdgQxDAMrkavcn3uOo697Jc9rmwdl58BeuEqkUtwOXoZo9SgpaqFoy8fpa2kdckfIEDolRC+Mh8RM8Kp8VN6sOaSX5/Y/9ZqyZhP6HAjfoNLf13SZoeOug5ONJ6g3C7Pqz/QT3ttOykrRWg8xIw5g/5Qni3HLXo5waIhbaU5M36G24nblKgSelp76K7sZpd3F0e2HAGDfBEjf4+gq3iu3AS6+pWb53PzHLt/jIfph3hKPQy+NshA8wCNvkai+ie6GLlILBNbG77IdBNI9WJYoTsLdxiODJO202z2bybYHEQpxcijEW7GblLwaP5lCFNrOYF+WdmFaZlcmLrA3eRd5DIMIz/Y0B8hUrkUK/eutS6YQIJkiH33+kjmkpi2ycn7J93B/qcY2VtIkuBxvt0CQbfitxh6MMToo1FGZ0eLrnyR+Vhh8Rs5fQgFEjiOw/mJ8xy/d5x4Jl58AmFqtnRwDpO5tZIs5BaYSE0gyShQyCq7wIXpcE7h4XdSnOUJc2R0J/qv113xwhKGsISp2YpejYevSdJFgp+ZJ8YC6ReSxApDWMLsJfUPAAAA//9Ius+LAAAABklEQVQDAJ08cHyitQoCAAAAAElFTkSuQmCC>
+
+[image13]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAADyklEQVR4AYyVS28bVRiG3zMzHsdxJm5IW1pKqCCpkNKgCjWLil3X7LpEiB8AqlSBuASo5HaRXTfwBwpsKkVEiFQgsaELJEQpRQErVIBiEjXX1rexPbdz4zt2qzaJb9F5fb7zXd5nfCLbFvr8FQp5t7T8wfOl3z95rXL38ltGJg4oZ2p9xtETUL7z4QsnGT5OZ8ZvZg4d+yH9zMT19PjEdRMryk1QzfT0gnQF+HfeO5zKZq85IyfmUrmXz9je6awzOsMcb4bZ3jTFp86kssfnnOzItU3q7QbpCNA6b+lM9lLKO3HB9qZcKzMJe3gS1mNlpmCb3MhLLkEuZNPeJTPTCdIRULmbzLiZsYv28IuWlX4OVvoIrNQYLGeUlIPtjoOlj8MamiDoScvO5C6amYEBzpD7pj387ChzD5MhmVoZMMslpR4pDcvx0IK6R+Fkj42amYEAxR/zQ5aTOsdS9JTGmKUAZgNgADSJFmNgzAJjaTAnS6BDsBz3nJml6p5l7TnRIecNpZmdytEEQCaPLNE2Nyf1JGYUgl7oAZjt5MysyTytA4Cx3EbEFCrQnDwF9SpoLSkmKQFNMjWtOLSmekscSumKmaWBPesAgJ36PNaa39JJDVpGgIoBnZCZ2Y2idl7TrgKKG1DcB6S4ZWb3uNPhAIByaNTVVyIsb2lehhJNMjFmbYhWFOsQSgYAGSvqkVF5S3LrSzO7Xx0BR89eXpVx86qMNrkWZQI06AlD2s07IhlzUYMSJahwmyseXs29Mlfcb27OHQGMQYuwcUNEpUUZbSvNK2RWB2RIomvhdWoo0+3tKJlUFkWzccPMGMP96ggwTWOv5qsqDj6T0e6mpGvQwicI3bcIWruk/5GKy5umx/SamU7qCjDNv21Ht5H4S2QEZQzpzmVSp5hAsQ8dN5daPaa5i3oCzp/PCx4FiyrxIeMGRFyHpFgQRPIGuEgWTU8X71a6J8B0JFKshc0gSUIfPKy2lIQ1xEGTs1ismZ5e6gtYlxMbt+8NlX01iYBNQbinEdvT+HPNk7+ue/QB6GWP3j847dGzvBa4QSPOQCAHbY8hFMOgnB81jiTtnu6vfd/B7OysiCLx39r6fdzf2ML27m5rD2Jx7/U3/ql1t25X+gKoTUuNKOEClaqPh6WqOUBy5S0sTDOq91yDANAMw+8flEpJGEWo+XWUK1WeCLm6srKie7pTcSDA7sPKwvJy4Yulm9/Fi998K376+ZevH2zsvJvP5813N9l0XwMB5ufnd/7+949Pi8Xi26vF1XcKhb/e/+jKlfXutk8q/wMAAP//v5Of/gAAAAZJREFUAwBMiw4zq5M0EgAAAABJRU5ErkJggg==>
+
+[image14]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAFV0lEQVR4AexUe1BUZRT/3dcuC7uLEJBoorwRMYPIUewBZVk60wxNo5aWk00+GB+AOTVWsvlkcqwpp1FRlDFzHJ0iBdF88DCEEkyUlKfLY2FdHgvLvvfevffrrjM6wyj+Zf915jv3njnnnt/vfuec76PxH8v/BA8KvLy6WfPeHw0vrqioD3nglI0nUyJCKIuzf6PVZTs7YLcs2l9VM3375foUIvufCMHSk6ej3S73eqfVqh7nsi8ZJDhkI94QiqLIQwQEoNpiYpTV8fEan5bJNgAKjxFeJAs9breWt9lgtYzMHvCSyylPqSt9KaMIrjwdHXZ9YsQHQ05+F+v0FNBOzz4t782vmhz1UUV0dIxMPur7iooKVld2MVHk2DchirCbjOgym4nV404qMVk35NbdSn6QcDUiYpof3KdESfyREGkNFxa2WJ2S/L5/QsJ62k/5AxGk0nNRMdknEhMV++vruZ3FJellXMBR85SoM2EzZ8/y91NCS1EICgykOgyGN3r6TLr2XsOxewS14ZOnsk7+pERhliIqSh27fy81o6ocCQcLMO1IEZVSejogMjc7XjNhwm6V0v+MvtN4vCss/Lw9Lm6RMzRkinHYzEkd+kGtKJ6xDQ9X8C7XZa/bVWK/27eJPiXXGpSYQygSy4aGYvKObVDPfAE93+9B84pVuLVsOfQ78kFrNIjN3w4u8/W5Q+PD33GHjefMIzaYWtuhbm4aSZsUsfHteemZQlfrPHcTPfc1Q9vC8tXLimlRFJMklnlXAsUGpr8CdWoqOvO+hvFgIRTh4Zi4JguBabNh+rUYnXv2YlJGE3hPH/r7+jF44ya0Tbcdz7LMhrRQzdGVqanCtYICWVcKOp1Ogiy01mrNVDFMkCRJ0MoErtY2jFypQeCcNERu0YHiODBPBSNq62YwwS4I3b/jmcafQTXUIbTltmO6gtsyXRV/NCMjwyvjPbRopZtPIywLQgjogAAIQ0MQBR7jZDJLTS2a1q5DU8566AvzELzkLfRXJGOBV40VrIAFleV9cadOFM+fH+vBGEKLklcj+oLyBLj0enDBQaBkQn5wEJLHDckrQPC60Fn+NyxtBJqpmXA0CkhIeg4afXuI1NCY4ksfS2mHVzJ65PKAZWC5VA5lRARU0dEYLC2DKi4e2udTwUIFlTsAI24eZo5FS2cHOsyDMAcHB1gkMUmXns5iDKHtXv6SXRCIr0z2xkY45MZFfJoLQQYwHjqMyK82IVqensi8TZiS8TJIw00QhoPTw8PBsowFCNN6PNwY+KB5L3VhaHh4UAwKhHdoWJ6eg/BPTETUju0YOncWrVlrIdw1gfGKMGzbBbGyGrHJM6DyV0EYHgbB468RWgnhjtNhL+21WSWiDoD5/AV053+DcS/NQcK+vWC0WhgLi9CTvxsu+e/DXk1H0icfw/+OHozN5mufyapUChhD6IWAQ5ToAwOGno5eyQvRzw/GoiK0rs2WJwtIPHIY0346jKl7vkPSgX1I2LkVvAzuOnYcoTRlVTFcna6y8pEj6uOk5QcJhveqi+JyukwmR6c8ooLccPPFS2hetRrNWWtgv3b9Xh083Qbo87ai/fMv4OntBVjFFRdDKmWMMRfti8i7EDeKnhKTUrm40eFor/V4pAFRgF0+E0OVVWjbrMM/Hy5Hy7ps9BX/BofZzI8Q1PYqmJWftbTYfBhj6T2C+0GDzXbWrlQs7QEprJaku3U8T1rkHRnls9AviTDJaiBSjxH4tptwi2Rw2byf/ej3KIKTgFhgNv+lUShybDQ1t1PBZt3g2F/+VLD1NRxTVscyuW0g89ppbPnSeMfwaMjR3n8BAAD//3/XF/gAAAAGSURBVAMAhwWJEUDWJPcAAAAASUVORK5CYII=>
+
+[image15]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEO0lEQVR4AeyTS2wVVRzGvzl3Zu609wF9Q2mhxVZLxSsGIhjCgoUsjEajwYUbokEXEklwQYJibDTBDUF5LdCFEXdAojEGjYCmKiZG06S3D0wuSGlt586dO3Pn/bh3Hp7bBhIXLULSHSf5nTNn/iffd+Y7ZwiWuT0wuGvA9xVR/Ov2jHcl95zyTd+jd3O4ZwPnysNrIqZ2jE9nPk9y/InCELJLmSxpEJ9DQv9+sNkb3tTvX3rs+erwptNJoXmE4YS9YS1o0eaU9sDPcPdlYF3u7fDbcm+lMqkvWJb7MdHYeIGwwpthWG23yxJKhZumKtpnBpJm5Z4N4nNt6dhnzrK8cIQh3LNRGHXVXIs1pVnI16dCqVDMu3Z4uHsge9V6sm/AvNg3aH3Xm7Mv9T3hX96Y8y8PDjoXc131BOYjKpxAsni2I/XnGXAxRWES7wnZ5l0JvrGBxgG2cQW4bBvSq9ahfWBDomdbbmPP5g3HM90PjTS0rJlobO2aaGjtHW1o7hnhmjpH2ZWdE1xTpmCl+g6T+GJfsqVzzWtcmjnds6Llg3K29V0hk9mT4AWAFcDwaTDJJiRSq8Gu6Aab7URCaCKEb6TJEDAMAQgL0DGOgDgKEAc1hLWqYGvm08RPpdemWtsOpptX7Um1rj6Y6eh8p2FlezuTzABsCkhQIUIBD/qCwgChC7s4FRUnJmVxfFyZy+cVMZ+XxLHRWTE/NjU7Nj4ujt34SpecQySZadvGr1y9jm/qgtDWS5Kt6zmSWsWApQZ0V4ipJqgooZeFNAAkDXBNdNNcUAtqu4vT3FqM8d2ulV2nTcvrCzNy/9rXlVzvPvXFR942fyF05eMgAjO/0/ndUhGGitVFQQAmQaERgI6oN+rIsOBSGZ6eUNeWoTmn++N/3P791/2NQ6juHELA0KTqK+sQhH4HAhsIDIpJ0YHQAiKvXl8gDoF5qkDk0roNWynfsBx8u7Bg8Z5EnuNFvonI0SgqIrcyT+wqgCsB1TIQUGoloKZSA2pMDzWOwVdQcRaXXqiQmqtd8+m/4pkqPENB1dIRuCYCz6KjgdCuUMqUEkVC5Mj0Y8U4rHnDm99AsCCzeE9s3fzNVsumUZKhFUvQRBGmXIKrq9SwAs9U4BvqHTxdhiHOGJ5unGSYhSuwuDxA1Fl3sjzjXChPe658KzDEgl+cGjVnZq+VLXVWiUy5QvOmqCosRYEhybEmVvK6Gk4vJXy7Rvr3q4YhcR/qxcQBU2b32ir7gqkLuzSJ2Ve+FR6X/va+lqbcn+UZ52plzv9BE/3PLAVDk3/Y8m2RpUZ6D4GtR/Wb209an+44pZ/fcdr4fecp5a+njtlfSqZ9qKLxrxoVZrepMy/pKnnFdp0Dufetn14+D3q1lpJeqM0b1B8Z/DfP+vyZk/B3fqJp249apW1HbGnrR6ayZQjO/8m+rlnnjkF9shwsu8G/AAAA//8isWhpAAAABklEQVQDANgdCk9d8H6wAAAAAElFTkSuQmCC>
+
+[image16]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEO0lEQVR4AeyTS2wVVRzGvzl3Zu609wF9Q2mhxVZLxSsGIhjCgoUsjEajwYUbokEXEklwQYJibDTBDUF5LdCFEXdAojEGjYCmKiZG06S3D0wuSGlt586dO3Pn/bh3Hp7bBhIXLULSHSf5nTNn/iffd+Y7ZwiWuT0wuGvA9xVR/Ov2jHcl95zyTd+jd3O4ZwPnysNrIqZ2jE9nPk9y/InCELJLmSxpEJ9DQv9+sNkb3tTvX3rs+erwptNJoXmE4YS9YS1o0eaU9sDPcPdlYF3u7fDbcm+lMqkvWJb7MdHYeIGwwpthWG23yxJKhZumKtpnBpJm5Z4N4nNt6dhnzrK8cIQh3LNRGHXVXIs1pVnI16dCqVDMu3Z4uHsge9V6sm/AvNg3aH3Xm7Mv9T3hX96Y8y8PDjoXc131BOYjKpxAsni2I/XnGXAxRWES7wnZ5l0JvrGBxgG2cQW4bBvSq9ahfWBDomdbbmPP5g3HM90PjTS0rJlobO2aaGjtHW1o7hnhmjpH2ZWdE1xTpmCl+g6T+GJfsqVzzWtcmjnds6Llg3K29V0hk9mT4AWAFcDwaTDJJiRSq8Gu6Aab7URCaCKEb6TJEDAMAQgL0DGOgDgKEAc1hLWqYGvm08RPpdemWtsOpptX7Um1rj6Y6eh8p2FlezuTzABsCkhQIUIBD/qCwgChC7s4FRUnJmVxfFyZy+cVMZ+XxLHRWTE/NjU7Nj4ujt34SpecQySZadvGr1y9jm/qgtDWS5Kt6zmSWsWApQZ0V4ipJqgooZeFNAAkDXBNdNNcUAtqu4vT3FqM8d2ulV2nTcvrCzNy/9rXlVzvPvXFR942fyF05eMgAjO/0/ndUhGGitVFQQAmQaERgI6oN+rIsOBSGZ6eUNeWoTmn++N/3P791/2NQ6juHELA0KTqK+sQhH4HAhsIDIpJ0YHQAiKvXl8gDoF5qkDk0roNWynfsBx8u7Bg8Z5EnuNFvonI0SgqIrcyT+wqgCsB1TIQUGoloKZSA2pMDzWOwVdQcRaXXqiQmqtd8+m/4pkqPENB1dIRuCYCz6KjgdCuUMqUEkVC5Mj0Y8U4rHnDm99AsCCzeE9s3fzNVsumUZKhFUvQRBGmXIKrq9SwAs9U4BvqHTxdhiHOGJ5unGSYhSuwuDxA1Fl3sjzjXChPe658KzDEgl+cGjVnZq+VLXVWiUy5QvOmqCosRYEhybEmVvK6Gk4vJXy7Rvr3q4YhcR/qxcQBU2b32ir7gqkLuzSJ2Ve+FR6X/va+lqbcn+UZ52plzv9BE/3PLAVDk3/Y8m2RpUZ6D4GtR/Wb209an+44pZ/fcdr4fecp5a+njtlfSqZ9qKLxrxoVZrepMy/pKnnFdp0Dufetn14+D3q1lpJeqM0b1B8Z/DfP+vyZk/B3fqJp249apW1HbGnrR6ayZQjO/8m+rlnnjkF9shwsu8G/AAAA//8isWhpAAAABklEQVQDANgdCk9d8H6wAAAAAElFTkSuQmCC>
+
+[image17]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAD/0lEQVR4AaxVXYgbVRQ+dzJJ2o3mr5vdbFFRofjmm9UXH9QKreCCQp/7JgiyCIJQ9iWP6ovigyAixRcfpHXxrd1uSUGKuAiyK5W6st3u2p1sZpLM5GeTzO/1fLedkJZNf6ADX+bMued83zn3nplo9AhX+OVnH8qvv1iRX8X4fGV49tOFh6VKIvFIAv729klpbL8la3cQse1Zxil6yCWI5AMFZLWqy8s/5SiZzEg/IOn7ChQEpOn6lDx3Li8rVf1BOhMFqpWKvn/hx4+D6rWtpC7fpCjieuRdRHQ4O/W6f331ZvvWt59Ijp0kMlHgjUoluL22vrz35/o/rmkKGXIHLCKjkCLuZmhZon5j419zd++S4NjHFkDCS7/+/pfRbJ3Z+XtzfWA7FHkuha5HsI1bu9dtLzxz7PLVNcROwsQOkCB4Q15dXdto9/3Ttc3/VvstJ2LyyDTMPxoJ/fTLy1dvIAaxk6AEpJSCoU3C8cXFzaYrF4yd2rVazfqtE9HCax98tDEp/q6ftYm0m9u7b1vN1vlOp7N0PxzHWbJte8k+ceLnYxcvLha++yGd++b71HPnfzkLn401BuKQi3sM02pe2NraOqmJyDvl2M77ruvNh2F4D6IomudqFEiId5Pl8vFUufwK7NiPe8RxyIUNeL4/32y13vP98B0tmUyKiCfEbDTJ9XziwBE4kWJw4siOfeP3OA8ctbpF4Dx0KCU0vmhq6jCFgUdGrU6ez2PI4ziefL8di4F0fM3jAnduGxS4A3r6qQw3KkgdshCC8rkcq3pUNy0WCWg8edweJ4QQ1gCQG3sm+W6fSqUSoXDiS0MCAtmmQj5P3nDAIg3y+WUK+JMAgCC+xzaeATx7XkDYlv5+l2ZnZkBF4ARGAnhIJBJUKOSo27apZjZUJzEJiMYBP4DKQW7WazRTmiZd1xU5Cgcw++rwIABApFyeJadlkdVoHdgJiCGGLk2OMXZ36MUXniceGEUOHkAJ4GccWECP2K7hsE/tbp/8IFRnAuIYIHc6Pep1OzTHBQkhVKHggjgAW20RjNgBgl6vR9lslsqzMzQc9KjbG/AXOlBAXMCCHfZ1Ow49+8xRKhaLhBysgSsGih0JwBnwoQ4GA8pkMqrdhKZRafoI4fC6+0MWCBW6+wNq2006OlcmbCn2HTnIBQe4QA5bg2oMBCAYiIOEEDR9pEA+f0mbdpuspk0ub93c3KwaRRAhFjkAOGI++Ecd9Pt9NQGpVGq0lwgAARKLPF3FfJamiznVFXxYQ0wM5KIjcMGHs1QCruuqLUEAkg4CXpx0OkXpdFpVjuSD4rCOaQInOtF4nyIhhKoejicBdCeEmqpI4z/yK1zdJSa+8iTBnMue5638DwAA//9BRA58AAAABklEQVQDAIehl8S8X8jPAAAAAElFTkSuQmCC>
+
+[image18]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACrUlEQVR4AZyRX0iTURjGn30TzanpXOqGzUUWI1ilTkpsF5VRQRF1o0ZGYZgRFl6YQVe70AuhCyO0NCEpiplmoRE1hm6ks7nQyTddumlTc+6vc266LZ1r30AD0ZIOPJzznnN+D885L4H/GGKxOFJc94YdQmnbNghBRGtbe2fzh+7gd95lP3Hg1KyopNG7LYPWhqbSXdKugLz45nnfzDSu8F04mZ2AKY/v3wk+y7pUii99T6vNVtQvziPPNA7RIT6C+j5Yzaavf03Q0tKi+aEzHmmTy2GeNEAcGwd6USFmTEZIP8kQY/t2a0uDmnS+cXjnscPahQXcFwohyxKiQCmHfdGJUCIoe1VLDq1Mt25AcjnZi8wEuyV6h1nB2BEkbz/iSVUkRqKywb1TirR3EljdcxgcGgnB/dBPT+8OdQFhAz2bnZS66ldH+eZZvhVfyisiGoM/naBHRCBjXyqcDD5MYzIMaIahVPZDpR4omyJJ57pB+iW6hXnCC78IIPlANzsTe9ksnBZwsYeUYvTZE9x77YBCoURPr/qxgdTUUTAlwvuQ1YwzHhryIuHPhaSWfa42t7AAIh4Do1XFsMuleO9YwoTegA61/cK4dvAuBa6JcJ8lyoiLLhquu+juJFRZ4xPLe97WQV2Uh+pJPRosXmSqZZApm44GDNLONXBtJpIFNg9VuJ8TNWk3KrRDLxMhsE6hhBOAEg5nn+4jGi0kMpbRT93bqPAn2qpQHiviVQAcSCo1qHwQFWxg8UU5HjATgkAEbSP2pyaoJYOBq7R4HlZoRuTkO8DmxjAlx3UdLKyG2xSKeI26t5nCBpECTlbAMIpfUslCjES7Pz1/woUk2hw9GvCt4mDoNS82g6k9olMIhk0xW2RXzqaMtdt4yfUwUAfLgSht3BxobEBL1VvpNwAAAP//mI5IggAAAAZJREFUAwD5qhfUHd54rgAAAABJRU5ErkJggg==>
+
+[image19]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACwElEQVR4AZSRW0iUQRTHz8y3i3mpFTUqNM1SQsVSUKFaHyKt3Vral5KejDDt4qWwhUW7sC+9hKFJZmm69pD1lA+JSFj5kklWSrre8ZKb7EXd1tW9zvdN820gmm3QYQ5n+M/8f3OGg+EfMTDnjB618V8+zDiFtl4j1b+dXG7sHMtfbwkIsK64X9vmho2zfd1xiWGefnlC8KesGDCav7Y3PWjrX6WUIhH0V8DYzHxlz/t3qqy0lM9HsrOHw0LDVkLDZO64uDhr2bUrvTvJd9fD9mFHQIDTvnQ3Iz11HCHOiSlPAbGkhIqvYU4qKE/mjiwPdgQ/77GcFTURtJZ6vX7P+NAQbJPJrDzvBYEnVPD6gCc+AMFHgXhAyiAKxYkpiURSvwlgmJiQewlPqUCZlwChFASgwPMUiJcAxphyHEDs7l32bWCL3ARwOBxOk/EHYn0j8VBMhBBgtkHMSAhBmBLwuN1BEUFensmwIY5lZ7d/7OuFVQ8fIognggCU5wH5K1P8laJvhpH4LRzfvQmQl5fndRHBV32vKo1iqYQxxHGxjuB3RQitekg4b58PXfL5zmwAKBSn92fIj9PikhKpy2zEd27qDtmdPhlwUkwxh7mgEInRZIl/8awpVaB809H09J9rAKVanbwvJX00JzcHrpbeALNzGUbGBl2XCy8crNBWymtq6uW6iorD+rr7MSHBXIH6XMFFYOEHKJXq5L0JaYbIqHB41doCbrsJ+gaGoOtNZ2hmZobU5XPkLppnT+2I2bq9qvYxOl9U1sy8/oVVKlV0fNIBQxQzv2xpgAWrBdjkoKz8eqJ4Q6fTkebG5q7auroOjUa3IGrrE8+bFqYiI2TQqm8AKzOzr4JWeyupvLh4cv3FQHtsWzS3PH1UDRaLCTiOg3Lt7SSNpnQ0kOFPHU9PT18CKjwRWOQXFcZW/odZhP0CAAD//6cVBesAAAAGSURBVAMA4R1GvzGiO44AAAAASUVORK5CYII=>
+
+[image20]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAADyUlEQVR4AZyTXWgUVxTHf3OTbHaNyeajycbYmCah9EEaC+IHplK6WqoUhGJTKSTQt1AqbZFgfNCsoRQJ+FArLUgEX22llNTYEtQHH4p9FQSRYrJJNq2mu5tNVtfZj5npPTtpPlo3bpzhz9w5557fOeeeGYVcp5s2MBTYZ5xtHNnwTUu08ts2s/K79vVJx0isMISFMDVb5RfV1he+Bu+VPdt2HPpgz6G67je7ynvWKYmRWGEIC80UtsKf3l1WW9a3f+vems62HTS/tIm66mpq/f51SWIkVhjCKtNMYSu8JZ83NTbU+Co9zFgzhDOTTKTDRStsTjL1dJppUTqSZwhLmMJWhtfpxGszlYnwwJxYlwTeZAU46AlyoDzIJqeBsDmVZwlT2IpSe2PCSTCZnmbSXJ9S2ad8VH+YD1ve552mt5kiwrgZRljCFLZyyJK0k8xmo8zmilc0G+M97346arailOJaYoyf4tdchmYJ09Fs/Zna2HYWy85gWcUqzevqVT7b0osqUfpYxxmc/ArTeuIyNEuYYKNwLFzl9LM4VTgeBpr6qd9YT0bDToe/zB/Nao7LVauNz0+gdEEHK/bxVmAvjr7H5sb4Jf5rgeIs6SCnnVmtHBV42K2202nsZKfxBpWOV9tdH47sy1Gnqvg40IPf4yem5zD85zBzenYs+pefbpzuwNYQkYXHKOXT1k/4cfsVftj2PV1Vh1GOof1uu+jqD/jeJdgQxDAMrkavcn3uOo697Jc9rmwdl58BeuEqkUtwOXoZo9SgpaqFoy8fpa2kdckfIEDolRC+Mh8RM8Kp8VN6sOaSX5/Y/9ZqyZhP6HAjfoNLf13SZoeOug5ONJ6g3C7Pqz/QT3ttOykrRWg8xIw5g/5Qni3HLXo5waIhbaU5M36G24nblKgSelp76K7sZpd3F0e2HAGDfBEjf4+gq3iu3AS6+pWb53PzHLt/jIfph3hKPQy+NshA8wCNvkai+ie6GLlILBNbG77IdBNI9WJYoTsLdxiODJO202z2bybYHEQpxcijEW7GblLwaP5lCFNrOYF+WdmFaZlcmLrA3eRd5DIMIz/Y0B8hUrkUK/eutS6YQIJkiH33+kjmkpi2ycn7J93B/qcY2VtIkuBxvt0CQbfitxh6MMToo1FGZ0eLrnyR+Vhh8Rs5fQgFEjiOw/mJ8xy/d5x4Jl58AmFqtnRwDpO5tZIs5BaYSE0gyShQyCq7wIXpcE7h4XdSnOUJc2R0J/qv113xwhKGsISp2YpejYevSdJFgp+ZJ8YC6ReSxApDWMLsJfUPAAAA//9Ius+LAAAABklEQVQDAJ08cHyitQoCAAAAAElFTkSuQmCC>
+
+[image21]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAADyklEQVR4AYyVS28bVRiG3zMzHsdxJm5IW1pKqCCpkNKgCjWLil3X7LpEiB8AqlSBuASo5HaRXTfwBwpsKkVEiFQgsaELJEQpRQErVIBiEjXX1rexPbdz4zt2qzaJb9F5fb7zXd5nfCLbFvr8FQp5t7T8wfOl3z95rXL38ltGJg4oZ2p9xtETUL7z4QsnGT5OZ8ZvZg4d+yH9zMT19PjEdRMryk1QzfT0gnQF+HfeO5zKZq85IyfmUrmXz9je6awzOsMcb4bZ3jTFp86kssfnnOzItU3q7QbpCNA6b+lM9lLKO3HB9qZcKzMJe3gS1mNlpmCb3MhLLkEuZNPeJTPTCdIRULmbzLiZsYv28IuWlX4OVvoIrNQYLGeUlIPtjoOlj8MamiDoScvO5C6amYEBzpD7pj387ChzD5MhmVoZMMslpR4pDcvx0IK6R+Fkj42amYEAxR/zQ5aTOsdS9JTGmKUAZgNgADSJFmNgzAJjaTAnS6BDsBz3nJml6p5l7TnRIecNpZmdytEEQCaPLNE2Nyf1JGYUgl7oAZjt5MysyTytA4Cx3EbEFCrQnDwF9SpoLSkmKQFNMjWtOLSmekscSumKmaWBPesAgJ36PNaa39JJDVpGgIoBnZCZ2Y2idl7TrgKKG1DcB6S4ZWb3uNPhAIByaNTVVyIsb2lehhJNMjFmbYhWFOsQSgYAGSvqkVF5S3LrSzO7Xx0BR89eXpVx86qMNrkWZQI06AlD2s07IhlzUYMSJahwmyseXs29Mlfcb27OHQGMQYuwcUNEpUUZbSvNK2RWB2RIomvhdWoo0+3tKJlUFkWzccPMGMP96ggwTWOv5qsqDj6T0e6mpGvQwicI3bcIWruk/5GKy5umx/SamU7qCjDNv21Ht5H4S2QEZQzpzmVSp5hAsQ8dN5daPaa5i3oCzp/PCx4FiyrxIeMGRFyHpFgQRPIGuEgWTU8X71a6J8B0JFKshc0gSUIfPKy2lIQ1xEGTs1ismZ5e6gtYlxMbt+8NlX01iYBNQbinEdvT+HPNk7+ue/QB6GWP3j847dGzvBa4QSPOQCAHbY8hFMOgnB81jiTtnu6vfd/B7OysiCLx39r6fdzf2ML27m5rD2Jx7/U3/ql1t25X+gKoTUuNKOEClaqPh6WqOUBy5S0sTDOq91yDANAMw+8flEpJGEWo+XWUK1WeCLm6srKie7pTcSDA7sPKwvJy4Yulm9/Fi998K376+ZevH2zsvJvP5813N9l0XwMB5ufnd/7+949Pi8Xi26vF1XcKhb/e/+jKlfXutk8q/wMAAP//v5Of/gAAAAZJREFUAwBMiw4zq5M0EgAAAABJRU5ErkJggg==>
+
+[image22]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAFV0lEQVR4AexUe1BUZRT/3dcuC7uLEJBoorwRMYPIUewBZVk60wxNo5aWk00+GB+AOTVWsvlkcqwpp1FRlDFzHJ0iBdF88DCEEkyUlKfLY2FdHgvLvvfevffrrjM6wyj+Zf915jv3njnnnt/vfuec76PxH8v/BA8KvLy6WfPeHw0vrqioD3nglI0nUyJCKIuzf6PVZTs7YLcs2l9VM3375foUIvufCMHSk6ej3S73eqfVqh7nsi8ZJDhkI94QiqLIQwQEoNpiYpTV8fEan5bJNgAKjxFeJAs9breWt9lgtYzMHvCSyylPqSt9KaMIrjwdHXZ9YsQHQ05+F+v0FNBOzz4t782vmhz1UUV0dIxMPur7iooKVld2MVHk2DchirCbjOgym4nV404qMVk35NbdSn6QcDUiYpof3KdESfyREGkNFxa2WJ2S/L5/QsJ62k/5AxGk0nNRMdknEhMV++vruZ3FJellXMBR85SoM2EzZ8/y91NCS1EICgykOgyGN3r6TLr2XsOxewS14ZOnsk7+pERhliIqSh27fy81o6ocCQcLMO1IEZVSejogMjc7XjNhwm6V0v+MvtN4vCss/Lw9Lm6RMzRkinHYzEkd+kGtKJ6xDQ9X8C7XZa/bVWK/27eJPiXXGpSYQygSy4aGYvKObVDPfAE93+9B84pVuLVsOfQ78kFrNIjN3w4u8/W5Q+PD33GHjefMIzaYWtuhbm4aSZsUsfHteemZQlfrPHcTPfc1Q9vC8tXLimlRFJMklnlXAsUGpr8CdWoqOvO+hvFgIRTh4Zi4JguBabNh+rUYnXv2YlJGE3hPH/r7+jF44ya0Tbcdz7LMhrRQzdGVqanCtYICWVcKOp1Ogiy01mrNVDFMkCRJ0MoErtY2jFypQeCcNERu0YHiODBPBSNq62YwwS4I3b/jmcafQTXUIbTltmO6gtsyXRV/NCMjwyvjPbRopZtPIywLQgjogAAIQ0MQBR7jZDJLTS2a1q5DU8566AvzELzkLfRXJGOBV40VrIAFleV9cadOFM+fH+vBGEKLklcj+oLyBLj0enDBQaBkQn5wEJLHDckrQPC60Fn+NyxtBJqpmXA0CkhIeg4afXuI1NCY4ksfS2mHVzJ65PKAZWC5VA5lRARU0dEYLC2DKi4e2udTwUIFlTsAI24eZo5FS2cHOsyDMAcHB1gkMUmXns5iDKHtXv6SXRCIr0z2xkY45MZFfJoLQQYwHjqMyK82IVqensi8TZiS8TJIw00QhoPTw8PBsowFCNN6PNwY+KB5L3VhaHh4UAwKhHdoWJ6eg/BPTETUju0YOncWrVlrIdw1gfGKMGzbBbGyGrHJM6DyV0EYHgbB468RWgnhjtNhL+21WSWiDoD5/AV053+DcS/NQcK+vWC0WhgLi9CTvxsu+e/DXk1H0icfw/+OHozN5mufyapUChhD6IWAQ5ToAwOGno5eyQvRzw/GoiK0rs2WJwtIPHIY0346jKl7vkPSgX1I2LkVvAzuOnYcoTRlVTFcna6y8pEj6uOk5QcJhveqi+JyukwmR6c8ooLccPPFS2hetRrNWWtgv3b9Xh083Qbo87ai/fMv4OntBVjFFRdDKmWMMRfti8i7EDeKnhKTUrm40eFor/V4pAFRgF0+E0OVVWjbrMM/Hy5Hy7ps9BX/BofZzI8Q1PYqmJWftbTYfBhj6T2C+0GDzXbWrlQs7QEprJaku3U8T1rkHRnls9AviTDJaiBSjxH4tptwi2Rw2byf/ej3KIKTgFhgNv+lUShybDQ1t1PBZt3g2F/+VLD1NRxTVscyuW0g89ppbPnSeMfwaMjR3n8BAAD//3/XF/gAAAAGSURBVAMAhwWJEUDWJPcAAAAASUVORK5CYII=>
+
+[image23]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEO0lEQVR4AeyTS2wVVRzGvzl3Zu609wF9Q2mhxVZLxSsGIhjCgoUsjEajwYUbokEXEklwQYJibDTBDUF5LdCFEXdAojEGjYCmKiZG06S3D0wuSGlt586dO3Pn/bh3Hp7bBhIXLULSHSf5nTNn/iffd+Y7ZwiWuT0wuGvA9xVR/Ov2jHcl95zyTd+jd3O4ZwPnysNrIqZ2jE9nPk9y/InCELJLmSxpEJ9DQv9+sNkb3tTvX3rs+erwptNJoXmE4YS9YS1o0eaU9sDPcPdlYF3u7fDbcm+lMqkvWJb7MdHYeIGwwpthWG23yxJKhZumKtpnBpJm5Z4N4nNt6dhnzrK8cIQh3LNRGHXVXIs1pVnI16dCqVDMu3Z4uHsge9V6sm/AvNg3aH3Xm7Mv9T3hX96Y8y8PDjoXc131BOYjKpxAsni2I/XnGXAxRWES7wnZ5l0JvrGBxgG2cQW4bBvSq9ahfWBDomdbbmPP5g3HM90PjTS0rJlobO2aaGjtHW1o7hnhmjpH2ZWdE1xTpmCl+g6T+GJfsqVzzWtcmjnds6Llg3K29V0hk9mT4AWAFcDwaTDJJiRSq8Gu6Aab7URCaCKEb6TJEDAMAQgL0DGOgDgKEAc1hLWqYGvm08RPpdemWtsOpptX7Um1rj6Y6eh8p2FlezuTzABsCkhQIUIBD/qCwgChC7s4FRUnJmVxfFyZy+cVMZ+XxLHRWTE/NjU7Nj4ujt34SpecQySZadvGr1y9jm/qgtDWS5Kt6zmSWsWApQZ0V4ipJqgooZeFNAAkDXBNdNNcUAtqu4vT3FqM8d2ulV2nTcvrCzNy/9rXlVzvPvXFR942fyF05eMgAjO/0/ndUhGGitVFQQAmQaERgI6oN+rIsOBSGZ6eUNeWoTmn++N/3P791/2NQ6juHELA0KTqK+sQhH4HAhsIDIpJ0YHQAiKvXl8gDoF5qkDk0roNWynfsBx8u7Bg8Z5EnuNFvonI0SgqIrcyT+wqgCsB1TIQUGoloKZSA2pMDzWOwVdQcRaXXqiQmqtd8+m/4pkqPENB1dIRuCYCz6KjgdCuUMqUEkVC5Mj0Y8U4rHnDm99AsCCzeE9s3fzNVsumUZKhFUvQRBGmXIKrq9SwAs9U4BvqHTxdhiHOGJ5unGSYhSuwuDxA1Fl3sjzjXChPe658KzDEgl+cGjVnZq+VLXVWiUy5QvOmqCosRYEhybEmVvK6Gk4vJXy7Rvr3q4YhcR/qxcQBU2b32ir7gqkLuzSJ2Ve+FR6X/va+lqbcn+UZ52plzv9BE/3PLAVDk3/Y8m2RpUZ6D4GtR/Wb209an+44pZ/fcdr4fecp5a+njtlfSqZ9qKLxrxoVZrepMy/pKnnFdp0Dufetn14+D3q1lpJeqM0b1B8Z/DfP+vyZk/B3fqJp249apW1HbGnrR6ayZQjO/8m+rlnnjkF9shwsu8G/AAAA//8isWhpAAAABklEQVQDANgdCk9d8H6wAAAAAElFTkSuQmCC>
+
+[image24]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEO0lEQVR4AeyTS2wVVRzGvzl3Zu609wF9Q2mhxVZLxSsGIhjCgoUsjEajwYUbokEXEklwQYJibDTBDUF5LdCFEXdAojEGjYCmKiZG06S3D0wuSGlt586dO3Pn/bh3Hp7bBhIXLULSHSf5nTNn/iffd+Y7ZwiWuT0wuGvA9xVR/Ov2jHcl95zyTd+jd3O4ZwPnysNrIqZ2jE9nPk9y/InCELJLmSxpEJ9DQv9+sNkb3tTvX3rs+erwptNJoXmE4YS9YS1o0eaU9sDPcPdlYF3u7fDbcm+lMqkvWJb7MdHYeIGwwpthWG23yxJKhZumKtpnBpJm5Z4N4nNt6dhnzrK8cIQh3LNRGHXVXIs1pVnI16dCqVDMu3Z4uHsge9V6sm/AvNg3aH3Xm7Mv9T3hX96Y8y8PDjoXc131BOYjKpxAsni2I/XnGXAxRWES7wnZ5l0JvrGBxgG2cQW4bBvSq9ahfWBDomdbbmPP5g3HM90PjTS0rJlobO2aaGjtHW1o7hnhmjpH2ZWdE1xTpmCl+g6T+GJfsqVzzWtcmjnds6Llg3K29V0hk9mT4AWAFcDwaTDJJiRSq8Gu6Aab7URCaCKEb6TJEDAMAQgL0DGOgDgKEAc1hLWqYGvm08RPpdemWtsOpptX7Um1rj6Y6eh8p2FlezuTzABsCkhQIUIBD/qCwgChC7s4FRUnJmVxfFyZy+cVMZ+XxLHRWTE/NjU7Nj4ujt34SpecQySZadvGr1y9jm/qgtDWS5Kt6zmSWsWApQZ0V4ipJqgooZeFNAAkDXBNdNNcUAtqu4vT3FqM8d2ulV2nTcvrCzNy/9rXlVzvPvXFR942fyF05eMgAjO/0/ndUhGGitVFQQAmQaERgI6oN+rIsOBSGZ6eUNeWoTmn++N/3P791/2NQ6juHELA0KTqK+sQhH4HAhsIDIpJ0YHQAiKvXl8gDoF5qkDk0roNWynfsBx8u7Bg8Z5EnuNFvonI0SgqIrcyT+wqgCsB1TIQUGoloKZSA2pMDzWOwVdQcRaXXqiQmqtd8+m/4pkqPENB1dIRuCYCz6KjgdCuUMqUEkVC5Mj0Y8U4rHnDm99AsCCzeE9s3fzNVsumUZKhFUvQRBGmXIKrq9SwAs9U4BvqHTxdhiHOGJ5unGSYhSuwuDxA1Fl3sjzjXChPe658KzDEgl+cGjVnZq+VLXVWiUy5QvOmqCosRYEhybEmVvK6Gk4vJXy7Rvr3q4YhcR/qxcQBU2b32ir7gqkLuzSJ2Ve+FR6X/va+lqbcn+UZ52plzv9BE/3PLAVDk3/Y8m2RpUZ6D4GtR/Wb209an+44pZ/fcdr4fecp5a+njtlfSqZ9qKLxrxoVZrepMy/pKnnFdp0Dufetn14+D3q1lpJeqM0b1B8Z/DfP+vyZk/B3fqJp249apW1HbGnrR6ayZQjO/8m+rlnnjkF9shwsu8G/AAAA//8isWhpAAAABklEQVQDANgdCk9d8H6wAAAAAElFTkSuQmCC>
+
+[image25]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAD/0lEQVR4AaxVXYgbVRQ+dzJJ2o3mr5vdbFFRofjmm9UXH9QKreCCQp/7JgiyCIJQ9iWP6ovigyAixRcfpHXxrd1uSUGKuAiyK5W6st3u2p1sZpLM5GeTzO/1fLedkJZNf6ADX+bMued83zn3nplo9AhX+OVnH8qvv1iRX8X4fGV49tOFh6VKIvFIAv729klpbL8la3cQse1Zxil6yCWI5AMFZLWqy8s/5SiZzEg/IOn7ChQEpOn6lDx3Li8rVf1BOhMFqpWKvn/hx4+D6rWtpC7fpCjieuRdRHQ4O/W6f331ZvvWt59Ijp0kMlHgjUoluL22vrz35/o/rmkKGXIHLCKjkCLuZmhZon5j419zd++S4NjHFkDCS7/+/pfRbJ3Z+XtzfWA7FHkuha5HsI1bu9dtLzxz7PLVNcROwsQOkCB4Q15dXdto9/3Ttc3/VvstJ2LyyDTMPxoJ/fTLy1dvIAaxk6AEpJSCoU3C8cXFzaYrF4yd2rVazfqtE9HCax98tDEp/q6ftYm0m9u7b1vN1vlOp7N0PxzHWbJte8k+ceLnYxcvLha++yGd++b71HPnfzkLn401BuKQi3sM02pe2NraOqmJyDvl2M77ruvNh2F4D6IomudqFEiId5Pl8vFUufwK7NiPe8RxyIUNeL4/32y13vP98B0tmUyKiCfEbDTJ9XziwBE4kWJw4siOfeP3OA8ctbpF4Dx0KCU0vmhq6jCFgUdGrU6ez2PI4ziefL8di4F0fM3jAnduGxS4A3r6qQw3KkgdshCC8rkcq3pUNy0WCWg8edweJ4QQ1gCQG3sm+W6fSqUSoXDiS0MCAtmmQj5P3nDAIg3y+WUK+JMAgCC+xzaeATx7XkDYlv5+l2ZnZkBF4ARGAnhIJBJUKOSo27apZjZUJzEJiMYBP4DKQW7WazRTmiZd1xU5Cgcw++rwIABApFyeJadlkdVoHdgJiCGGLk2OMXZ36MUXniceGEUOHkAJ4GccWECP2K7hsE/tbp/8IFRnAuIYIHc6Pep1OzTHBQkhVKHggjgAW20RjNgBgl6vR9lslsqzMzQc9KjbG/AXOlBAXMCCHfZ1Ow49+8xRKhaLhBysgSsGih0JwBnwoQ4GA8pkMqrdhKZRafoI4fC6+0MWCBW6+wNq2006OlcmbCn2HTnIBQe4QA5bg2oMBCAYiIOEEDR9pEA+f0mbdpuspk0ub93c3KwaRRAhFjkAOGI++Ecd9Pt9NQGpVGq0lwgAARKLPF3FfJamiznVFXxYQ0wM5KIjcMGHs1QCruuqLUEAkg4CXpx0OkXpdFpVjuSD4rCOaQInOtF4nyIhhKoejicBdCeEmqpI4z/yK1zdJSa+8iTBnMue5638DwAA//9BRA58AAAABklEQVQDAIehl8S8X8jPAAAAAElFTkSuQmCC>
+
+[image26]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACrUlEQVR4AZyRX0iTURjGn30TzanpXOqGzUUWI1ilTkpsF5VRQRF1o0ZGYZgRFl6YQVe70AuhCyO0NCEpiplmoRE1hm6ks7nQyTddumlTc+6vc266LZ1r30AD0ZIOPJzznnN+D885L4H/GGKxOFJc94YdQmnbNghBRGtbe2fzh+7gd95lP3Hg1KyopNG7LYPWhqbSXdKugLz45nnfzDSu8F04mZ2AKY/v3wk+y7pUii99T6vNVtQvziPPNA7RIT6C+j5Yzaavf03Q0tKi+aEzHmmTy2GeNEAcGwd6USFmTEZIP8kQY/t2a0uDmnS+cXjnscPahQXcFwohyxKiQCmHfdGJUCIoe1VLDq1Mt25AcjnZi8wEuyV6h1nB2BEkbz/iSVUkRqKywb1TirR3EljdcxgcGgnB/dBPT+8OdQFhAz2bnZS66ldH+eZZvhVfyisiGoM/naBHRCBjXyqcDD5MYzIMaIahVPZDpR4omyJJ57pB+iW6hXnCC78IIPlANzsTe9ksnBZwsYeUYvTZE9x77YBCoURPr/qxgdTUUTAlwvuQ1YwzHhryIuHPhaSWfa42t7AAIh4Do1XFsMuleO9YwoTegA61/cK4dvAuBa6JcJ8lyoiLLhquu+juJFRZ4xPLe97WQV2Uh+pJPRosXmSqZZApm44GDNLONXBtJpIFNg9VuJ8TNWk3KrRDLxMhsE6hhBOAEg5nn+4jGi0kMpbRT93bqPAn2qpQHiviVQAcSCo1qHwQFWxg8UU5HjATgkAEbSP2pyaoJYOBq7R4HlZoRuTkO8DmxjAlx3UdLKyG2xSKeI26t5nCBpECTlbAMIpfUslCjES7Pz1/woUk2hw9GvCt4mDoNS82g6k9olMIhk0xW2RXzqaMtdt4yfUwUAfLgSht3BxobEBL1VvpNwAAAP//mI5IggAAAAZJREFUAwD5qhfUHd54rgAAAABJRU5ErkJggg==>
+
+[image27]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACwElEQVR4AZSRW0iUQRTHz8y3i3mpFTUqNM1SQsVSUKFaHyKt3Vral5KejDDt4qWwhUW7sC+9hKFJZmm69pD1lA+JSFj5kklWSrre8ZKb7EXd1tW9zvdN820gmm3QYQ5n+M/8f3OGg+EfMTDnjB618V8+zDiFtl4j1b+dXG7sHMtfbwkIsK64X9vmho2zfd1xiWGefnlC8KesGDCav7Y3PWjrX6WUIhH0V8DYzHxlz/t3qqy0lM9HsrOHw0LDVkLDZO64uDhr2bUrvTvJd9fD9mFHQIDTvnQ3Iz11HCHOiSlPAbGkhIqvYU4qKE/mjiwPdgQ/77GcFTURtJZ6vX7P+NAQbJPJrDzvBYEnVPD6gCc+AMFHgXhAyiAKxYkpiURSvwlgmJiQewlPqUCZlwChFASgwPMUiJcAxphyHEDs7l32bWCL3ARwOBxOk/EHYn0j8VBMhBBgtkHMSAhBmBLwuN1BEUFensmwIY5lZ7d/7OuFVQ8fIognggCU5wH5K1P8laJvhpH4LRzfvQmQl5fndRHBV32vKo1iqYQxxHGxjuB3RQitekg4b58PXfL5zmwAKBSn92fIj9PikhKpy2zEd27qDtmdPhlwUkwxh7mgEInRZIl/8awpVaB809H09J9rAKVanbwvJX00JzcHrpbeALNzGUbGBl2XCy8crNBWymtq6uW6iorD+rr7MSHBXIH6XMFFYOEHKJXq5L0JaYbIqHB41doCbrsJ+gaGoOtNZ2hmZobU5XPkLppnT+2I2bq9qvYxOl9U1sy8/oVVKlV0fNIBQxQzv2xpgAWrBdjkoKz8eqJ4Q6fTkebG5q7auroOjUa3IGrrE8+bFqYiI2TQqm8AKzOzr4JWeyupvLh4cv3FQHtsWzS3PH1UDRaLCTiOg3Lt7SSNpnQ0kOFPHU9PT18CKjwRWOQXFcZW/odZhP0CAAD//6cVBesAAAAGSURBVAMA4R1GvzGiO44AAAAASUVORK5CYII=>
+
+[image28]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAADyUlEQVR4AZyTXWgUVxTHf3OTbHaNyeajycbYmCah9EEaC+IHplK6WqoUhGJTKSTQt1AqbZFgfNCsoRQJ+FArLUgEX22llNTYEtQHH4p9FQSRYrJJNq2mu5tNVtfZj5npPTtpPlo3bpzhz9w5557fOeeeGYVcp5s2MBTYZ5xtHNnwTUu08ts2s/K79vVJx0isMISFMDVb5RfV1he+Bu+VPdt2HPpgz6G67je7ynvWKYmRWGEIC80UtsKf3l1WW9a3f+vems62HTS/tIm66mpq/f51SWIkVhjCKtNMYSu8JZ83NTbU+Co9zFgzhDOTTKTDRStsTjL1dJppUTqSZwhLmMJWhtfpxGszlYnwwJxYlwTeZAU46AlyoDzIJqeBsDmVZwlT2IpSe2PCSTCZnmbSXJ9S2ad8VH+YD1ve552mt5kiwrgZRljCFLZyyJK0k8xmo8zmilc0G+M97346arailOJaYoyf4tdchmYJ09Fs/Zna2HYWy85gWcUqzevqVT7b0osqUfpYxxmc/ArTeuIyNEuYYKNwLFzl9LM4VTgeBpr6qd9YT0bDToe/zB/Nao7LVauNz0+gdEEHK/bxVmAvjr7H5sb4Jf5rgeIs6SCnnVmtHBV42K2202nsZKfxBpWOV9tdH47sy1Gnqvg40IPf4yem5zD85zBzenYs+pefbpzuwNYQkYXHKOXT1k/4cfsVftj2PV1Vh1GOof1uu+jqD/jeJdgQxDAMrkavcn3uOo697Jc9rmwdl58BeuEqkUtwOXoZo9SgpaqFoy8fpa2kdckfIEDolRC+Mh8RM8Kp8VN6sOaSX5/Y/9ZqyZhP6HAjfoNLf13SZoeOug5ONJ6g3C7Pqz/QT3ttOykrRWg8xIw5g/5Qni3HLXo5waIhbaU5M36G24nblKgSelp76K7sZpd3F0e2HAGDfBEjf4+gq3iu3AS6+pWb53PzHLt/jIfph3hKPQy+NshA8wCNvkai+ie6GLlILBNbG77IdBNI9WJYoTsLdxiODJO202z2bybYHEQpxcijEW7GblLwaP5lCFNrOYF+WdmFaZlcmLrA3eRd5DIMIz/Y0B8hUrkUK/eutS6YQIJkiH33+kjmkpi2ycn7J93B/qcY2VtIkuBxvt0CQbfitxh6MMToo1FGZ0eLrnyR+Vhh8Rs5fQgFEjiOw/mJ8xy/d5x4Jl58AmFqtnRwDpO5tZIs5BaYSE0gyShQyCq7wIXpcE7h4XdSnOUJc2R0J/qv113xwhKGsISp2YpejYevSdJFgp+ZJ8YC6ReSxApDWMLsJfUPAAAA//9Ius+LAAAABklEQVQDAJ08cHyitQoCAAAAAElFTkSuQmCC>
+
+[image29]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAADyklEQVR4AYyVS28bVRiG3zMzHsdxJm5IW1pKqCCpkNKgCjWLil3X7LpEiB8AqlSBuASo5HaRXTfwBwpsKkVEiFQgsaELJEQpRQErVIBiEjXX1rexPbdz4zt2qzaJb9F5fb7zXd5nfCLbFvr8FQp5t7T8wfOl3z95rXL38ltGJg4oZ2p9xtETUL7z4QsnGT5OZ8ZvZg4d+yH9zMT19PjEdRMryk1QzfT0gnQF+HfeO5zKZq85IyfmUrmXz9je6awzOsMcb4bZ3jTFp86kssfnnOzItU3q7QbpCNA6b+lM9lLKO3HB9qZcKzMJe3gS1mNlpmCb3MhLLkEuZNPeJTPTCdIRULmbzLiZsYv28IuWlX4OVvoIrNQYLGeUlIPtjoOlj8MamiDoScvO5C6amYEBzpD7pj387ChzD5MhmVoZMMslpR4pDcvx0IK6R+Fkj42amYEAxR/zQ5aTOsdS9JTGmKUAZgNgADSJFmNgzAJjaTAnS6BDsBz3nJml6p5l7TnRIecNpZmdytEEQCaPLNE2Nyf1JGYUgl7oAZjt5MysyTytA4Cx3EbEFCrQnDwF9SpoLSkmKQFNMjWtOLSmekscSumKmaWBPesAgJ36PNaa39JJDVpGgIoBnZCZ2Y2idl7TrgKKG1DcB6S4ZWb3uNPhAIByaNTVVyIsb2lehhJNMjFmbYhWFOsQSgYAGSvqkVF5S3LrSzO7Xx0BR89eXpVx86qMNrkWZQI06AlD2s07IhlzUYMSJahwmyseXs29Mlfcb27OHQGMQYuwcUNEpUUZbSvNK2RWB2RIomvhdWoo0+3tKJlUFkWzccPMGMP96ggwTWOv5qsqDj6T0e6mpGvQwicI3bcIWruk/5GKy5umx/SamU7qCjDNv21Ht5H4S2QEZQzpzmVSp5hAsQ8dN5daPaa5i3oCzp/PCx4FiyrxIeMGRFyHpFgQRPIGuEgWTU8X71a6J8B0JFKshc0gSUIfPKy2lIQ1xEGTs1ismZ5e6gtYlxMbt+8NlX01iYBNQbinEdvT+HPNk7+ue/QB6GWP3j847dGzvBa4QSPOQCAHbY8hFMOgnB81jiTtnu6vfd/B7OysiCLx39r6fdzf2ML27m5rD2Jx7/U3/ql1t25X+gKoTUuNKOEClaqPh6WqOUBy5S0sTDOq91yDANAMw+8flEpJGEWo+XWUK1WeCLm6srKie7pTcSDA7sPKwvJy4Yulm9/Fi998K376+ZevH2zsvJvP5813N9l0XwMB5ufnd/7+949Pi8Xi26vF1XcKhb/e/+jKlfXutk8q/wMAAP//v5Of/gAAAAZJREFUAwBMiw4zq5M0EgAAAABJRU5ErkJggg==>
+
+[image30]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAFV0lEQVR4AexUe1BUZRT/3dcuC7uLEJBoorwRMYPIUewBZVk60wxNo5aWk00+GB+AOTVWsvlkcqwpp1FRlDFzHJ0iBdF88DCEEkyUlKfLY2FdHgvLvvfevffrrjM6wyj+Zf915jv3njnnnt/vfuec76PxH8v/BA8KvLy6WfPeHw0vrqioD3nglI0nUyJCKIuzf6PVZTs7YLcs2l9VM3375foUIvufCMHSk6ej3S73eqfVqh7nsi8ZJDhkI94QiqLIQwQEoNpiYpTV8fEan5bJNgAKjxFeJAs9breWt9lgtYzMHvCSyylPqSt9KaMIrjwdHXZ9YsQHQ05+F+v0FNBOzz4t782vmhz1UUV0dIxMPur7iooKVld2MVHk2DchirCbjOgym4nV404qMVk35NbdSn6QcDUiYpof3KdESfyREGkNFxa2WJ2S/L5/QsJ62k/5AxGk0nNRMdknEhMV++vruZ3FJellXMBR85SoM2EzZ8/y91NCS1EICgykOgyGN3r6TLr2XsOxewS14ZOnsk7+pERhliIqSh27fy81o6ocCQcLMO1IEZVSejogMjc7XjNhwm6V0v+MvtN4vCss/Lw9Lm6RMzRkinHYzEkd+kGtKJ6xDQ9X8C7XZa/bVWK/27eJPiXXGpSYQygSy4aGYvKObVDPfAE93+9B84pVuLVsOfQ78kFrNIjN3w4u8/W5Q+PD33GHjefMIzaYWtuhbm4aSZsUsfHteemZQlfrPHcTPfc1Q9vC8tXLimlRFJMklnlXAsUGpr8CdWoqOvO+hvFgIRTh4Zi4JguBabNh+rUYnXv2YlJGE3hPH/r7+jF44ya0Tbcdz7LMhrRQzdGVqanCtYICWVcKOp1Ogiy01mrNVDFMkCRJ0MoErtY2jFypQeCcNERu0YHiODBPBSNq62YwwS4I3b/jmcafQTXUIbTltmO6gtsyXRV/NCMjwyvjPbRopZtPIywLQgjogAAIQ0MQBR7jZDJLTS2a1q5DU8566AvzELzkLfRXJGOBV40VrIAFleV9cadOFM+fH+vBGEKLklcj+oLyBLj0enDBQaBkQn5wEJLHDckrQPC60Fn+NyxtBJqpmXA0CkhIeg4afXuI1NCY4ksfS2mHVzJ65PKAZWC5VA5lRARU0dEYLC2DKi4e2udTwUIFlTsAI24eZo5FS2cHOsyDMAcHB1gkMUmXns5iDKHtXv6SXRCIr0z2xkY45MZFfJoLQQYwHjqMyK82IVqensi8TZiS8TJIw00QhoPTw8PBsowFCNN6PNwY+KB5L3VhaHh4UAwKhHdoWJ6eg/BPTETUju0YOncWrVlrIdw1gfGKMGzbBbGyGrHJM6DyV0EYHgbB468RWgnhjtNhL+21WSWiDoD5/AV053+DcS/NQcK+vWC0WhgLi9CTvxsu+e/DXk1H0icfw/+OHozN5mufyapUChhD6IWAQ5ToAwOGno5eyQvRzw/GoiK0rs2WJwtIPHIY0346jKl7vkPSgX1I2LkVvAzuOnYcoTRlVTFcna6y8pEj6uOk5QcJhveqi+JyukwmR6c8ooLccPPFS2hetRrNWWtgv3b9Xh083Qbo87ai/fMv4OntBVjFFRdDKmWMMRfti8i7EDeKnhKTUrm40eFor/V4pAFRgF0+E0OVVWjbrMM/Hy5Hy7ps9BX/BofZzI8Q1PYqmJWftbTYfBhj6T2C+0GDzXbWrlQs7QEprJaku3U8T1rkHRnls9AviTDJaiBSjxH4tptwi2Rw2byf/ej3KIKTgFhgNv+lUShybDQ1t1PBZt3g2F/+VLD1NRxTVscyuW0g89ppbPnSeMfwaMjR3n8BAAD//3/XF/gAAAAGSURBVAMAhwWJEUDWJPcAAAAASUVORK5CYII=>
+
+[image31]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEO0lEQVR4AeyTS2wVVRzGvzl3Zu609wF9Q2mhxVZLxSsGIhjCgoUsjEajwYUbokEXEklwQYJibDTBDUF5LdCFEXdAojEGjYCmKiZG06S3D0wuSGlt586dO3Pn/bh3Hp7bBhIXLULSHSf5nTNn/iffd+Y7ZwiWuT0wuGvA9xVR/Ov2jHcl95zyTd+jd3O4ZwPnysNrIqZ2jE9nPk9y/InCELJLmSxpEJ9DQv9+sNkb3tTvX3rs+erwptNJoXmE4YS9YS1o0eaU9sDPcPdlYF3u7fDbcm+lMqkvWJb7MdHYeIGwwpthWG23yxJKhZumKtpnBpJm5Z4N4nNt6dhnzrK8cIQh3LNRGHXVXIs1pVnI16dCqVDMu3Z4uHsge9V6sm/AvNg3aH3Xm7Mv9T3hX96Y8y8PDjoXc131BOYjKpxAsni2I/XnGXAxRWES7wnZ5l0JvrGBxgG2cQW4bBvSq9ahfWBDomdbbmPP5g3HM90PjTS0rJlobO2aaGjtHW1o7hnhmjpH2ZWdE1xTpmCl+g6T+GJfsqVzzWtcmjnds6Llg3K29V0hk9mT4AWAFcDwaTDJJiRSq8Gu6Aab7URCaCKEb6TJEDAMAQgL0DGOgDgKEAc1hLWqYGvm08RPpdemWtsOpptX7Um1rj6Y6eh8p2FlezuTzABsCkhQIUIBD/qCwgChC7s4FRUnJmVxfFyZy+cVMZ+XxLHRWTE/NjU7Nj4ujt34SpecQySZadvGr1y9jm/qgtDWS5Kt6zmSWsWApQZ0V4ipJqgooZeFNAAkDXBNdNNcUAtqu4vT3FqM8d2ulV2nTcvrCzNy/9rXlVzvPvXFR942fyF05eMgAjO/0/ndUhGGitVFQQAmQaERgI6oN+rIsOBSGZ6eUNeWoTmn++N/3P791/2NQ6juHELA0KTqK+sQhH4HAhsIDIpJ0YHQAiKvXl8gDoF5qkDk0roNWynfsBx8u7Bg8Z5EnuNFvonI0SgqIrcyT+wqgCsB1TIQUGoloKZSA2pMDzWOwVdQcRaXXqiQmqtd8+m/4pkqPENB1dIRuCYCz6KjgdCuUMqUEkVC5Mj0Y8U4rHnDm99AsCCzeE9s3fzNVsumUZKhFUvQRBGmXIKrq9SwAs9U4BvqHTxdhiHOGJ5unGSYhSuwuDxA1Fl3sjzjXChPe658KzDEgl+cGjVnZq+VLXVWiUy5QvOmqCosRYEhybEmVvK6Gk4vJXy7Rvr3q4YhcR/qxcQBU2b32ir7gqkLuzSJ2Ve+FR6X/va+lqbcn+UZ52plzv9BE/3PLAVDk3/Y8m2RpUZ6D4GtR/Wb209an+44pZ/fcdr4fecp5a+njtlfSqZ9qKLxrxoVZrepMy/pKnnFdp0Dufetn14+D3q1lpJeqM0b1B8Z/DfP+vyZk/B3fqJp249apW1HbGnrR6ayZQjO/8m+rlnnjkF9shwsu8G/AAAA//8isWhpAAAABklEQVQDANgdCk9d8H6wAAAAAElFTkSuQmCC>
+
+[image32]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEO0lEQVR4AeyTS2wVVRzGvzl3Zu609wF9Q2mhxVZLxSsGIhjCgoUsjEajwYUbokEXEklwQYJibDTBDUF5LdCFEXdAojEGjYCmKiZG06S3D0wuSGlt586dO3Pn/bh3Hp7bBhIXLULSHSf5nTNn/iffd+Y7ZwiWuT0wuGvA9xVR/Ov2jHcl95zyTd+jd3O4ZwPnysNrIqZ2jE9nPk9y/InCELJLmSxpEJ9DQv9+sNkb3tTvX3rs+erwptNJoXmE4YS9YS1o0eaU9sDPcPdlYF3u7fDbcm+lMqkvWJb7MdHYeIGwwpthWG23yxJKhZumKtpnBpJm5Z4N4nNt6dhnzrK8cIQh3LNRGHXVXIs1pVnI16dCqVDMu3Z4uHsge9V6sm/AvNg3aH3Xm7Mv9T3hX96Y8y8PDjoXc131BOYjKpxAsni2I/XnGXAxRWES7wnZ5l0JvrGBxgG2cQW4bBvSq9ahfWBDomdbbmPP5g3HM90PjTS0rJlobO2aaGjtHW1o7hnhmjpH2ZWdE1xTpmCl+g6T+GJfsqVzzWtcmjnds6Llg3K29V0hk9mT4AWAFcDwaTDJJiRSq8Gu6Aab7URCaCKEb6TJEDAMAQgL0DGOgDgKEAc1hLWqYGvm08RPpdemWtsOpptX7Um1rj6Y6eh8p2FlezuTzABsCkhQIUIBD/qCwgChC7s4FRUnJmVxfFyZy+cVMZ+XxLHRWTE/NjU7Nj4ujt34SpecQySZadvGr1y9jm/qgtDWS5Kt6zmSWsWApQZ0V4ipJqgooZeFNAAkDXBNdNNcUAtqu4vT3FqM8d2ulV2nTcvrCzNy/9rXlVzvPvXFR942fyF05eMgAjO/0/ndUhGGitVFQQAmQaERgI6oN+rIsOBSGZ6eUNeWoTmn++N/3P791/2NQ6juHELA0KTqK+sQhH4HAhsIDIpJ0YHQAiKvXl8gDoF5qkDk0roNWynfsBx8u7Bg8Z5EnuNFvonI0SgqIrcyT+wqgCsB1TIQUGoloKZSA2pMDzWOwVdQcRaXXqiQmqtd8+m/4pkqPENB1dIRuCYCz6KjgdCuUMqUEkVC5Mj0Y8U4rHnDm99AsCCzeE9s3fzNVsumUZKhFUvQRBGmXIKrq9SwAs9U4BvqHTxdhiHOGJ5unGSYhSuwuDxA1Fl3sjzjXChPe658KzDEgl+cGjVnZq+VLXVWiUy5QvOmqCosRYEhybEmVvK6Gk4vJXy7Rvr3q4YhcR/qxcQBU2b32ir7gqkLuzSJ2Ve+FR6X/va+lqbcn+UZ52plzv9BE/3PLAVDk3/Y8m2RpUZ6D4GtR/Wb209an+44pZ/fcdr4fecp5a+njtlfSqZ9qKLxrxoVZrepMy/pKnnFdp0Dufetn14+D3q1lpJeqM0b1B8Z/DfP+vyZk/B3fqJp249apW1HbGnrR6ayZQjO/8m+rlnnjkF9shwsu8G/AAAA//8isWhpAAAABklEQVQDANgdCk9d8H6wAAAAAElFTkSuQmCC>
+
+[image33]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAD/0lEQVR4AaxVXYgbVRQ+dzJJ2o3mr5vdbFFRofjmm9UXH9QKreCCQp/7JgiyCIJQ9iWP6ovigyAixRcfpHXxrd1uSUGKuAiyK5W6st3u2p1sZpLM5GeTzO/1fLedkJZNf6ADX+bMued83zn3nplo9AhX+OVnH8qvv1iRX8X4fGV49tOFh6VKIvFIAv729klpbL8la3cQse1Zxil6yCWI5AMFZLWqy8s/5SiZzEg/IOn7ChQEpOn6lDx3Li8rVf1BOhMFqpWKvn/hx4+D6rWtpC7fpCjieuRdRHQ4O/W6f331ZvvWt59Ijp0kMlHgjUoluL22vrz35/o/rmkKGXIHLCKjkCLuZmhZon5j419zd++S4NjHFkDCS7/+/pfRbJ3Z+XtzfWA7FHkuha5HsI1bu9dtLzxz7PLVNcROwsQOkCB4Q15dXdto9/3Ttc3/VvstJ2LyyDTMPxoJ/fTLy1dvIAaxk6AEpJSCoU3C8cXFzaYrF4yd2rVazfqtE9HCax98tDEp/q6ftYm0m9u7b1vN1vlOp7N0PxzHWbJte8k+ceLnYxcvLha++yGd++b71HPnfzkLn401BuKQi3sM02pe2NraOqmJyDvl2M77ruvNh2F4D6IomudqFEiId5Pl8vFUufwK7NiPe8RxyIUNeL4/32y13vP98B0tmUyKiCfEbDTJ9XziwBE4kWJw4siOfeP3OA8ctbpF4Dx0KCU0vmhq6jCFgUdGrU6ez2PI4ziefL8di4F0fM3jAnduGxS4A3r6qQw3KkgdshCC8rkcq3pUNy0WCWg8edweJ4QQ1gCQG3sm+W6fSqUSoXDiS0MCAtmmQj5P3nDAIg3y+WUK+JMAgCC+xzaeATx7XkDYlv5+l2ZnZkBF4ARGAnhIJBJUKOSo27apZjZUJzEJiMYBP4DKQW7WazRTmiZd1xU5Cgcw++rwIABApFyeJadlkdVoHdgJiCGGLk2OMXZ36MUXniceGEUOHkAJ4GccWECP2K7hsE/tbp/8IFRnAuIYIHc6Pep1OzTHBQkhVKHggjgAW20RjNgBgl6vR9lslsqzMzQc9KjbG/AXOlBAXMCCHfZ1Ow49+8xRKhaLhBysgSsGih0JwBnwoQ4GA8pkMqrdhKZRafoI4fC6+0MWCBW6+wNq2006OlcmbCn2HTnIBQe4QA5bg2oMBCAYiIOEEDR9pEA+f0mbdpuspk0ub93c3KwaRRAhFjkAOGI++Ecd9Pt9NQGpVGq0lwgAARKLPF3FfJamiznVFXxYQ0wM5KIjcMGHs1QCruuqLUEAkg4CXpx0OkXpdFpVjuSD4rCOaQInOtF4nyIhhKoejicBdCeEmqpI4z/yK1zdJSa+8iTBnMue5638DwAA//9BRA58AAAABklEQVQDAIehl8S8X8jPAAAAAElFTkSuQmCC>
+
+[image34]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACrUlEQVR4AZyRX0iTURjGn30TzanpXOqGzUUWI1ilTkpsF5VRQRF1o0ZGYZgRFl6YQVe70AuhCyO0NCEpiplmoRE1hm6ks7nQyTddumlTc+6vc266LZ1r30AD0ZIOPJzznnN+D885L4H/GGKxOFJc94YdQmnbNghBRGtbe2fzh+7gd95lP3Hg1KyopNG7LYPWhqbSXdKugLz45nnfzDSu8F04mZ2AKY/v3wk+y7pUii99T6vNVtQvziPPNA7RIT6C+j5Yzaavf03Q0tKi+aEzHmmTy2GeNEAcGwd6USFmTEZIP8kQY/t2a0uDmnS+cXjnscPahQXcFwohyxKiQCmHfdGJUCIoe1VLDq1Mt25AcjnZi8wEuyV6h1nB2BEkbz/iSVUkRqKywb1TirR3EljdcxgcGgnB/dBPT+8OdQFhAz2bnZS66ldH+eZZvhVfyisiGoM/naBHRCBjXyqcDD5MYzIMaIahVPZDpR4omyJJ57pB+iW6hXnCC78IIPlANzsTe9ksnBZwsYeUYvTZE9x77YBCoURPr/qxgdTUUTAlwvuQ1YwzHhryIuHPhaSWfa42t7AAIh4Do1XFsMuleO9YwoTegA61/cK4dvAuBa6JcJ8lyoiLLhquu+juJFRZ4xPLe97WQV2Uh+pJPRosXmSqZZApm44GDNLONXBtJpIFNg9VuJ8TNWk3KrRDLxMhsE6hhBOAEg5nn+4jGi0kMpbRT93bqPAn2qpQHiviVQAcSCo1qHwQFWxg8UU5HjATgkAEbSP2pyaoJYOBq7R4HlZoRuTkO8DmxjAlx3UdLKyG2xSKeI26t5nCBpECTlbAMIpfUslCjES7Pz1/woUk2hw9GvCt4mDoNS82g6k9olMIhk0xW2RXzqaMtdt4yfUwUAfLgSht3BxobEBL1VvpNwAAAP//mI5IggAAAAZJREFUAwD5qhfUHd54rgAAAABJRU5ErkJggg==>
+
+[image35]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACwElEQVR4AZSRW0iUQRTHz8y3i3mpFTUqNM1SQsVSUKFaHyKt3Vral5KejDDt4qWwhUW7sC+9hKFJZmm69pD1lA+JSFj5kklWSrre8ZKb7EXd1tW9zvdN820gmm3QYQ5n+M/8f3OGg+EfMTDnjB618V8+zDiFtl4j1b+dXG7sHMtfbwkIsK64X9vmho2zfd1xiWGefnlC8KesGDCav7Y3PWjrX6WUIhH0V8DYzHxlz/t3qqy0lM9HsrOHw0LDVkLDZO64uDhr2bUrvTvJd9fD9mFHQIDTvnQ3Iz11HCHOiSlPAbGkhIqvYU4qKE/mjiwPdgQ/77GcFTURtJZ6vX7P+NAQbJPJrDzvBYEnVPD6gCc+AMFHgXhAyiAKxYkpiURSvwlgmJiQewlPqUCZlwChFASgwPMUiJcAxphyHEDs7l32bWCL3ARwOBxOk/EHYn0j8VBMhBBgtkHMSAhBmBLwuN1BEUFensmwIY5lZ7d/7OuFVQ8fIognggCU5wH5K1P8laJvhpH4LRzfvQmQl5fndRHBV32vKo1iqYQxxHGxjuB3RQitekg4b58PXfL5zmwAKBSn92fIj9PikhKpy2zEd27qDtmdPhlwUkwxh7mgEInRZIl/8awpVaB809H09J9rAKVanbwvJX00JzcHrpbeALNzGUbGBl2XCy8crNBWymtq6uW6iorD+rr7MSHBXIH6XMFFYOEHKJXq5L0JaYbIqHB41doCbrsJ+gaGoOtNZ2hmZobU5XPkLppnT+2I2bq9qvYxOl9U1sy8/oVVKlV0fNIBQxQzv2xpgAWrBdjkoKz8eqJ4Q6fTkebG5q7auroOjUa3IGrrE8+bFqYiI2TQqm8AKzOzr4JWeyupvLh4cv3FQHtsWzS3PH1UDRaLCTiOg3Lt7SSNpnQ0kOFPHU9PT18CKjwRWOQXFcZW/odZhP0CAAD//6cVBesAAAAGSURBVAMA4R1GvzGiO44AAAAASUVORK5CYII=>
+
+[image36]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAADyUlEQVR4AZyTXWgUVxTHf3OTbHaNyeajycbYmCah9EEaC+IHplK6WqoUhGJTKSTQt1AqbZFgfNCsoRQJ+FArLUgEX22llNTYEtQHH4p9FQSRYrJJNq2mu5tNVtfZj5npPTtpPlo3bpzhz9w5557fOeeeGYVcp5s2MBTYZ5xtHNnwTUu08ts2s/K79vVJx0isMISFMDVb5RfV1he+Bu+VPdt2HPpgz6G67je7ynvWKYmRWGEIC80UtsKf3l1WW9a3f+vems62HTS/tIm66mpq/f51SWIkVhjCKtNMYSu8JZ83NTbU+Co9zFgzhDOTTKTDRStsTjL1dJppUTqSZwhLmMJWhtfpxGszlYnwwJxYlwTeZAU46AlyoDzIJqeBsDmVZwlT2IpSe2PCSTCZnmbSXJ9S2ad8VH+YD1ve552mt5kiwrgZRljCFLZyyJK0k8xmo8zmilc0G+M97346arailOJaYoyf4tdchmYJ09Fs/Zna2HYWy85gWcUqzevqVT7b0osqUfpYxxmc/ArTeuIyNEuYYKNwLFzl9LM4VTgeBpr6qd9YT0bDToe/zB/Nao7LVauNz0+gdEEHK/bxVmAvjr7H5sb4Jf5rgeIs6SCnnVmtHBV42K2202nsZKfxBpWOV9tdH47sy1Gnqvg40IPf4yem5zD85zBzenYs+pefbpzuwNYQkYXHKOXT1k/4cfsVftj2PV1Vh1GOof1uu+jqD/jeJdgQxDAMrkavcn3uOo697Jc9rmwdl58BeuEqkUtwOXoZo9SgpaqFoy8fpa2kdckfIEDolRC+Mh8RM8Kp8VN6sOaSX5/Y/9ZqyZhP6HAjfoNLf13SZoeOug5ONJ6g3C7Pqz/QT3ttOykrRWg8xIw5g/5Qni3HLXo5waIhbaU5M36G24nblKgSelp76K7sZpd3F0e2HAGDfBEjf4+gq3iu3AS6+pWb53PzHLt/jIfph3hKPQy+NshA8wCNvkai+ie6GLlILBNbG77IdBNI9WJYoTsLdxiODJO202z2bybYHEQpxcijEW7GblLwaP5lCFNrOYF+WdmFaZlcmLrA3eRd5DIMIz/Y0B8hUrkUK/eutS6YQIJkiH33+kjmkpi2ycn7J93B/qcY2VtIkuBxvt0CQbfitxh6MMToo1FGZ0eLrnyR+Vhh8Rs5fQgFEjiOw/mJ8xy/d5x4Jl58AmFqtnRwDpO5tZIs5BaYSE0gyShQyCq7wIXpcE7h4XdSnOUJc2R0J/qv113xwhKGsISp2YpejYevSdJFgp+ZJ8YC6ReSxApDWMLsJfUPAAAA//9Ius+LAAAABklEQVQDAJ08cHyitQoCAAAAAElFTkSuQmCC>
+
+[image37]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAADyklEQVR4AYyVS28bVRiG3zMzHsdxJm5IW1pKqCCpkNKgCjWLil3X7LpEiB8AqlSBuASo5HaRXTfwBwpsKkVEiFQgsaELJEQpRQErVIBiEjXX1rexPbdz4zt2qzaJb9F5fb7zXd5nfCLbFvr8FQp5t7T8wfOl3z95rXL38ltGJg4oZ2p9xtETUL7z4QsnGT5OZ8ZvZg4d+yH9zMT19PjEdRMryk1QzfT0gnQF+HfeO5zKZq85IyfmUrmXz9je6awzOsMcb4bZ3jTFp86kssfnnOzItU3q7QbpCNA6b+lM9lLKO3HB9qZcKzMJe3gS1mNlpmCb3MhLLkEuZNPeJTPTCdIRULmbzLiZsYv28IuWlX4OVvoIrNQYLGeUlIPtjoOlj8MamiDoScvO5C6amYEBzpD7pj387ChzD5MhmVoZMMslpR4pDcvx0IK6R+Fkj42amYEAxR/zQ5aTOsdS9JTGmKUAZgNgADSJFmNgzAJjaTAnS6BDsBz3nJml6p5l7TnRIecNpZmdytEEQCaPLNE2Nyf1JGYUgl7oAZjt5MysyTytA4Cx3EbEFCrQnDwF9SpoLSkmKQFNMjWtOLSmekscSumKmaWBPesAgJ36PNaa39JJDVpGgIoBnZCZ2Y2idl7TrgKKG1DcB6S4ZWb3uNPhAIByaNTVVyIsb2lehhJNMjFmbYhWFOsQSgYAGSvqkVF5S3LrSzO7Xx0BR89eXpVx86qMNrkWZQI06AlD2s07IhlzUYMSJahwmyseXs29Mlfcb27OHQGMQYuwcUNEpUUZbSvNK2RWB2RIomvhdWoo0+3tKJlUFkWzccPMGMP96ggwTWOv5qsqDj6T0e6mpGvQwicI3bcIWruk/5GKy5umx/SamU7qCjDNv21Ht5H4S2QEZQzpzmVSp5hAsQ8dN5daPaa5i3oCzp/PCx4FiyrxIeMGRFyHpFgQRPIGuEgWTU8X71a6J8B0JFKshc0gSUIfPKy2lIQ1xEGTs1ismZ5e6gtYlxMbt+8NlX01iYBNQbinEdvT+HPNk7+ue/QB6GWP3j847dGzvBa4QSPOQCAHbY8hFMOgnB81jiTtnu6vfd/B7OysiCLx39r6fdzf2ML27m5rD2Jx7/U3/ql1t25X+gKoTUuNKOEClaqPh6WqOUBy5S0sTDOq91yDANAMw+8flEpJGEWo+XWUK1WeCLm6srKie7pTcSDA7sPKwvJy4Yulm9/Fi998K376+ZevH2zsvJvP5813N9l0XwMB5ufnd/7+949Pi8Xi26vF1XcKhb/e/+jKlfXutk8q/wMAAP//v5Of/gAAAAZJREFUAwBMiw4zq5M0EgAAAABJRU5ErkJggg==>
+
+[image38]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAFV0lEQVR4AexUe1BUZRT/3dcuC7uLEJBoorwRMYPIUewBZVk60wxNo5aWk00+GB+AOTVWsvlkcqwpp1FRlDFzHJ0iBdF88DCEEkyUlKfLY2FdHgvLvvfevffrrjM6wyj+Zf915jv3njnnnt/vfuec76PxH8v/BA8KvLy6WfPeHw0vrqioD3nglI0nUyJCKIuzf6PVZTs7YLcs2l9VM3375foUIvufCMHSk6ej3S73eqfVqh7nsi8ZJDhkI94QiqLIQwQEoNpiYpTV8fEan5bJNgAKjxFeJAs9breWt9lgtYzMHvCSyylPqSt9KaMIrjwdHXZ9YsQHQ05+F+v0FNBOzz4t782vmhz1UUV0dIxMPur7iooKVld2MVHk2DchirCbjOgym4nV404qMVk35NbdSn6QcDUiYpof3KdESfyREGkNFxa2WJ2S/L5/QsJ62k/5AxGk0nNRMdknEhMV++vruZ3FJellXMBR85SoM2EzZ8/y91NCS1EICgykOgyGN3r6TLr2XsOxewS14ZOnsk7+pERhliIqSh27fy81o6ocCQcLMO1IEZVSejogMjc7XjNhwm6V0v+MvtN4vCss/Lw9Lm6RMzRkinHYzEkd+kGtKJ6xDQ9X8C7XZa/bVWK/27eJPiXXGpSYQygSy4aGYvKObVDPfAE93+9B84pVuLVsOfQ78kFrNIjN3w4u8/W5Q+PD33GHjefMIzaYWtuhbm4aSZsUsfHteemZQlfrPHcTPfc1Q9vC8tXLimlRFJMklnlXAsUGpr8CdWoqOvO+hvFgIRTh4Zi4JguBabNh+rUYnXv2YlJGE3hPH/r7+jF44ya0Tbcdz7LMhrRQzdGVqanCtYICWVcKOp1Ogiy01mrNVDFMkCRJ0MoErtY2jFypQeCcNERu0YHiODBPBSNq62YwwS4I3b/jmcafQTXUIbTltmO6gtsyXRV/NCMjwyvjPbRopZtPIywLQgjogAAIQ0MQBR7jZDJLTS2a1q5DU8566AvzELzkLfRXJGOBV40VrIAFleV9cadOFM+fH+vBGEKLklcj+oLyBLj0enDBQaBkQn5wEJLHDckrQPC60Fn+NyxtBJqpmXA0CkhIeg4afXuI1NCY4ksfS2mHVzJ65PKAZWC5VA5lRARU0dEYLC2DKi4e2udTwUIFlTsAI24eZo5FS2cHOsyDMAcHB1gkMUmXns5iDKHtXv6SXRCIr0z2xkY45MZFfJoLQQYwHjqMyK82IVqensi8TZiS8TJIw00QhoPTw8PBsowFCNN6PNwY+KB5L3VhaHh4UAwKhHdoWJ6eg/BPTETUju0YOncWrVlrIdw1gfGKMGzbBbGyGrHJM6DyV0EYHgbB468RWgnhjtNhL+21WSWiDoD5/AV053+DcS/NQcK+vWC0WhgLi9CTvxsu+e/DXk1H0icfw/+OHozN5mufyapUChhD6IWAQ5ToAwOGno5eyQvRzw/GoiK0rs2WJwtIPHIY0346jKl7vkPSgX1I2LkVvAzuOnYcoTRlVTFcna6y8pEj6uOk5QcJhveqi+JyukwmR6c8ooLccPPFS2hetRrNWWtgv3b9Xh083Qbo87ai/fMv4OntBVjFFRdDKmWMMRfti8i7EDeKnhKTUrm40eFor/V4pAFRgF0+E0OVVWjbrMM/Hy5Hy7ps9BX/BofZzI8Q1PYqmJWftbTYfBhj6T2C+0GDzXbWrlQs7QEprJaku3U8T1rkHRnls9AviTDJaiBSjxH4tptwi2Rw2byf/ej3KIKTgFhgNv+lUShybDQ1t1PBZt3g2F/+VLD1NRxTVscyuW0g89ppbPnSeMfwaMjR3n8BAAD//3/XF/gAAAAGSURBVAMAhwWJEUDWJPcAAAAASUVORK5CYII=>
+
+[image39]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEO0lEQVR4AeyTS2wVVRzGvzl3Zu609wF9Q2mhxVZLxSsGIhjCgoUsjEajwYUbokEXEklwQYJibDTBDUF5LdCFEXdAojEGjYCmKiZG06S3D0wuSGlt586dO3Pn/bh3Hp7bBhIXLULSHSf5nTNn/iffd+Y7ZwiWuT0wuGvA9xVR/Ov2jHcl95zyTd+jd3O4ZwPnysNrIqZ2jE9nPk9y/InCELJLmSxpEJ9DQv9+sNkb3tTvX3rs+erwptNJoXmE4YS9YS1o0eaU9sDPcPdlYF3u7fDbcm+lMqkvWJb7MdHYeIGwwpthWG23yxJKhZumKtpnBpJm5Z4N4nNt6dhnzrK8cIQh3LNRGHXVXIs1pVnI16dCqVDMu3Z4uHsge9V6sm/AvNg3aH3Xm7Mv9T3hX96Y8y8PDjoXc131BOYjKpxAsni2I/XnGXAxRWES7wnZ5l0JvrGBxgG2cQW4bBvSq9ahfWBDomdbbmPP5g3HM90PjTS0rJlobO2aaGjtHW1o7hnhmjpH2ZWdE1xTpmCl+g6T+GJfsqVzzWtcmjnds6Llg3K29V0hk9mT4AWAFcDwaTDJJiRSq8Gu6Aab7URCaCKEb6TJEDAMAQgL0DGOgDgKEAc1hLWqYGvm08RPpdemWtsOpptX7Um1rj6Y6eh8p2FlezuTzABsCkhQIUIBD/qCwgChC7s4FRUnJmVxfFyZy+cVMZ+XxLHRWTE/NjU7Nj4ujt34SpecQySZadvGr1y9jm/qgtDWS5Kt6zmSWsWApQZ0V4ipJqgooZeFNAAkDXBNdNNcUAtqu4vT3FqM8d2ulV2nTcvrCzNy/9rXlVzvPvXFR942fyF05eMgAjO/0/ndUhGGitVFQQAmQaERgI6oN+rIsOBSGZ6eUNeWoTmn++N/3P791/2NQ6juHELA0KTqK+sQhH4HAhsIDIpJ0YHQAiKvXl8gDoF5qkDk0roNWynfsBx8u7Bg8Z5EnuNFvonI0SgqIrcyT+wqgCsB1TIQUGoloKZSA2pMDzWOwVdQcRaXXqiQmqtd8+m/4pkqPENB1dIRuCYCz6KjgdCuUMqUEkVC5Mj0Y8U4rHnDm99AsCCzeE9s3fzNVsumUZKhFUvQRBGmXIKrq9SwAs9U4BvqHTxdhiHOGJ5unGSYhSuwuDxA1Fl3sjzjXChPe658KzDEgl+cGjVnZq+VLXVWiUy5QvOmqCosRYEhybEmVvK6Gk4vJXy7Rvr3q4YhcR/qxcQBU2b32ir7gqkLuzSJ2Ve+FR6X/va+lqbcn+UZ52plzv9BE/3PLAVDk3/Y8m2RpUZ6D4GtR/Wb209an+44pZ/fcdr4fecp5a+njtlfSqZ9qKLxrxoVZrepMy/pKnnFdp0Dufetn14+D3q1lpJeqM0b1B8Z/DfP+vyZk/B3fqJp249apW1HbGnrR6ayZQjO/8m+rlnnjkF9shwsu8G/AAAA//8isWhpAAAABklEQVQDANgdCk9d8H6wAAAAAElFTkSuQmCC>
+
+[image40]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEO0lEQVR4AeyTS2wVVRzGvzl3Zu609wF9Q2mhxVZLxSsGIhjCgoUsjEajwYUbokEXEklwQYJibDTBDUF5LdCFEXdAojEGjYCmKiZG06S3D0wuSGlt586dO3Pn/bh3Hp7bBhIXLULSHSf5nTNn/iffd+Y7ZwiWuT0wuGvA9xVR/Ov2jHcl95zyTd+jd3O4ZwPnysNrIqZ2jE9nPk9y/InCELJLmSxpEJ9DQv9+sNkb3tTvX3rs+erwptNJoXmE4YS9YS1o0eaU9sDPcPdlYF3u7fDbcm+lMqkvWJb7MdHYeIGwwpthWG23yxJKhZumKtpnBpJm5Z4N4nNt6dhnzrK8cIQh3LNRGHXVXIs1pVnI16dCqVDMu3Z4uHsge9V6sm/AvNg3aH3Xm7Mv9T3hX96Y8y8PDjoXc131BOYjKpxAsni2I/XnGXAxRWES7wnZ5l0JvrGBxgG2cQW4bBvSq9ahfWBDomdbbmPP5g3HM90PjTS0rJlobO2aaGjtHW1o7hnhmjpH2ZWdE1xTpmCl+g6T+GJfsqVzzWtcmjnds6Llg3K29V0hk9mT4AWAFcDwaTDJJiRSq8Gu6Aab7URCaCKEb6TJEDAMAQgL0DGOgDgKEAc1hLWqYGvm08RPpdemWtsOpptX7Um1rj6Y6eh8p2FlezuTzABsCkhQIUIBD/qCwgChC7s4FRUnJmVxfFyZy+cVMZ+XxLHRWTE/NjU7Nj4ujt34SpecQySZadvGr1y9jm/qgtDWS5Kt6zmSWsWApQZ0V4ipJqgooZeFNAAkDXBNdNNcUAtqu4vT3FqM8d2ulV2nTcvrCzNy/9rXlVzvPvXFR942fyF05eMgAjO/0/ndUhGGitVFQQAmQaERgI6oN+rIsOBSGZ6eUNeWoTmn++N/3P791/2NQ6juHELA0KTqK+sQhH4HAhsIDIpJ0YHQAiKvXl8gDoF5qkDk0roNWynfsBx8u7Bg8Z5EnuNFvonI0SgqIrcyT+wqgCsB1TIQUGoloKZSA2pMDzWOwVdQcRaXXqiQmqtd8+m/4pkqPENB1dIRuCYCz6KjgdCuUMqUEkVC5Mj0Y8U4rHnDm99AsCCzeE9s3fzNVsumUZKhFUvQRBGmXIKrq9SwAs9U4BvqHTxdhiHOGJ5unGSYhSuwuDxA1Fl3sjzjXChPe658KzDEgl+cGjVnZq+VLXVWiUy5QvOmqCosRYEhybEmVvK6Gk4vJXy7Rvr3q4YhcR/qxcQBU2b32ir7gqkLuzSJ2Ve+FR6X/va+lqbcn+UZ52plzv9BE/3PLAVDk3/Y8m2RpUZ6D4GtR/Wb209an+44pZ/fcdr4fecp5a+njtlfSqZ9qKLxrxoVZrepMy/pKnnFdp0Dufetn14+D3q1lpJeqM0b1B8Z/DfP+vyZk/B3fqJp249apW1HbGnrR6ayZQjO/8m+rlnnjkF9shwsu8G/AAAA//8isWhpAAAABklEQVQDANgdCk9d8H6wAAAAAElFTkSuQmCC>
+
+[image41]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAD/0lEQVR4AaxVXYgbVRQ+dzJJ2o3mr5vdbFFRofjmm9UXH9QKreCCQp/7JgiyCIJQ9iWP6ovigyAixRcfpHXxrd1uSUGKuAiyK5W6st3u2p1sZpLM5GeTzO/1fLedkJZNf6ADX+bMued83zn3nplo9AhX+OVnH8qvv1iRX8X4fGV49tOFh6VKIvFIAv729klpbL8la3cQse1Zxil6yCWI5AMFZLWqy8s/5SiZzEg/IOn7ChQEpOn6lDx3Li8rVf1BOhMFqpWKvn/hx4+D6rWtpC7fpCjieuRdRHQ4O/W6f331ZvvWt59Ijp0kMlHgjUoluL22vrz35/o/rmkKGXIHLCKjkCLuZmhZon5j419zd++S4NjHFkDCS7/+/pfRbJ3Z+XtzfWA7FHkuha5HsI1bu9dtLzxz7PLVNcROwsQOkCB4Q15dXdto9/3Ttc3/VvstJ2LyyDTMPxoJ/fTLy1dvIAaxk6AEpJSCoU3C8cXFzaYrF4yd2rVazfqtE9HCax98tDEp/q6ftYm0m9u7b1vN1vlOp7N0PxzHWbJte8k+ceLnYxcvLha++yGd++b71HPnfzkLn401BuKQi3sM02pe2NraOqmJyDvl2M77ruvNh2F4D6IomudqFEiId5Pl8vFUufwK7NiPe8RxyIUNeL4/32y13vP98B0tmUyKiCfEbDTJ9XziwBE4kWJw4siOfeP3OA8ctbpF4Dx0KCU0vmhq6jCFgUdGrU6ez2PI4ziefL8di4F0fM3jAnduGxS4A3r6qQw3KkgdshCC8rkcq3pUNy0WCWg8edweJ4QQ1gCQG3sm+W6fSqUSoXDiS0MCAtmmQj5P3nDAIg3y+WUK+JMAgCC+xzaeATx7XkDYlv5+l2ZnZkBF4ARGAnhIJBJUKOSo27apZjZUJzEJiMYBP4DKQW7WazRTmiZd1xU5Cgcw++rwIABApFyeJadlkdVoHdgJiCGGLk2OMXZ36MUXniceGEUOHkAJ4GccWECP2K7hsE/tbp/8IFRnAuIYIHc6Pep1OzTHBQkhVKHggjgAW20RjNgBgl6vR9lslsqzMzQc9KjbG/AXOlBAXMCCHfZ1Ow49+8xRKhaLhBysgSsGih0JwBnwoQ4GA8pkMqrdhKZRafoI4fC6+0MWCBW6+wNq2006OlcmbCn2HTnIBQe4QA5bg2oMBCAYiIOEEDR9pEA+f0mbdpuspk0ub93c3KwaRRAhFjkAOGI++Ecd9Pt9NQGpVGq0lwgAARKLPF3FfJamiznVFXxYQ0wM5KIjcMGHs1QCruuqLUEAkg4CXpx0OkXpdFpVjuSD4rCOaQInOtF4nyIhhKoejicBdCeEmqpI4z/yK1zdJSa+8iTBnMue5638DwAA//9BRA58AAAABklEQVQDAIehl8S8X8jPAAAAAElFTkSuQmCC>
+
+[image42]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACrUlEQVR4AZyRX0iTURjGn30TzanpXOqGzUUWI1ilTkpsF5VRQRF1o0ZGYZgRFl6YQVe70AuhCyO0NCEpiplmoRE1hm6ks7nQyTddumlTc+6vc266LZ1r30AD0ZIOPJzznnN+D885L4H/GGKxOFJc94YdQmnbNghBRGtbe2fzh+7gd95lP3Hg1KyopNG7LYPWhqbSXdKugLz45nnfzDSu8F04mZ2AKY/v3wk+y7pUii99T6vNVtQvziPPNA7RIT6C+j5Yzaavf03Q0tKi+aEzHmmTy2GeNEAcGwd6USFmTEZIP8kQY/t2a0uDmnS+cXjnscPahQXcFwohyxKiQCmHfdGJUCIoe1VLDq1Mt25AcjnZi8wEuyV6h1nB2BEkbz/iSVUkRqKywb1TirR3EljdcxgcGgnB/dBPT+8OdQFhAz2bnZS66ldH+eZZvhVfyisiGoM/naBHRCBjXyqcDD5MYzIMaIahVPZDpR4omyJJ57pB+iW6hXnCC78IIPlANzsTe9ksnBZwsYeUYvTZE9x77YBCoURPr/qxgdTUUTAlwvuQ1YwzHhryIuHPhaSWfa42t7AAIh4Do1XFsMuleO9YwoTegA61/cK4dvAuBa6JcJ8lyoiLLhquu+juJFRZ4xPLe97WQV2Uh+pJPRosXmSqZZApm44GDNLONXBtJpIFNg9VuJ8TNWk3KrRDLxMhsE6hhBOAEg5nn+4jGi0kMpbRT93bqPAn2qpQHiviVQAcSCo1qHwQFWxg8UU5HjATgkAEbSP2pyaoJYOBq7R4HlZoRuTkO8DmxjAlx3UdLKyG2xSKeI26t5nCBpECTlbAMIpfUslCjES7Pz1/woUk2hw9GvCt4mDoNS82g6k9olMIhk0xW2RXzqaMtdt4yfUwUAfLgSht3BxobEBL1VvpNwAAAP//mI5IggAAAAZJREFUAwD5qhfUHd54rgAAAABJRU5ErkJggg==>
+
+[image43]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACwElEQVR4AZSRW0iUQRTHz8y3i3mpFTUqNM1SQsVSUKFaHyKt3Vral5KejDDt4qWwhUW7sC+9hKFJZmm69pD1lA+JSFj5kklWSrre8ZKb7EXd1tW9zvdN820gmm3QYQ5n+M/8f3OGg+EfMTDnjB618V8+zDiFtl4j1b+dXG7sHMtfbwkIsK64X9vmho2zfd1xiWGefnlC8KesGDCav7Y3PWjrX6WUIhH0V8DYzHxlz/t3qqy0lM9HsrOHw0LDVkLDZO64uDhr2bUrvTvJd9fD9mFHQIDTvnQ3Iz11HCHOiSlPAbGkhIqvYU4qKE/mjiwPdgQ/77GcFTURtJZ6vX7P+NAQbJPJrDzvBYEnVPD6gCc+AMFHgXhAyiAKxYkpiURSvwlgmJiQewlPqUCZlwChFASgwPMUiJcAxphyHEDs7l32bWCL3ARwOBxOk/EHYn0j8VBMhBBgtkHMSAhBmBLwuN1BEUFensmwIY5lZ7d/7OuFVQ8fIognggCU5wH5K1P8laJvhpH4LRzfvQmQl5fndRHBV32vKo1iqYQxxHGxjuB3RQitekg4b58PXfL5zmwAKBSn92fIj9PikhKpy2zEd27qDtmdPhlwUkwxh7mgEInRZIl/8awpVaB809H09J9rAKVanbwvJX00JzcHrpbeALNzGUbGBl2XCy8crNBWymtq6uW6iorD+rr7MSHBXIH6XMFFYOEHKJXq5L0JaYbIqHB41doCbrsJ+gaGoOtNZ2hmZobU5XPkLppnT+2I2bq9qvYxOl9U1sy8/oVVKlV0fNIBQxQzv2xpgAWrBdjkoKz8eqJ4Q6fTkebG5q7auroOjUa3IGrrE8+bFqYiI2TQqm8AKzOzr4JWeyupvLh4cv3FQHtsWzS3PH1UDRaLCTiOg3Lt7SSNpnQ0kOFPHU9PT18CKjwRWOQXFcZW/odZhP0CAAD//6cVBesAAAAGSURBVAMA4R1GvzGiO44AAAAASUVORK5CYII=>
+
+[image44]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAADyUlEQVR4AZyTXWgUVxTHf3OTbHaNyeajycbYmCah9EEaC+IHplK6WqoUhGJTKSTQt1AqbZFgfNCsoRQJ+FArLUgEX22llNTYEtQHH4p9FQSRYrJJNq2mu5tNVtfZj5npPTtpPlo3bpzhz9w5557fOeeeGYVcp5s2MBTYZ5xtHNnwTUu08ts2s/K79vVJx0isMISFMDVb5RfV1he+Bu+VPdt2HPpgz6G67je7ynvWKYmRWGEIC80UtsKf3l1WW9a3f+vems62HTS/tIm66mpq/f51SWIkVhjCKtNMYSu8JZ83NTbU+Co9zFgzhDOTTKTDRStsTjL1dJppUTqSZwhLmMJWhtfpxGszlYnwwJxYlwTeZAU46AlyoDzIJqeBsDmVZwlT2IpSe2PCSTCZnmbSXJ9S2ad8VH+YD1ve552mt5kiwrgZRljCFLZyyJK0k8xmo8zmilc0G+M97346arailOJaYoyf4tdchmYJ09Fs/Zna2HYWy85gWcUqzevqVT7b0osqUfpYxxmc/ArTeuIyNEuYYKNwLFzl9LM4VTgeBpr6qd9YT0bDToe/zB/Nao7LVauNz0+gdEEHK/bxVmAvjr7H5sb4Jf5rgeIs6SCnnVmtHBV42K2202nsZKfxBpWOV9tdH47sy1Gnqvg40IPf4yem5zD85zBzenYs+pefbpzuwNYQkYXHKOXT1k/4cfsVftj2PV1Vh1GOof1uu+jqD/jeJdgQxDAMrkavcn3uOo697Jc9rmwdl58BeuEqkUtwOXoZo9SgpaqFoy8fpa2kdckfIEDolRC+Mh8RM8Kp8VN6sOaSX5/Y/9ZqyZhP6HAjfoNLf13SZoeOug5ONJ6g3C7Pqz/QT3ttOykrRWg8xIw5g/5Qni3HLXo5waIhbaU5M36G24nblKgSelp76K7sZpd3F0e2HAGDfBEjf4+gq3iu3AS6+pWb53PzHLt/jIfph3hKPQy+NshA8wCNvkai+ie6GLlILBNbG77IdBNI9WJYoTsLdxiODJO202z2bybYHEQpxcijEW7GblLwaP5lCFNrOYF+WdmFaZlcmLrA3eRd5DIMIz/Y0B8hUrkUK/eutS6YQIJkiH33+kjmkpi2ycn7J93B/qcY2VtIkuBxvt0CQbfitxh6MMToo1FGZ0eLrnyR+Vhh8Rs5fQgFEjiOw/mJ8xy/d5x4Jl58AmFqtnRwDpO5tZIs5BaYSE0gyShQyCq7wIXpcE7h4XdSnOUJc2R0J/qv113xwhKGsISp2YpejYevSdJFgp+ZJ8YC6ReSxApDWMLsJfUPAAAA//9Ius+LAAAABklEQVQDAJ08cHyitQoCAAAAAElFTkSuQmCC>
+
+[image45]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAADyklEQVR4AYyVS28bVRiG3zMzHsdxJm5IW1pKqCCpkNKgCjWLil3X7LpEiB8AqlSBuASo5HaRXTfwBwpsKkVEiFQgsaELJEQpRQErVIBiEjXX1rexPbdz4zt2qzaJb9F5fb7zXd5nfCLbFvr8FQp5t7T8wfOl3z95rXL38ltGJg4oZ2p9xtETUL7z4QsnGT5OZ8ZvZg4d+yH9zMT19PjEdRMryk1QzfT0gnQF+HfeO5zKZq85IyfmUrmXz9je6awzOsMcb4bZ3jTFp86kssfnnOzItU3q7QbpCNA6b+lM9lLKO3HB9qZcKzMJe3gS1mNlpmCb3MhLLkEuZNPeJTPTCdIRULmbzLiZsYv28IuWlX4OVvoIrNQYLGeUlIPtjoOlj8MamiDoScvO5C6amYEBzpD7pj387ChzD5MhmVoZMMslpR4pDcvx0IK6R+Fkj42amYEAxR/zQ5aTOsdS9JTGmKUAZgNgADSJFmNgzAJjaTAnS6BDsBz3nJml6p5l7TnRIecNpZmdytEEQCaPLNE2Nyf1JGYUgl7oAZjt5MysyTytA4Cx3EbEFCrQnDwF9SpoLSkmKQFNMjWtOLSmekscSumKmaWBPesAgJ36PNaa39JJDVpGgIoBnZCZ2Y2idl7TrgKKG1DcB6S4ZWb3uNPhAIByaNTVVyIsb2lehhJNMjFmbYhWFOsQSgYAGSvqkVF5S3LrSzO7Xx0BR89eXpVx86qMNrkWZQI06AlD2s07IhlzUYMSJahwmyseXs29Mlfcb27OHQGMQYuwcUNEpUUZbSvNK2RWB2RIomvhdWoo0+3tKJlUFkWzccPMGMP96ggwTWOv5qsqDj6T0e6mpGvQwicI3bcIWruk/5GKy5umx/SamU7qCjDNv21Ht5H4S2QEZQzpzmVSp5hAsQ8dN5daPaa5i3oCzp/PCx4FiyrxIeMGRFyHpFgQRPIGuEgWTU8X71a6J8B0JFKshc0gSUIfPKy2lIQ1xEGTs1ismZ5e6gtYlxMbt+8NlX01iYBNQbinEdvT+HPNk7+ue/QB6GWP3j847dGzvBa4QSPOQCAHbY8hFMOgnB81jiTtnu6vfd/B7OysiCLx39r6fdzf2ML27m5rD2Jx7/U3/ql1t25X+gKoTUuNKOEClaqPh6WqOUBy5S0sTDOq91yDANAMw+8flEpJGEWo+XWUK1WeCLm6srKie7pTcSDA7sPKwvJy4Yulm9/Fi998K376+ZevH2zsvJvP5813N9l0XwMB5ufnd/7+949Pi8Xi26vF1XcKhb/e/+jKlfXutk8q/wMAAP//v5Of/gAAAAZJREFUAwBMiw4zq5M0EgAAAABJRU5ErkJggg==>
+
+[image46]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAFV0lEQVR4AexUe1BUZRT/3dcuC7uLEJBoorwRMYPIUewBZVk60wxNo5aWk00+GB+AOTVWsvlkcqwpp1FRlDFzHJ0iBdF88DCEEkyUlKfLY2FdHgvLvvfevffrrjM6wyj+Zf915jv3njnnnt/vfuec76PxH8v/BA8KvLy6WfPeHw0vrqioD3nglI0nUyJCKIuzf6PVZTs7YLcs2l9VM3375foUIvufCMHSk6ej3S73eqfVqh7nsi8ZJDhkI94QiqLIQwQEoNpiYpTV8fEan5bJNgAKjxFeJAs9breWt9lgtYzMHvCSyylPqSt9KaMIrjwdHXZ9YsQHQ05+F+v0FNBOzz4t782vmhz1UUV0dIxMPur7iooKVld2MVHk2DchirCbjOgym4nV404qMVk35NbdSn6QcDUiYpof3KdESfyREGkNFxa2WJ2S/L5/QsJ62k/5AxGk0nNRMdknEhMV++vruZ3FJellXMBR85SoM2EzZ8/y91NCS1EICgykOgyGN3r6TLr2XsOxewS14ZOnsk7+pERhliIqSh27fy81o6ocCQcLMO1IEZVSejogMjc7XjNhwm6V0v+MvtN4vCss/Lw9Lm6RMzRkinHYzEkd+kGtKJ6xDQ9X8C7XZa/bVWK/27eJPiXXGpSYQygSy4aGYvKObVDPfAE93+9B84pVuLVsOfQ78kFrNIjN3w4u8/W5Q+PD33GHjefMIzaYWtuhbm4aSZsUsfHteemZQlfrPHcTPfc1Q9vC8tXLimlRFJMklnlXAsUGpr8CdWoqOvO+hvFgIRTh4Zi4JguBabNh+rUYnXv2YlJGE3hPH/r7+jF44ya0Tbcdz7LMhrRQzdGVqanCtYICWVcKOp1Ogiy01mrNVDFMkCRJ0MoErtY2jFypQeCcNERu0YHiODBPBSNq62YwwS4I3b/jmcafQTXUIbTltmO6gtsyXRV/NCMjwyvjPbRopZtPIywLQgjogAAIQ0MQBR7jZDJLTS2a1q5DU8566AvzELzkLfRXJGOBV40VrIAFleV9cadOFM+fH+vBGEKLklcj+oLyBLj0enDBQaBkQn5wEJLHDckrQPC60Fn+NyxtBJqpmXA0CkhIeg4afXuI1NCY4ksfS2mHVzJ65PKAZWC5VA5lRARU0dEYLC2DKi4e2udTwUIFlTsAI24eZo5FS2cHOsyDMAcHB1gkMUmXns5iDKHtXv6SXRCIr0z2xkY45MZFfJoLQQYwHjqMyK82IVqensi8TZiS8TJIw00QhoPTw8PBsowFCNN6PNwY+KB5L3VhaHh4UAwKhHdoWJ6eg/BPTETUju0YOncWrVlrIdw1gfGKMGzbBbGyGrHJM6DyV0EYHgbB468RWgnhjtNhL+21WSWiDoD5/AV053+DcS/NQcK+vWC0WhgLi9CTvxsu+e/DXk1H0icfw/+OHozN5mufyapUChhD6IWAQ5ToAwOGno5eyQvRzw/GoiK0rs2WJwtIPHIY0346jKl7vkPSgX1I2LkVvAzuOnYcoTRlVTFcna6y8pEj6uOk5QcJhveqi+JyukwmR6c8ooLccPPFS2hetRrNWWtgv3b9Xh083Qbo87ai/fMv4OntBVjFFRdDKmWMMRfti8i7EDeKnhKTUrm40eFor/V4pAFRgF0+E0OVVWjbrMM/Hy5Hy7ps9BX/BofZzI8Q1PYqmJWftbTYfBhj6T2C+0GDzXbWrlQs7QEprJaku3U8T1rkHRnls9AviTDJaiBSjxH4tptwi2Rw2byf/ej3KIKTgFhgNv+lUShybDQ1t1PBZt3g2F/+VLD1NRxTVscyuW0g89ppbPnSeMfwaMjR3n8BAAD//3/XF/gAAAAGSURBVAMAhwWJEUDWJPcAAAAASUVORK5CYII=>
+
+[image47]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEO0lEQVR4AeyTS2wVVRzGvzl3Zu609wF9Q2mhxVZLxSsGIhjCgoUsjEajwYUbokEXEklwQYJibDTBDUF5LdCFEXdAojEGjYCmKiZG06S3D0wuSGlt586dO3Pn/bh3Hp7bBhIXLULSHSf5nTNn/iffd+Y7ZwiWuT0wuGvA9xVR/Ov2jHcl95zyTd+jd3O4ZwPnysNrIqZ2jE9nPk9y/InCELJLmSxpEJ9DQv9+sNkb3tTvX3rs+erwptNJoXmE4YS9YS1o0eaU9sDPcPdlYF3u7fDbcm+lMqkvWJb7MdHYeIGwwpthWG23yxJKhZumKtpnBpJm5Z4N4nNt6dhnzrK8cIQh3LNRGHXVXIs1pVnI16dCqVDMu3Z4uHsge9V6sm/AvNg3aH3Xm7Mv9T3hX96Y8y8PDjoXc131BOYjKpxAsni2I/XnGXAxRWES7wnZ5l0JvrGBxgG2cQW4bBvSq9ahfWBDomdbbmPP5g3HM90PjTS0rJlobO2aaGjtHW1o7hnhmjpH2ZWdE1xTpmCl+g6T+GJfsqVzzWtcmjnds6Llg3K29V0hk9mT4AWAFcDwaTDJJiRSq8Gu6Aab7URCaCKEb6TJEDAMAQgL0DGOgDgKEAc1hLWqYGvm08RPpdemWtsOpptX7Um1rj6Y6eh8p2FlezuTzABsCkhQIUIBD/qCwgChC7s4FRUnJmVxfFyZy+cVMZ+XxLHRWTE/NjU7Nj4ujt34SpecQySZadvGr1y9jm/qgtDWS5Kt6zmSWsWApQZ0V4ipJqgooZeFNAAkDXBNdNNcUAtqu4vT3FqM8d2ulV2nTcvrCzNy/9rXlVzvPvXFR942fyF05eMgAjO/0/ndUhGGitVFQQAmQaERgI6oN+rIsOBSGZ6eUNeWoTmn++N/3P791/2NQ6juHELA0KTqK+sQhH4HAhsIDIpJ0YHQAiKvXl8gDoF5qkDk0roNWynfsBx8u7Bg8Z5EnuNFvonI0SgqIrcyT+wqgCsB1TIQUGoloKZSA2pMDzWOwVdQcRaXXqiQmqtd8+m/4pkqPENB1dIRuCYCz6KjgdCuUMqUEkVC5Mj0Y8U4rHnDm99AsCCzeE9s3fzNVsumUZKhFUvQRBGmXIKrq9SwAs9U4BvqHTxdhiHOGJ5unGSYhSuwuDxA1Fl3sjzjXChPe658KzDEgl+cGjVnZq+VLXVWiUy5QvOmqCosRYEhybEmVvK6Gk4vJXy7Rvr3q4YhcR/qxcQBU2b32ir7gqkLuzSJ2Ve+FR6X/va+lqbcn+UZ52plzv9BE/3PLAVDk3/Y8m2RpUZ6D4GtR/Wb209an+44pZ/fcdr4fecp5a+njtlfSqZ9qKLxrxoVZrepMy/pKnnFdp0Dufetn14+D3q1lpJeqM0b1B8Z/DfP+vyZk/B3fqJp249apW1HbGnrR6ayZQjO/8m+rlnnjkF9shwsu8G/AAAA//8isWhpAAAABklEQVQDANgdCk9d8H6wAAAAAElFTkSuQmCC>
+
+[image48]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEO0lEQVR4AeyTS2wVVRzGvzl3Zu609wF9Q2mhxVZLxSsGIhjCgoUsjEajwYUbokEXEklwQYJibDTBDUF5LdCFEXdAojEGjYCmKiZG06S3D0wuSGlt586dO3Pn/bh3Hp7bBhIXLULSHSf5nTNn/iffd+Y7ZwiWuT0wuGvA9xVR/Ov2jHcl95zyTd+jd3O4ZwPnysNrIqZ2jE9nPk9y/InCELJLmSxpEJ9DQv9+sNkb3tTvX3rs+erwptNJoXmE4YS9YS1o0eaU9sDPcPdlYF3u7fDbcm+lMqkvWJb7MdHYeIGwwpthWG23yxJKhZumKtpnBpJm5Z4N4nNt6dhnzrK8cIQh3LNRGHXVXIs1pVnI16dCqVDMu3Z4uHsge9V6sm/AvNg3aH3Xm7Mv9T3hX96Y8y8PDjoXc131BOYjKpxAsni2I/XnGXAxRWES7wnZ5l0JvrGBxgG2cQW4bBvSq9ahfWBDomdbbmPP5g3HM90PjTS0rJlobO2aaGjtHW1o7hnhmjpH2ZWdE1xTpmCl+g6T+GJfsqVzzWtcmjnds6Llg3K29V0hk9mT4AWAFcDwaTDJJiRSq8Gu6Aab7URCaCKEb6TJEDAMAQgL0DGOgDgKEAc1hLWqYGvm08RPpdemWtsOpptX7Um1rj6Y6eh8p2FlezuTzABsCkhQIUIBD/qCwgChC7s4FRUnJmVxfFyZy+cVMZ+XxLHRWTE/NjU7Nj4ujt34SpecQySZadvGr1y9jm/qgtDWS5Kt6zmSWsWApQZ0V4ipJqgooZeFNAAkDXBNdNNcUAtqu4vT3FqM8d2ulV2nTcvrCzNy/9rXlVzvPvXFR942fyF05eMgAjO/0/ndUhGGitVFQQAmQaERgI6oN+rIsOBSGZ6eUNeWoTmn++N/3P791/2NQ6juHELA0KTqK+sQhH4HAhsIDIpJ0YHQAiKvXl8gDoF5qkDk0roNWynfsBx8u7Bg8Z5EnuNFvonI0SgqIrcyT+wqgCsB1TIQUGoloKZSA2pMDzWOwVdQcRaXXqiQmqtd8+m/4pkqPENB1dIRuCYCz6KjgdCuUMqUEkVC5Mj0Y8U4rHnDm99AsCCzeE9s3fzNVsumUZKhFUvQRBGmXIKrq9SwAs9U4BvqHTxdhiHOGJ5unGSYhSuwuDxA1Fl3sjzjXChPe658KzDEgl+cGjVnZq+VLXVWiUy5QvOmqCosRYEhybEmVvK6Gk4vJXy7Rvr3q4YhcR/qxcQBU2b32ir7gqkLuzSJ2Ve+FR6X/va+lqbcn+UZ52plzv9BE/3PLAVDk3/Y8m2RpUZ6D4GtR/Wb209an+44pZ/fcdr4fecp5a+njtlfSqZ9qKLxrxoVZrepMy/pKnnFdp0Dufetn14+D3q1lpJeqM0b1B8Z/DfP+vyZk/B3fqJp249apW1HbGnrR6ayZQjO/8m+rlnnjkF9shwsu8G/AAAA//8isWhpAAAABklEQVQDANgdCk9d8H6wAAAAAElFTkSuQmCC>
+
+[image49]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAD/0lEQVR4AaxVXYgbVRQ+dzJJ2o3mr5vdbFFRofjmm9UXH9QKreCCQp/7JgiyCIJQ9iWP6ovigyAixRcfpHXxrd1uSUGKuAiyK5W6st3u2p1sZpLM5GeTzO/1fLedkJZNf6ADX+bMued83zn3nplo9AhX+OVnH8qvv1iRX8X4fGV49tOFh6VKIvFIAv729klpbL8la3cQse1Zxil6yCWI5AMFZLWqy8s/5SiZzEg/IOn7ChQEpOn6lDx3Li8rVf1BOhMFqpWKvn/hx4+D6rWtpC7fpCjieuRdRHQ4O/W6f331ZvvWt59Ijp0kMlHgjUoluL22vrz35/o/rmkKGXIHLCKjkCLuZmhZon5j419zd++S4NjHFkDCS7/+/pfRbJ3Z+XtzfWA7FHkuha5HsI1bu9dtLzxz7PLVNcROwsQOkCB4Q15dXdto9/3Ttc3/VvstJ2LyyDTMPxoJ/fTLy1dvIAaxk6AEpJSCoU3C8cXFzaYrF4yd2rVazfqtE9HCax98tDEp/q6ftYm0m9u7b1vN1vlOp7N0PxzHWbJte8k+ceLnYxcvLha++yGd++b71HPnfzkLn401BuKQi3sM02pe2NraOqmJyDvl2M77ruvNh2F4D6IomudqFEiId5Pl8vFUufwK7NiPe8RxyIUNeL4/32y13vP98B0tmUyKiCfEbDTJ9XziwBE4kWJw4siOfeP3OA8ctbpF4Dx0KCU0vmhq6jCFgUdGrU6ez2PI4ziefL8di4F0fM3jAnduGxS4A3r6qQw3KkgdshCC8rkcq3pUNy0WCWg8edweJ4QQ1gCQG3sm+W6fSqUSoXDiS0MCAtmmQj5P3nDAIg3y+WUK+JMAgCC+xzaeATx7XkDYlv5+l2ZnZkBF4ARGAnhIJBJUKOSo27apZjZUJzEJiMYBP4DKQW7WazRTmiZd1xU5Cgcw++rwIABApFyeJadlkdVoHdgJiCGGLk2OMXZ36MUXniceGEUOHkAJ4GccWECP2K7hsE/tbp/8IFRnAuIYIHc6Pep1OzTHBQkhVKHggjgAW20RjNgBgl6vR9lslsqzMzQc9KjbG/AXOlBAXMCCHfZ1Ow49+8xRKhaLhBysgSsGih0JwBnwoQ4GA8pkMqrdhKZRafoI4fC6+0MWCBW6+wNq2006OlcmbCn2HTnIBQe4QA5bg2oMBCAYiIOEEDR9pEA+f0mbdpuspk0ub93c3KwaRRAhFjkAOGI++Ecd9Pt9NQGpVGq0lwgAARKLPF3FfJamiznVFXxYQ0wM5KIjcMGHs1QCruuqLUEAkg4CXpx0OkXpdFpVjuSD4rCOaQInOtF4nyIhhKoejicBdCeEmqpI4z/yK1zdJSa+8iTBnMue5638DwAA//9BRA58AAAABklEQVQDAIehl8S8X8jPAAAAAElFTkSuQmCC>
