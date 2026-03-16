@@ -89,6 +89,14 @@ The goal: every trainer leaves knowing exactly what to do on the floor, why the 
 - The trainee's Knowledge Check at the end of each day comes from this material
 - Your job: remind the trainee to complete their Trainual review before the next shift
 
+**How to verify completion before starting the next day:**
+- Open Trainual on your phone or tablet before the shift begins
+- Pull up your trainee's profile and check the progress indicator for the previous day's topic
+- Green = complete. Anything else = not complete — follow the missed Knowledge Check protocol before proceeding
+- Do not assume completion. Check it. If you start Day 2 without confirming Day 1 is green, the layer system breaks.
+
+> **Key rule:** A trainer who does not check Trainual is a trainer running on assumptions. That is how gaps stay invisible.
+
 ### Layer 3: The 30-Day Evaluation (20 min)
 - Conducted 30 days after the trainee's first solo shift
 - Covers: service standard execution, product knowledge, teamwork, guest interaction
@@ -189,7 +197,32 @@ Print all checklists for the role being trained. Walk through each day in sequen
 
 ---
 
-## BLOCK 4: ACCOUNTABILITY + INCENTIVE STRUCTURE (45 min)
+### INSERT D: SUPPORT STAFF TRAINERS (SA, BARBACK, SECURITY)
+
+*This insert covers trainers for roles that do not yet have full 5-day programs. Structure is lighter — focus on the core behaviors and accountability expectations.*
+
+**SA / Server Assistant — OAK (2 Days)**
+- Focus areas: food running accuracy, table clearing timing, server communication, restocking protocols
+- Common trainer gap: treating the SA as extra labor instead of a trainee with standards to hit
+- CFU to practice: "What do you communicate to the server before you run a food order to a table?"
+- Day 2 focus: higher-volume application — the trainee should be running without prompting
+
+**Barback — OAK (3 Days)**
+- Focus areas: ice levels, glassware rotation, bar restocking, bartender communication cues
+- Common trainer gap: not defining what "stocked" means — give them the par levels explicitly
+- CFU to practice: "How do you know when to restock ice without being asked?"
+- Day 3 focus: inventory receiving and storage organization — confirm they can do it unsupervised
+
+**Security — Cantina (Structure TBD with Tony)**
+- Role build not finalized — do not run Block 3 for Security until the checklist exists
+- Trainer for this role attends Blocks 1, 2, 4, 5, and 6 in full
+- Block 3 placeholder: walk through the Commitment Card and accountability expectations; hold role-specific checklist walkthrough at a separate session once the build is complete
+
+**Bottle Girl — Cantina (Structure TBD with Tony)**
+- Same as Security — role build pending
+- Trainer attends all universal blocks; Block 3 deferred until checklist is built
+
+> **Note to facilitator:** If Support Staff trainers are in the room during another role's Block 3 insert, they can observe — it models what their version will look like. Do not skip the insert entirely; acknowledge them and set the expectation for when their full walkthrough happens.: ACCOUNTABILITY + INCENTIVE STRUCTURE (45 min)
 
 ### The Accountability Form (15 min)
 - Submitted by the trainee at the end of every training shift via the app
@@ -208,6 +241,8 @@ Print all checklists for the role being trained. Walk through each day in sequen
 | **Per-Shift Bonus** | Checklist submitted + accountability form filed same day | $TBD |
 | **Completion Bonus** | Trainee completes all 5 days with no missed submissions | $TBD |
 | **30-Day Bonus** | 30-day evaluation completed + trainee still on schedule | $TBD |
+
+**Sizing guidance for Tony conversation:** The per-shift bonus should be enough to offset the paperwork friction — it keeps trainers compliant day-to-day. The 30-day bonus should be the largest of the three — it's the only incentive tied to actual trainee retention and long-term performance. If the 30-day bonus is smaller than the completion bonus, trainers are incentivized to finish the week, not to care what happens after it.
 
 **Hard rules:**
 - Incentives are not retroactive — missed submissions cannot be made up
@@ -243,7 +278,7 @@ Facilitator presents three scenarios. Trainers call out what they would do.
 > *Answer: Yes, during the recap — not in front of guests.*
 
 > **Scenario 3:** Your trainee forgot to complete their Trainual review and did not do the Knowledge Check. Their shift starts in 10 minutes. What do you do?
-> *Answer: Flag to GM. Do not run the shift as normal — this creates an accountability gap.*
+> *Answer: The trainee completes the missed Knowledge Check during their pre-shift meal or first break — before the day's training content begins. You do not sign off on the Day 2 checklist until the Day 1 Trainual content shows green in their profile. The shift runs, but the sign-off does not happen until the gap is closed. Flag to GM if it becomes a pattern.*
 
 ### Exercise 3: Checklist Run-Through (15 min)
 Each trainer picks one day from their role's checklist and walks the group through it as if orienting a trainee before the shift starts.
