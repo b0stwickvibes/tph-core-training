@@ -153,13 +153,25 @@ Source: Trainer Manual: Host (TRAINUAL VERSION) + CORE Trainee Manual: Host
 - [x] Evaluator Notes section included
 - **File:** `PHASE-5-universal-docs/EVAL_30Day_Rubric.md` (239 lines)
 
-### Step 15: Enhanced Accountability Form
-- [x] You're managing the app side — **Trainer Assessment Tool is LIVE**
-- [x] Trainer-side scoring (5 categories, 1-5 scale) is live with 36+ real submissions across all 3 locations
-- [x] Test before launch — production-tested Jan–Mar 2026 with real trainer/trainee data
-- **App files:** `ACCOUNTABILITY-files/code.gs` (1,849 lines), `index.html`, `script.html`, `styles.html`
-- **Spec file:** `ACCOUNTABILITY-files/ACCOUNTABILITY_Form_Spec.md` (176 lines)
-- ⚠️ **OPEN ITEM:** The spec describes a **trainee-submitted** self-accountability form (3 questions + photo upload) that is a **separate companion tool** to the trainer assessment. This has not been built yet. The trainer-side tool is complete.
+### Step 15: Enhanced Accountability Form — REWRITTEN ✅
+- [x] Trainer Assessment Tool is LIVE — 36+ real submissions across all 3 locations (Jan–Mar 2026)
+- [x] **Spec rewritten** — fixed submitter (trainer, not trainee), aligned to CORE_Program_Outline.md Section 2
+- [x] **Full code rewrite** — code.gs (1,849 → ~680 lines), index.html, script.html, styles.html all rebuilt from scratch
+- [x] **New form fields added:**
+  - 3 accountability questions (what covered, where struggling, plan forward) with character minimums
+  - End-of-shift recap confirmation (Yes/No + follow-up if No)
+  - Checklist photo upload (file → Google Drive, organized by location/trainee/day)
+- [x] **Backend improvements:**
+  - Single TRAINERS config (no more HTML parsing or DriveApp file scanning)
+  - Single-pass analytics (reads Training Records once, populates all sheets)
+  - Alert/flag logic (Day 4/5 low scores, missed recaps, consecutive NI detection)
+  - sendNotificationEmail bug fixed
+  - Double-comma bug in Cantina roster fixed
+  - All dead code removed
+- [x] **Spec includes:** implementation status, data architecture (23 columns), incentive gate, GM audit protocol, pre-launch checklist
+- **App files:** `ACCOUNTABILITY-files/code.gs`, `index.html`, `script.html`, `styles.html`
+- **Spec file:** `ACCOUNTABILITY-files/ACCOUNTABILITY_Form_Spec.md`
+- ⚠️ **DEPLOY NOTE:** Code is rewritten locally. Needs to be deployed to Google Apps Script project to go live. Existing production data (36+ records) will not be affected — new columns are additive.
 
 ---
 
@@ -185,9 +197,9 @@ Source: Trainer Manual: Host (TRAINUAL VERSION) + CORE Trainee Manual: Host
 | **Phase 2** | ✅ Complete | Server checklists (5), Google Sheets builders, enriched trainee manual. |
 | **Phase 3** | ✅ Complete | Host checklists (5), Google Sheets builders, enriched trainee manual. |
 | **Phase 4** | ⬜ Not started | SA, Barback, Security, Bottle Girl — new role builds. |
-| **Phase 5** | ✅ Complete | Protocol ✅. Trainer Agenda ✅. 30-Day Rubric (OAK + Cantina) ✅. Accountability Form spec ✅. Trainer Assessment app LIVE. Trainee self-form TBD. |
+| **Phase 5** | ✅ Complete | Protocol ✅. Trainer Agenda ✅. 30-Day Rubric (OAK + Cantina) ✅. Accountability Form spec + code fully rewritten ✅. Deploy to GAS pending. |
 | **Phase 6** | ⬜ Deferred | Duplicate content problem — accepted for now (Option 3). |
 
 ---
 
-**NEXT UP: Phase 4 new role builds (SA, Barback, Security, Bottle Girl). Also: build trainee self-accountability form (spec in ACCOUNTABILITY-files/) as a companion to the live trainer assessment tool.**
+**NEXT UP: Phase 4 new role builds (SA, Barback, Security, Bottle Girl). Also: deploy rewritten accountability form code to Google Apps Script project (code is ready, needs copy-paste into GAS editor).**
