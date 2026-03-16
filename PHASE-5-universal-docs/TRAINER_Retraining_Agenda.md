@@ -32,8 +32,8 @@ The goal: every trainer leaves knowing exactly what to do on the floor, why the 
 | **Block 1** | 0:00 | 45 min | Why the System Changed |
 | **Block 2** | 0:45 | 60 min | The Three-Layer System |
 | **Block 3** | 1:45 | 75 min | Checklist Walkthrough (Role-Specific) |
-| **Break** | 3:00 | 15 min | |
-| **Block 4** | 3:15 | 45 min | Accountability + Incentive Structure |
+| **Block 4** | 3:00 | 45 min | Accountability + Incentive Structure |
+| **Break** | 3:45 | 15 min | |
 | **Block 5** | 4:00 | 45 min | Live Demo + Scenario Practice |
 | **Block 6** | 4:45 | 15 min | Wrap-Up + Commitments |
 
@@ -110,6 +110,8 @@ The goal: every trainer leaves knowing exactly what to do on the floor, why the 
 ## BLOCK 3: CHECKLIST WALKTHROUGH — ROLE-SPECIFIC (75 min)
 
 Print all checklists for the role being trained. Walk through each day in sequence. The goal: every trainer can explain every checkbox — not just read it.
+
+> **The checklist is a coverage guarantee — not a script and not a lecture outline.** Your job is to demonstrate and coach during live service. The checklist ensures nothing gets skipped. It does not tell you how to talk.
 
 ---
 
@@ -222,7 +224,11 @@ Print all checklists for the role being trained. Walk through each day in sequen
 - Same as Security — role build pending
 - Trainer attends all universal blocks; Block 3 deferred until checklist is built
 
-> **Note to facilitator:** If Support Staff trainers are in the room during another role's Block 3 insert, they can observe — it models what their version will look like. Do not skip the insert entirely; acknowledge them and set the expectation for when their full walkthrough happens.: ACCOUNTABILITY + INCENTIVE STRUCTURE (45 min)
+> **Note to facilitator:** If Support Staff trainers are in the room during another role's Block 3 insert, they can observe — it models what their version will look like. Do not skip the insert entirely; acknowledge them and set the expectation for when their full walkthrough happens.
+
+---
+
+## BLOCK 4: ACCOUNTABILITY + INCENTIVE STRUCTURE (45 min)
 
 ### The Accountability Form (15 min)
 - Submitted by the trainee at the end of every training shift via the app
@@ -254,6 +260,59 @@ Print all checklists for the role being trained. Walk through each day in sequen
 - Accountability form = digital record
 - Both are required for every shift — not one or the other
 - GM audits weekly. Patterns of incomplete submissions affect trainer eligibility for future cohorts.
+
+---
+
+## TRAINER CONDUCT STANDARDS
+
+These apply on every training shift, regardless of how busy it gets. Non-negotiable.
+
+- **Do not run their tables for them.** If a trainee is struggling, coach through it — do not take over. Taking over protects the shift and breaks the training.
+- **Do not skip the recap.** Busy service does not cancel the recap. It gets shorter if needed, but it happens every shift without exception.
+- **Do not give answers during a check-for-understanding.** Redirect. Ask again. Wait. Giving the answer tells you nothing about what the trainee actually retained.
+- **Do not freelance the curriculum.** If it is not on the checklist, it is not part of today's training. Add-ons create inconsistency across trainers and locations.
+- **Do not let a trainee submit the accountability form for them.** The trainee submits it. The trainer confirms it was submitted before leaving the building. Those are two different actions.
+
+---
+
+## ESCALATION PROTOCOL
+
+Not everything stays between trainer and trainee. These situations go to the GM immediately.
+
+| Situation | Action |
+|---|---|
+| Trainee is combative or refusing direction | Stop the training shift. GM takes over. |
+| Trainee no-shows without contact | Log it. GM determines whether to continue the cohort. |
+| Missed accountability form two shifts in a row | Flag to GM. Do not continue to Day 3 without resolution. |
+| Trainee fails a CFU twice on the same topic | Note it on the checklist. Flag to GM before Day 3. |
+| Trainer suspects a trainee is impaired | Remove from floor immediately. GM handles. |
+| Documentation dispute (trainer vs. trainee account) | Do not resolve it yourself. GM mediates with the signed checklist as the record. |
+
+**The rule:** If you are unsure whether something is your call, it is not your call. Escalate.
+
+---
+
+## COMMON TRAINING FAILURES
+
+These are the most frequent ways the system breaks down. Know them before you hit the floor.
+
+**Trainer-side failures:**
+- Skipping the End-of-Shift Recap because service ran long
+- Doing the trainee's job during service instead of letting them work through it
+- Signing the checklist without actually covering every item
+- Assuming Trainual completion without checking the profile
+- Coaching during Day 5 evaluation instead of observing
+
+**Trainee-side failures (trainer is responsible for catching these):**
+- Submitting the accountability form without completing the Knowledge Check
+- Completing side work only when watched
+- Giving correct answers during the recap but not executing on the floor
+- Avoiding the GM or trainer after a mistake instead of reporting it
+
+**System failures (escalate to GM):**
+- Accountability form submissions not matching checklist dates
+- Trainee advancing to the next day without the previous day's checklist signed
+- 30-day evaluation not triggered within the required window after first solo shift
 
 ---
 
