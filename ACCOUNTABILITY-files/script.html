@@ -1,0 +1,497 @@
+<script>
+// ============================================================================
+// TRAINING ACCOUNTABILITY FORM — CLIENT-SIDE LOGIC
+// Three Points Hospitality — C.O.R.E. Training System
+// ============================================================================
+
+let form, submitBtn, scoreSummary;
+let isSubmitting = false;
+let photoData = null;
+let photoFileName = null;
+let photoMimeType = null;
+
+// Trainer roster — loaded from backend (single source of truth)
+let trainersByLocation = {};
+
+// ---------------------------------------------------------------------------
+// INITIALIZATION
+// ---------------------------------------------------------------------------
+
+window.addEventListener('load', function () {
+  initializeForm();
+  loadTrainerRoster();
+});
+
+function initializeForm() {
+  form = document.getElementById('accountabilityForm');
+  submitBtn = document.getElementById('submitBtn');
+  scoreSummary = document.getElementById('scoreSummary');
+
+  if (!form) { console.error('Form not found'); return; }
+  console.log('✅ Form initialized');
+
+  // Location → Trainer filtering
+  document.getElementById('location').addEventListener('change', updateTrainerDropdown);
+
+  // Score calculation on radio change
+  form.querySelectorAll('input[type="radio"][name="knowledge"], input[type="radio"][name="technical"], input[type="radio"][name="service"], input[type="radio"][name="teamwork"], input[type="radio"][name="professionalism"]')
+    .forEach(r => r.addEventListener('change', updateScoreDisplay));
+
+  // Character count tracking for accountability questions
+  setupCharCount('whatCovered', 30);
+  setupCharCount('whereStruggling', 20);
+  setupCharCount('planForward', 20);
+
+  // Recap toggle — show/hide follow-up
+  document.querySelectorAll('input[name="recapCompleted"]').forEach(r => {
+    r.addEventListener('change', function () {
+      const followUp = document.getElementById('recapFollowUp');
+      followUp.style.display = this.value === 'No' ? 'block' : 'none';
+    });
+  });
+
+  // Photo upload
+  setupPhotoUpload();
+
+  // Auto-select shift by time of day
+  autoSelectShift();
+
+  // Form submission
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (isSubmitting) return;
+    if (validateForm()) submitForm();
+  });
+
+  // Prevent double-click on button
+  if (submitBtn) {
+    submitBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (!isSubmitting) form.dispatchEvent(new Event('submit'));
+    });
+  }
+}
+
+function loadTrainerRoster() {
+  if (typeof google !== 'undefined' && google.script && google.script.run) {
+    google.script.run
+      .withSuccessHandler(function (roster) {
+        trainersByLocation = roster || {};
+        console.log('✅ Trainer roster loaded from backend');
+      })
+      .withFailureHandler(function () {
+        console.log('⚠️ Backend unavailable, using fallback roster');
+        trainersByLocation = getFallbackRoster();
+      })
+      .getTrainerRoster();
+  } else {
+    trainersByLocation = getFallbackRoster();
+  }
+}
+
+function getFallbackRoster() {
+  return {
+    'Cantina Añejo': [
+      'Adeniza Fenne', 'Axaielle Cazeau-Quinn', 'Christian Lucas',
+      'Davia Geders', 'Ella Agustin', 'Emma Yang', 'Evan Amato',
+      'Gabriella McMillan', 'Lilah Bowers', 'Lilly Denny',
+      'Macy Williams', 'Selina Ayup', 'Shaylee Estes',
+      'Suzy Takla', 'Valeria Cvjetkovic'
+    ],
+    'Original American Kitchen': [
+      'Carson Fontana', 'Desiree Edwards', 'Emma Thomas',
+      'Kai Nishikawa', 'Natalia Martinez', 'Rachel Donly',
+      'Tanner Griffin', 'Val Revilla'
+    ],
+    'White Buffalo': ['Dani Mizrachi', 'Holden Fernandez']
+  };
+}
+
+
+// ---------------------------------------------------------------------------
+// TRAINER DROPDOWN
+// ---------------------------------------------------------------------------
+
+function updateTrainerDropdown() {
+  const location = document.getElementById('location').value;
+  const trainerSelect = document.getElementById('trainer');
+  trainerSelect.innerHTML = '';
+
+  if (location && trainersByLocation[location]) {
+    trainerSelect.disabled = false;
+    trainerSelect.style.background = '#fafafa';
+
+    addOption(trainerSelect, '', 'Select your name');
+    trainersByLocation[location].forEach(name => addOption(trainerSelect, name, name));
+  } else {
+    trainerSelect.disabled = true;
+    trainerSelect.style.background = '#f0f0f0';
+    addOption(trainerSelect, '', 'Select location first');
+  }
+}
+
+function addOption(select, value, text) {
+  const opt = document.createElement('option');
+  opt.value = value;
+  opt.textContent = text;
+  select.appendChild(opt);
+}
+
+
+// ---------------------------------------------------------------------------
+// SCORE DISPLAY
+// ---------------------------------------------------------------------------
+
+function updateScoreDisplay() {
+  const categories = ['knowledge', 'technical', 'service', 'teamwork', 'professionalism'];
+  const scores = {};
+  let allFilled = true;
+
+  categories.forEach(cat => {
+    scores[cat] = getRadioValue(cat);
+    if (!scores[cat]) allFilled = false;
+  });
+
+  if (!allFilled) {
+    if (scoreSummary) scoreSummary.style.display = 'none';
+    return;
+  }
+
+  const total = categories.reduce((sum, cat) => sum + parseInt(scores[cat]), 0);
+  const pct = Math.round((total / 25) * 100);
+
+  setText('totalScore', `${total}/25 (${pct}%)`);
+  categories.forEach(cat => setText(cat + 'Score', scores[cat]));
+
+  let level, cls;
+  if (pct >= 90) { level = 'Excellent Performance'; cls = 'excellent'; }
+  else if (pct >= 75) { level = 'Good Performance'; cls = 'good'; }
+  else { level = 'Needs Improvement'; cls = 'needs-improvement'; }
+
+  const el = document.getElementById('performanceLevel');
+  if (el) { el.textContent = level; el.className = 'performance-level ' + cls; }
+  if (scoreSummary) scoreSummary.style.display = 'block';
+}
+
+
+// ---------------------------------------------------------------------------
+// CHARACTER COUNTS
+// ---------------------------------------------------------------------------
+
+function setupCharCount(fieldId, minChars) {
+  const field = document.getElementById(fieldId);
+  const counter = document.getElementById(fieldId + 'Count');
+  if (!field || !counter) return;
+
+  field.addEventListener('input', function () {
+    const len = this.value.length;
+    counter.textContent = `${len}/${minChars} minimum characters`;
+    counter.className = 'char-count' + (len >= minChars ? ' char-count-met' : '');
+  });
+}
+
+
+// ---------------------------------------------------------------------------
+// PHOTO UPLOAD
+// ---------------------------------------------------------------------------
+
+function setupPhotoUpload() {
+  const area = document.getElementById('photoUploadArea');
+  const input = document.getElementById('checklistPhoto');
+  const placeholder = document.getElementById('uploadPlaceholder');
+  const preview = document.getElementById('uploadPreview');
+  const previewImg = document.getElementById('photoPreviewImg');
+  const removeBtn = document.getElementById('removePhoto');
+
+  if (!area || !input) return;
+
+  // Click area to trigger file input
+  area.addEventListener('click', function (e) {
+    if (e.target !== removeBtn && !removeBtn.contains(e.target)) {
+      input.click();
+    }
+  });
+
+  input.addEventListener('change', function () {
+    const file = this.files[0];
+    if (!file) return;
+
+    // Validate size (10MB)
+    if (file.size > 10 * 1024 * 1024) {
+      alert('Photo too large. Maximum size is 10MB.');
+      this.value = '';
+      return;
+    }
+
+    // Read as base64 for server-side upload
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      // Store base64 data (strip the data:... prefix)
+      const base64 = e.target.result.split(',')[1];
+      photoData = base64;
+      photoFileName = file.name;
+      photoMimeType = file.type;
+
+      // Show preview
+      previewImg.src = e.target.result;
+      placeholder.style.display = 'none';
+      preview.style.display = 'block';
+    };
+    reader.readAsDataURL(file);
+  });
+
+  // Remove photo
+  if (removeBtn) {
+    removeBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      photoData = null;
+      photoFileName = null;
+      photoMimeType = null;
+      input.value = '';
+      placeholder.style.display = 'block';
+      preview.style.display = 'none';
+    });
+  }
+}
+
+
+// ---------------------------------------------------------------------------
+// AUTO SHIFT SELECTION
+// ---------------------------------------------------------------------------
+
+function autoSelectShift() {
+  const shift = document.getElementById('shift');
+  if (!shift) return;
+  const hour = new Date().getHours();
+  if (hour >= 6 && hour < 14) shift.value = 'Morning';
+  else if (hour >= 14 && hour < 22) shift.value = 'Afternoon';
+  else shift.value = 'Evening';
+}
+
+
+// ---------------------------------------------------------------------------
+// VALIDATION
+// ---------------------------------------------------------------------------
+
+function validateForm() {
+  clearAllErrors();
+  let valid = true;
+  const missing = [];
+  let firstError = null;
+
+  // Required dropdowns and text inputs
+  const fields = [
+    { id: 'location', label: 'Location' },
+    { id: 'trainer', label: 'Trainer Name' },
+    { id: 'trainee', label: 'Trainee Name' },
+    { id: 'position', label: 'Position' },
+    { id: 'trainingDay', label: 'Training Day' },
+    { id: 'shift', label: 'Shift' }
+  ];
+
+  fields.forEach(f => {
+    const el = document.getElementById(f.id);
+    if (!el || !el.value.trim()) {
+      markError(el);
+      missing.push(f.label);
+      if (!firstError) firstError = el;
+      valid = false;
+    }
+  });
+
+  // Required ratings
+  const ratings = ['knowledge', 'technical', 'service', 'teamwork', 'professionalism'];
+  ratings.forEach(name => {
+    if (!getRadioValue(name)) {
+      const block = document.querySelector(`[data-question="${name}"]`);
+      if (block) { block.classList.add('validation-error'); if (!firstError) firstError = block; }
+      missing.push(name.charAt(0).toUpperCase() + name.slice(1) + ' rating');
+      valid = false;
+    }
+  });
+
+  // Required text fields with minimum character counts
+  const textFields = [
+    { id: 'whatCovered', label: 'What Was Covered', min: 30 },
+    { id: 'whereStruggling', label: 'Where Struggling', min: 20 },
+    { id: 'planForward', label: 'Plan Forward', min: 20 }
+  ];
+
+  textFields.forEach(f => {
+    const el = document.getElementById(f.id);
+    if (!el || el.value.trim().length < f.min) {
+      markError(el);
+      const block = document.querySelector(`[data-question="${f.id}"]`);
+      if (block) { block.classList.add('validation-error'); if (!firstError) firstError = block; }
+      missing.push(`${f.label} (min ${f.min} chars)`);
+      valid = false;
+    }
+  });
+
+  // Recap confirmation
+  if (!getRadioValue('recapCompleted')) {
+    const block = document.querySelector('[data-question="recapCompleted"]');
+    if (block) { block.classList.add('validation-error'); if (!firstError) firstError = block; }
+    missing.push('Recap confirmation');
+    valid = false;
+  } else if (getRadioValue('recapCompleted') === 'No') {
+    const reason = document.getElementById('recapMissedReason');
+    if (!reason || !reason.value.trim()) {
+      markError(reason);
+      missing.push('Recap missed reason');
+      valid = false;
+    }
+  }
+
+  // Photo upload — required
+  if (!photoData) {
+    const block = document.querySelector('[data-question="photoUpload"]');
+    if (block) { block.classList.add('validation-error'); if (!firstError) firstError = block; }
+    missing.push('Checklist photo');
+    valid = false;
+  }
+
+  if (!valid) {
+    showValidationBanner(missing);
+    if (submitBtn) {
+      submitBtn.classList.add('submit-btn-flash');
+      setTimeout(() => submitBtn.classList.remove('submit-btn-flash'), 800);
+    }
+    if (firstError) firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  return valid;
+}
+
+function markError(el) {
+  if (el) {
+    el.style.border = '2px solid #e74c3c';
+    el.style.backgroundColor = '#fef2f2';
+  }
+}
+
+function clearAllErrors() {
+  document.querySelectorAll('.validation-error').forEach(el => el.classList.remove('validation-error'));
+  document.querySelectorAll('input, select, textarea').forEach(el => {
+    el.style.border = '';
+    el.style.backgroundColor = '';
+  });
+  document.querySelectorAll('.validation-banner').forEach(b => b.remove());
+}
+
+function showValidationBanner(missing) {
+  const banner = document.createElement('div');
+  banner.className = 'validation-banner';
+  banner.innerHTML = `<h3>⚠️ Complete All Required Fields</h3><p>${missing.length} field${missing.length > 1 ? 's' : ''} missing</p>`;
+
+  const firstSection = document.querySelector('.section');
+  if (firstSection) {
+    firstSection.insertBefore(banner, firstSection.firstChild);
+    setTimeout(() => { if (banner.parentNode) banner.remove(); }, 8000);
+  }
+}
+
+
+// ---------------------------------------------------------------------------
+// FORM SUBMISSION
+// ---------------------------------------------------------------------------
+
+function submitForm() {
+  if (isSubmitting) return;
+  isSubmitting = true;
+
+  if (submitBtn) {
+    submitBtn.disabled = true;
+    submitBtn.classList.add('loading');
+    submitBtn.textContent = 'Submitting...';
+  }
+
+  const data = {
+    timestamp: new Date().toISOString(),
+    location: val('location'),
+    trainer: val('trainer'),
+    trainee: val('trainee'),
+    position: val('position'),
+    trainingDay: val('trainingDay'),
+    shift: val('shift'),
+    knowledgeScore: getRadioValue('knowledge'),
+    technicalScore: getRadioValue('technical'),
+    serviceScore: getRadioValue('service'),
+    teamworkScore: getRadioValue('teamwork'),
+    professionalismScore: getRadioValue('professionalism'),
+    whatCovered: val('whatCovered'),
+    whereStruggling: val('whereStruggling'),
+    planForward: val('planForward'),
+    recapCompleted: getRadioValue('recapCompleted'),
+    recapMissedReason: val('recapMissedReason'),
+    overallNotes: val('overallNotes'),
+    photoData: photoData || '',
+    photoFileName: photoFileName || '',
+    photoMimeType: photoMimeType || ''
+  };
+
+  console.log('📤 Submitting...');
+
+  if (typeof google !== 'undefined' && google.script && google.script.run) {
+    google.script.run
+      .withSuccessHandler(onSuccess)
+      .withFailureHandler(onFailure)
+      .submitTrainingData(data);
+  } else {
+    // Test mode
+    console.log('🔧 Test mode — simulating submission');
+    setTimeout(() => onSuccess({ success: true, recordId: 'TEST-' + Date.now() }), 1500);
+  }
+}
+
+function onSuccess(response) {
+  console.log('✅ Success:', response);
+
+  if (response && response.success) {
+    form.style.display = 'none';
+    const successMsg = document.getElementById('successMessage');
+    const recordIdEl = document.getElementById('successRecordId');
+    if (recordIdEl && response.recordId) recordIdEl.textContent = response.recordId;
+    if (successMsg) successMsg.style.display = 'block';
+  } else {
+    alert('Submission issue: ' + (response ? response.error : 'Unknown error'));
+  }
+
+  resetSubmissionState();
+}
+
+function onFailure(error) {
+  console.error('❌ Failure:', error);
+  alert('Error submitting form: ' + (error.message || error.toString()));
+  resetSubmissionState();
+}
+
+function resetSubmissionState() {
+  isSubmitting = false;
+  if (submitBtn) {
+    submitBtn.disabled = false;
+    submitBtn.classList.remove('loading');
+    submitBtn.textContent = 'Submit Training Assessment';
+  }
+}
+
+
+// ---------------------------------------------------------------------------
+// UTILITIES
+// ---------------------------------------------------------------------------
+
+function val(id) {
+  const el = document.getElementById(id);
+  return el ? el.value.trim() : '';
+}
+
+function getRadioValue(name) {
+  const sel = form.querySelector(`input[name="${name}"]:checked`);
+  return sel ? sel.value : null;
+}
+
+function setText(id, text) {
+  const el = document.getElementById(id);
+  if (el) el.textContent = text;
+}
+</script>

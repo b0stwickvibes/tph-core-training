@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Accountability - Three Points Hospitality</title>
+    <?!= include('styles.html'); ?>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Training Accountability</h1>
+            <h2>Three Points Hospitality Group</h2>
+        </div>
+
+        <form id="accountabilityForm">
+            <!-- Basic Information Section -->
+            <div class="section">
+                <h3>Training Session Information</h3>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="location">Location <span class="required">*</span></label>
+                        <select id="location" name="location">
+                            <option value="">Select Location</option>
+                            <option value="Cantina Añejo">Cantina Añejo</option>
+                            <option value="Original American Kitchen">Original American Kitchen</option>
+                            <option value="White Buffalo">White Buffalo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="trainer">Trainer Name <span class="required">*</span></label>
+                        <select id="trainer" name="trainer" disabled>
+                            <option value="">Select location first</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="trainee">Trainee Name <span class="required">*</span></label>
+                        <input type="text" id="trainee" name="trainee" placeholder="Enter trainee name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="position">Position Being Trained <span class="required">*</span></label>
+                        <select id="position" name="position">
+                            <option value="">Select Position</option>
+                            <option value="Bartender">Bartender</option>
+                            <option value="Server">Server</option>
+                            <option value="Host">Host</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="trainingDay">Training Day <span class="required">*</span></label>
+                        <select id="trainingDay" name="trainingDay">
+                            <option value="">Select Day</option>
+                            <option value="1">Day 1</option>
+                            <option value="2">Day 2</option>
+                            <option value="3">Day 3</option>
+                            <option value="4">Day 4</option>
+                            <option value="5">Day 5</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="shift">Shift <span class="required">*</span></label>
+                        <select id="shift" name="shift">
+                            <option value="">Select Shift</option>
+                            <option value="Morning">Morning</option>
+                            <option value="Afternoon">Afternoon</option>
+                            <option value="Evening">Evening</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Evaluation Section -->
+            <div class="section">
+                <h3>Performance Evaluation</h3>
+
+                <!-- Knowledge & Understanding -->
+                <div class="question-block" data-question="knowledge">
+                    <div class="question-title">Knowledge & Understanding of Role <span class="required">*</span></div>
+                    <div class="rating-group">
+                        <div class="rating-option">
+                            <input type="radio" id="knowledge_1" name="knowledge" value="1">
+                            <label for="knowledge_1">
+                                <div class="score">1</div>
+                                <div class="label">Poor</div>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="knowledge_2" name="knowledge" value="2">
+                            <label for="knowledge_2">
+                                <div class="score">2</div>
+                                <div class="label">Below Average</div>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="knowledge_3" name="knowledge" value="3">
+                            <label for="knowledge_3">
+                                <div class="score">3</div>
+                                <div class="label">Average</div>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="knowledge_4" name="knowledge" value="4">
+                            <label for="knowledge_4">
+                                <div class="score">4</div>
+                                <div class="label">Good</div>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="knowledge_5" name="knowledge" value="5">
+                            <label for="knowledge_5">
+                                <div class="score">5</div>
+                                <div class="label">Excellent</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="question-block" data-question="technical">
+                    <div class="question-title">Technical Skills & Execution <span class="required">*</span></div>
+                    <div class="rating-group">
+                        <div class="rating-option">
+                            <input type="radio" id="technical_1" name="technical" value="1">
+                            <label for="technical_1">
+                                <div class="score">1</div>
+                                <div class="label">Poor</div>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="technical_2" name="technical" value="2">
+                            <label for="technical_2">
+                                <div class="score">2</div>
+                                <div class="label">Below Average</div>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="technical_3" name="technical" value="3">
+                            <label for="technical_3">
+                                <div class="score">3</div>
+                                <div class="label">Average</div>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="technical_4" name="technical" value="4">
+                            <label for="technical_4">
+                                <div class="score">4</div>
+                                <div class="label">Good</div>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="technical_5" name="technical" value="5">
+                            <label for="technical_5">
+                                <div class="score">5</div>
+                                <div class="label">Excellent</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customer Service -->
+                <div class="question-block" data-question="service">
+                    <div class="question-title">Customer Service & Communication <span class="required">*</span></div>
+                    <div class="rating-group">
+                        <div class="rating-option">
+                            <input type="radio" id="service_1" name="service" value="1">
+                            <label for="service_1">
+                                <div class="score">1</div>
+                                <div class="label">Poor</div>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="service_2" name="service" value="2">
+                            <label for="service_2">
+                                <div class="score">2</div>
+                                <div class="label">Below Average</div>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="service_3" name="service" value="3">
+                            <label for="service_3">
+                                <div class="score">3</div>
+                                <div class="label">Average</div>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="service_4" name="service" value="4">
+                            <label for="service_4">
+                                <div class="score">4</div>
+                                <div class="label">Good</div>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="service_5" name="service" value="5">
+                            <label for="service_5">
+                                <div class="score">5</div>
+                                <div class="label">Excellent</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teamwork -->
+                <div class="question-block" data-question="teamwork">
+                    <div class="question-title">Teamwork & Collaboration <span class="required">*</span></div>
+                    <div class="rating-group">
+                        <div class="rating-option">
+                            <input type="radio" id="teamwork_1" name="teamwork" value="1">
+                            <label for="teamwork_1">
+                                <div class="score">1</div>
+                                <div class="label">Poor</div>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="teamwork_2" name="teamwork" value="2">
+                            <label for="teamwork_2">
+                                <div class="score">2</div>
+                                <div class="label">Below Average</div>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="teamwork_3" name="teamwork" value="3">
+                            <label for="teamwork_3">
+                                <div class="score">3</div>
+                                <div class="label">Average</div>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="teamwork_4" name="teamwork" value="4">
+                            <label for="teamwork_4">
+                                <div class="score">4</div>
+                                <div class="label">Good</div>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="teamwork_5" name="teamwork" value="5">
+                            <label for="teamwork_5">
+                                <div class="score">5</div>
+                                <div class="label">Excellent</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professionalism -->
+                <div class="question-block" data-question="professionalism">
+                    <div class="question-title">Professionalism & Attitude <span class="required">*</span></div>
+                    <div class="rating-group">
+                        <div class="rating-option">
+                            <input type="radio" id="professionalism_1" name="professionalism" value="1">
+                            <label for="professionalism_1">
+                                <div class="score">1</div>
+                                <div class="label">Poor</div>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="professionalism_2" name="professionalism" value="2">
+                            <label for="professionalism_2">
+                                <div class="score">2</div>
+                                <div class="label">Below Average</div>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="professionalism_3" name="professionalism" value="3">
+                            <label for="professionalism_3">
+                                <div class="score">3</div>
+                                <div class="label">Average</div>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="professionalism_4" name="professionalism" value="4">
+                            <label for="professionalism_4">
+                                <div class="score">4</div>
+                                <div class="label">Good</div>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="professionalism_5" name="professionalism" value="5">
+                            <label for="professionalism_5">
+                                <div class="score">5</div>
+                                <div class="label">Excellent</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Overall Assessment -->
+                <div class="question-block" data-question="overallNotes">
+                    <div class="question-title">Overall Performance Assessment <span class="required">*</span></div>
+                    <div class="form-group">
+                        <textarea name="overallNotes" placeholder="Overall comments, areas for improvement, and recommendations for next training session..." rows="4"></textarea>
+                    </div>
+                </div>
+
+                <!-- Score Summary -->
+                <div id="scoreSummary" class="score-summary" style="display: none;">
+                    <div class="total-score" id="totalScore">0</div>
+                    <div class="performance-level" id="performanceLevel"></div>
+                    <div class="score-breakdown">
+                        <div>Knowledge: <span id="knowledgeScore">0</span>/5</div>
+                        <div>Technical Skills: <span id="technicalScore">0</span>/5</div>
+                        <div>Customer Service: <span id="serviceScore">0</span>/5</div>
+                        <div>Teamwork: <span id="teamworkScore">0</span>/5</div>
+                        <div>Professionalism: <span id="professionalismScore">0</span>/5</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="submit-section">
+                <button type="submit" class="submit-btn" id="submitBtn">Submit Training Assessment</button>
+            </div>
+        </form>
+
+        <div id="successMessage" style="display: none;">
+            <h3>Assessment Submitted Successfully!</h3>
+            <p>The training accountability record has been saved to the system.</p>
+            <button onclick="window.location.reload()">Submit Another Assessment</button>
+        </div>
+    </div>
+
+    <?!= include('script.html'); ?>
+</body>
+</html>
