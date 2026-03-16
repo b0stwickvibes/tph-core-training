@@ -154,10 +154,12 @@ Source: Trainer Manual: Host (TRAINUAL VERSION) + CORE Trainee Manual: Host
 - **File:** `PHASE-5-universal-docs/EVAL_30Day_Rubric.md` (239 lines)
 
 ### Step 15: Enhanced Accountability Form
-- [ ] You're managing the app side
-- [ ] Confirm 3 questions are live + photo upload functional
-- [ ] Test before launch
-- **Spec file:** `PHASE-5-universal-docs/ACCOUNTABILITY_Form_Spec.md` (176 lines)
+- [x] You're managing the app side — **Trainer Assessment Tool is LIVE**
+- [x] Trainer-side scoring (5 categories, 1-5 scale) is live with 36+ real submissions across all 3 locations
+- [x] Test before launch — production-tested Jan–Mar 2026 with real trainer/trainee data
+- **App files:** `ACCOUNTABILITY-files/code.gs` (1,849 lines), `index.html`, `script.html`, `styles.html`
+- **Spec file:** `ACCOUNTABILITY-files/ACCOUNTABILITY_Form_Spec.md` (176 lines)
+- ⚠️ **OPEN ITEM:** The spec describes a **trainee-submitted** self-accountability form (3 questions + photo upload) that is a **separate companion tool** to the trainer assessment. This has not been built yet. The trainer-side tool is complete.
 
 ---
 
@@ -183,9 +185,9 @@ Source: Trainer Manual: Host (TRAINUAL VERSION) + CORE Trainee Manual: Host
 | **Phase 2** | ✅ Complete | Server checklists (5), Google Sheets builders, enriched trainee manual. |
 | **Phase 3** | ✅ Complete | Host checklists (5), Google Sheets builders, enriched trainee manual. |
 | **Phase 4** | ⬜ Not started | SA, Barback, Security, Bottle Girl — new role builds. |
-| **Phase 5** | 🟡 In progress | Protocol ✅. Trainer Agenda ✅. 30-Day Rubric ✅. Accountability Form spec ✅ — app-side pending. |
+| **Phase 5** | ✅ Complete | Protocol ✅. Trainer Agenda ✅. 30-Day Rubric (OAK + Cantina) ✅. Accountability Form spec ✅. Trainer Assessment app LIVE. Trainee self-form TBD. |
 | **Phase 6** | ⬜ Deferred | Duplicate content problem — accepted for now (Option 3). |
 
 ---
 
-**NEXT UP: Confirm trainer incentive $ amounts with Tony → mark Step 15 complete once app-side is live → Phase 4 new role builds (SA, Barback, Security, Bottle Girl).**
+**NEXT UP: Phase 4 new role builds (SA, Barback, Security, Bottle Girl). Also: build trainee self-accountability form (spec in ACCOUNTABILITY-files/) as a companion to the live trainer assessment tool.**
