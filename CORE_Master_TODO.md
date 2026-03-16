@@ -1,5 +1,5 @@
 # C.O.R.E. RESTRUCTURE — MASTER TODO LIST
-**Last Updated: March 16, 2026**
+**Last Updated: March 17, 2026**
 
 ---
 
@@ -136,21 +136,28 @@ Source: Trainer Manual: Host (TRAINUAL VERSION) + CORE Trainee Manual: Host
 - [x] Content protocol built: bucket templates (Skill / Process / Guest-Facing), priority logic, compression rules, formatting rules, quality checklist
 - **File:** `PROTOCOL_Enriched_Trainee_Manual.md` (375 lines)
 
-### Step 13: Trainer Retraining Agenda
-- [ ] Universal template with role-specific inserts
-- [ ] Covers: checklist walkthrough, live demos, accountability expectations, incentive structure, 30-day mentorship
-- [ ] Prep for 5-hour workshop
-- [ ] Estimated effort: 1-2 hours
+### Step 13: Trainer Retraining Agenda — DONE ✅
+- [x] Universal template with role-specific inserts
+- [x] Covers: checklist walkthrough, live demos, accountability expectations, incentive structure, 30-day mentorship
+- [x] 5-hour workshop structured across 6 blocks
+- [x] Role-specific day-by-day walkthrough sections (Bartender/Server/Host) with CFUs and trainer gap notes
+- [x] Trainer Commitment Card included
+- [ ] **PENDING:** Confirm incentive dollar amounts with Tony (per-shift, completion bonus, 30-day bonus — all marked TBD)
+- **File:** `PHASE-5-universal-docs/TRAINER_Retraining_Agenda.md` (294 lines)
 
-### Step 14: 30-Day Evaluation Rubric
-- [ ] Universal criteria + role-specific scoring
-- [ ] Formalize pass/conditional/fail thresholds
-- [ ] Estimated effort: 1 hour
+### Step 14: 30-Day Evaluation Rubric — DONE ✅
+- [x] Universal criteria (Professionalism, Accountability, Team Communication, Guest Interaction)
+- [x] Role-specific scoring inserts for Bartender, Server, Host
+- [x] Pass / Conditional Pass / Needs Improvement thresholds formalized (85% / 70-84% / below 70%)
+- [x] N/O scoring handled in denominator logic
+- [x] Evaluator Notes section included
+- **File:** `PHASE-5-universal-docs/EVAL_30Day_Rubric.md` (239 lines)
 
 ### Step 15: Enhanced Accountability Form
 - [ ] You're managing the app side
 - [ ] Confirm 3 questions are live + photo upload functional
 - [ ] Test before launch
+- **Spec file:** `PHASE-5-universal-docs/ACCOUNTABILITY_Form_Spec.md` (176 lines)
 
 ---
 
@@ -176,9 +183,9 @@ Source: Trainer Manual: Host (TRAINUAL VERSION) + CORE Trainee Manual: Host
 | **Phase 2** | ✅ Complete | Server checklists (5), Google Sheets builders, enriched trainee manual. |
 | **Phase 3** | ✅ Complete | Host checklists (5), Google Sheets builders, enriched trainee manual. |
 | **Phase 4** | ⬜ Not started | SA, Barback, Security, Bottle Girl — new role builds. |
-| **Phase 5** | 🟡 In progress | Protocol built ✅. Trainer retraining agenda, 30-day rubric, accountability form still pending. |
+| **Phase 5** | 🟡 In progress | Protocol ✅. Trainer Agenda ✅. 30-Day Rubric ✅. Accountability Form spec ✅ — app-side pending. |
 | **Phase 6** | ⬜ Deferred | Duplicate content problem — accepted for now (Option 3). |
 
 ---
 
-**NEXT UP: Phase 5 remaining items (Trainer Retraining Agenda, 30-Day Eval Rubric) → then Phase 4 new role builds.**
+**NEXT UP: Confirm trainer incentive $ amounts with Tony → mark Step 15 complete once app-side is live → Phase 4 new role builds (SA, Barback, Security, Bottle Girl).**
