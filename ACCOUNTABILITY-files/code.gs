@@ -654,23 +654,28 @@ function createLocationSummarySheet(ss) {
     row++;
 
     // All formulas use named ranges — never break when columns shift
+    var locQ  = '"' + location + '"';
     var metricsFormulas = [
       ['Total Assessments',
-        '=COUNTIF(tr_location,"' + location + '")',
-        '=COUNTIFS(tr_location,"' + location + '",tr_timestamp,">="&' + thisMonthStart + ',tr_timestamp,"<="&TODAY())',
-        '=COUNTIFS(tr_location,"' + location + '",tr_timestamp,">="&' + lastMonthStart + ',tr_timestamp,"<="&' + lastMonthEnd + ')',
-        '', 'Count'],
+        '=COUNTIF(tr_location,' + locQ + ')',
+        '=COUNTIFS(tr_location,' + locQ + ',tr_timestamp,">="&' + thisMonthStart + ',tr_timestamp,"<="&TODAY())',
+        '=COUNTIFS(tr_location,' + locQ + ',tr_timestamp,">="&' + lastMonthStart + ',tr_timestamp,"<="&' + lastMonthEnd + ')',
+        '=IFERROR(B' + (row+0) + '-C' + (row+0) + ',"")', 'Count'],
       ['Average Score (%)',
-        '=IFERROR(ROUND(AVERAGEIF(tr_location,"' + location + '",tr_percentage),1),0)',
-        '=IFERROR(ROUND(AVERAGEIFS(tr_percentage,tr_location,"' + location + '",tr_timestamp,">="&' + thisMonthStart + ',tr_timestamp,"<="&TODAY()),1),0)',
-        '=IFERROR(ROUND(AVERAGEIFS(tr_percentage,tr_location,"' + location + '",tr_timestamp,">="&' + lastMonthStart + ',tr_timestamp,"<="&' + lastMonthEnd + '),1),0)',
-        '', 'Percentage column'],
+        '=IFERROR(ROUND(AVERAGEIF(tr_location,' + locQ + ',tr_percentage),1),0)',
+        '=IFERROR(ROUND(AVERAGEIFS(tr_percentage,tr_location,' + locQ + ',tr_timestamp,">="&' + thisMonthStart + ',tr_timestamp,"<="&TODAY()),1),0)',
+        '=IFERROR(ROUND(AVERAGEIFS(tr_percentage,tr_location,' + locQ + ',tr_timestamp,">="&' + lastMonthStart + ',tr_timestamp,"<="&' + lastMonthEnd + '),1),0)',
+        '=IFERROR(B' + (row+1) + '-C' + (row+1) + ',"")', 'Percentage column'],
       ['Excellence Rate (%)',
-        '=IFERROR(ROUND(COUNTIFS(tr_location,"' + location + '",tr_performance_level,"Excellent")/COUNTIF(tr_location,"' + location + '")*100,1),0)',
-        '', '', '', 'All-time only'],
+        '=IFERROR(ROUND(COUNTIFS(tr_location,' + locQ + ',tr_performance_level,"Excellent")/COUNTIF(tr_location,' + locQ + ')*100,1),0)',
+        '=IFERROR(ROUND(COUNTIFS(tr_location,' + locQ + ',tr_performance_level,"Excellent",tr_timestamp,">="&' + thisMonthStart + ',tr_timestamp,"<="&TODAY())/COUNTIFS(tr_location,' + locQ + ',tr_timestamp,">="&' + thisMonthStart + ',tr_timestamp,"<="&TODAY())*100,1),0)',
+        '=IFERROR(ROUND(COUNTIFS(tr_location,' + locQ + ',tr_performance_level,"Excellent",tr_timestamp,">="&' + lastMonthStart + ',tr_timestamp,"<="&' + lastMonthEnd + ')/COUNTIFS(tr_location,' + locQ + ',tr_timestamp,">="&' + lastMonthStart + ',tr_timestamp,"<="&' + lastMonthEnd + ')*100,1),0)',
+        '=IFERROR(B' + (row+2) + '-C' + (row+2) + ',"")', '≥90% score'],
       ['Active Trainers',
         '=' + TRAINER_COUNTS[location],
-        '', '', '', 'Roster count']
+        '=B' + (row+3),
+        '=B' + (row+3),
+        '', 'Roster count']
     ];
 
     sheet.getRange(row, 1, metricsFormulas.length, 6).setValues(metricsFormulas);
@@ -783,7 +788,11 @@ function populateAnalyticsDashboard(ss, records) {
     if (!r[COLUMNS.TIMESTAMP] || !r[COLUMNS.LOCATION]) return;
     const ts = new Date(r[COLUMNS.TIMESTAMP]);
     const pct = parseFloat(r[COLUMNS.PERCENTAGE]) || 0;
-    const level = r[COLUMNS.PERFORMANCE_LEVEL] || '';
+    // Derive level from pct if the stored value is blank (handles un-backfilled rows)
+    const storedLevel = (r[COLUMNS.PERFORMANCE_LEVEL] || '').toString().trim();
+    const level = storedLevel || (pct >= CONFIG.SCORING.THRESHOLDS.EXCELLENT ? 'Excellent'
+                                : pct >= CONFIG.SCORING.THRESHOLDS.GOOD      ? 'Good'
+                                : pct > 0                                     ? 'Needs Improvement' : '');
     const trainer = r[COLUMNS.TRAINER];
     const trainee = r[COLUMNS.TRAINEE];
     const loc = r[COLUMNS.LOCATION];
@@ -885,7 +894,7 @@ function populateTrainerPerformance(ss, records) {
     if (!grouped[key]) grouped[key] = { loc: loc, trainer: trainer, month: month, count: 0, scoreSum: 0, successes: 0 };
     grouped[key].count++;
     grouped[key].scoreSum += pct;
-    if (pct >= 80) grouped[key].successes++;
+    if (pct >= CONFIG.SCORING.THRESHOLDS.GOOD) grouped[key].successes++;
   });
 
   // Sort and write by location section
@@ -962,7 +971,10 @@ function populateMonthlyLocationPerformance(ss, records) {
     const loc = r[COLUMNS.LOCATION];
     const ts = new Date(r[COLUMNS.TIMESTAMP]);
     const pct = parseFloat(r[COLUMNS.PERCENTAGE]) || 0;
-    const level = r[COLUMNS.PERFORMANCE_LEVEL] || '';
+    const storedLevel = (r[COLUMNS.PERFORMANCE_LEVEL] || '').toString().trim();
+    const level = storedLevel || (pct >= CONFIG.SCORING.THRESHOLDS.EXCELLENT ? 'Excellent'
+                                : pct >= CONFIG.SCORING.THRESHOLDS.GOOD      ? 'Good'
+                                : pct > 0                                     ? 'Needs Improvement' : '');
     if (isNaN(ts.getTime())) return;
 
     const month = Utilities.formatDate(ts, Session.getScriptTimeZone(), 'MMM yyyy');

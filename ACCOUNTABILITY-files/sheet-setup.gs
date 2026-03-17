@@ -355,23 +355,28 @@ function step7_rebuildLocationSummaryFormulas(ss) {
       .setBackground('#8FA4A7').setFontColor('#FFFFFF').setFontWeight('bold');
     row++;
 
+    var locQ = '"' + location + '"';
     var formulas = [
       ['Total Assessments',
-        '=COUNTIF(tr_location,"' + location + '")',
-        '=COUNTIFS(tr_location,"' + location + '",tr_timestamp,">="&' + thisMonthStart + ',tr_timestamp,"<="&TODAY())',
-        '=COUNTIFS(tr_location,"' + location + '",tr_timestamp,">="&' + lastMonthStart + ',tr_timestamp,"<="&' + lastMonthEnd + ')',
-        '', 'Count'],
+        '=COUNTIF(tr_location,' + locQ + ')',
+        '=COUNTIFS(tr_location,' + locQ + ',tr_timestamp,">="&' + thisMonthStart + ',tr_timestamp,"<="&TODAY())',
+        '=COUNTIFS(tr_location,' + locQ + ',tr_timestamp,">="&' + lastMonthStart + ',tr_timestamp,"<="&' + lastMonthEnd + ')',
+        '=IFERROR(B' + (row+0) + '-C' + (row+0) + ',"")', 'Count'],
       ['Average Score (%)',
-        '=IFERROR(ROUND(AVERAGEIF(tr_location,"' + location + '",tr_percentage),1),0)',
-        '=IFERROR(ROUND(AVERAGEIFS(tr_percentage,tr_location,"' + location + '",tr_timestamp,">="&' + thisMonthStart + ',tr_timestamp,"<="&TODAY()),1),0)',
-        '=IFERROR(ROUND(AVERAGEIFS(tr_percentage,tr_location,"' + location + '",tr_timestamp,">="&' + lastMonthStart + ',tr_timestamp,"<="&' + lastMonthEnd + '),1),0)',
-        '', 'Percentage column'],
+        '=IFERROR(ROUND(AVERAGEIF(tr_location,' + locQ + ',tr_percentage),1),0)',
+        '=IFERROR(ROUND(AVERAGEIFS(tr_percentage,tr_location,' + locQ + ',tr_timestamp,">="&' + thisMonthStart + ',tr_timestamp,"<="&TODAY()),1),0)',
+        '=IFERROR(ROUND(AVERAGEIFS(tr_percentage,tr_location,' + locQ + ',tr_timestamp,">="&' + lastMonthStart + ',tr_timestamp,"<="&' + lastMonthEnd + '),1),0)',
+        '=IFERROR(B' + (row+1) + '-C' + (row+1) + ',"")', 'Percentage column'],
       ['Excellence Rate (%)',
-        '=IFERROR(ROUND(COUNTIFS(tr_location,"' + location + '",tr_performance_level,"Excellent")/COUNTIF(tr_location,"' + location + '")*100,1),0)',
-        '', '', '', 'All-time only'],
+        '=IFERROR(ROUND(COUNTIFS(tr_location,' + locQ + ',tr_performance_level,"Excellent")/COUNTIF(tr_location,' + locQ + ')*100,1),0)',
+        '=IFERROR(ROUND(COUNTIFS(tr_location,' + locQ + ',tr_performance_level,"Excellent",tr_timestamp,">="&' + thisMonthStart + ',tr_timestamp,"<="&TODAY())/COUNTIFS(tr_location,' + locQ + ',tr_timestamp,">="&' + thisMonthStart + ',tr_timestamp,"<="&TODAY())*100,1),0)',
+        '=IFERROR(ROUND(COUNTIFS(tr_location,' + locQ + ',tr_performance_level,"Excellent",tr_timestamp,">="&' + lastMonthStart + ',tr_timestamp,"<="&' + lastMonthEnd + ')/COUNTIFS(tr_location,' + locQ + ',tr_timestamp,">="&' + lastMonthStart + ',tr_timestamp,"<="&' + lastMonthEnd + ')*100,1),0)',
+        '=IFERROR(B' + (row+2) + '-C' + (row+2) + ',"")', '≥90% score'],
       ['Active Trainers',
         '=' + SETUP_TRAINER_COUNTS[location],
-        '', '', '', 'Roster count']
+        '=B' + (row+3),
+        '=B' + (row+3),
+        '', 'Roster count']
     ];
 
     ls.getRange(row, 1, formulas.length, 6).setValues(formulas);
