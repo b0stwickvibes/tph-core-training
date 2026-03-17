@@ -445,16 +445,47 @@ function checkAlertConditions(data, percentage, performanceLevel, recordId) {
   // Send alert email if any flags triggered
   if (alerts.length > 0) {
     try {
-      const subject = CONFIG.EMAIL.SUBJECT_PREFIX + ' ⚠️ Training Alert — ' + data.trainee + ' (' + recordId + ')';
-      const body = 'Training Alert Summary\n' +
-        'Record: ' + recordId + '\n' +
-        'Trainee: ' + data.trainee + ' | Trainer: ' + data.trainer + '\n' +
-        'Location: ' + data.location + ' | Day ' + data.trainingDay + '\n' +
-        'Score: ' + Math.round(percentage * 100) + '% (' + performanceLevel + ')\n\n' +
-        alerts.join('\n\n');
+      const subject = CONFIG.EMAIL.SUBJECT_PREFIX + ' ⚠️ Alert — ' +
+        data.trainer + ' → ' + data.trainee + ' | Day ' + data.trainingDay + ' | ' + data.location;
+
+      const alertRows = alerts.map(function(a) {
+        return '<tr><td style="padding:10px 14px;border-bottom:1px solid #fcc;font-size:13px;line-height:1.5;">' + a + '</td></tr>';
+      }).join('');
+
+      const htmlBody = `
+<div style="font-family:Arial,sans-serif;max-width:620px;margin:0 auto;color:#333;">
+  <div style="background:#EA4335;padding:18px 24px;border-radius:8px 8px 0 0;">
+    <h2 style="margin:0;color:#fff;font-size:17px;">⚠️ C.O.R.E. Training Alert</h2>
+    <p style="margin:4px 0 0;color:#fdd;font-size:13px;">Three Points Hospitality &nbsp;|&nbsp; ${data.location}</p>
+  </div>
+  <div style="background:#fef2f2;padding:12px 24px;border-left:4px solid #EA4335;font-size:14px;">
+    <strong>Trainer:</strong> ${data.trainer} &nbsp;&nbsp;
+    <strong>Trainee:</strong> ${data.trainee} &nbsp;&nbsp;
+    <strong>Day:</strong> ${data.trainingDay}<br>
+    <strong>Score:</strong> ${Math.round(percentage * 100)}% — ${performanceLevel} &nbsp;&nbsp;
+    <strong>Record:</strong> <span style="font-size:11px;color:#888;">${recordId}</span>
+  </div>
+  <div style="padding:20px 24px;">
+    <h3 style="font-size:14px;color:#EA4335;border-bottom:2px solid #EA4335;padding-bottom:6px;margin-bottom:12px;">
+      ${alerts.length} Flag${alerts.length > 1 ? 's' : ''} Triggered
+    </h3>
+    <table style="width:100%;border-collapse:collapse;background:#fff9f9;border:1px solid #fcc;border-radius:4px;">
+      ${alertRows}
+    </table>
+  </div>
+  <div style="background:#f5f5f5;padding:12px 24px;border-top:1px solid #ddd;
+    border-radius:0 0 8px 8px;font-size:11px;color:#999;text-align:center;">
+    C.O.R.E. Training Accountability System &nbsp;|&nbsp; Three Points Hospitality
+  </div>
+</div>`;
+
+      const plainBody = 'Training Alert — ' + data.trainer + ' → ' + data.trainee +
+        '\nDay ' + data.trainingDay + ' | ' + data.location +
+        '\nScore: ' + Math.round(percentage * 100) + '% (' + performanceLevel + ')' +
+        '\nRecord: ' + recordId + '\n\n' + alerts.join('\n\n');
 
       CONFIG.EMAIL.RECIPIENTS.forEach(function(email) {
-        MailApp.sendEmail(email, subject, body);
+        MailApp.sendEmail({ to: email, subject: subject, body: plainBody, htmlBody: htmlBody });
       });
       console.log('✓ Alert email sent: ' + alerts.length + ' flag(s)');
     } catch (e) {
@@ -504,40 +535,176 @@ function sendNotificationSafe(data, recordId, totalScore, percentage, performanc
       return;
     }
 
-    const subject = CONFIG.EMAIL.SUBJECT_PREFIX + ' ' + performanceLevel + ' — ' + data.trainee + ' Day ' + data.trainingDay;
-    const bodyParts = [
-      'Training Assessment Submitted',
-      '',
-      'Record ID: ' + recordId,
-      'Location: ' + data.location,
-      'Trainer: ' + data.trainer,
-      'Trainee: ' + data.trainee,
-      'Position: ' + data.position,
-      'Training Day: ' + data.trainingDay,
-      'Shift: ' + (data.shift || 'Not specified'),
-      '',
-      '--- Scores ---',
-      'Performance: ' + data.performanceScore,
-      'Knowledge:   ' + data.knowledgeScore,
-      'Attitude:    ' + data.attitudeScore,
-      'Total: ' + totalScore + '/15 (' + Math.round(percentage * 100) + '%)',
-      'Performance Level: ' + performanceLevel,
-      '',
-      '--- Accountability ---',
-      'What was covered: ' + (data.whatCovered || 'N/A'),
-      'Where struggling: ' + (data.whereStruggling || 'N/A'),
-      'Plan forward: ' + (data.planForward || 'N/A'),
-      'Recap: ' + (data.recap || 'N/A')
-    ];
+    // Subject includes trainer + trainee + day
+    const subject = CONFIG.EMAIL.SUBJECT_PREFIX + ' Training Assessment — ' +
+      data.trainer + ' → ' + data.trainee + ' | Day ' + data.trainingDay + ' | ' + performanceLevel;
 
-    bodyParts.push('Checklist photo: ' + (data.photoUrl ? 'Uploaded' : 'Not uploaded'));
-    bodyParts.push('');
-    bodyParts.push('Overall notes: ' + (data.overallNotes || 'None'));
+    // Badge colour by performance level
+    const levelColor = performanceLevel === 'Excellent'          ? '#34A853'
+                     : performanceLevel === 'Good'               ? '#4285F4'
+                     : /* Needs Improvement */                     '#EA4335';
 
-    const body = bodyParts.join('\n');
+    const scorePercent = Math.round(percentage * 100);
+
+    // Photo block — Drive link as a button (inline embed not possible from Drive URLs)
+    const photoBlock = data.photoUrl
+      ? '<a href="' + data.photoUrl + '" style="display:inline-block;padding:8px 16px;' +
+        'background:#4285F4;color:#fff;text-decoration:none;border-radius:4px;font-size:13px;">' +
+        '📷 View Checklist Photo</a>'
+      : '<span style="color:#999;font-style:italic;">No photo uploaded</span>';
+
+    const htmlBody = `
+<div style="font-family:Arial,sans-serif;max-width:620px;margin:0 auto;color:#333;">
+
+  <!-- Header bar -->
+  <div style="background:#2C5AA0;padding:20px 24px;border-radius:8px 8px 0 0;">
+    <h2 style="margin:0;color:#fff;font-size:18px;letter-spacing:0.5px;">
+      C.O.R.E. Training Assessment Submitted
+    </h2>
+    <p style="margin:4px 0 0;color:#c8d8f0;font-size:13px;">
+      Three Points Hospitality &nbsp;|&nbsp; ${data.location}
+    </p>
+  </div>
+
+  <!-- Session summary strip -->
+  <div style="background:#f0f4fb;padding:14px 24px;border-left:4px solid #2C5AA0;">
+    <table style="width:100%;border-collapse:collapse;font-size:14px;">
+      <tr>
+        <td style="padding:4px 12px 4px 0;color:#555;width:130px;"><strong>Trainer</strong></td>
+        <td style="padding:4px 0;">${data.trainer}</td>
+        <td style="padding:4px 12px 4px 24px;color:#555;width:130px;"><strong>Training Day</strong></td>
+        <td style="padding:4px 0;">Day ${data.trainingDay}</td>
+      </tr>
+      <tr>
+        <td style="padding:4px 12px 4px 0;color:#555;"><strong>Trainee</strong></td>
+        <td style="padding:4px 0;">${data.trainee}</td>
+        <td style="padding:4px 12px 4px 24px;color:#555;"><strong>Position</strong></td>
+        <td style="padding:4px 0;">${data.position}</td>
+      </tr>
+      <tr>
+        <td style="padding:4px 12px 4px 0;color:#555;"><strong>Shift</strong></td>
+        <td style="padding:4px 0;">${data.shift || 'Not specified'}</td>
+        <td style="padding:4px 12px 4px 24px;color:#555;"><strong>Record ID</strong></td>
+        <td style="padding:4px 0;font-size:11px;color:#888;">${recordId}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div style="padding:20px 24px;">
+
+    <!-- Performance badge -->
+    <div style="margin-bottom:20px;text-align:center;">
+      <span style="display:inline-block;background:${levelColor};color:#fff;
+        padding:10px 28px;border-radius:24px;font-size:16px;font-weight:bold;letter-spacing:0.5px;">
+        ${performanceLevel} &nbsp;|&nbsp; ${scorePercent}%
+      </span>
+      <div style="color:#888;font-size:12px;margin-top:6px;">
+        Total Score: ${totalScore} / 15
+      </div>
+    </div>
+
+    <!-- Score breakdown -->
+    <table style="width:100%;border-collapse:collapse;margin-bottom:20px;font-size:14px;">
+      <thead>
+        <tr style="background:#8FA4A7;color:#fff;">
+          <th style="padding:8px 12px;text-align:left;">Category</th>
+          <th style="padding:8px 12px;text-align:center;">Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background:#f9f9f9;">
+          <td style="padding:8px 12px;border-bottom:1px solid #eee;">Performance</td>
+          <td style="padding:8px 12px;text-align:center;border-bottom:1px solid #eee;">${data.performanceScore}</td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;border-bottom:1px solid #eee;">Knowledge</td>
+          <td style="padding:8px 12px;text-align:center;border-bottom:1px solid #eee;">${data.knowledgeScore}</td>
+        </tr>
+        <tr style="background:#f9f9f9;">
+          <td style="padding:8px 12px;">Attitude</td>
+          <td style="padding:8px 12px;text-align:center;">${data.attitudeScore}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Accountability section -->
+    <h3 style="font-size:14px;color:#2C5AA0;border-bottom:2px solid #2C5AA0;
+      padding-bottom:6px;margin-bottom:12px;">Accountability Notes</h3>
+
+    <table style="width:100%;border-collapse:collapse;font-size:13px;margin-bottom:20px;">
+      <tr style="background:#f9f9f9;">
+        <td style="padding:8px 12px;font-weight:bold;color:#555;width:160px;vertical-align:top;
+          border-bottom:1px solid #eee;">What Was Covered</td>
+        <td style="padding:8px 12px;border-bottom:1px solid #eee;">${data.whatCovered || '<em style="color:#aaa">Not provided</em>'}</td>
+      </tr>
+      <tr>
+        <td style="padding:8px 12px;font-weight:bold;color:#555;vertical-align:top;
+          border-bottom:1px solid #eee;">Where Struggling</td>
+        <td style="padding:8px 12px;border-bottom:1px solid #eee;">${data.whereStruggling || '<em style="color:#aaa">Not provided</em>'}</td>
+      </tr>
+      <tr style="background:#f9f9f9;">
+        <td style="padding:8px 12px;font-weight:bold;color:#555;vertical-align:top;
+          border-bottom:1px solid #eee;">Plan for Next Shift</td>
+        <td style="padding:8px 12px;border-bottom:1px solid #eee;">${data.planForward || '<em style="color:#aaa">Not provided</em>'}</td>
+      </tr>
+      <tr>
+        <td style="padding:8px 12px;font-weight:bold;color:#555;vertical-align:top;">End-of-Shift Recap</td>
+        <td style="padding:8px 12px;">${data.recap || 'N/A'}</td>
+      </tr>
+    </table>
+
+    <!-- Overall notes -->
+    ${data.overallNotes ? `
+    <div style="background:#fffbea;border-left:4px solid #f4c542;padding:12px 16px;
+      border-radius:0 4px 4px 0;margin-bottom:20px;font-size:13px;">
+      <strong style="color:#555;">Overall Notes:</strong><br>
+      ${data.overallNotes.replace(/\n/g, '<br>')}
+    </div>` : ''}
+
+    <!-- Checklist photo -->
+    <h3 style="font-size:14px;color:#2C5AA0;border-bottom:2px solid #2C5AA0;
+      padding-bottom:6px;margin-bottom:12px;">Checklist Photo</h3>
+    <p style="margin:0 0 20px;font-size:13px;">${photoBlock}</p>
+    ${data.photoUrl ? '<p style="font-size:11px;color:#aaa;margin:-14px 0 20px;">File saved in Google Drive under ' +
+      'TPH Training Checklists / ' + data.location + ' / ' + data.trainee + '</p>' : ''}
+
+  </div>
+
+  <!-- Footer -->
+  <div style="background:#f5f5f5;padding:14px 24px;border-top:1px solid #ddd;
+    border-radius:0 0 8px 8px;font-size:11px;color:#999;text-align:center;">
+    C.O.R.E. Training Accountability System &nbsp;|&nbsp; Three Points Hospitality<br>
+    This notification was auto-generated on form submission.
+  </div>
+
+</div>`;
+
+    // Plain-text fallback
+    const plainBody = [
+      'C.O.R.E. Training Assessment — ' + data.trainer + ' → ' + data.trainee,
+      'Day ' + data.trainingDay + ' | ' + data.location + ' | ' + (data.shift || 'No shift'),
+      '',
+      'Score: ' + scorePercent + '% (' + totalScore + '/15) — ' + performanceLevel,
+      'Performance: ' + data.performanceScore + '  Knowledge: ' + data.knowledgeScore + '  Attitude: ' + data.attitudeScore,
+      '',
+      'What Was Covered: ' + (data.whatCovered || 'N/A'),
+      'Where Struggling: ' + (data.whereStruggling || 'N/A'),
+      'Plan for Next Shift: ' + (data.planForward || 'N/A'),
+      'Recap: ' + (data.recap || 'N/A'),
+      '',
+      'Overall Notes: ' + (data.overallNotes || 'None'),
+      'Checklist Photo: ' + (data.photoUrl || 'Not uploaded'),
+      '',
+      'Record ID: ' + recordId
+    ].join('\n');
 
     CONFIG.EMAIL.RECIPIENTS.forEach(function(email) {
-      MailApp.sendEmail(email, subject, body);
+      MailApp.sendEmail({
+        to: email,
+        subject: subject,
+        body: plainBody,
+        htmlBody: htmlBody
+      });
     });
 
     PropertiesService.getScriptProperties().setProperty(hourKey, (count + 1).toString());
