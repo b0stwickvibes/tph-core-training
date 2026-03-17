@@ -106,6 +106,7 @@ function runFullMigration() {
     step5_verifyHeaders(sheet);
     step6_createNamedRanges(ss, sheet);
     step7_rebuildLocationSummaryFormulas(ss);
+    step8_backfillScoresAndPercentage(sheet);
 
     SpreadsheetApp.flush();
     Logger.log('=== MIGRATION COMPLETE ===');
@@ -113,7 +114,7 @@ function runFullMigration() {
     ui.alert('✅ Migration Complete',
       'Training Records restructured.\n' +
       FINAL_HEADERS.length + ' named ranges created.\n\n' +
-      'Run "Refresh All Analytics" from the Training System menu to update analytics.',
+      'Now run "🔄 Refresh All Analytics" from the Training System menu.',
       ui.ButtonSet.OK
     );
 
@@ -379,6 +380,132 @@ function step7_rebuildLocationSummaryFormulas(ss) {
 
   ls.getRange('B3').setValue(new Date());
   Logger.log('  ✅ Location Summary rebuilt with named range formulas.');
+}
+
+
+// ============================================================================
+// STEP 8 — Backfill Total Score, Percentage, and Performance Level
+// for all existing rows using the new 3-score schema (max 15)
+// ============================================================================
+
+function step8_backfillScoresAndPercentage(sheet) {
+  Logger.log('Step 8: Backfilling scores and percentage for existing rows...');
+  var h = getHeaderMap(sheet);
+
+  var colPerf     = h['Performance Score'];
+  var colKnow     = h['Knowledge Score'];
+  var colAtt      = h['Attitude Score'];
+  var colTotal    = h['Total Score'];
+  var colPct      = h['Percentage'];
+  var colLevel    = h['Performance Level'];
+
+  if (!colPerf || !colKnow || !colAtt || !colTotal || !colPct || !colLevel) {
+    Logger.log('  ⚠️ One or more score columns not found — skipping backfill.');
+    return;
+  }
+
+  var lastRow = sheet.getLastRow();
+  if (lastRow <= 1) { Logger.log('  No data rows to backfill.'); return; }
+
+  var numRows = lastRow - 1;
+
+  // Read all score columns at once
+  var perfVals  = sheet.getRange(2, colPerf,  numRows, 1).getValues();
+  var knowVals  = sheet.getRange(2, colKnow,  numRows, 1).getValues();
+  var attVals   = sheet.getRange(2, colAtt,   numRows, 1).getValues();
+  var totalVals = sheet.getRange(2, colTotal, numRows, 1).getValues();
+  var pctVals   = sheet.getRange(2, colPct,   numRows, 1).getValues();
+
+  var newTotals  = [];
+  var newPcts    = [];
+  var newLevels  = [];
+  var backfilled = 0;
+
+  for (var i = 0; i < numRows; i++) {
+    var perf  = toScore(perfVals[i][0]);
+    var know  = toScore(knowVals[i][0]);
+    var att   = toScore(attVals[i][0]);
+    var total = parseInt(totalVals[i][0]) || 0;
+    var pct   = parseFloat(pctVals[i][0]) || 0;
+
+    // Only backfill rows where Percentage is missing or 0 but scores exist
+    if ((pct === 0 || pct === '') && (perf > 0 || know > 0 || att > 0)) {
+      total = perf + know + att;
+      pct   = Math.round((total / 15) * 100);
+      backfilled++;
+    }
+
+    var level = pct >= 90 ? 'Excellent' : pct >= 75 ? 'Good' : 'Needs Improvement';
+    if (pct === 0 && total === 0) level = '';
+
+    newTotals.push([total]);
+    newPcts.push([pct]);
+    newLevels.push([level]);
+  }
+
+  sheet.getRange(2, colTotal, numRows, 1).setValues(newTotals);
+  sheet.getRange(2, colPct,   numRows, 1).setValues(newPcts);
+  sheet.getRange(2, colLevel, numRows, 1).setValues(newLevels);
+
+  Logger.log('  ✅ Backfilled ' + backfilled + ' rows. All ' + numRows + ' rows verified.');
+}
+
+/** Convert a score cell value (label or number) to integer 1–5, or 0 if blank */
+function toScore(val) {
+  if (!val && val !== 0) return 0;
+  var s = val.toString().trim();
+  var map = { 'Poor': 1, 'Developing': 2, 'Average': 3, 'Strong': 4, 'Excellent': 5,
+              'Below Average': 2, 'Good': 4 }; // handle old labels too
+  if (map[s]) return map[s];
+  var n = parseInt(s);
+  return (!isNaN(n) && n >= 1 && n <= 5) ? n : 0;
+}
+
+
+// ============================================================================
+// STANDALONE — Rebuild all four analytics sheets from scratch
+// Run this from the menu after migration to get clean sheets
+// ============================================================================
+
+function rebuildAllAnalyticsSheets() {
+  var ui = SpreadsheetApp.getUi();
+  var result = ui.alert(
+    '🔄 Rebuild All Analytics Sheets?',
+    'This will DELETE and recreate:\n' +
+    '• Analytics Dashboard\n• Location Summary\n• Trainer Performance\n• Monthly Location Performance\n\n' +
+    'Training Records data is NOT affected.\n\nContinue?',
+    ui.ButtonSet.YES_NO
+  );
+  if (result !== ui.Button.YES) { ui.alert('Cancelled.'); return; }
+
+  try {
+    var ss = SpreadsheetApp.getActiveSpreadsheet();
+    var toDelete = ['Analytics Dashboard', 'Location Summary', 'Trainer Performance', 'Monthly Location Performance'];
+
+    toDelete.forEach(function(name) {
+      var s = ss.getSheetByName(name);
+      if (s) { ss.deleteSheet(s); Logger.log('Deleted: ' + name); }
+    });
+
+    // Recreate via code.gs functions (they exist in same script scope)
+    createAnalyticsSheet(ss);
+    createLocationSummarySheet(ss);
+    createTrainerPerformanceSheet(ss);
+    createMonthlyLocationPerformanceSheet(ss);
+
+    // Populate from live data
+    var records = getTrainingRecords(ss);
+    populateAnalyticsDashboard(ss, records);
+    populateTrainerPerformance(ss, records);
+    populateMonthlyLocationPerformance(ss, records);
+
+    SpreadsheetApp.flush();
+    Logger.log('✅ All analytics sheets rebuilt from ' + records.length + ' records.');
+    ui.alert('✅ Done', 'All analytics sheets rebuilt from ' + records.length + ' records.', ui.ButtonSet.OK);
+
+  } catch (e) {
+    ui.alert('❌ Error', e.toString(), ui.ButtonSet.OK);
+  }
 }
 
 
