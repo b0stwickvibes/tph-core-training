@@ -6,7 +6,7 @@
 // This Google Apps Script powers the Trainer Accountability Form — a web app
 // submitted by trainers at the end of every training shift. It captures:
 //   1. Session info (location, trainer, trainee, position, day, shift)
-//   2. Trainee performance scores (5 categories, 1-5 scale)
+//   2. Trainee performance scores (3 categories, named labels: Poor→Excellent)
 //   3. Three accountability questions (coverage, gaps, plan forward)
 //   4. End-of-shift recap confirmation (yes/no)
 //   5. Photo upload of signed daily floor checklist
@@ -36,9 +36,11 @@ const CONFIG = {
   },
   SCORING: {
     MAX_PER_CATEGORY: 5,
-    CATEGORIES: 5,
-    MAX_TOTAL: 25,
-    THRESHOLDS: { EXCELLENT: 90, GOOD: 75 }
+    CATEGORIES: 3,
+    MAX_TOTAL: 15,
+    THRESHOLDS: { EXCELLENT: 90, GOOD: 75 },
+    // Named label → numeric value
+    LABEL_MAP: { 'Poor': 1, 'Developing': 2, 'Average': 3, 'Strong': 4, 'Excellent': 5 }
   },
   PHOTO_UPLOAD: {
     FOLDER_NAME: 'TPH Training Checklists',
@@ -74,41 +76,36 @@ for (const loc of CONFIG.LOCATIONS) {
   TRAINER_COUNTS[loc] = TRAINERS[loc].length;
 }
 
-// Training Records column layout (A=0 through W=22)
+// Training Records column layout — A=0 through S=18 (19 columns, no Record ID)
 const COLUMNS = {
-  RECORD_ID: 0,        // A
-  TIMESTAMP: 1,         // B
-  LOCATION: 2,          // C
-  TRAINER: 3,           // D
-  TRAINEE: 4,           // E
-  POSITION: 5,          // F
-  TRAINING_DAY: 6,      // G
-  SHIFT: 7,             // H
-  PERFORMANCE_LEVEL: 8, // I
-  KNOWLEDGE: 9,         // J
-  TECHNICAL: 10,        // K
-  SERVICE: 11,          // L
-  TEAMWORK: 12,         // M
-  PROFESSIONALISM: 13,  // N
-  TOTAL_SCORE: 14,      // O
-  PERCENTAGE: 15,       // P
-  WHAT_COVERED: 16,     // Q
-  WHERE_STRUGGLING: 17, // R
-  PLAN_FORWARD: 18,     // S
-  RECAP_COMPLETED: 19,  // T
-  RECAP_MISSED_REASON: 20, // U
-  CHECKLIST_PHOTO_URL: 21,  // V
-  OVERALL_NOTES: 22     // W
+  TIMESTAMP: 0,          // A
+  LOCATION: 1,           // B
+  TRAINER: 2,            // C
+  TRAINEE: 3,            // D
+  POSITION: 4,           // E
+  TRAINING_DAY: 5,       // F
+  SHIFT: 6,              // G
+  PERFORMANCE_LEVEL: 7,  // H
+  OVERALL_NOTES: 8,      // I
+  PERFORMANCE_SCORE: 9,  // J
+  KNOWLEDGE_SCORE: 10,   // K
+  ATTITUDE_SCORE: 11,    // L
+  TOTAL_SCORE: 12,       // M
+  PERCENTAGE: 13,        // N
+  WHAT_COVERED: 14,      // O
+  WHERE_STRUGGLING: 15,  // P
+  PLAN_FORWARD: 16,      // Q
+  RECAP: 17,             // R
+  PHOTO_URL: 18          // S
 };
 
 const HEADERS = [
-  'Record ID', 'Timestamp', 'Location', 'Trainer', 'Trainee', 'Position',
-  'Training Day', 'Shift', 'Performance Level',
-  'Knowledge', 'Technical', 'Service', 'Teamwork', 'Professionalism',
+  'Timestamp', 'Location', 'Trainer', 'Trainee', 'Position',
+  'Training Day', 'Shift', 'Performance Level', 'Overall Notes',
+  'Performance Score', 'Knowledge Score', 'Attitude Score',
   'Total Score', 'Percentage',
   'What Was Covered', 'Where Struggling', 'Plan for Next Shift',
-  'Recap Completed', 'Recap Missed Reason', 'Checklist Photo URL',
-  'Overall Notes'
+  'Recap', 'Checklist Photo URL'
 ];
 
 
@@ -149,6 +146,8 @@ function onOpen() {
     .addSeparator()
     .addItem('🎨 Apply Location Colors', 'applyLocationColorCoding')
     .addItem('💰 Format PAID VALIDATION', 'formatPaidValidationSheet')
+    .addSeparator()
+    .addItem('🔧 Run Sheet Migration (one-time)', 'runFullMigration')
     .addItem('⚙️ System Setup (First Time)', 'initializeSystem')
     .addToUi();
 }
@@ -165,9 +164,8 @@ function submitTrainingData(data) {
     // --- Validate required fields ---
     const required = [
       'location', 'trainer', 'trainee', 'position', 'trainingDay',
-      'knowledgeScore', 'technicalScore', 'serviceScore',
-      'teamworkScore', 'professionalismScore',
-      'whatCovered', 'whereStruggling', 'planForward', 'recapCompleted'
+      'performanceScore', 'knowledgeScore', 'attitudeScore',
+      'whatCovered', 'whereStruggling', 'planForward', 'recap'
     ];
     for (const field of required) {
       if (!data[field] && data[field] !== 0 && data[field] !== false) {
@@ -175,15 +173,19 @@ function submitTrainingData(data) {
       }
     }
 
-    // --- Calculate scores ---
-    const scores = {
-      knowledge: parseInt(data.knowledgeScore),
-      technical: parseInt(data.technicalScore),
-      service: parseInt(data.serviceScore),
-      teamwork: parseInt(data.teamworkScore),
-      professionalism: parseInt(data.professionalismScore)
+    // --- Convert named labels → numbers and calculate scores ---
+    const labelToNum = function(label) {
+      var n = CONFIG.SCORING.LABEL_MAP[label];
+      if (n) return n;
+      var parsed = parseInt(label);
+      return (!isNaN(parsed) && parsed >= 1 && parsed <= 5) ? parsed : 0;
     };
-    const totalScore = Object.values(scores).reduce(function(a, b) { return a + b; }, 0);
+    const scores = {
+      performance: labelToNum(data.performanceScore),
+      knowledge:   labelToNum(data.knowledgeScore),
+      attitude:    labelToNum(data.attitudeScore)
+    };
+    const totalScore = scores.performance + scores.knowledge + scores.attitude;
     const percentage = Math.round((totalScore / CONFIG.SCORING.MAX_TOTAL) * 100);
     const performanceLevel = percentage >= CONFIG.SCORING.THRESHOLDS.EXCELLENT ? 'Excellent'
       : percentage >= CONFIG.SCORING.THRESHOLDS.GOOD ? 'Good'
@@ -213,19 +215,16 @@ function submitTrainingData(data) {
       position: data.position,
       trainingDay: data.trainingDay,
       shift: data.shift,
+      performanceScore: data.performanceScore,
       knowledgeScore: data.knowledgeScore,
-      technicalScore: data.technicalScore,
-      serviceScore: data.serviceScore,
-      teamworkScore: data.teamworkScore,
-      professionalismScore: data.professionalismScore,
+      attitudeScore: data.attitudeScore,
       totalScore: totalScore,
       percentage: percentage,
       performanceLevel: performanceLevel,
       whatCovered: data.whatCovered,
       whereStruggling: data.whereStruggling,
       planForward: data.planForward,
-      recapCompleted: data.recapCompleted,
-      recapMissedReason: data.recapMissedReason,
+      recap: data.recap,
       overallNotes: data.overallNotes,
       photoUrl: photoUrl,
       hash: hash
@@ -243,7 +242,7 @@ function submitTrainingData(data) {
     return {
       success: true,
       recordId: recordId,
-      message: 'Assessment submitted. Record ID: ' + recordId,
+      message: 'Assessment submitted successfully.',
       timestamp: new Date().toISOString()
     };
 
@@ -272,46 +271,44 @@ function insertRecord(ss, data) {
     }
 
     const timestamp = new Date();
-    const recordId = 'TR-' +
-      Utilities.formatDate(timestamp, Session.getScriptTimeZone(), 'yyyyMMdd') +
-      '-' + Math.random().toString(36).substr(2, 6).toUpperCase();
 
     const row = [
-      recordId,                          // A: Record ID
-      timestamp,                         // B: Timestamp
-      data.location,                     // C: Location
-      data.trainer,                      // D: Trainer
-      data.trainee,                      // E: Trainee
-      data.position,                     // F: Position
-      data.trainingDay,                  // G: Training Day
-      data.shift || '',                  // H: Shift
-      data.performanceLevel,             // I: Performance Level
-      data.knowledgeScore,               // J: Knowledge
-      data.technicalScore,               // K: Technical
-      data.serviceScore,                 // L: Service
-      data.teamworkScore,                // M: Teamwork
-      data.professionalismScore,         // N: Professionalism
-      data.totalScore,                   // O: Total Score
-      data.percentage,                   // P: Percentage
-      data.whatCovered || '',            // Q: What Was Covered
-      data.whereStruggling || '',        // R: Where Struggling
-      data.planForward || '',            // S: Plan Forward
-      data.recapCompleted || '',         // T: Recap Completed
-      data.recapMissedReason || '',      // U: Recap Missed Reason
-      data.photoUrl || '',               // V: Checklist Photo URL
-      data.overallNotes || ''            // W: Overall Notes
+      timestamp,                         // A: Timestamp
+      data.location,                     // B: Location
+      data.trainer,                      // C: Trainer
+      data.trainee,                      // D: Trainee
+      data.position,                     // E: Position
+      data.trainingDay,                  // F: Training Day
+      data.shift || '',                  // G: Shift
+      data.performanceLevel,             // H: Performance Level
+      data.overallNotes || '',           // I: Overall Notes
+      data.performanceScore,             // J: Performance Score
+      data.knowledgeScore,               // K: Knowledge Score
+      data.attitudeScore,                // L: Attitude Score
+      data.totalScore,                   // M: Total Score
+      data.percentage,                   // N: Percentage
+      data.whatCovered || '',            // O: What Was Covered
+      data.whereStruggling || '',        // P: Where Struggling
+      data.planForward || '',            // Q: Plan for Next Shift
+      data.recap || '',                  // R: Recap
+      data.photoUrl || ''               // S: Checklist Photo URL
     ];
 
     sheet.appendRow(row);
 
-    // Color-code performance level cell
+    // Color-code the Performance Level cell
     const lastRow = sheet.getLastRow();
     const colors = { 'Excellent': '#d5f4e6', 'Good': '#fff3cd', 'Needs Improvement': '#f8d7da' };
     sheet.getRange(lastRow, COLUMNS.PERFORMANCE_LEVEL + 1)
       .setBackground(colors[data.performanceLevel] || '#ffffff');
 
     SpreadsheetApp.flush();
-    return recordId;
+
+    // Return a generated reference for the success message
+    const ref = 'TR-' +
+      Utilities.formatDate(timestamp, Session.getScriptTimeZone(), 'yyyyMMdd') +
+      '-' + Math.random().toString(36).substr(2, 6).toUpperCase();
+    return ref;
 
   } finally {
     lock.releaseLock();
@@ -430,9 +427,9 @@ function checkAlertConditions(data, percentage, performanceLevel, recordId) {
   }
 
   // Flag 2: Recap not completed
-  if (data.recapCompleted === 'No') {
+  if (data.recap && data.recap.toString().startsWith('No')) {
     alerts.push('⚠️ MISSED RECAP: ' + data.trainer + ' did not complete End-of-Shift Recap with ' + data.trainee +
-      ' (Day ' + day + ' at ' + data.location + '). Reason: ' + (data.recapMissedReason || 'Not provided'));
+      ' (Day ' + day + ' at ' + data.location + '). ' + data.recap);
   }
 
   // Flag 3: Check for consecutive Needs Improvement (same trainee)
@@ -519,24 +516,18 @@ function sendNotificationSafe(data, recordId, totalScore, percentage, performanc
       'Shift: ' + (data.shift || 'Not specified'),
       '',
       '--- Scores ---',
-      'Knowledge: ' + data.knowledgeScore + '/5',
-      'Technical: ' + data.technicalScore + '/5',
-      'Service: ' + data.serviceScore + '/5',
-      'Teamwork: ' + data.teamworkScore + '/5',
-      'Professionalism: ' + data.professionalismScore + '/5',
-      'Total: ' + totalScore + '/25 (' + percentage + '%)',
+      'Performance: ' + data.performanceScore,
+      'Knowledge:   ' + data.knowledgeScore,
+      'Attitude:    ' + data.attitudeScore,
+      'Total: ' + totalScore + '/15 (' + percentage + '%)',
       'Performance Level: ' + performanceLevel,
       '',
       '--- Accountability ---',
       'What was covered: ' + (data.whatCovered || 'N/A'),
       'Where struggling: ' + (data.whereStruggling || 'N/A'),
       'Plan forward: ' + (data.planForward || 'N/A'),
-      'Recap completed: ' + data.recapCompleted
+      'Recap: ' + (data.recap || 'N/A')
     ];
-
-    if (data.recapCompleted === 'No') {
-      bodyParts.push('Recap missed reason: ' + (data.recapMissedReason || 'N/A'));
-    }
 
     bodyParts.push('Checklist photo: ' + (data.photoUrl ? 'Uploaded' : 'Not uploaded'));
     bodyParts.push('');
@@ -576,8 +567,8 @@ function createTrainingRecordsSheet(ss) {
   sheet.getRange(1, 1, 1, HEADERS.length).setValues([HEADERS])
     .setBackground('#2C5AA0').setFontColor('#FFFFFF').setFontWeight('bold').setFontSize(11);
 
-  // Column widths
-  var widths = [120, 150, 150, 120, 120, 100, 80, 80, 130, 80, 80, 80, 80, 80, 80, 80, 250, 250, 250, 80, 200, 200, 300];
+  // Column widths — matches 19-col layout A–S
+  var widths = [150, 150, 120, 120, 100, 80, 80, 130, 300, 80, 80, 80, 80, 80, 250, 250, 250, 200, 200];
   widths.forEach(function(w, i) { sheet.setColumnWidth(i + 1, w); });
 
   sheet.setFrozenRows(1);
@@ -648,10 +639,9 @@ function createLocationSummarySheet(ss) {
   sheet.getRange('B3').setValue(new Date()).setNumberFormat('MM/dd/yyyy hh:mm:ss AM/PM');
 
   var row = 5;
-  var tr = "'Training Records'";
   var thisMonthStart = 'DATE(YEAR(TODAY()),MONTH(TODAY()),1)';
   var lastMonthStart = 'DATE(YEAR(EOMONTH(TODAY(),-1)),MONTH(EOMONTH(TODAY(),-1)),1)';
-  var lastMonthEnd = 'EOMONTH(TODAY(),-1)';
+  var lastMonthEnd   = 'EOMONTH(TODAY(),-1)';
 
   CONFIG.LOCATIONS.forEach(function(location) {
     sheet.getRange(row, 1).setValue('📍 ' + location.toUpperCase())
@@ -663,19 +653,20 @@ function createLocationSummarySheet(ss) {
       .setBackground('#8FA4A7').setFontColor('#FFFFFF').setFontWeight('bold');
     row++;
 
+    // All formulas use named ranges — never break when columns shift
     var metricsFormulas = [
       ['Total Assessments',
-        '=COUNTIF(' + tr + '!C:C,"' + location + '")',
-        '=COUNTIFS(' + tr + '!C:C,"' + location + '",' + tr + '!B:B,">="&' + thisMonthStart + ',' + tr + '!B:B,"<="&TODAY())',
-        '=COUNTIFS(' + tr + '!C:C,"' + location + '",' + tr + '!B:B,">="&' + lastMonthStart + ',' + tr + '!B:B,"<="&' + lastMonthEnd + ')',
+        '=COUNTIF(tr_location,"' + location + '")',
+        '=COUNTIFS(tr_location,"' + location + '",tr_timestamp,">="&' + thisMonthStart + ',tr_timestamp,"<="&TODAY())',
+        '=COUNTIFS(tr_location,"' + location + '",tr_timestamp,">="&' + lastMonthStart + ',tr_timestamp,"<="&' + lastMonthEnd + ')',
         '', 'Count'],
       ['Average Score (%)',
-        '=IFERROR(ROUND(AVERAGEIF(' + tr + '!C:C,"' + location + '",' + tr + '!P:P),1),0)',
-        '=IFERROR(ROUND(AVERAGEIFS(' + tr + '!P:P,' + tr + '!C:C,"' + location + '",' + tr + '!B:B,">="&' + thisMonthStart + ',' + tr + '!B:B,"<="&TODAY()),1),0)',
-        '=IFERROR(ROUND(AVERAGEIFS(' + tr + '!P:P,' + tr + '!C:C,"' + location + '",' + tr + '!B:B,">="&' + lastMonthStart + ',' + tr + '!B:B,"<="&' + lastMonthEnd + '),1),0)',
+        '=IFERROR(ROUND(AVERAGEIF(tr_location,"' + location + '",tr_percentage),1),0)',
+        '=IFERROR(ROUND(AVERAGEIFS(tr_percentage,tr_location,"' + location + '",tr_timestamp,">="&' + thisMonthStart + ',tr_timestamp,"<="&TODAY()),1),0)',
+        '=IFERROR(ROUND(AVERAGEIFS(tr_percentage,tr_location,"' + location + '",tr_timestamp,">="&' + lastMonthStart + ',tr_timestamp,"<="&' + lastMonthEnd + '),1),0)',
         '', 'Percentage column'],
       ['Excellence Rate (%)',
-        '=IFERROR(ROUND(COUNTIFS(' + tr + '!C:C,"' + location + '",' + tr + '!I:I,"Excellent")/COUNTIF(' + tr + '!C:C,"' + location + '")*100,1),0)',
+        '=IFERROR(ROUND(COUNTIFS(tr_location,"' + location + '",tr_performance_level,"Excellent")/COUNTIF(tr_location,"' + location + '")*100,1),0)',
         '', '', '', 'All-time only'],
       ['Active Trainers',
         '=' + TRAINER_COUNTS[location],
@@ -1121,8 +1112,16 @@ function initializeSystem() {
     const sheet1 = ss.getSheetByName('Sheet1');
     if (sheet1 && ss.getSheets().length > 1) ss.deleteSheet(sheet1);
 
+    // Populate analytics from any existing data
+    const records = getTrainingRecords(ss);
+    if (records.length > 0) {
+      populateAnalyticsDashboard(ss, records);
+      populateTrainerPerformance(ss, records);
+      populateMonthlyLocationPerformance(ss, records);
+    }
+
     console.log('✓ System initialized');
-    ui.alert('Success', '✓ All sheets created. System ready.', ui.ButtonSet.OK);
+    ui.alert('Success', '✓ All sheets created and analytics populated. System ready.', ui.ButtonSet.OK);
   } catch (e) {
     ui.alert('Error', 'Setup failed: ' + e.toString(), ui.ButtonSet.OK);
   }

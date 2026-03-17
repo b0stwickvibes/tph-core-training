@@ -74,7 +74,7 @@ var SCORE_MAP = {
 };
 
 var LOCATIONS = ['Cantina Añejo', 'Original American Kitchen', 'White Buffalo'];
-var TRAINER_COUNTS = { 'Cantina Añejo': 15, 'Original American Kitchen': 8, 'White Buffalo': 2 };
+var SETUP_TRAINER_COUNTS = { 'Cantina Añejo': 15, 'Original American Kitchen': 8, 'White Buffalo': 2 };
 
 
 // ============================================================================
@@ -369,7 +369,7 @@ function step7_rebuildLocationSummaryFormulas(ss) {
         '=IFERROR(ROUND(COUNTIFS(tr_location,"' + location + '",tr_performance_level,"Excellent")/COUNTIF(tr_location,"' + location + '")*100,1),0)',
         '', '', '', 'All-time only'],
       ['Active Trainers',
-        '=' + TRAINER_COUNTS[location],
+        '=' + SETUP_TRAINER_COUNTS[location],
         '', '', '', 'Roster count']
     ];
 
