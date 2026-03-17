@@ -1,34 +1,43 @@
 // ============================================================
 // 30-DAY EVAL BUILDER — THREE POINTS HOSPITALITY
-// Mirrors Bartender-builder.gs architecture exactly.
-// Builds: Cantina 30-Day Eval + OAK 30-Day Eval sheets.
+// Builds one sheet per ROLE per LOCATION.
+// Cantina: Bartender / Server / Host
+// OAK:     Bartender / Server / Host  (duplicate file, swap config)
 // ============================================================
 
 function onOpen() {
   SpreadsheetApp.getUi().createMenu('Eval Tools')
-    .addItem('Build ALL Evals', 'buildAllEvals')
+    .addItem('Build ALL Evals (this location)', 'buildAllEvals')
     .addSeparator()
-    .addItem('Build Cantina 30-Day Eval', 'buildCantinaEval')
-    .addItem('Build OAK 30-Day Eval', 'buildOakEval')
+    .addItem('Build Bartender Eval', 'buildBartenderEval')
+    .addItem('Build Server Eval', 'buildServerEval')
+    .addItem('Build Host Eval', 'buildHostEval')
     .addSeparator()
     .addItem('Format Active Sheet', 'formatActiveSheet')
     .addToUi();
 }
 
 function buildAllEvals() {
-  buildCantinaEval();
-  buildOakEval();
-  SpreadsheetApp.getActive().toast('Both eval sheets built.');
+  const cfg = getLocationConfig();
+  buildEval_(cfg, 'Bartender');
+  buildEval_(cfg, 'Server');
+  buildEval_(cfg, 'Host');
+  SpreadsheetApp.getActive().toast('All 3 role evals built.');
 }
 
-function buildCantinaEval() {
-  buildEval_(getCantinaConfig());
-  SpreadsheetApp.getActive().toast('Cantina 30-Day Eval built.');
+function buildBartenderEval() {
+  buildEval_(getLocationConfig(), 'Bartender');
+  SpreadsheetApp.getActive().toast('Bartender eval built.');
 }
 
-function buildOakEval() {
-  buildEval_(getOakConfig());
-  SpreadsheetApp.getActive().toast('OAK 30-Day Eval built.');
+function buildServerEval() {
+  buildEval_(getLocationConfig(), 'Server');
+  SpreadsheetApp.getActive().toast('Server eval built.');
+}
+
+function buildHostEval() {
+  buildEval_(getLocationConfig(), 'Host');
+  SpreadsheetApp.getActive().toast('Host eval built.');
 }
 
 // ============================================================
@@ -63,29 +72,29 @@ const COL = { MARGIN_L: 1, YN: 2, TEXT: 3, GUTTER: 4, SCORE: 5, NOTES: 6, MARGIN
 // CORE BUILDER
 // ============================================================
 
-function buildEval_(cfg) {
+function buildEval_(cfg, role) {
   const ss = SpreadsheetApp.getActive();
-  const sheetName = cfg.sheetName;
+  const sheetName = cfg.locationShort + ' ' + role + ' 30-Day Eval';
   let sh = ss.getSheetByName(sheetName);
   if (sh) ss.deleteSheet(sh);
   sh = ss.insertSheet(sheetName);
 
   resetSheet_(sh);
-  let row = buildHeader_(sh, cfg);
+  let row = buildHeader_(sh, cfg, role);
   row = buildKeyBlock_(sh, row);
-  row = buildSection0_(sh, row);       // Employee Info
-  row = buildSection1_(sh, row);       // Universal Criteria
-  SpreadsheetApp.flush();              // Commit batch — prevent service timeout
-  row = buildSection2_(sh, row, cfg);  // Knowledge Test
+  row = buildSection0_(sh, row, role);       // Employee Info
+  row = buildSection1_(sh, row);             // Universal Criteria
   SpreadsheetApp.flush();
-  row = buildSection3_(sh, row, cfg);  // Role-Specific Active Test
+  row = buildSection2_(sh, row, cfg, role);  // Knowledge Test (role-filtered)
   SpreadsheetApp.flush();
-  row = buildSection4_(sh, row);       // Evaluator Notes
-  row = buildSection5_(sh, row);       // Assessment Summary
+  row = buildSection3_(sh, row, cfg, role);  // Role-Specific Active Test (single role)
   SpreadsheetApp.flush();
-  row = buildSection6_(sh, row);       // Scoring + Outcome
-  row = buildSection7_(sh, row);       // Sign-Off
-  SpreadsheetApp.flush();       // Sign-Off
+  row = buildSection4_(sh, row);             // Evaluator Notes
+  row = buildSection5_(sh, row);             // Assessment Summary
+  SpreadsheetApp.flush();
+  row = buildSection6_(sh, row);             // Scoring + Outcome
+  row = buildSection7_(sh, row);             // Sign-Off
+  SpreadsheetApp.flush();
 }
 
 // ============================================================
@@ -117,7 +126,7 @@ function resetSheet_(sh) {
 // HEADER
 // ============================================================
 
-function buildHeader_(sh, cfg) {
+function buildHeader_(sh, cfg, role) {
   let row = 1;
 
   // Row 1: Thin navy top bar
@@ -132,7 +141,7 @@ function buildHeader_(sh, cfg) {
     .setFontColor(COLORS.navy).setVerticalAlignment('middle');
 
   sh.getRange(row, COL.SCORE, 1, 2).merge()
-    .setValue('30-DAY PERFORMANCE EVALUATION')
+    .setValue(role.toUpperCase() + ' — 30-DAY EVALUATION')
     .setBackground(COLORS.navy)
     .setFontFamily(FONTS.title).setFontSize(12).setFontWeight('bold')
     .setFontColor(COLORS.white)
@@ -244,12 +253,12 @@ function buildKeyBlock_(sh, row) {
 // SECTION 0: EMPLOYEE INFORMATION
 // ============================================================
 
-function buildSection0_(sh, row) {
+function buildSection0_(sh, row, role) {
   row = writeSectionHeader_(sh, row, '0', 'EMPLOYEE INFORMATION');
 
   const fields = [
     ['Employee Name', '____________________________________'],
-    ['Position', '☐ Bartender          ☐ Server          ☐ Host'],
+    ['Position', role],
     ['First Solo Shift', '________________    Days Since Solo: ________'],
     ['Training Status', '☐ New Hire     ☐ Role Transfer     ☐ Re-Training']
   ];
@@ -308,18 +317,8 @@ function buildSection1_(sh, row) {
 // SECTION 2: ACTIVE KNOWLEDGE TEST
 // ============================================================
 
-function buildSection2_(sh, row, cfg) {
+function buildSection2_(sh, row, cfg, role) {
   row = writeSectionHeader_(sh, row, '2', 'ACTIVE KNOWLEDGE TEST     Max: 24 pts  (6 questions × 4)');
-
-  // Role callout box
-  sh.getRange(row, COL.YN, 1, 5).merge()
-    .setValue('► ROLE BEING EVALUATED:    ☐ Bartender          ☐ Server          ☐ Host\n   Circle the role above. In Set B, complete ONLY the question bank that matches the checked role.')
-    .setBackground('#fff3cd')
-    .setFontFamily(FONTS.header).setFontSize(10).setFontWeight('bold')
-    .setFontColor('#7d4e00').setVerticalAlignment('middle').setWrap(true)
-    .setBorder(true, true, true, true, false, false, '#ffc107', SpreadsheetApp.BorderStyle.SOLID_MEDIUM);
-  sh.setRowHeight(row, 38); row++;
-  sh.setRowHeight(row, 6); row++; // spacer
 
   // SET A
   row = writeQuestionSetHeader_(sh, row, 'SET A: Happy Hour & Service Standards', 'Select 2 questions. Circle the numbers used below.');
@@ -335,29 +334,14 @@ function buildSection2_(sh, row, cfg) {
   row = writeSetSubtotal_(sh, row, 'Set A Score', '8');
   sh.setRowHeight(row, 8); row++;
 
-  // SET B
-  row = writeQuestionSetHeader_(sh, row, 'SET B: Menu & Product Knowledge', 'Use ONLY the bank matching the role circled above. Select 2 questions.');
+  // SET B — role-specific bank only
+  const setBKey = 'setB' + role;  // setBBartender, setBServer, or setBHost
+  const setBQuestions = cfg[setBKey];
 
-  // Bartender sub-header
-  row = writeRoleBankHeader_(sh, row, '▸ BARTENDER');
+  row = writeQuestionSetHeader_(sh, row, 'SET B: ' + role + ' Menu & Product Knowledge', 'Select 2 questions. Circle the numbers used below.');
   row = writeColumnHeaders_(sh, row, 'Question', 'Score  /4', 'Notes / Answer');
-  cfg.setBBartender.forEach((q, i) => {
-    const bg = i % 2 === 0 ? COLORS.white : COLORS.rowAlt;
-    writeQuestionRow_(sh, row, q.num, q.question, q.answer, bg);
-    sh.setRowHeight(row, 24); row++;
-  });
 
-  // Server sub-header
-  row = writeRoleBankHeader_(sh, row, '▸ SERVER');
-  cfg.setBServer.forEach((q, i) => {
-    const bg = i % 2 === 0 ? COLORS.white : COLORS.rowAlt;
-    writeQuestionRow_(sh, row, q.num, q.question, q.answer, bg);
-    sh.setRowHeight(row, 24); row++;
-  });
-
-  // Host sub-header
-  row = writeRoleBankHeader_(sh, row, '▸ HOST');
-  cfg.setBHost.forEach((q, i) => {
+  setBQuestions.forEach((q, i) => {
     const bg = i % 2 === 0 ? COLORS.white : COLORS.rowAlt;
     writeQuestionRow_(sh, row, q.num, q.question, q.answer, bg);
     sh.setRowHeight(row, 24); row++;
@@ -389,40 +373,18 @@ function buildSection2_(sh, row, cfg) {
 // SECTION 3: ROLE-SPECIFIC ACTIVE TEST
 // ============================================================
 
-function buildSection3_(sh, row, cfg) {
-  row = writeSectionHeader_(sh, row, '3', 'ROLE-SPECIFIC ACTIVE TEST     Max: 12 pts  (3 tests × 4)');
+function buildSection3_(sh, row, cfg, role) {
+  row = writeSectionHeader_(sh, row, '3', role.toUpperCase() + ' ACTIVE TEST     Max: 12 pts  (3 tests × 4)');
 
-  sh.getRange(row, COL.YN, 1, 5).merge()
-    .setValue('Complete ONLY the insert that matches the role circled in Section 2. Skip the other two.')
-    .setBackground('#fff3cd')
-    .setFontFamily(FONTS.body).setFontSize(9).setFontWeight('bold')
-    .setFontColor('#7d4e00').setVerticalAlignment('middle')
-    .setBorder(true, true, true, true, false, false, '#ffc107', SpreadsheetApp.BorderStyle.SOLID);
-  sh.setRowHeight(row, 20); row++;
-  sh.setRowHeight(row, 6); row++;
+  // Single role insert — map role to config key
+  const insertKey = role.toLowerCase() + 'Insert';  // bartenderInsert, serverInsert, hostInsert
+  const insert = cfg[insertKey];
 
-  // --- BARTENDER INSERT ---
-  row = writeRoleInsertHeader_(sh, row, 'INSERT A — BARTENDER');
-  cfg.bartenderInsert.forEach((test, i) => {
-    row = writeActiveTest_(sh, row, 'A' + (i + 1) + '. ' + test.title, test.instructions, test.rubric, test.notes);
+  row = writeRoleInsertHeader_(sh, row, role.toUpperCase() + ' ACTIVE TEST');
+  insert.forEach((test, i) => {
+    row = writeActiveTest_(sh, row, (i + 1) + '. ' + test.title, test.instructions, test.rubric, test.notes);
   });
-  row = writeInsertTotal_(sh, row, 'Bartender Insert Total', '12');
-  sh.setRowHeight(row, 10); row++;
-
-  // --- SERVER INSERT ---
-  row = writeRoleInsertHeader_(sh, row, 'INSERT B — SERVER');
-  cfg.serverInsert.forEach((test, i) => {
-    row = writeActiveTest_(sh, row, 'B' + (i + 1) + '. ' + test.title, test.instructions, test.rubric, test.notes);
-  });
-  row = writeInsertTotal_(sh, row, 'Server Insert Total', '12');
-  sh.setRowHeight(row, 10); row++;
-
-  // --- HOST INSERT ---
-  row = writeRoleInsertHeader_(sh, row, 'INSERT C — HOST');
-  cfg.hostInsert.forEach((test, i) => {
-    row = writeActiveTest_(sh, row, 'C' + (i + 1) + '. ' + test.title, test.instructions, test.rubric, test.notes);
-  });
-  row = writeInsertTotal_(sh, row, 'Host Insert Total', '12');
+  row = writeInsertTotal_(sh, row, role + ' Active Test Total', '12');
   sh.setRowHeight(row, 8); row++;
 
   return row;
@@ -903,12 +865,13 @@ function formatActiveSheet() {
 }
 
 // ============================================================
-// CANTINA CONFIG
+// LOCATION CONFIG — Cantina Añejo
+// Duplicate this file and swap data below for OAK / WB
 // ============================================================
 
-function getCantinaConfig() {
+function getLocationConfig() {
   return {
-    sheetName: 'Cantina 30-Day Eval',
+    locationShort: 'Cantina',
     locationDisplay: 'Cantina Añejo GNV',
 
     setA: [
