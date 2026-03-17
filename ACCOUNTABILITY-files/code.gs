@@ -43,7 +43,8 @@ const CONFIG = {
     LABEL_MAP: { 'Poor': 1, 'Developing': 2, 'Average': 3, 'Strong': 4, 'Excellent': 5 }
   },
   PHOTO_UPLOAD: {
-    FOLDER_NAME: 'TPH Training Checklists',
+    FOLDER_NAME: 'TPH Training Checklists',  // fallback name if folder ID not set
+    FOLDER_ID: '1smxt36fkuKB5NmFG94NML8qZlp3Wc4TG', // shared Drive folder — leave blank '' to auto-create by name
     MAX_SIZE_MB: 10,
     ALLOWED_TYPES: ['image/jpeg', 'image/png', 'image/heic']
   },
@@ -331,12 +332,14 @@ function saveChecklistPhoto(data) {
     );
 
     // Find or create the root folder
+    // If a specific folder ID is configured, open it directly (no search, no name collisions)
+    // Otherwise fall back to finding/creating by name
     var rootFolder;
-    const folders = DriveApp.getFoldersByName(CONFIG.PHOTO_UPLOAD.FOLDER_NAME);
-    if (folders.hasNext()) {
-      rootFolder = folders.next();
+    if (CONFIG.PHOTO_UPLOAD.FOLDER_ID) {
+      rootFolder = DriveApp.getFolderById(CONFIG.PHOTO_UPLOAD.FOLDER_ID);
     } else {
-      rootFolder = DriveApp.createFolder(CONFIG.PHOTO_UPLOAD.FOLDER_NAME);
+      const folders = DriveApp.getFoldersByName(CONFIG.PHOTO_UPLOAD.FOLDER_NAME);
+      rootFolder = folders.hasNext() ? folders.next() : DriveApp.createFolder(CONFIG.PHOTO_UPLOAD.FOLDER_NAME);
     }
 
     // Organize: Location / Trainer (fixed roster — never misspelled)
