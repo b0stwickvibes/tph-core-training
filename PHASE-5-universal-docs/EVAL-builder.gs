@@ -75,12 +75,17 @@ function buildEval_(cfg) {
   row = buildKeyBlock_(sh, row);
   row = buildSection0_(sh, row);       // Employee Info
   row = buildSection1_(sh, row);       // Universal Criteria
+  SpreadsheetApp.flush();              // Commit batch — prevent service timeout
   row = buildSection2_(sh, row, cfg);  // Knowledge Test
+  SpreadsheetApp.flush();
   row = buildSection3_(sh, row, cfg);  // Role-Specific Active Test
+  SpreadsheetApp.flush();
   row = buildSection4_(sh, row);       // Evaluator Notes
   row = buildSection5_(sh, row);       // Assessment Summary
+  SpreadsheetApp.flush();
   row = buildSection6_(sh, row);       // Scoring + Outcome
   row = buildSection7_(sh, row);       // Sign-Off
+  SpreadsheetApp.flush();       // Sign-Off
 }
 
 // ============================================================
