@@ -268,22 +268,29 @@ Alert emails include: trainer name, trainee name, training day, location, score,
 
 ## How Checklist Photos Are Organized in Google Drive
 
-Every photo the trainer uploads goes into a structured folder automatically. No manual organizing required.
+Every photo the trainer uploads goes into a structured folder automatically. Each location has its own root folder in the location's shared Drive — no manual organizing required.
 
 **Folder structure:**
 ```
-TPH Training Accountability
-  └── Cantina Añejo
-        └── Sarah Johnson  ← Trainer's folder
-              Day1_Marcus_2026-03-17.jpg
-              Day2_Marcus_2026-03-18.jpg
-              Day1_Jess_2026-03-19.jpg
-  └── Original American Kitchen
-        └── Tanner Griffin
-              Day3_Alex_2026-03-17.jpg
-  └── White Buffalo
-        └── Dani Mizrachi
-              ...
+Cantina Trainer Upload          ← lives in Cantina's shared Drive
+  └── Sarah Johnson             ← Trainer's folder
+        Day1_Marcus_2026-03-17.jpg
+        Day2_Marcus_2026-03-18.jpg
+        Day1_Jess_2026-03-19.jpg
+  └── Christian Lucas
+        Day3_Alex_2026-03-17.jpg
+
+OAK Trainer Upload              ← lives in OAK's shared Drive
+  └── Tanner Griffin
+        Day1_Sam_2026-03-17.jpg
+  └── Rachel Donly
+        ...
+
+WB Trainer Upload               ← lives in WB's shared Drive
+  └── Dani Mizrachi
+        Day2_Jordan_2026-03-18.jpg
+  └── Holden Fernandez
+        ...
 ```
 
 **Why it's organized by trainer, not trainee:**

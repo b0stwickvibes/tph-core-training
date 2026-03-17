@@ -42,8 +42,13 @@ const CONFIG = {
     LABEL_MAP: { 'Poor': 1, 'Developing': 2, 'Average': 3, 'Strong': 4, 'Excellent': 5 }
   },
   PHOTO_UPLOAD: {
-    FOLDER_NAME: 'TPH Training Accountability',  // fallback name if folder ID not set
-    FOLDER_ID: '1smxt36fkuKB5NmFG94NML8qZlp3Wc4TG', // shared Drive folder — leave blank '' to auto-create by name
+    // Per-location shared Drive folders — each location gets its own root
+    // Leave an ID blank ('') to auto-create a folder by name instead
+    LOCATION_FOLDERS: {
+      'Cantina Añejo':              { id: '1smxt36fkuKB5NmFG94NML8qZlp3Wc4TG', name: 'Cantina Trainer Upload' },
+      'Original American Kitchen':  { id: '', name: 'OAK Trainer Upload' },
+      'White Buffalo':              { id: '', name: 'WB Trainer Upload' }
+    },
     MAX_SIZE_MB: 10,
     ALLOWED_TYPES: ['image/jpeg', 'image/png', 'image/heic']
   },
@@ -202,6 +207,8 @@ function submitTrainingData(data) {
     if (data.photoData && data.photoFileName) {
       photoUrl = saveChecklistPhoto(data);
     }
+    // Attach URL back to data so email functions can reference it
+    data.photoUrl = photoUrl;
 
     // --- Get spreadsheet and ensure sheets exist ---
     const ss = SpreadsheetApp.getActiveSpreadsheet();
@@ -330,21 +337,25 @@ function saveChecklistPhoto(data) {
       data.photoFileName || 'checklist.jpg'
     );
 
-    // Find or create the root folder
-    // If a specific folder ID is configured, open it directly (no search, no name collisions)
-    // Otherwise fall back to finding/creating by name
-    var rootFolder;
-    if (CONFIG.PHOTO_UPLOAD.FOLDER_ID) {
-      rootFolder = DriveApp.getFolderById(CONFIG.PHOTO_UPLOAD.FOLDER_ID);
-    } else {
-      const folders = DriveApp.getFoldersByName(CONFIG.PHOTO_UPLOAD.FOLDER_NAME);
-      rootFolder = folders.hasNext() ? folders.next() : DriveApp.createFolder(CONFIG.PHOTO_UPLOAD.FOLDER_NAME);
+    // Resolve the location-specific root folder
+    // e.g. "Cantina Trainer Upload" for Cantina Añejo
+    var locConfig = CONFIG.PHOTO_UPLOAD.LOCATION_FOLDERS[data.location];
+    if (!locConfig) {
+      // Unknown location — fall back to a generic folder
+      locConfig = { id: '', name: (data.location || 'Unknown') + ' Trainer Upload' };
     }
 
-    // Organize: Location / Trainer (fixed roster — never misspelled)
-    // Trainee name is embedded in filename so photos remain searchable
-    const locationFolder = getOrCreateSubfolder(rootFolder, data.location);
-    const trainerFolder  = getOrCreateSubfolder(locationFolder, data.trainer);
+    var locationFolder;
+    if (locConfig.id) {
+      locationFolder = DriveApp.getFolderById(locConfig.id);
+    } else {
+      var folders = DriveApp.getFoldersByName(locConfig.name);
+      locationFolder = folders.hasNext() ? folders.next() : DriveApp.createFolder(locConfig.name);
+    }
+
+    // Trainer subfolder directly inside the location folder
+    // Roster names come from a validated dropdown — no typo risk
+    const trainerFolder = getOrCreateSubfolder(locationFolder, data.trainer);
 
     // Filename: Day{N}_{Trainee}_{date}.{ext}
     // Trainee comes from free-text input so we sanitize it for a safe filename
@@ -678,7 +689,8 @@ function sendNotificationSafe(data, recordId, totalScore, percentage, performanc
       padding-bottom:6px;margin-bottom:12px;">Checklist Photo</h3>
     <p style="margin:0 0 20px;font-size:13px;">${photoBlock}</p>
     ${data.photoUrl ? '<p style="font-size:11px;color:#aaa;margin:-14px 0 20px;">File saved in Google Drive under ' +
-      'TPH Training Accountability / ' + data.location + ' / ' + data.trainer + '</p>' : ''}
+      ((CONFIG.PHOTO_UPLOAD.LOCATION_FOLDERS[data.location] || {}).name || data.location) +
+      ' / ' + data.trainer + '</p>' : ''}
 
   </div>
 
