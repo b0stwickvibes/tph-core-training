@@ -738,12 +738,13 @@ function writeScoredRow_(sh, row, label, description, bg) {
 
 function writeQuestionRow_(sh, row, num, question, answer, bg) {
   // Num + question in B+C
-  const rich = SpreadsheetApp.newRichTextValue().setText(num + '  ' + question + '\n' + answer);
+  const fullText = num + '  ' + question + '\n' + answer;
+  const rich = SpreadsheetApp.newRichTextValue().setText(fullText);
   const bold = SpreadsheetApp.newTextStyle().setFontFamily(FONTS.body).setFontSize(9).setBold(true).setForegroundColor(COLORS.text).build();
   const normal = SpreadsheetApp.newTextStyle().setFontFamily(FONTS.body).setFontSize(8.5).setBold(false).setForegroundColor('#888888').build();
   const numLen = (num + '  ' + question).length;
   rich.setTextStyle(0, numLen, bold);
-  rich.setTextStyle(numLen, rich.getText().length, normal);
+  rich.setTextStyle(numLen, fullText.length, normal);
 
   sh.getRange(row, COL.YN, 1, 2).merge()
     .setRichTextValue(rich.build())
