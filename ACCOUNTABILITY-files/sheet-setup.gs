@@ -292,6 +292,11 @@ function step5_verifyHeaders(sheet) {
   // Column widths
   var widths = [150, 150, 120, 120, 100, 80, 80, 130, 300, 80, 80, 80, 80, 80, 250, 250, 250, 200, 200];
   widths.forEach(function(w, i) { sheet.setColumnWidth(i + 1, w); });
+
+  // Format Percentage column (col N = index 14, 1-based) as %
+  var h2 = getHeaderMap(sheet);
+  if (h2['Percentage']) sheet.getRange(2, h2['Percentage'], 9999, 1).setNumberFormat('0%');
+
   sheet.setFrozenRows(1);
 }
 
@@ -470,8 +475,8 @@ function step8_backfillScoresAndPercentage(sheet) {
       total = ''; pct = ''; level = '';
     } else {
       total = perf + know + att;
-      pct   = Math.round((total / 15) * 100);
-      level = pct >= 90 ? 'Excellent' : pct >= 75 ? 'Good' : 'Needs Improvement';
+      pct   = Math.round((total / 15) * 100) / 100; // decimal 0.0–1.0 for Sheets % format
+      level = pct >= 0.90 ? 'Excellent' : pct >= 0.75 ? 'Good' : 'Needs Improvement';
       written++;
     }
 
@@ -482,7 +487,7 @@ function step8_backfillScoresAndPercentage(sheet) {
 
   // ALWAYS overwrite Total Score and Percentage from scratch — ignore old values
   sheet.getRange(2, colTotal, numRows, 1).setValues(newTotals);
-  sheet.getRange(2, colPct,   numRows, 1).setValues(newPcts);
+  sheet.getRange(2, colPct,   numRows, 1).setValues(newPcts).setNumberFormat('0%');
   if (colLevel) sheet.getRange(2, colLevel, numRows, 1).setValues(newLevels);
 
   Logger.log('  ✅ Wrote fresh Total/Pct/Level for ' + written + ' scored rows out of ' + numRows + ' total rows.');

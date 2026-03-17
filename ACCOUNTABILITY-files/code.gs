@@ -186,9 +186,9 @@ function submitTrainingData(data) {
       attitude:    labelToNum(data.attitudeScore)
     };
     const totalScore = scores.performance + scores.knowledge + scores.attitude;
-    const percentage = Math.round((totalScore / CONFIG.SCORING.MAX_TOTAL) * 100);
-    const performanceLevel = percentage >= CONFIG.SCORING.THRESHOLDS.EXCELLENT ? 'Excellent'
-      : percentage >= CONFIG.SCORING.THRESHOLDS.GOOD ? 'Good'
+    const percentage = Math.round((totalScore / CONFIG.SCORING.MAX_TOTAL) * 100) / 100; // store as decimal (0.60 not 60)
+    const performanceLevel = percentage >= CONFIG.SCORING.THRESHOLDS.EXCELLENT / 100 ? 'Excellent'
+      : percentage >= CONFIG.SCORING.THRESHOLDS.GOOD / 100 ? 'Good'
       : 'Needs Improvement';
 
     // --- Duplicate check ---
@@ -296,8 +296,9 @@ function insertRecord(ss, data) {
 
     sheet.appendRow(row);
 
-    // Color-code the Performance Level cell
+    // Format Percentage cell as % and color-code Performance Level
     const lastRow = sheet.getLastRow();
+    sheet.getRange(lastRow, COLUMNS.PERCENTAGE + 1).setNumberFormat('0%');
     const colors = { 'Excellent': '#d5f4e6', 'Good': '#fff3cd', 'Needs Improvement': '#f8d7da' };
     sheet.getRange(lastRow, COLUMNS.PERFORMANCE_LEVEL + 1)
       .setBackground(colors[data.performanceLevel] || '#ffffff');
@@ -421,8 +422,8 @@ function checkAlertConditions(data, percentage, performanceLevel, recordId) {
   const alerts = [];
 
   // Flag 1: Day 4 or 5 with score < 75%
-  if ((day === 4 || day === 5) && percentage < CONFIG.SCORING.THRESHOLDS.GOOD) {
-    alerts.push('⚠️ LOW SCORE on Day ' + day + ': ' + data.trainee + ' scored ' + percentage + '% (' + performanceLevel + '). ' +
+  if ((day === 4 || day === 5) && percentage < CONFIG.SCORING.THRESHOLDS.GOOD / 100) {
+    alerts.push('⚠️ LOW SCORE on Day ' + day + ': ' + data.trainee + ' scored ' + Math.round(percentage * 100) + '% (' + performanceLevel + '). ' +
       'Trainer: ' + data.trainer + ' at ' + data.location + '. May not be ready for mock service.');
   }
 
@@ -449,7 +450,7 @@ function checkAlertConditions(data, percentage, performanceLevel, recordId) {
         'Record: ' + recordId + '\n' +
         'Trainee: ' + data.trainee + ' | Trainer: ' + data.trainer + '\n' +
         'Location: ' + data.location + ' | Day ' + data.trainingDay + '\n' +
-        'Score: ' + percentage + '% (' + performanceLevel + ')\n\n' +
+        'Score: ' + Math.round(percentage * 100) + '% (' + performanceLevel + ')\n\n' +
         alerts.join('\n\n');
 
       CONFIG.EMAIL.RECIPIENTS.forEach(function(email) {
@@ -519,7 +520,7 @@ function sendNotificationSafe(data, recordId, totalScore, percentage, performanc
       'Performance: ' + data.performanceScore,
       'Knowledge:   ' + data.knowledgeScore,
       'Attitude:    ' + data.attitudeScore,
-      'Total: ' + totalScore + '/15 (' + percentage + '%)',
+      'Total: ' + totalScore + '/15 (' + Math.round(percentage * 100) + '%)',
       'Performance Level: ' + performanceLevel,
       '',
       '--- Accountability ---',
@@ -802,10 +803,10 @@ function getTrainingRecords(ss) {
       if (p > 0 || k > 0 || a > 0) {
         var derivedTotal = p + k + a;
         mapped[COLUMNS.TOTAL_SCORE] = derivedTotal;
-        mapped[COLUMNS.PERCENTAGE]  = Math.round((derivedTotal / 15) * 100);
+        mapped[COLUMNS.PERCENTAGE]  = Math.round((derivedTotal / 15) * 100) / 100; // decimal 0.0–1.0
         var derivedPct = mapped[COLUMNS.PERCENTAGE];
         mapped[COLUMNS.PERFORMANCE_LEVEL] = mapped[COLUMNS.PERFORMANCE_LEVEL] ||
-          (derivedPct >= 90 ? 'Excellent' : derivedPct >= 75 ? 'Good' : 'Needs Improvement');
+          (derivedPct >= 0.90 ? 'Excellent' : derivedPct >= 0.75 ? 'Good' : 'Needs Improvement');
       }
     }
     return mapped;
@@ -893,7 +894,7 @@ function populateAnalyticsDashboard(ss, records) {
   var periods = [buckets.thisWeek, buckets.lastWeek, buckets.thisMonth, buckets.allTime];
   var overviewData = [
     ['Total Assessments'].concat(periods.map(function(p) { return p.total; })),
-    ['Average Score (%)'].concat(periods.map(function(p) { return p.total > 0 ? Math.round(p.scoreSum / p.total) : 0; })),
+    ['Average Score (%)'].concat(periods.map(function(p) { return p.total > 0 ? Math.round(p.scoreSum / p.total * 100) : 0; })),
     ['Excellent Rate (%)'].concat(periods.map(function(p) { return p.total > 0 ? Math.round(p.excellent / p.total * 100) : 0; })),
     ['Good Rate (%)'].concat(periods.map(function(p) { return p.total > 0 ? Math.round(p.good / p.total * 100) : 0; })),
     ['Needs Improvement (%)'].concat(periods.map(function(p) { return p.total > 0 ? Math.round(p.ni / p.total * 100) : 0; })),
@@ -908,7 +909,7 @@ function populateAnalyticsDashboard(ss, records) {
     var row = 17 + i;
     sheet.getRange(row, 1).setValue(loc);
     sheet.getRange(row, 2).setValue(b.total);
-    sheet.getRange(row, 3).setValue(b.total > 0 ? Math.round(b.scoreSum / b.total) : 0);
+    sheet.getRange(row, 3).setValue(b.total > 0 ? Math.round(b.scoreSum / b.total * 100) : 0);
     sheet.getRange(row, 4).setValue(b.total > 0 ? Math.round(b.excellent / b.total * 100) : 0);
     sheet.getRange(row, 5).setValue(b.total > 0 ? Math.round(b.ni / b.total * 100) : 0);
   });
@@ -920,7 +921,7 @@ function newBucket() {
 
 function addToBucket(bucket, pct, level, trainer, trainee) {
   bucket.total++;
-  bucket.scoreSum += pct;
+  bucket.scoreSum += pct; // pct is 0.0–1.0 decimal
   if (level === 'Excellent') bucket.excellent++;
   if (level === 'Good') bucket.good++;
   if (level === 'Needs Improvement') bucket.ni++;
@@ -971,7 +972,7 @@ function populateTrainerPerformance(ss, records) {
     if (!grouped[key]) grouped[key] = { loc: loc, trainer: trainer, month: month, count: 0, scoreSum: 0, successes: 0 };
     grouped[key].count++;
     grouped[key].scoreSum += pct;
-    if (pct >= CONFIG.SCORING.THRESHOLDS.GOOD) grouped[key].successes++;
+    if (pct >= CONFIG.SCORING.THRESHOLDS.GOOD / 100) grouped[key].successes++;
   });
 
   // Sort and write by location section
@@ -996,7 +997,7 @@ function populateTrainerPerformance(ss, records) {
       sheet.getRange(row, col).setValue('');
       sheet.getRange(row, col + 1).setValue(d.trainer);
       sheet.getRange(row, col + 2).setValue(d.count).setNumberFormat('0');
-      sheet.getRange(row, col + 3).setValue(Math.round(d.scoreSum / d.count)).setNumberFormat('0');
+      sheet.getRange(row, col + 3).setValue(Math.round(d.scoreSum / d.count * 100)).setNumberFormat('0');  // avg %
       sheet.getRange(row, col + 4).setValue(Math.round(d.successes / d.count * 100)).setNumberFormat('0');
       row++;
     });
@@ -1063,7 +1064,7 @@ function populateMonthlyLocationPerformance(ss, records) {
     if (level === 'Excellent') grouped[key].excellent++;
     if (level === 'Good') grouped[key].good++;
     if (level === 'Needs Improvement') grouped[key].ni++;
-    if (pct >= CONFIG.SCORING.THRESHOLDS.GOOD) grouped[key].success++;
+    if (pct >= CONFIG.SCORING.THRESHOLDS.GOOD / 100) grouped[key].success++;
   });
 
   var sorted = Object.values(grouped).sort(function(a, b) {
@@ -1091,7 +1092,7 @@ function populateMonthlyLocationPerformance(ss, records) {
       sheet.getRange(row, 1, 1, 7).setValues([[
         d.month,
         d.total,
-        d.total > 0 ? Math.round(d.scoreSum / d.total) : 0,
+        d.total > 0 ? Math.round(d.scoreSum / d.total * 100) : 0,  // avg %
         d.excellent,
         d.good,
         d.ni,
