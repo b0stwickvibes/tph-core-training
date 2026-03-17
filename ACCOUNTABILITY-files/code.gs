@@ -24,7 +24,7 @@ const CONFIG = {
   EMAIL: {
     ENABLED: true,
     RECIPIENTS: ['devin@threepointshospitality.com'],
-    SUBJECT_PREFIX: '[TPH Training]',
+    SUBJECT_PREFIX: '[Training Accountability Submission]',
     HOURLY_LIMIT: 10
   },
   LOCATIONS: ['Cantina Añejo', 'Original American Kitchen', 'White Buffalo'],
@@ -43,7 +43,7 @@ const CONFIG = {
     LABEL_MAP: { 'Poor': 1, 'Developing': 2, 'Average': 3, 'Strong': 4, 'Excellent': 5 }
   },
   PHOTO_UPLOAD: {
-    FOLDER_NAME: 'TPH Training Checklists',  // fallback name if folder ID not set
+    FOLDER_NAME: 'TPH Training Accountability',  // fallback name if folder ID not set
     FOLDER_ID: '1smxt36fkuKB5NmFG94NML8qZlp3Wc4TG', // shared Drive folder — leave blank '' to auto-create by name
     MAX_SIZE_MB: 10,
     ALLOWED_TYPES: ['image/jpeg', 'image/png', 'image/heic']
@@ -542,7 +542,7 @@ function sendNotificationSafe(data, recordId, totalScore, percentage, performanc
     }
 
     // Subject includes trainer + trainee + day
-    const subject = CONFIG.EMAIL.SUBJECT_PREFIX + ' Training Assessment — ' +
+    const subject = CONFIG.EMAIL.SUBJECT_PREFIX + ' ' +
       data.trainer + ' → ' + data.trainee + ' | Day ' + data.trainingDay + ' | ' + performanceLevel;
 
     // Badge colour by performance level
@@ -672,7 +672,7 @@ function sendNotificationSafe(data, recordId, totalScore, percentage, performanc
       padding-bottom:6px;margin-bottom:12px;">Checklist Photo</h3>
     <p style="margin:0 0 20px;font-size:13px;">${photoBlock}</p>
     ${data.photoUrl ? '<p style="font-size:11px;color:#aaa;margin:-14px 0 20px;">File saved in Google Drive under ' +
-      'TPH Training Checklists / ' + data.location + ' / ' + data.trainer + '</p>' : ''}
+      'TPH Training Accountability / ' + data.location + ' / ' + data.trainer + '</p>' : ''}
 
   </div>
 

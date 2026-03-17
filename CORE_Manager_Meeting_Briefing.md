@@ -229,7 +229,7 @@ When a trainer completes a shift and submits the accountability report, the app:
 Every submission sends you a formatted email. Here's what's in it:
 
 **Subject line reads:**
-> `[TPH Training] Training Assessment — Sarah Johnson → Marcus | Day 3 | Good`
+> `[Training Accountability Submission] Sarah Johnson → Marcus | Day 3 | Good`
 
 So before you even open it, you know: who trained, who got trained, what day, and how it went.
 
@@ -266,7 +266,7 @@ Every photo the trainer uploads goes into a structured folder automatically. No 
 
 **Folder structure:**
 ```
-TPH Training Checklists
+TPH Training Accountability
   └── Cantina Añejo
         └── Sarah Johnson  ← Trainer's folder
               Day1_Marcus_2026-03-17.jpg
