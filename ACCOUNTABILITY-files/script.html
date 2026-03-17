@@ -432,8 +432,8 @@ function onSuccess(response) {
   if (response && response.success) {
     form.style.display = 'none';
     const successMsg = document.getElementById('successMessage');
-    const recordIdEl = document.getElementById('successRecordId');
-    if (recordIdEl && response.recordId) recordIdEl.textContent = response.recordId;
+    const trainerNameEl = document.getElementById('successTrainerName');
+    if (trainerNameEl) trainerNameEl.textContent = val('trainer') || 'Trainer';
     if (successMsg) successMsg.style.display = 'block';
   } else {
     alert('Submission issue: ' + (response ? response.error : 'Unknown error'));
