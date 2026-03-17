@@ -402,16 +402,46 @@ function step8_backfillScoresAndPercentage(sheet) {
   Logger.log('Step 8: Backfilling scores and percentage for existing rows...');
   var h = getHeaderMap(sheet);
 
-  var colPerf     = h['Performance Score'];
-  var colKnow     = h['Knowledge Score'];
-  var colAtt      = h['Attitude Score'];
-  var colTotal    = h['Total Score'];
-  var colPct      = h['Percentage'];
-  var colLevel    = h['Performance Level'];
+  // Log every header so we can see exactly what's in the sheet
+  Logger.log('  Current headers: ' + JSON.stringify(h));
 
-  if (!colPerf || !colKnow || !colAtt || !colTotal || !colPct || !colLevel) {
-    Logger.log('  ⚠️ One or more score columns not found — skipping backfill.');
+  var colPerf  = h['Performance Score'];
+  var colKnow  = h['Knowledge Score'];
+  var colAtt   = h['Attitude Score'];
+  var colTotal = h['Total Score'];
+  var colPct   = h['Percentage'];
+  var colLevel = h['Performance Level'];
+
+  Logger.log('  Col indexes (1-based): perf=' + colPerf + ' know=' + colKnow +
+             ' att=' + colAtt + ' total=' + colTotal + ' pct=' + colPct + ' level=' + colLevel);
+
+  if (!colPerf || !colKnow || !colAtt) {
+    Logger.log('  ⚠️ Score columns not found — skipping backfill.');
     return;
+  }
+  if (!colTotal) {
+    // Total Score column is missing — insert it right after Attitude Score
+    Logger.log('  ⚠️ "Total Score" column not found — inserting after Attitude Score col ' + colAtt);
+    sheet.insertColumnAfter(colAtt);
+    sheet.getRange(1, colAtt + 1).setValue('Total Score');
+    // Re-read header map
+    h = getHeaderMap(sheet);
+    colTotal = h['Total Score'];
+    colPct   = h['Percentage'];
+    colLevel = h['Performance Level'];
+    Logger.log('  Re-read: total=' + colTotal + ' pct=' + colPct + ' level=' + colLevel);
+  }
+  if (!colPct) {
+    Logger.log('  ⚠️ "Percentage" column not found — inserting after Total Score col ' + colTotal);
+    sheet.insertColumnAfter(colTotal);
+    sheet.getRange(1, colTotal + 1).setValue('Percentage');
+    h = getHeaderMap(sheet);
+    colPct   = h['Percentage'];
+    colLevel = h['Performance Level'];
+    Logger.log('  Re-read: pct=' + colPct + ' level=' + colLevel);
+  }
+  if (!colLevel) {
+    Logger.log('  ⚠️ "Performance Level" column not found — skipping level writes.');
   }
 
   var lastRow = sheet.getLastRow();
@@ -419,45 +449,45 @@ function step8_backfillScoresAndPercentage(sheet) {
 
   var numRows = lastRow - 1;
 
-  // Read all score columns at once
-  var perfVals  = sheet.getRange(2, colPerf,  numRows, 1).getValues();
-  var knowVals  = sheet.getRange(2, colKnow,  numRows, 1).getValues();
-  var attVals   = sheet.getRange(2, colAtt,   numRows, 1).getValues();
-  var totalVals = sheet.getRange(2, colTotal, numRows, 1).getValues();
-  var pctVals   = sheet.getRange(2, colPct,   numRows, 1).getValues();
+  // Read the 3 score columns
+  var perfVals = sheet.getRange(2, colPerf, numRows, 1).getValues();
+  var knowVals = sheet.getRange(2, colKnow, numRows, 1).getValues();
+  var attVals  = sheet.getRange(2, colAtt,  numRows, 1).getValues();
 
-  var newTotals  = [];
-  var newPcts    = [];
-  var newLevels  = [];
-  var backfilled = 0;
+  var newTotals = [];
+  var newPcts   = [];
+  var newLevels = [];
+  var written   = 0;
 
   for (var i = 0; i < numRows; i++) {
-    var perf  = toScore(perfVals[i][0]);
-    var know  = toScore(knowVals[i][0]);
-    var att   = toScore(attVals[i][0]);
-    var total = parseInt(totalVals[i][0]) || 0;
-    var pct   = parseFloat(pctVals[i][0]) || 0;
+    var perf = toScore(perfVals[i][0]);
+    var know = toScore(knowVals[i][0]);
+    var att  = toScore(attVals[i][0]);
 
-    // Only backfill rows where Percentage is missing or 0 but scores exist
-    if ((pct === 0 || pct === '') && (perf > 0 || know > 0 || att > 0)) {
+    var total, pct, level;
+    if (perf === 0 && know === 0 && att === 0) {
+      // No score data — leave blank
+      total = ''; pct = ''; level = '';
+    } else {
       total = perf + know + att;
       pct   = Math.round((total / 15) * 100);
-      backfilled++;
+      level = pct >= 90 ? 'Excellent' : pct >= 75 ? 'Good' : 'Needs Improvement';
+      written++;
     }
-
-    var level = pct >= 90 ? 'Excellent' : pct >= 75 ? 'Good' : 'Needs Improvement';
-    if (pct === 0 && total === 0) level = '';
 
     newTotals.push([total]);
     newPcts.push([pct]);
     newLevels.push([level]);
   }
 
+  // ALWAYS overwrite Total Score and Percentage from scratch — ignore old values
   sheet.getRange(2, colTotal, numRows, 1).setValues(newTotals);
   sheet.getRange(2, colPct,   numRows, 1).setValues(newPcts);
-  sheet.getRange(2, colLevel, numRows, 1).setValues(newLevels);
+  if (colLevel) sheet.getRange(2, colLevel, numRows, 1).setValues(newLevels);
 
-  Logger.log('  ✅ Backfilled ' + backfilled + ' rows. All ' + numRows + ' rows verified.');
+  Logger.log('  ✅ Wrote fresh Total/Pct/Level for ' + written + ' scored rows out of ' + numRows + ' total rows.');
+  Logger.log('  Sample check row 2: perf=' + toScore(perfVals[0][0]) + ' know=' + toScore(knowVals[0][0]) +
+             ' att=' + toScore(attVals[0][0]) + ' → total=' + newTotals[0][0] + ' pct=' + newPcts[0][0] + '%');
 }
 
 /** Convert a score cell value (label or number) to integer 1–5, or 0 if blank */

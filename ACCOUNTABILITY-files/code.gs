@@ -789,7 +789,26 @@ function getTrainingRecords(ss) {
              ' (header: "' + headers[colMap[COLUMNS.PERCENTAGE]] + '")');
 
   return allData.slice(1).map(function(rawRow) {
-    return colMap.map(function(srcIdx) { return rawRow[srcIdx] !== undefined ? rawRow[srcIdx] : ''; });
+    var mapped = colMap.map(function(srcIdx) { return rawRow[srcIdx] !== undefined ? rawRow[srcIdx] : ''; });
+
+    // Safety net: if Percentage is 0/blank but the 3 score columns have label values,
+    // derive pct on the fly so analytics are never blocked by a missing column
+    var pct = parseFloat(mapped[COLUMNS.PERCENTAGE]) || 0;
+    if (pct === 0) {
+      var LMAP = { 'Poor': 1, 'Developing': 2, 'Average': 3, 'Strong': 4, 'Excellent': 5 };
+      var p = LMAP[mapped[COLUMNS.PERFORMANCE_SCORE]] || parseInt(mapped[COLUMNS.PERFORMANCE_SCORE]) || 0;
+      var k = LMAP[mapped[COLUMNS.KNOWLEDGE_SCORE]]   || parseInt(mapped[COLUMNS.KNOWLEDGE_SCORE])   || 0;
+      var a = LMAP[mapped[COLUMNS.ATTITUDE_SCORE]]    || parseInt(mapped[COLUMNS.ATTITUDE_SCORE])    || 0;
+      if (p > 0 || k > 0 || a > 0) {
+        var derivedTotal = p + k + a;
+        mapped[COLUMNS.TOTAL_SCORE] = derivedTotal;
+        mapped[COLUMNS.PERCENTAGE]  = Math.round((derivedTotal / 15) * 100);
+        var derivedPct = mapped[COLUMNS.PERCENTAGE];
+        mapped[COLUMNS.PERFORMANCE_LEVEL] = mapped[COLUMNS.PERFORMANCE_LEVEL] ||
+          (derivedPct >= 90 ? 'Excellent' : derivedPct >= 75 ? 'Good' : 'Needs Improvement');
+      }
+    }
+    return mapped;
   });
 }
 
