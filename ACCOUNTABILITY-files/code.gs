@@ -680,6 +680,9 @@ function createLocationSummarySheet(ss) {
     ];
 
     sheet.getRange(row, 1, metricsFormulas.length, 6).setValues(metricsFormulas);
+    // Average Score (row+1) and Excellence Rate (row+2): cols B–E display integers as "60%"
+    sheet.getRange(row + 1, 2, 1, 4).setNumberFormat('0"%"'); // Average Score (%)
+    sheet.getRange(row + 2, 2, 1, 4).setNumberFormat('0"%"'); // Excellence Rate (%)
     row += metricsFormulas.length + 2;
   });
 
@@ -902,6 +905,8 @@ function populateAnalyticsDashboard(ss, records) {
     ['Active Trainers'].concat(periods.map(function(p) { return p.trainers.size; }))
   ];
   sheet.getRange(7, 1, overviewData.length, 5).setValues(overviewData);
+  // Rows 8–11 are the % rows (Avg Score, Excellent Rate, Good Rate, NI Rate) — cols B–E
+  sheet.getRange(8, 2, 4, 4).setNumberFormat('0"%"');
 
   // Populate location rows (rows 17-19)
   CONFIG.LOCATIONS.forEach(function(loc, i) {
@@ -913,6 +918,8 @@ function populateAnalyticsDashboard(ss, records) {
     sheet.getRange(row, 4).setValue(b.total > 0 ? Math.round(b.excellent / b.total * 100) : 0);
     sheet.getRange(row, 5).setValue(b.total > 0 ? Math.round(b.ni / b.total * 100) : 0);
   });
+  // Cols C–E on location rows are all %
+  sheet.getRange(17, 3, CONFIG.LOCATIONS.length, 3).setNumberFormat('0"%"');
 }
 
 function newBucket() {
@@ -997,10 +1004,15 @@ function populateTrainerPerformance(ss, records) {
       sheet.getRange(row, col).setValue('');
       sheet.getRange(row, col + 1).setValue(d.trainer);
       sheet.getRange(row, col + 2).setValue(d.count).setNumberFormat('0');
-      sheet.getRange(row, col + 3).setValue(Math.round(d.scoreSum / d.count * 100)).setNumberFormat('0');  // avg %
-      sheet.getRange(row, col + 4).setValue(Math.round(d.successes / d.count * 100)).setNumberFormat('0');
+      sheet.getRange(row, col + 3).setValue(Math.round(d.scoreSum / d.count * 100)).setNumberFormat('0"%"');
+      sheet.getRange(row, col + 4).setValue(Math.round(d.successes / d.count * 100)).setNumberFormat('0"%"');
       row++;
     });
+    // Batch-format the entire Avg Score and Success Rate columns for this location section
+    if (row > 3) {
+      sheet.getRange(3, col + 3, row - 3, 1).setNumberFormat('0"%"');
+      sheet.getRange(3, col + 4, row - 3, 1).setNumberFormat('0"%"');
+    }
   });
 
   SpreadsheetApp.flush();
@@ -1088,6 +1100,7 @@ function populateMonthlyLocationPerformance(ss, records) {
       .setBackground('#8FA4A7').setFontColor('#FFFFFF').setFontWeight('bold');
     row++;
 
+    var locDataStart = row;
     sorted.filter(function(d) { return d.loc === loc; }).forEach(function(d) {
       sheet.getRange(row, 1, 1, 7).setValues([[
         d.month,
@@ -1100,6 +1113,10 @@ function populateMonthlyLocationPerformance(ss, records) {
       ]]);
       row++;
     });
+    if (row > locDataStart) {
+      sheet.getRange(locDataStart, 3, row - locDataStart, 1).setNumberFormat('0"%"'); // Avg Score (%)
+      sheet.getRange(locDataStart, 7, row - locDataStart, 1).setNumberFormat('0"%"'); // Success Rate (%)
+    }
     row += 2;
   });
 

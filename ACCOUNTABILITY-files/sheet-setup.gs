@@ -385,6 +385,9 @@ function step7_rebuildLocationSummaryFormulas(ss) {
     ];
 
     ls.getRange(row, 1, formulas.length, 6).setValues(formulas);
+    // Average Score (row+1) and Excellence Rate (row+2): cols B–E display integers as "60%"
+    ls.getRange(row + 1, 2, 1, 4).setNumberFormat('0"%"'); // Average Score (%)
+    ls.getRange(row + 2, 2, 1, 4).setNumberFormat('0"%"'); // Excellence Rate (%)
     row += formulas.length + 2;
   });
 
