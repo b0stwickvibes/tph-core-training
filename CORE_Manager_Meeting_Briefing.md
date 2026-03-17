@@ -206,7 +206,105 @@ Day 1 for all roles at all locations is Orientation.
 
 ---
 
-# SECTION 7: MEETING AGENDA
+# SECTION 6B: ACCOUNTABILITY APP — WHAT'S BEEN UPGRADED
+
+> This is a behind-the-scenes overview for managers. You don't need to touch anything — the app handles it automatically. This section is so you know exactly what happens after a trainer hits "Submit."
+
+---
+
+## What the App Does
+
+When a trainer completes a shift and submits the accountability report, the app:
+
+1. Records the session in a secure Google Sheet
+2. Emails you a full summary of that shift immediately
+3. Flags anything that needs your attention
+4. Saves the checklist photo to a structured Google Drive folder
+5. Updates all four analytics dashboards automatically
+
+---
+
+## The Email You Receive
+
+Every submission sends you a formatted email. Here's what's in it:
+
+**Subject line reads:**
+> `[TPH Training] Training Assessment — Sarah Johnson → Marcus | Day 3 | Good`
+
+So before you even open it, you know: who trained, who got trained, what day, and how it went.
+
+**Inside the email:**
+
+| Section | What It Shows |
+|---------|--------------|
+| **Session Header** | Location, trainer, trainee, position, shift, and training day |
+| **Performance Badge** | A color-coded result — 🟢 Excellent / 🔵 Good / 🔴 Needs Improvement — with the percentage score |
+| **Score Breakdown** | The three scoring categories: Performance, Knowledge, and Attitude |
+| **Accountability Notes** | What was covered that shift, where the trainee is struggling, the plan for the next shift, and whether the end-of-shift recap happened |
+| **Overall Notes** | Any freeform notes the trainer added |
+| **Checklist Photo** | A direct link to view the signed floor checklist in Google Drive |
+
+---
+
+## Alert Emails (Separate from the Summary)
+
+If something needs immediate attention, you get a **second, separate alert email** — red-themed so it stands out. Three things trigger an alert:
+
+| Trigger | What It Means |
+|---------|--------------|
+| **Low score on Day 4 or 5** | Trainee scored below 75% late in training. May not be ready for mock service. |
+| **Missed end-of-shift recap** | Trainer skipped the recap conversation with the trainee. |
+| **Consecutive "Needs Improvement" scores** | Same trainee has scored Needs Improvement two or more shifts in a row — a pattern flag, not just a bad day. |
+
+Alert emails include: trainer name, trainee name, training day, location, score, and the exact flag text so you know exactly what to follow up on.
+
+---
+
+## How Checklist Photos Are Organized in Google Drive
+
+Every photo the trainer uploads goes into a structured folder automatically. No manual organizing required.
+
+**Folder structure:**
+```
+TPH Training Checklists
+  └── Cantina Añejo
+        └── Sarah Johnson  ← Trainer's folder
+              Day1_Marcus_2026-03-17.jpg
+              Day2_Marcus_2026-03-18.jpg
+              Day1_Jess_2026-03-19.jpg
+  └── Original American Kitchen
+        └── Tanner Griffin
+              Day3_Alex_2026-03-17.jpg
+  └── White Buffalo
+        └── Dani Mizrachi
+              ...
+```
+
+**Why it's organized by trainer, not trainee:**
+- Trainer names come from a locked dropdown on the form — no typos possible
+- Trainee names are typed in freehand — organizing by trainee would mean one misspelling creates a stray folder
+- Every trainee's name is still in the filename (e.g., `Day2_Marcus_2026-03-18.jpg`), so you can find any trainee's history by searching
+
+To find a trainer's checklist photos: open their folder in Drive. Every shift they've trained is right there.
+
+---
+
+## The Four Analytics Dashboards (Auto-Updated)
+
+Every time the app receives a submission, four dashboards in Google Sheets update automatically. No one has to maintain them.
+
+| Dashboard | What It Shows |
+|-----------|--------------|
+| **Analytics Dashboard** | Overall performance totals — this week, last week, this month, all time. Breakdown by location. |
+| **Trainer Performance** | Each trainer's assessment count, average score, and success rate, organized by month. |
+| **Monthly Location Performance** | Month-by-month breakdown per location — total assessments, average scores, and how many trainees hit the "Good or better" threshold. |
+| **Location Summary** | Live formulas showing all-time, this-month, and last-month totals per location — automatically updates as new submissions come in. |
+
+These are your real-time visibility layer. If you want to know how Cantina's training is going this month, open the Location Summary. If you want to see which trainer has the best success rate, open Trainer Performance.
+
+---
+
+
 
 **Duration: 3 Hours | Date: March 18, 2026**
 
@@ -217,7 +315,7 @@ Day 1 for all roles at all locations is Orientation.
 | **3** | 15 min | **Live Demo: Daily Training Guide** | Walk through the 3 Trainual steps (Before We Begin → Checklists → End of Shift). Show the actual subject in Trainual. |
 | **4** | 20 min | **Live Demo: Floor Checklist** | Print a Bartender Day 1 checklist from Google Sheets. Walk through how a trainer uses it on the floor. |
 | **5** | 15 min | **Live Demo: Enriched Trainee Manual** | Show a day in Trainual. Skill/Process/Guest-Facing buckets. How it supports knowledge checks. |
-| **6** | 15 min | **Accountability System** | The App, the photo upload, Day 1/Day 5 check-ins, the "no submission = no incentive" rule. |
+| **6** | 20 min | **Accountability System** | The App, the photo upload, Day 1/Day 5 check-ins, the "no submission = no incentive" rule. Walk through what the submission email looks like. Show the four dashboards live. |
 | — | 10 min | **BREAK** | — |
 | **7** | 15 min | **Trainer Schedule** | Walk through the schedule by location. Shift assignments, Day 1 orientation times, Days 2-5 rotations. |
 | **8** | 15 min | **30-Day Mentorship & Evaluation** | Post-training expectations. Day 30 rubric. Pass/Conditional/Fail outcomes. Trainer payout tied to trainee performance. |
