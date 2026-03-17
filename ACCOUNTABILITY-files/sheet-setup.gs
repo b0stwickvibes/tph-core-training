@@ -389,6 +389,11 @@ function step7_rebuildLocationSummaryFormulas(ss) {
 // ============================================================================
 
 function step8_backfillScoresAndPercentage(sheet) {
+  // Allow running standalone from the editor (no argument)
+  if (!sheet) {
+    sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(SHEET_NAME);
+    if (!sheet) { Logger.log('Sheet "' + SHEET_NAME + '" not found.'); return; }
+  }
   Logger.log('Step 8: Backfilling scores and percentage for existing rows...');
   var h = getHeaderMap(sheet);
 
