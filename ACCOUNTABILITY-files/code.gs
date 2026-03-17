@@ -46,8 +46,8 @@ const CONFIG = {
     // Leave an ID blank ('') to auto-create a folder by name instead
     LOCATION_FOLDERS: {
       'Cantina Añejo':              { id: '1smxt36fkuKB5NmFG94NML8qZlp3Wc4TG', name: 'Cantina Trainer Upload' },
-      'Original American Kitchen':  { id: '', name: 'OAK Trainer Upload' },
-      'White Buffalo':              { id: '', name: 'WB Trainer Upload' }
+      'Original American Kitchen':  { id: '1GHGorN1BZjw5sNyKIPpE3DJ-AXozy98X', name: 'OAK Trainer Upload' },
+      'White Buffalo':              { id: '1YcAchHDrFG4ucIVtyinHDbzeTv7lZSJT', name: 'WB Trainer Upload' }
     },
     MAX_SIZE_MB: 10,
     ALLOWED_TYPES: ['image/jpeg', 'image/png', 'image/heic']
