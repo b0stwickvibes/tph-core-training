@@ -77,16 +77,28 @@ function loadTrainerRoster() {
     google.script.run
       .withSuccessHandler(function (roster) {
         trainersByLocation = roster || {};
+        populateLocationDropdown();
         console.log('✅ Trainer roster loaded from backend');
       })
       .withFailureHandler(function () {
         console.log('⚠️ Backend unavailable, using fallback roster');
         trainersByLocation = getFallbackRoster();
+        populateLocationDropdown();
       })
       .getTrainerRoster();
   } else {
     trainersByLocation = getFallbackRoster();
+    populateLocationDropdown();
   }
+}
+
+function populateLocationDropdown() {
+  const locationSelect = document.getElementById('location');
+  if (!locationSelect) return;
+  locationSelect.innerHTML = '<option value="">Select Location</option>';
+  Object.keys(trainersByLocation).forEach(function(loc) {
+    addOption(locationSelect, loc, loc);
+  });
 }
 
 function getFallbackRoster() {

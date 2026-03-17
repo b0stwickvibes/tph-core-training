@@ -231,11 +231,11 @@
                     <div class="total-score" id="totalScore">0</div>
                     <div class="performance-level" id="performanceLevel"></div>
                     <div class="score-breakdown">
-                        <div>Knowledge: <span id="knowledgeScoreDisplay">0</span>/5</div>
-                        <div>Technical: <span id="technicalScoreDisplay">0</span>/5</div>
-                        <div>Service: <span id="serviceScoreDisplay">0</span>/5</div>
-                        <div>Teamwork: <span id="teamworkScoreDisplay">0</span>/5</div>
-                        <div>Professionalism: <span id="professionalismScoreDisplay">0</span>/5</div>
+                        <div>Knowledge: <span id="knowledgeScore">0</span>/5</div>
+                        <div>Technical: <span id="technicalScore">0</span>/5</div>
+                        <div>Service: <span id="serviceScore">0</span>/5</div>
+                        <div>Teamwork: <span id="teamworkScore">0</span>/5</div>
+                        <div>Professionalism: <span id="professionalismScore">0</span>/5</div>
                     </div>
                 </div>
             </div>
@@ -287,7 +287,7 @@
                     </label>
                 </div>
 
-                <div class="follow-up-field" id="recapMissedReasonField" style="display: none;">
+                <div class="follow-up-field" id="recapFollowUp" style="display: none;">
                     <label for="recapMissedReason">Why was the recap missed? <span class="required">*</span></label>
                     <textarea id="recapMissedReason" name="recapMissedReason" rows="2" placeholder="e.g. Trainee had to leave early, shift ran late and didn't have time..."></textarea>
                 </div>
@@ -302,14 +302,14 @@
 
                 <div class="photo-upload-area" id="photoUploadArea">
                     <input type="file" id="checklistPhoto" accept="image/jpeg,image/png,image/heic" style="display: none;">
-                    <div id="photoPlaceholder" class="photo-placeholder">
+                    <div id="uploadPlaceholder" class="photo-placeholder">
                         <span class="upload-icon">📷</span>
                         <span>Tap to upload checklist photo</span>
                         <span class="upload-hint">JPG, PNG, or HEIC — max 10 MB</span>
                     </div>
-                    <div id="photoPreview" class="photo-preview" style="display: none;">
+                    <div id="uploadPreview" class="photo-preview" style="display: none;">
                         <img id="photoPreviewImg" src="" alt="Checklist preview">
-                        <button type="button" class="remove-photo" id="removePhotoBtn">✕ Remove</button>
+                        <button type="button" class="remove-photo" id="removePhoto">✕ Remove</button>
                     </div>
                 </div>
             </div>
@@ -335,7 +335,7 @@
             <div class="success-content">
                 <h3>✅ Assessment Submitted</h3>
                 <p>Record saved to the system.</p>
-                <p class="record-id" id="submittedRecordId"></p>
+                <p class="record-id" id="successRecordId"></p>
                 <button onclick="window.location.reload()" class="submit-btn">Submit Another Assessment</button>
             </div>
         </div>
