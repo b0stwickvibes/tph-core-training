@@ -229,9 +229,9 @@ When a trainer completes a shift and submits the accountability report, the app:
 Every submission sends you a formatted email. Here's what's in it:
 
 **Subject line reads:**
-> `[Training Accountability Submission] Sarah Johnson → Marcus | Day 3 | Good`
+> `Day 3 Training Submission || Sarah Johnson → Marcus`
 
-So before you even open it, you know: who trained, who got trained, what day, and how it went.
+So before you even open it, you know: what day, who trained, and who got trained.
 
 **Inside the email:**
 
@@ -248,13 +248,19 @@ So before you even open it, you know: who trained, who got trained, what day, an
 
 ## Alert Emails (Separate from the Summary)
 
-If something needs immediate attention, you get a **second, separate alert email** — red-themed so it stands out. Three things trigger an alert:
+If something needs immediate attention, you get a **second, separate alert email** — red-themed so it stands out. The subject line tells you exactly what's wrong before you open it:
 
-| Trigger | What It Means |
-|---------|--------------|
-| **Low score on Day 4 or 5** | Trainee scored below 75% late in training. May not be ready for mock service. |
-| **Missed end-of-shift recap** | Trainer skipped the recap conversation with the trainee. |
-| **Consecutive "Needs Improvement" scores** | Same trainee has scored Needs Improvement two or more shifts in a row — a pattern flag, not just a bad day. |
+> `[NO RECAP] Day 3 Training Submission || Sarah Johnson → Marcus`
+> `[LOW SCORE] Day 5 Training Submission || Tanner Griffin → Alex`
+> `[NO RECAP] [CONSECUTIVE NI] Day 4 Training Submission || Dani Mizrachi → Jess`
+
+Three things trigger an alert:
+
+| Trigger | Subject Tag | What It Means |
+|---------|------------|--------------|
+| **Low score on Day 4 or 5** | `[LOW SCORE]` | Trainee scored below 75% late in training. May not be ready for mock service. |
+| **Missed end-of-shift recap** | `[NO RECAP]` | Trainer skipped the recap conversation with the trainee. |
+| **Consecutive "Needs Improvement" scores** | `[CONSECUTIVE NI]` | Same trainee has scored Needs Improvement two or more shifts in a row — a pattern flag, not just a bad day. |
 
 Alert emails include: trainer name, trainee name, training day, location, score, and the exact flag text so you know exactly what to follow up on.
 

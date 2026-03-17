@@ -24,7 +24,6 @@ const CONFIG = {
   EMAIL: {
     ENABLED: true,
     RECIPIENTS: ['devin@threepointshospitality.com'],
-    SUBJECT_PREFIX: '[Training Accountability Submission]',
     HOURLY_LIMIT: 10
   },
   LOCATIONS: ['Cantina Añejo', 'Original American Kitchen', 'White Buffalo'],
@@ -451,8 +450,15 @@ function checkAlertConditions(data, percentage, performanceLevel, recordId) {
   // Send alert email if any flags triggered
   if (alerts.length > 0) {
     try {
-      const subject = CONFIG.EMAIL.SUBJECT_PREFIX + ' ⚠️ Alert — ' +
-        data.trainer + ' → ' + data.trainee + ' | Day ' + data.trainingDay + ' | ' + data.location;
+      // Build flag tags for the subject line
+      var flagTags = [];
+      if (data.recap && data.recap.toString().startsWith('No')) flagTags.push('NO RECAP');
+      if ((day === 4 || day === 5) && percentage < CONFIG.SCORING.THRESHOLDS.GOOD / 100) flagTags.push('LOW SCORE');
+      if (performanceLevel === 'Needs Improvement' && checkConsecutiveNI(data.trainee, data.location) >= 2) flagTags.push('CONSECUTIVE NI');
+
+      var tagPrefix = '[' + flagTags.join('] [') + '] ';
+      const subject = tagPrefix + 'Day ' + data.trainingDay + ' Training Submission || ' +
+        data.trainer + ' → ' + data.trainee;
 
       const alertRows = alerts.map(function(a) {
         return '<tr><td style="padding:10px 14px;border-bottom:1px solid #fcc;font-size:13px;line-height:1.5;">' + a + '</td></tr>';
@@ -541,9 +547,9 @@ function sendNotificationSafe(data, recordId, totalScore, percentage, performanc
       return;
     }
 
-    // Subject includes trainer + trainee + day
-    const subject = CONFIG.EMAIL.SUBJECT_PREFIX + ' ' +
-      data.trainer + ' → ' + data.trainee + ' | Day ' + data.trainingDay + ' | ' + performanceLevel;
+    // Subject: "Day 3 Training Submission || Trainer → Trainee"
+    const subject = 'Day ' + data.trainingDay + ' Training Submission || ' +
+      data.trainer + ' → ' + data.trainee;
 
     // Badge colour by performance level
     const levelColor = performanceLevel === 'Excellent'          ? '#34A853'
@@ -687,7 +693,7 @@ function sendNotificationSafe(data, recordId, totalScore, percentage, performanc
 
     // Plain-text fallback
     const plainBody = [
-      'C.O.R.E. Training Assessment — ' + data.trainer + ' → ' + data.trainee,
+      'Day ' + data.trainingDay + ' Training Submission || ' + data.trainer + ' → ' + data.trainee,
       'Day ' + data.trainingDay + ' | ' + data.location + ' | ' + (data.shift || 'No shift'),
       '',
       'Score: ' + scorePercent + '% (' + totalScore + '/15) — ' + performanceLevel,
