@@ -675,7 +675,7 @@ function createLocationSummarySheet(ss) {
         '=' + TRAINER_COUNTS[location],
         '=B' + (row+3),
         '=B' + (row+3),
-        '', 'Roster count']
+        '"—"', 'Roster count (static)']
     ];
 
     sheet.getRange(row, 1, metricsFormulas.length, 6).setValues(metricsFormulas);
@@ -744,11 +744,69 @@ function refreshAnalytics() {
   }
 }
 
-/** Read all Training Records (skip header). Returns array of row arrays. */
+/**
+ * Read all Training Records and return as array of objects keyed by header name.
+ * Reading by header name — immune to column order changes after migration.
+ */
 function getTrainingRecords(ss) {
   const sheet = ss.getSheetByName('Training Records');
   if (!sheet || sheet.getLastRow() <= 1) return [];
-  return sheet.getDataRange().getValues().slice(1);
+
+  const lastCol = sheet.getLastColumn();
+  const lastRow = sheet.getLastRow();
+  const allData = sheet.getRange(1, 1, lastRow, lastCol).getValues();
+  const headers = allData[0].map(function(h) { return (h || '').toString().trim(); });
+
+  // Build a header→colIndex map (0-based)
+  var colIndex = {};
+  headers.forEach(function(h, i) { if (h) colIndex[h] = i; });
+
+  // For each data row, build a positional array matching COLUMNS (0–18)
+  // Falls back to COLUMNS positional index if header isn't found
+  var colMap = [
+    colIndex['Timestamp']           !== undefined ? colIndex['Timestamp']           : COLUMNS.TIMESTAMP,
+    colIndex['Location']            !== undefined ? colIndex['Location']            : COLUMNS.LOCATION,
+    colIndex['Trainer']             !== undefined ? colIndex['Trainer']             : COLUMNS.TRAINER,
+    colIndex['Trainee']             !== undefined ? colIndex['Trainee']             : COLUMNS.TRAINEE,
+    colIndex['Position']            !== undefined ? colIndex['Position']            : COLUMNS.POSITION,
+    colIndex['Training Day']        !== undefined ? colIndex['Training Day']        : COLUMNS.TRAINING_DAY,
+    colIndex['Shift']               !== undefined ? colIndex['Shift']               : COLUMNS.SHIFT,
+    colIndex['Performance Level']   !== undefined ? colIndex['Performance Level']   : COLUMNS.PERFORMANCE_LEVEL,
+    colIndex['Overall Notes']       !== undefined ? colIndex['Overall Notes']       : COLUMNS.OVERALL_NOTES,
+    colIndex['Performance Score']   !== undefined ? colIndex['Performance Score']   : COLUMNS.PERFORMANCE_SCORE,
+    colIndex['Knowledge Score']     !== undefined ? colIndex['Knowledge Score']     : COLUMNS.KNOWLEDGE_SCORE,
+    colIndex['Attitude Score']      !== undefined ? colIndex['Attitude Score']      : COLUMNS.ATTITUDE_SCORE,
+    colIndex['Total Score']         !== undefined ? colIndex['Total Score']         : COLUMNS.TOTAL_SCORE,
+    colIndex['Percentage']          !== undefined ? colIndex['Percentage']          : COLUMNS.PERCENTAGE,
+    colIndex['What Was Covered']    !== undefined ? colIndex['What Was Covered']    : COLUMNS.WHAT_COVERED,
+    colIndex['Where Struggling']    !== undefined ? colIndex['Where Struggling']    : COLUMNS.WHERE_STRUGGLING,
+    colIndex['Plan for Next Shift'] !== undefined ? colIndex['Plan for Next Shift'] : COLUMNS.PLAN_FORWARD,
+    colIndex['Recap']               !== undefined ? colIndex['Recap']               : COLUMNS.RECAP,
+    colIndex['Checklist Photo URL'] !== undefined ? colIndex['Checklist Photo URL'] : COLUMNS.PHOTO_URL
+  ];
+
+  Logger.log('getTrainingRecords: Percentage reading from col index ' + colMap[COLUMNS.PERCENTAGE] +
+             ' (header: "' + headers[colMap[COLUMNS.PERCENTAGE]] + '")');
+
+  return allData.slice(1).map(function(rawRow) {
+    return colMap.map(function(srcIdx) { return rawRow[srcIdx] !== undefined ? rawRow[srcIdx] : ''; });
+  });
+}
+
+/** Logs a sample of Training Records data — run standalone to diagnose column mapping issues */
+function logDataSample() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var records = getTrainingRecords(ss);
+  Logger.log('Total records: ' + records.length);
+  records.slice(0, 5).forEach(function(r, i) {
+    Logger.log('Row ' + (i+2) + ': loc=' + r[COLUMNS.LOCATION] +
+               ' | perfScore=' + r[COLUMNS.PERFORMANCE_SCORE] +
+               ' | knowScore=' + r[COLUMNS.KNOWLEDGE_SCORE] +
+               ' | attScore='  + r[COLUMNS.ATTITUDE_SCORE] +
+               ' | total='     + r[COLUMNS.TOTAL_SCORE] +
+               ' | pct='       + r[COLUMNS.PERCENTAGE] +
+               ' | level='     + r[COLUMNS.PERFORMANCE_LEVEL]);
+  });
 }
 
 
@@ -986,7 +1044,7 @@ function populateMonthlyLocationPerformance(ss, records) {
     if (level === 'Excellent') grouped[key].excellent++;
     if (level === 'Good') grouped[key].good++;
     if (level === 'Needs Improvement') grouped[key].ni++;
-    if (pct >= 80) grouped[key].success++;
+    if (pct >= CONFIG.SCORING.THRESHOLDS.GOOD) grouped[key].success++;
   });
 
   var sorted = Object.values(grouped).sort(function(a, b) {
@@ -1006,7 +1064,7 @@ function populateMonthlyLocationPerformance(ss, records) {
 
     // Column headers
     sheet.getRange(row, 1, 1, 7)
-      .setValues([['Month', 'Total', 'Avg Score', 'Excellent', 'Good', 'Needs Improvement', 'Success Rate (%)']])
+      .setValues([['Month', 'Total', 'Avg Score (%)', 'Excellent', 'Good', 'Needs Improvement', 'Success Rate (%)']])
       .setBackground('#8FA4A7').setFontColor('#FFFFFF').setFontWeight('bold');
     row++;
 

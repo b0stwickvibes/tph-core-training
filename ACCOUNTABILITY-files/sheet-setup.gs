@@ -376,7 +376,7 @@ function step7_rebuildLocationSummaryFormulas(ss) {
         '=' + SETUP_TRAINER_COUNTS[location],
         '=B' + (row+3),
         '=B' + (row+3),
-        '', 'Roster count']
+        '"—"', 'Roster count (static)']
     ];
 
     ls.getRange(row, 1, formulas.length, 6).setValues(formulas);
