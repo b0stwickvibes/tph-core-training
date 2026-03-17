@@ -339,15 +339,18 @@ function saveChecklistPhoto(data) {
       rootFolder = DriveApp.createFolder(CONFIG.PHOTO_UPLOAD.FOLDER_NAME);
     }
 
-    // Organize: Location / Trainee / Day
+    // Organize: Location / Trainer (fixed roster — never misspelled)
+    // Trainee name is embedded in filename so photos remain searchable
     const locationFolder = getOrCreateSubfolder(rootFolder, data.location);
-    const traineeFolder = getOrCreateSubfolder(locationFolder, data.trainee);
+    const trainerFolder  = getOrCreateSubfolder(locationFolder, data.trainer);
 
-    // Name the file descriptively
+    // Filename: Day{N}_{Trainee}_{date}.{ext}
+    // Trainee comes from free-text input so we sanitize it for a safe filename
+    const safeTrainee = (data.trainee || 'Unknown').replace(/[^a-zA-Z0-9\-_ ]/g, '').trim() || 'Unknown';
     const dateStr = Utilities.formatDate(new Date(), Session.getScriptTimeZone(), 'yyyy-MM-dd');
-    const fileName = 'Day' + data.trainingDay + '_' + data.trainee + '_' + dateStr + '.' + getExtension(data.photoFileName);
+    const fileName = 'Day' + data.trainingDay + '_' + safeTrainee + '_' + dateStr + '.' + getExtension(data.photoFileName);
 
-    const file = traineeFolder.createFile(blob.setName(fileName));
+    const file = trainerFolder.createFile(blob.setName(fileName));
     file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
 
     console.log('✓ Photo saved: ' + file.getUrl());
@@ -666,7 +669,7 @@ function sendNotificationSafe(data, recordId, totalScore, percentage, performanc
       padding-bottom:6px;margin-bottom:12px;">Checklist Photo</h3>
     <p style="margin:0 0 20px;font-size:13px;">${photoBlock}</p>
     ${data.photoUrl ? '<p style="font-size:11px;color:#aaa;margin:-14px 0 20px;">File saved in Google Drive under ' +
-      'TPH Training Checklists / ' + data.location + ' / ' + data.trainee + '</p>' : ''}
+      'TPH Training Checklists / ' + data.location + ' / ' + data.trainer + '</p>' : ''}
 
   </div>
 
