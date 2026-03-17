@@ -1,8 +1,6 @@
 // ============================================================
-// 30-DAY EVAL BUILDER — THREE POINTS HOSPITALITY
-// Builds one sheet per ROLE per LOCATION.
-// Cantina: Bartender / Server / Host
-// OAK:     Bartender / Server / Host  (duplicate file, swap config)
+// 30-DAY EVAL BUILDER — ORIGINAL AMERICAN KITCHEN (OAK)
+// Builds one sheet per ROLE: Bartender / Server / Host
 // ============================================================
 
 function onOpen() {
@@ -865,71 +863,70 @@ function formatActiveSheet() {
 }
 
 // ============================================================
-// LOCATION CONFIG — Cantina Añejo
-// Duplicate this file and swap data below for OAK / WB
+// LOCATION CONFIG — Original American Kitchen (OAK)
 // ============================================================
 
 function getLocationConfig() {
   return {
-    locationShort: 'Cantina',
-    locationDisplay: 'Cantina Añejo GNV',
+    locationShort: 'OAK',
+    locationDisplay: 'Original American Kitchen (OAK)',
 
     setA: [
-      { num: 'A-1', question: 'What are the Happy Hour times?', answer: 'Mon–Thu, 5:00 PM – 7:00 PM' },
-      { num: 'A-2', question: 'Name the five $4 well spirits.', answer: 'E11even Vodka, Bombay Gin, Bacardi Rum, Evan Williams Whiskey, Cazadores Blanco' },
-      { num: 'A-3', question: 'True or False: HH applies on Gamedays and Holidays.', answer: 'False' },
-      { num: 'A-4', question: 'What are the $7 / $9 / $10 Patron specials?', answer: '$7 Silver · $9 Reposado · $10 Añejo Cantina Barrel Select' },
-      { num: 'A-5', question: 'Which Woodbridge wines are on Happy Hour?', answer: 'Cabernet, Rosé, Chardonnay, Pinot Grigio' },
+      { num: 'A-1', question: 'What are the Happy Hour times?', answer: 'Mon–Fri, 4:00 PM – 6:00 PM' },
+      { num: 'A-2', question: 'Name the $5 craft beers on Happy Hour.', answer: 'Founders All Day IPA · Kona Big Wave · Dry Wrought Seasonal Cider · Cypress & Grove Prairie Ride' },
+      { num: 'A-3', question: 'What are the three $6 classic cocktails on HH?', answer: 'Margarita · Old Fashioned · Gimlet' },
+      { num: 'A-4', question: 'Which four house wines are on Happy Hour?', answer: 'Pinot Grigio · Chardonnay · Cabernet Sauvignon · Merlot' },
+      { num: 'A-5', question: 'Does HH pricing apply on Gamedays or Holidays?', answer: 'No' },
       { num: 'A-6', question: 'What is the Hi! Method under pressure?', answer: 'Acknowledge immediately · finish current priority correctly · return with control and hospitality' },
-      { num: 'A-7', question: 'What is the 10-Foot Rule?', answer: 'Acknowledge nearby guests with eye contact and readiness to assist' },
+      { num: 'A-7', question: 'What is the 10-Foot Rule?', answer: 'Within 10 feet of a guest, make eye contact and acknowledge them' },
       { num: 'A-8', question: 'What is the 60-Second Rule?', answer: 'Greet a newly seated table within 60 seconds' }
     ],
 
     setBBartender: [
-      { num: 'BB-1', question: 'What is the House Margarita spec?', answer: '2oz Cazadores · 1oz Triple Sec · 0.75oz Lime · 0.5oz Agave' },
-      { num: 'BB-2', question: 'What makes the Smoked Añejo Old Fashioned unique?', answer: 'Tequila-based · made with Patron Barrel Select Cantina Añejo' },
-      { num: 'BB-3', question: 'What does additive-free tequila mean?', answer: 'Made only with agave, water, and yeast — no legal additives' },
+      { num: 'BB-1', question: 'What is the OAK House Margarita spec?', answer: '2oz Cazadores · 1oz Triple Sec · 0.75oz Lime Juice · 0.5oz Agave' },
+      { num: 'BB-2', question: 'Describe the Smoked Pecan Old Fashioned.', answer: 'Pecan-infused Buffalo Trace bourbon · turbinado 4-spice pecan simple syrup · chocolate bitters · smoked glass' },
+      { num: 'BB-3', question: 'What is the OAK signature draft lineup?', answer: 'Ask manager for current tap list — rotates seasonally' },
       { num: 'BB-4', question: 'Single / Rocks / Double pour sizes?', answer: '1.25oz / 1.75oz / 2.25oz' },
-      { num: 'BB-5', question: 'Frozen Float upcharge and spirit?', answer: '$5 · Bacardi Black float' },
-      { num: 'BB-6', question: 'List all draft beers and styles.', answer: 'Modelo (Lager) · Dos XX Lager · Dos XX Ambar · FM Cantina Lager · Blue Moon · Coors Light · Juicy Haze (IPA) · Swamp Head' },
-      { num: 'BB-7', question: 'Fist grip vs. scissor grip?', answer: 'Fist = precision · Scissor = speed' },
-      { num: 'BB-8', question: 'Añejo Espresso Martini ingredients?', answer: 'Patron Barrel Cantina Añejo · Cazadores Café · espresso · Ancho Reyes · Aztec choc bitters · saline · cinnamon' }
+      { num: 'BB-5', question: 'What makes OAK bourbon program distinct?', answer: 'Curated American whiskey selection with seasonal barrel picks' },
+      { num: 'BB-6', question: 'Fist grip vs. scissor grip?', answer: 'Fist = precision · Scissor = speed' },
+      { num: 'BB-7', question: 'What is a proper whiskey neat presentation?', answer: 'Proper glassware · correct pour · side water offered · no ice unless requested' },
+      { num: 'BB-8', question: 'What is the house mocktail or zero-proof offering?', answer: 'Reference current menu — know at least one and describe it confidently' }
     ],
 
     setBServer: [
-      { num: 'BS-1', question: 'What three items come in the Mexican Trifecta?', answer: 'Salsa Madre · Guacamole Ranchero or Salsa Verde · Queso Blanco' },
-      { num: 'BS-2', question: 'Describe the Birria Jalisco tacos.', answer: 'Birria chuck roast & short rib · pickled red onion · shredded Mexican cheese · cilantro · corn tortilla · consomé' },
-      { num: 'BS-3', question: 'Is the Mexican Brownie gluten free?', answer: 'No' },
-      { num: 'BS-4', question: 'Protein add-on for Grande Nachos?', answer: 'Chicken or Pork +$4 · Birria Beef +$7' },
-      { num: 'BS-5', question: 'Two salad dressing options?', answer: 'Cilantro crema · Mango habanero vinaigrette' },
-      { num: 'BS-6', question: 'What can be added to Fajitas for upsell?', answer: 'Rice and Beans for $3' },
-      { num: 'BS-7', question: 'Describe the Tijuana Caesar dressing.', answer: 'Anchovy · garlic · dijon · cracked black pepper · worcestershire · lime juice · egg yolk' },
-      { num: 'BS-8', question: 'Protein options for Enchiladas?', answer: 'Guajillo Chicken · Citrus Carnitas · Tequila Lime Shrimp · Carne Asada' }
+      { num: 'BS-1', question: 'Describe the OAK signature burger.', answer: 'Reference current menu — must know protein, toppings, bun, and any notable ingredient' },
+      { num: 'BS-2', question: 'What are the two most common allergen concerns on the menu?', answer: 'Gluten (burger buns, breaded items) · Dairy (sauces, cheese)' },
+      { num: 'BS-3', question: 'What is the upsell path on a basic burger order?', answer: 'Upgrade protein · add premium topping · suggest a craft beer or cocktail pairing' },
+      { num: 'BS-4', question: 'Describe the Steps of Service for OAK.', answer: '60-sec greet · drink order + upsell · app rec · food order with mods confirmed · 2-bite check · refills/table manicure · check on signal · farewell' },
+      { num: 'BS-5', question: 'What is the standard for a 2-Bite Check-Back?', answer: 'Return within 2 bites or 2 minutes of entrée delivery. Confirm satisfaction before the guest has to ask.' },
+      { num: 'BS-6', question: 'How do you handle a guest with a gluten allergy?', answer: 'Confirm allergy severity. Note in POS. Communicate to kitchen verbally. Confirm with expo before delivery.' },
+      { num: 'BS-7', question: 'When do you offer dessert?', answer: 'After entrée plates are cleared — proactively, before the guest asks for the check.' },
+      { num: 'BS-8', question: 'Describe a strong farewell at OAK.', answer: 'Thank them by name if known. Mention a reason to return (upcoming special, seasonal item). Hold the door or acknowledge the exit.' }
     ],
 
     setBHost: [
-      { num: 'BH-1', question: 'Three items in the Mexican Trifecta?', answer: 'Salsa Madre · Guacamole Ranchero or Salsa Verde · Queso Blanco' },
-      { num: 'BH-2', question: 'Name the five HH well spirits.', answer: 'E11even Vodka · Bombay Gin · Bacardi Rum · Evan Williams Whiskey · Cazadores Blanco' },
-      { num: 'BH-3', question: 'What is the Farewell Standard?', answer: 'Guest leaves with the same strong impression they arrived with' },
-      { num: 'BH-4', question: 'How do you explain the Street Kitchen concept?', answer: 'Scratch kitchen with international street-inspired dishes' },
-      { num: 'BH-5', question: 'How should you handle first-time guests?', answer: 'Guide them clearly · explain the concept · make strong recommendations' }
+      { num: 'BH-1', question: 'What is the Farewell Standard?', answer: 'Guest leaves with the same strong impression they arrived with' },
+      { num: 'BH-2', question: 'How do you handle a party arriving 15 minutes early for their reservation?', answer: 'Welcome them warmly. Offer the bar if table is not ready. Give an honest ETA. Do not seat them at a dirty or unset table.' },
+      { num: 'BH-3', question: 'What information do you gather when adding someone to the waitlist?', answer: 'Name · party size · phone number · any special needs (high chair, accessibility)' },
+      { num: 'BH-4', question: 'How do you describe OAK to a first-time guest?', answer: 'American kitchen and bar · seasonal and locally-inspired menu · strong cocktail program · comfortable and approachable' },
+      { num: 'BH-5', question: 'A guest complains about the wait time. What do you do?', answer: 'Acknowledge their frustration. Apologize without excuses. Offer a specific remedy (bar, appetizer, realistic updated time). Involve manager if needed.' }
     ],
 
     setC: [
       { num: 'S-1', question: 'Walk me through the LEAST Method.', answer: 'Listen · Empathize · Apologize · Solve · Thank' },
-      { num: 'S-2', question: 'Glass breaks in the ice well. What do you do?', answer: 'Stop immediately. Burn the well. No exceptions.' },
-      { num: 'S-3', question: 'A guest declines an appetizer. Recovery?', answer: 'Offer a quick-share option later. No pressure. Keep momentum.' },
-      { num: 'S-4', question: 'Table 1 needs refill. Table 2 has hot food in window. Table 3 needs check. Sequence it.', answer: 'Hot food first · Refill second · Check third' },
-      { num: 'S-5', question: 'Guest looks intoxicated and orders a double. What do you do?', answer: 'Politely decline. Offer water/food. Involve manager if needed.' },
-      { num: 'S-6', question: 'Mid-task. New guest walks in. What do you do?', answer: 'Acknowledge immediately (Hi! Method). Finish the task. Return with full attention.' },
-      { num: 'S-7', question: 'Guest sends a dish back. Walk through your response.', answer: 'Reassure guest. Communicate with kitchen immediately. Keep guest updated. Manager if needed.' },
-      { num: 'S-8', question: 'Low on limes mid-rush. What do you do?', answer: 'Communicate before you run out. Get support. Never abandon bar without coverage.' }
+      { num: 'S-2', question: 'A glass breaks behind the bar. What do you do?', answer: 'Stop. Sweep and contain. Notify manager. Verify no contamination before resuming.' },
+      { num: 'S-3', question: 'Table 1 needs refill. Table 2 has hot food in window. Table 3 needs check. Sequence it.', answer: 'Hot food first · Refill second · Check third' },
+      { num: 'S-4', question: 'Guest looks intoxicated and orders another round. What do you do?', answer: 'Politely decline. Offer water/food. Involve manager if needed.' },
+      { num: 'S-5', question: 'Mid-task and a new guest walks in. What do you do?', answer: 'Acknowledge immediately (Hi! Method). Finish the task. Return with full attention.' },
+      { num: 'S-6', question: 'Guest sends a dish back. Walk through your response.', answer: 'Reassure guest. Communicate with kitchen immediately. Keep guest updated. Manager if needed.' },
+      { num: 'S-7', question: 'You are running low on a menu item mid-service. What do you do?', answer: 'Alert manager immediately. Note table counts. Communicate the 86 to all servers. Update guests proactively.' },
+      { num: 'S-8', question: 'The POS goes down. What do you do?', answer: 'Try basic reset steps. Notify management immediately. Follow manual backup process.' }
     ],
 
     bartenderInsert: [
       {
         title: 'Timed Drink Build',
-        instructions: 'Call two drinks from the pool below. Time from first touch to presentation. Cantina pool: House Margarita · Smoked Añejo Old Fashioned · Cantina Ranch Water · Category E11even · Añejo Espresso Martini · Frozen Margarita with Bacardi Black Float.\n\nDrinks Called: _____________________ , _____________________     Time: _____ sec',
+        instructions: 'Call two drinks from the OAK pool. Time from first touch to presentation. OAK pool: House Margarita · Smoked Pecan Old Fashioned · Classic Gimlet · Seasonal Cocktail (current menu) · Whiskey Neat with water back · Craft Beer Draft Pull.\n\nDrinks Called: _____________________ , _____________________     Time: _____ sec',
         rubric: [
           'Under 75 seconds · clean workspace · accurate build · proper presentation',
           '75–95 seconds OR one minor execution error',
@@ -940,9 +937,9 @@ function getLocationConfig() {
       },
       {
         title: 'Upsell Demonstration',
-        instructions: 'Tell the employee: "A guest just ordered a standard well margarita." Ask them to demonstrate their upsell. Cantina targets: Patron Silver upgrade ($8) · Bacardi Black float ($5) · $150 Tableside Cantarito for groups.',
+        instructions: 'Tell the employee: "A guest just ordered a well vodka soda." Ask them to demonstrate their upsell. OAK targets: Premium spirit upgrade · craft beer swap · cocktail suggestion with description.',
         rubric: [
-          'Names a specific premium item with appetizing language and correct price',
+          'Names a specific premium item with appetizing language and price point',
           'Offers an upgrade — missing item name OR price OR enthusiasm',
           'Generic "would you like to upgrade?" with no specifics',
           'Does not attempt upsell'
@@ -965,7 +962,7 @@ function getLocationConfig() {
     serverInsert: [
       {
         title: 'Steps of Service Demo',
-        instructions: 'Ask employee to walk through a full table from greeting to payment. Score on sequence and completeness — not speed.\n\nTouchpoints: 60-sec Hi! Method · drink order + upsell · appetizer rec · food order with mods · 2-bite/2-min check · proactive refills + table manicure · check on signal · farewell standard\n\nTouchpoints hit: ___ / 8',
+        instructions: 'Ask employee to walk through a full table from greeting to payment. Score on sequence and completeness — not speed.\n\nTouchpoints: 60-sec Hi! Method · drink order + upsell · app rec · food order with mods · 2-bite/2-min check · proactive refills + table manicure · check on signal · farewell standard\n\nTouchpoints hit: ___ / 8',
         rubric: [
           '7–8 touchpoints hit · confident delivery · natural flow',
           '5–6 touchpoints hit · minor gaps',
@@ -976,11 +973,11 @@ function getLocationConfig() {
       },
       {
         title: 'Upsell Demonstration',
-        instructions: '"A guest just ordered three Chicken Street Tacos and a water." Demonstrate your upsell approach.',
+        instructions: '"A guest just ordered the basic burger and a water." Demonstrate your upsell approach. OAK targets: Premium protein upgrade · add a craft beer or cocktail · suggest an appetizer or premium topping.',
         rubric: [
-          'Upgrades protein to Birria (+$7) · recommends Rice & Beans ($3) · offers a drink — all with specific language',
-          'Attempts two of three upsell targets with some language',
-          'Attempts one upsell only OR gives generic "anything else?"',
+          'Attempts two or more upsell targets with specific language and enthusiasm',
+          'Attempts one upsell target with some language',
+          'Generic "can I get you anything else?" with no specific item',
           'Takes the order as-is with no upsell attempt'
         ],
         notes: 'Response observed:'
@@ -1023,7 +1020,7 @@ function getLocationConfig() {
       },
       {
         title: 'Priority Sequencing',
-        instructions: '"Three parties walk in at the same time. Two have reservations. One does not. A server flags you about a table not turning. What do you do?"',
+        instructions: '"Three parties walk in simultaneously. Two have reservations. One does not. A server flags you about a table not turning. What do you do?"',
         rubric: [
           'Reservation parties seated first · walk-in communicated to · server acknowledged with 60-sec commitment · door never abandoned',
           'Mostly correct · one beat missed',
