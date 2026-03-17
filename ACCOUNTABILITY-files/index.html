@@ -81,161 +81,92 @@
             </div>
 
             <!-- ============================================================ -->
-            <!-- SECTION 2: Performance Evaluation (5 categories, 1-5 scale)  -->
+            <!-- SECTION 2: Performance Evaluation (3 categories)            -->
             <!-- ============================================================ -->
             <div class="section">
                 <h3>Performance Evaluation</h3>
 
-                <!-- Knowledge & Understanding -->
+                <!-- Overall Performance -->
+                <div class="question-block" data-question="performance">
+                    <div class="question-title">Overall Performance <span class="required">*</span></div>
+                    <p class="question-desc">How well did the trainee execute their role today — speed, accuracy, flow, and confidence on the floor?</p>
+                    <div class="rating-group">
+                        <div class="rating-option">
+                            <input type="radio" id="performance_Poor" name="performance" value="Poor">
+                            <label for="performance_Poor"><div class="label">Poor</div></label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="performance_Developing" name="performance" value="Developing">
+                            <label for="performance_Developing"><div class="label">Developing</div></label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="performance_Average" name="performance" value="Average">
+                            <label for="performance_Average"><div class="label">Average</div></label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="performance_Strong" name="performance" value="Strong">
+                            <label for="performance_Strong"><div class="label">Strong</div></label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="performance_Excellent" name="performance" value="Excellent">
+                            <label for="performance_Excellent"><div class="label">Excellent</div></label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Knowledge -->
                 <div class="question-block" data-question="knowledge">
-                    <div class="question-title">Knowledge &amp; Understanding of Role <span class="required">*</span></div>
-                    <p class="question-desc">Menu knowledge, policies, procedures, role responsibilities</p>
+                    <div class="question-title">Knowledge &amp; Understanding <span class="required">*</span></div>
+                    <p class="question-desc">Menu knowledge, policies, procedures, POS proficiency, and role responsibilities.</p>
                     <div class="rating-group">
                         <div class="rating-option">
-                            <input type="radio" id="knowledge_1" name="knowledge" value="1">
-                            <label for="knowledge_1"><div class="score">1</div><div class="label">Poor</div></label>
+                            <input type="radio" id="knowledge_Poor" name="knowledge" value="Poor">
+                            <label for="knowledge_Poor"><div class="label">Poor</div></label>
                         </div>
                         <div class="rating-option">
-                            <input type="radio" id="knowledge_2" name="knowledge" value="2">
-                            <label for="knowledge_2"><div class="score">2</div><div class="label">Below Avg</div></label>
+                            <input type="radio" id="knowledge_Developing" name="knowledge" value="Developing">
+                            <label for="knowledge_Developing"><div class="label">Developing</div></label>
                         </div>
                         <div class="rating-option">
-                            <input type="radio" id="knowledge_3" name="knowledge" value="3">
-                            <label for="knowledge_3"><div class="score">3</div><div class="label">Average</div></label>
+                            <input type="radio" id="knowledge_Average" name="knowledge" value="Average">
+                            <label for="knowledge_Average"><div class="label">Average</div></label>
                         </div>
                         <div class="rating-option">
-                            <input type="radio" id="knowledge_4" name="knowledge" value="4">
-                            <label for="knowledge_4"><div class="score">4</div><div class="label">Good</div></label>
+                            <input type="radio" id="knowledge_Strong" name="knowledge" value="Strong">
+                            <label for="knowledge_Strong"><div class="label">Strong</div></label>
                         </div>
                         <div class="rating-option">
-                            <input type="radio" id="knowledge_5" name="knowledge" value="5">
-                            <label for="knowledge_5"><div class="score">5</div><div class="label">Excellent</div></label>
+                            <input type="radio" id="knowledge_Excellent" name="knowledge" value="Excellent">
+                            <label for="knowledge_Excellent"><div class="label">Excellent</div></label>
                         </div>
                     </div>
                 </div>
 
-                <!-- Technical Skills -->
-                <div class="question-block" data-question="technical">
-                    <div class="question-title">Technical Skills &amp; Execution <span class="required">*</span></div>
-                    <p class="question-desc">POS proficiency, drink builds, table maintenance, station setup</p>
+                <!-- Attitude & Coachability -->
+                <div class="question-block" data-question="attitude">
+                    <div class="question-title">Attitude &amp; Coachability <span class="required">*</span></div>
+                    <p class="question-desc">Receptiveness to feedback, punctuality, energy, professionalism, and willingness to improve.</p>
                     <div class="rating-group">
                         <div class="rating-option">
-                            <input type="radio" id="technical_1" name="technical" value="1">
-                            <label for="technical_1"><div class="score">1</div><div class="label">Poor</div></label>
+                            <input type="radio" id="attitude_Poor" name="attitude" value="Poor">
+                            <label for="attitude_Poor"><div class="label">Poor</div></label>
                         </div>
                         <div class="rating-option">
-                            <input type="radio" id="technical_2" name="technical" value="2">
-                            <label for="technical_2"><div class="score">2</div><div class="label">Below Avg</div></label>
+                            <input type="radio" id="attitude_Developing" name="attitude" value="Developing">
+                            <label for="attitude_Developing"><div class="label">Developing</div></label>
                         </div>
                         <div class="rating-option">
-                            <input type="radio" id="technical_3" name="technical" value="3">
-                            <label for="technical_3"><div class="score">3</div><div class="label">Average</div></label>
+                            <input type="radio" id="attitude_Average" name="attitude" value="Average">
+                            <label for="attitude_Average"><div class="label">Average</div></label>
                         </div>
                         <div class="rating-option">
-                            <input type="radio" id="technical_4" name="technical" value="4">
-                            <label for="technical_4"><div class="score">4</div><div class="label">Good</div></label>
+                            <input type="radio" id="attitude_Strong" name="attitude" value="Strong">
+                            <label for="attitude_Strong"><div class="label">Strong</div></label>
                         </div>
                         <div class="rating-option">
-                            <input type="radio" id="technical_5" name="technical" value="5">
-                            <label for="technical_5"><div class="score">5</div><div class="label">Excellent</div></label>
+                            <input type="radio" id="attitude_Excellent" name="attitude" value="Excellent">
+                            <label for="attitude_Excellent"><div class="label">Excellent</div></label>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Customer Service -->
-                <div class="question-block" data-question="service">
-                    <div class="question-title">Customer Service &amp; Communication <span class="required">*</span></div>
-                    <p class="question-desc">Guest interaction, upselling, tone, handling requests</p>
-                    <div class="rating-group">
-                        <div class="rating-option">
-                            <input type="radio" id="service_1" name="service" value="1">
-                            <label for="service_1"><div class="score">1</div><div class="label">Poor</div></label>
-                        </div>
-                        <div class="rating-option">
-                            <input type="radio" id="service_2" name="service" value="2">
-                            <label for="service_2"><div class="score">2</div><div class="label">Below Avg</div></label>
-                        </div>
-                        <div class="rating-option">
-                            <input type="radio" id="service_3" name="service" value="3">
-                            <label for="service_3"><div class="score">3</div><div class="label">Average</div></label>
-                        </div>
-                        <div class="rating-option">
-                            <input type="radio" id="service_4" name="service" value="4">
-                            <label for="service_4"><div class="score">4</div><div class="label">Good</div></label>
-                        </div>
-                        <div class="rating-option">
-                            <input type="radio" id="service_5" name="service" value="5">
-                            <label for="service_5"><div class="score">5</div><div class="label">Excellent</div></label>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Teamwork -->
-                <div class="question-block" data-question="teamwork">
-                    <div class="question-title">Teamwork &amp; Collaboration <span class="required">*</span></div>
-                    <p class="question-desc">Communication with team, willingness to help, floor awareness</p>
-                    <div class="rating-group">
-                        <div class="rating-option">
-                            <input type="radio" id="teamwork_1" name="teamwork" value="1">
-                            <label for="teamwork_1"><div class="score">1</div><div class="label">Poor</div></label>
-                        </div>
-                        <div class="rating-option">
-                            <input type="radio" id="teamwork_2" name="teamwork" value="2">
-                            <label for="teamwork_2"><div class="score">2</div><div class="label">Below Avg</div></label>
-                        </div>
-                        <div class="rating-option">
-                            <input type="radio" id="teamwork_3" name="teamwork" value="3">
-                            <label for="teamwork_3"><div class="score">3</div><div class="label">Average</div></label>
-                        </div>
-                        <div class="rating-option">
-                            <input type="radio" id="teamwork_4" name="teamwork" value="4">
-                            <label for="teamwork_4"><div class="score">4</div><div class="label">Good</div></label>
-                        </div>
-                        <div class="rating-option">
-                            <input type="radio" id="teamwork_5" name="teamwork" value="5">
-                            <label for="teamwork_5"><div class="score">5</div><div class="label">Excellent</div></label>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Professionalism -->
-                <div class="question-block" data-question="professionalism">
-                    <div class="question-title">Professionalism &amp; Attitude <span class="required">*</span></div>
-                    <p class="question-desc">Punctuality, appearance, attitude, coachability, energy</p>
-                    <div class="rating-group">
-                        <div class="rating-option">
-                            <input type="radio" id="professionalism_1" name="professionalism" value="1">
-                            <label for="professionalism_1"><div class="score">1</div><div class="label">Poor</div></label>
-                        </div>
-                        <div class="rating-option">
-                            <input type="radio" id="professionalism_2" name="professionalism" value="2">
-                            <label for="professionalism_2"><div class="score">2</div><div class="label">Below Avg</div></label>
-                        </div>
-                        <div class="rating-option">
-                            <input type="radio" id="professionalism_3" name="professionalism" value="3">
-                            <label for="professionalism_3"><div class="score">3</div><div class="label">Average</div></label>
-                        </div>
-                        <div class="rating-option">
-                            <input type="radio" id="professionalism_4" name="professionalism" value="4">
-                            <label for="professionalism_4"><div class="score">4</div><div class="label">Good</div></label>
-                        </div>
-                        <div class="rating-option">
-                            <input type="radio" id="professionalism_5" name="professionalism" value="5">
-                            <label for="professionalism_5"><div class="score">5</div><div class="label">Excellent</div></label>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Score Summary (live-calculated) -->
-                <div id="scoreSummary" class="score-summary" style="display: none;">
-                    <div class="total-score" id="totalScore">0</div>
-                    <div class="performance-level" id="performanceLevel"></div>
-                    <div class="score-breakdown">
-                        <div>Knowledge: <span id="knowledgeScore">0</span>/5</div>
-                        <div>Technical: <span id="technicalScore">0</span>/5</div>
-                        <div>Service: <span id="serviceScore">0</span>/5</div>
-                        <div>Teamwork: <span id="teamworkScore">0</span>/5</div>
-                        <div>Professionalism: <span id="professionalismScore">0</span>/5</div>
                     </div>
                 </div>
             </div>
@@ -278,12 +209,12 @@
 
                 <div class="recap-toggle">
                     <label class="toggle-option">
-                        <input type="radio" name="recapCompleted" value="Yes" id="recapYes">
-                        <span class="toggle-label">✅ Yes — Recap completed</span>
+                        <input type="radio" name="recap" value="Yes" id="recapYes">
+                        <span class="toggle-label yes-label">✅ Yes — Recap completed</span>
                     </label>
                     <label class="toggle-option">
-                        <input type="radio" name="recapCompleted" value="No" id="recapNo">
-                        <span class="toggle-label">❌ No — Recap was not completed</span>
+                        <input type="radio" name="recap" value="No" id="recapNo">
+                        <span class="toggle-label no-label">❌ No — Recap was not completed</span>
                     </label>
                 </div>
 

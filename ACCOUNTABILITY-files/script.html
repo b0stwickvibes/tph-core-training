@@ -4,7 +4,7 @@
 // Three Points Hospitality — C.O.R.E. Training System
 // ============================================================================
 
-let form, submitBtn, scoreSummary;
+let form, submitBtn;
 let isSubmitting = false;
 let photoData = null;
 let photoFileName = null;
@@ -25,7 +25,6 @@ window.addEventListener('load', function () {
 function initializeForm() {
   form = document.getElementById('accountabilityForm');
   submitBtn = document.getElementById('submitBtn');
-  scoreSummary = document.getElementById('scoreSummary');
 
   if (!form) { console.error('Form not found'); return; }
   console.log('✅ Form initialized');
@@ -33,9 +32,8 @@ function initializeForm() {
   // Location → Trainer filtering
   document.getElementById('location').addEventListener('change', updateTrainerDropdown);
 
-  // Score calculation on radio change
-  form.querySelectorAll('input[type="radio"][name="knowledge"], input[type="radio"][name="technical"], input[type="radio"][name="service"], input[type="radio"][name="teamwork"], input[type="radio"][name="professionalism"]')
-    .forEach(r => r.addEventListener('change', updateScoreDisplay));
+  // Score radios — no live display, scores calculated on submit
+  // (score summary popup removed)
 
   // Character count tracking for accountability questions
   setupCharCount('whatCovered', 30);
@@ -43,7 +41,7 @@ function initializeForm() {
   setupCharCount('planForward', 20);
 
   // Recap toggle — show/hide follow-up
-  document.querySelectorAll('input[name="recapCompleted"]').forEach(r => {
+  document.querySelectorAll('input[name="recap"]').forEach(r => {
     r.addEventListener('change', function () {
       const followUp = document.getElementById('recapFollowUp');
       followUp.style.display = this.value === 'No' ? 'block' : 'none';
@@ -147,42 +145,6 @@ function addOption(select, value, text) {
   opt.value = value;
   opt.textContent = text;
   select.appendChild(opt);
-}
-
-
-// ---------------------------------------------------------------------------
-// SCORE DISPLAY
-// ---------------------------------------------------------------------------
-
-function updateScoreDisplay() {
-  const categories = ['knowledge', 'technical', 'service', 'teamwork', 'professionalism'];
-  const scores = {};
-  let allFilled = true;
-
-  categories.forEach(cat => {
-    scores[cat] = getRadioValue(cat);
-    if (!scores[cat]) allFilled = false;
-  });
-
-  if (!allFilled) {
-    if (scoreSummary) scoreSummary.style.display = 'none';
-    return;
-  }
-
-  const total = categories.reduce((sum, cat) => sum + parseInt(scores[cat]), 0);
-  const pct = Math.round((total / 25) * 100);
-
-  setText('totalScore', `${total}/25 (${pct}%)`);
-  categories.forEach(cat => setText(cat + 'Score', scores[cat]));
-
-  let level, cls;
-  if (pct >= 90) { level = 'Excellent Performance'; cls = 'excellent'; }
-  else if (pct >= 75) { level = 'Good Performance'; cls = 'good'; }
-  else { level = 'Needs Improvement'; cls = 'needs-improvement'; }
-
-  const el = document.getElementById('performanceLevel');
-  if (el) { el.textContent = level; el.className = 'performance-level ' + cls; }
-  if (scoreSummary) scoreSummary.style.display = 'block';
 }
 
 
@@ -312,7 +274,7 @@ function validateForm() {
   });
 
   // Required ratings
-  const ratings = ['knowledge', 'technical', 'service', 'teamwork', 'professionalism'];
+  const ratings = ['performance', 'knowledge', 'attitude'];
   ratings.forEach(name => {
     if (!getRadioValue(name)) {
       const block = document.querySelector(`[data-question="${name}"]`);
@@ -341,12 +303,12 @@ function validateForm() {
   });
 
   // Recap confirmation
-  if (!getRadioValue('recapCompleted')) {
-    const block = document.querySelector('[data-question="recapCompleted"]');
+  if (!getRadioValue('recap')) {
+    const block = document.querySelector('[data-question="recap"]');
     if (block) { block.classList.add('validation-error'); if (!firstError) firstError = block; }
     missing.push('Recap confirmation');
     valid = false;
-  } else if (getRadioValue('recapCompleted') === 'No') {
+  } else if (getRadioValue('recap') === 'No') {
     const reason = document.getElementById('recapMissedReason');
     if (!reason || !reason.value.trim()) {
       markError(reason);
@@ -426,16 +388,13 @@ function submitForm() {
     position: val('position'),
     trainingDay: val('trainingDay'),
     shift: val('shift'),
+    performanceScore: getRadioValue('performance'),
     knowledgeScore: getRadioValue('knowledge'),
-    technicalScore: getRadioValue('technical'),
-    serviceScore: getRadioValue('service'),
-    teamworkScore: getRadioValue('teamwork'),
-    professionalismScore: getRadioValue('professionalism'),
+    attitudeScore: getRadioValue('attitude'),
     whatCovered: val('whatCovered'),
     whereStruggling: val('whereStruggling'),
     planForward: val('planForward'),
-    recapCompleted: getRadioValue('recapCompleted'),
-    recapMissedReason: val('recapMissedReason'),
+    recap: buildRecapValue(),
     overallNotes: val('overallNotes'),
     photoData: photoData || '',
     photoFileName: photoFileName || '',
@@ -454,6 +413,17 @@ function submitForm() {
     console.log('🔧 Test mode — simulating submission');
     setTimeout(() => onSuccess({ success: true, recordId: 'TEST-' + Date.now() }), 1500);
   }
+}
+
+// Builds the merged recap string that matches what sheet-setup.gs produces
+function buildRecapValue() {
+  const choice = getRadioValue('recap');
+  if (choice === 'Yes') return 'Yes — Complete';
+  if (choice === 'No') {
+    const reason = val('recapMissedReason');
+    return 'No — ' + (reason || 'No reason provided');
+  }
+  return '';
 }
 
 function onSuccess(response) {
