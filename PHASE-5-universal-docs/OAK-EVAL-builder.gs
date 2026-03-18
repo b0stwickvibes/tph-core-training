@@ -793,7 +793,7 @@ function writeActiveTest_(sh, row, title, instructions, rubric, notes) {
       .setBackground('#fffde7').setFontFamily(FONTS.header).setFontSize(10).setFontWeight('bold')
       .setFontColor(COLORS.navy).setHorizontalAlignment('center').setVerticalAlignment('middle')
       .setBorder(true, true, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
-    sh.getRange(row, COL.TEXT, 1, 2).merge().setValue(r)
+    sh.getRange(row, COL.TEXT).setValue(r)
       .setBackground(bg).setFontFamily(FONTS.body).setFontSize(9).setFontColor(COLORS.text)
       .setVerticalAlignment('middle').setWrap(true)
       .setBorder(true, false, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
