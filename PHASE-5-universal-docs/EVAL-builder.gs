@@ -70,10 +70,16 @@ function setFillFont_(range) {
   return range.setFontFamily(FONTS.fill);
 }
 
-// Column layout — clean 6-column grid, no gutter
-// A(1)=margin  B(2)=Y/N  C(3)=content  D(4)=points  E(5)=notes  F(6)=margin
-const COL = { MARGIN_L: 1, YN: 2, TEXT: 3, SCORE: 4, NOTES: 5, MARGIN_R: 6 };
-const SPAN = { FULL: 4, LEFT: 2, RIGHT: 2 };  // merge helpers
+// Column layout — 7-column grid
+// A(1)=margin(8)  B(2)=stub(30)  C(3)=content(330)  D(4)=stub(30)  E(5)=score(52)  F(6)=notes(222)  G(7)=margin(8)
+// FULL  = B–F (5 cols from col 2)
+// LEFT  = B–D (3 cols from col 2)  — content block
+// RIGHT = E–F (2 cols from col 5)  — score+notes block
+// CONTENT = C only (1)  |  SCORE = E only (1)  |  NOTES = F only (1)
+const COL = { MARGIN_L: 1, STUB_L: 2, TEXT: 3, STUB_R: 4, SCORE: 5, NOTES: 6, MARGIN_R: 7 };
+const SPAN = { FULL: 5, LEFT: 3, RIGHT: 2, CONTENT: 3 };
+// Convenience aliases so row writers read clearly
+const C = COL;
 
 // ============================================================
 // CORE BUILDER
@@ -114,18 +120,19 @@ function resetSheet_(sh) {
   if (sh.getMaxRows() > 1)    sh.deleteRows(2, sh.getMaxRows() - 1);
   if (sh.getMaxColumns() > 1) sh.deleteColumns(2, sh.getMaxColumns() - 1);
   sh.insertRowsAfter(1, 249);
-  sh.insertColumnsAfter(1, 5);  // 6 columns total
+  sh.insertColumnsAfter(1, 6);  // 7 columns total: A–G
   sh.getRange(1, 1, sh.getMaxRows(), sh.getMaxColumns()).breakApart();
   sh.setHiddenGridlines(true);
   sh.setTabColor(COLORS.navy);
 
-  // Column widths — clean edge-to-edge grid
-  sh.setColumnWidth(COL.MARGIN_L,  8);    // A: left margin
-  sh.setColumnWidth(COL.YN,       42);    // B: Y/N or number
-  sh.setColumnWidth(COL.TEXT,    388);    // C: main content
-  sh.setColumnWidth(COL.SCORE,    58);    // D: points / score
-  sh.setColumnWidth(COL.NOTES,   228);    // E: notes / answer
-  sh.setColumnWidth(COL.MARGIN_R,  8);    // F: right margin
+  // Column widths
+  sh.setColumnWidth(C.MARGIN_L,  8);   // A: left margin
+  sh.setColumnWidth(C.STUB_L,   30);   // B: left stub (merge control)
+  sh.setColumnWidth(C.TEXT,    330);   // C: main content
+  sh.setColumnWidth(C.STUB_R,   30);   // D: right stub (merge control)
+  sh.setColumnWidth(C.SCORE,    52);   // E: score / points
+  sh.setColumnWidth(C.NOTES,   222);   // F: notes / answer
+  sh.setColumnWidth(C.MARGIN_R,  8);   // G: right margin
 }
 
 // ============================================================
@@ -135,79 +142,82 @@ function resetSheet_(sh) {
 function buildHeader_(sh, cfg, role) {
   let row = 1;
 
-  // Row 1: Navy top bar
-  sh.getRange(row, 1, 1, 6).merge().setBackground(COLORS.navy);
-  sh.setRowHeight(row, 6);
-  row++;
+  // Row 1: breathing room
+  sh.setRowHeight(row, 16); row++;
 
-  // Row 2: Company name — full width, left-aligned
-  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
+  // Row 2: Company name left | form label right
+  sh.getRange(row, C.STUB_L, 1, 3).merge()
     .setValue('THREE POINTS HOSPITALITY GROUP')
-    .setFontFamily(FONTS.title).setFontSize(14).setFontWeight('bold')
-    .setFontColor(COLORS.navy).setVerticalAlignment('middle').setHorizontalAlignment('left');
-  sh.setRowHeight(row, 28);
-  row++;
+    .setFontFamily(FONTS.title).setFontSize(13).setFontWeight('bold')
+    .setFontColor(COLORS.navy).setVerticalAlignment('bottom').setHorizontalAlignment('left')
+    .setBackground(COLORS.white);
+  sh.getRange(row, C.SCORE, 1, 2).merge()
+    .setValue('30-Day Performance Evaluation')
+    .setFontFamily(FONTS.body).setFontSize(10)
+    .setFontColor('#999999').setVerticalAlignment('bottom').setHorizontalAlignment('right')
+    .setBackground(COLORS.white);
+  sh.setRowHeight(row, 28); row++;
 
-  // Row 3: Role + Eval title — full width, right-aligned
-  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
-    .setValue(role.toUpperCase() + '  ·  30-DAY PERFORMANCE EVALUATION')
-    .setFontFamily(FONTS.title).setFontSize(11).setFontWeight('bold')
-    .setFontColor('#5a6a7a').setVerticalAlignment('middle').setHorizontalAlignment('right');
-  sh.setRowHeight(row, 22);
-  row++;
+  // Row 3: Location left | Role right
+  sh.getRange(row, C.STUB_L, 1, 3).merge()
+    .setValue(cfg.locationDisplay)
+    .setFontFamily(FONTS.body).setFontSize(9)
+    .setFontColor('#aaaaaa').setVerticalAlignment('top').setHorizontalAlignment('left')
+    .setBackground(COLORS.white);
+  sh.getRange(row, C.SCORE, 1, 2).merge()
+    .setValue(role.toUpperCase())
+    .setFontFamily(FONTS.header).setFontSize(11).setFontWeight('bold')
+    .setFontColor(COLORS.navy).setVerticalAlignment('top').setHorizontalAlignment('right')
+    .setBackground(COLORS.white);
+  sh.setRowHeight(row, 20); row++;
 
-  // Row 4: Thin navy divider
-  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge().setBackground(COLORS.navy);
-  sh.setRowHeight(row, 3); row++;
-
-  // Row 5: Spacer
-  sh.setRowHeight(row, 4); row++;
-
-  // Meta fields — 2×2 grid
-  const metaStyle = function(range) {
-    range.setFontFamily(FONTS.header).setFontSize(9.5).setFontWeight('bold')
-      .setFontColor(COLORS.navy).setVerticalAlignment('middle').setHorizontalAlignment('left')
-      .setBackground(COLORS.lightBg);
-  };
-
-  // Row 6: Location + Date
-  sh.getRange(row, COL.YN, 1, 2).merge().setValue('Location:  ' + cfg.locationDisplay);
-  metaStyle(sh.getRange(row, COL.YN));
-  sh.getRange(row, COL.YN, 1, 2)
-    .setBorder(true, true, true, false, false, false, '#cccccc', SpreadsheetApp.BorderStyle.SOLID);
-  sh.getRange(row, COL.SCORE, 1, 2).merge().setValue('Date:');
-  metaStyle(sh.getRange(row, COL.SCORE));
-  setFillFont_(sh.getRange(row, COL.SCORE));
-  sh.getRange(row, COL.SCORE, 1, 2)
-    .setBorder(true, false, true, true, false, false, '#cccccc', SpreadsheetApp.BorderStyle.SOLID);
-  sh.setRowHeight(row, 26); row++;
-
-  // Row 7: Evaluator + GM Present
-  sh.getRange(row, COL.YN, 1, 2).merge().setValue('Evaluator:');
-  metaStyle(sh.getRange(row, COL.YN));
-  setFillFont_(sh.getRange(row, COL.YN));
-  sh.getRange(row, COL.YN, 1, 2)
-    .setBorder(true, true, true, false, false, false, '#cccccc', SpreadsheetApp.BorderStyle.SOLID);
-  sh.getRange(row, COL.SCORE, 1, 2).merge().setValue('GM:');
-  metaStyle(sh.getRange(row, COL.SCORE));
-  setFillFont_(sh.getRange(row, COL.SCORE));
-  sh.getRange(row, COL.SCORE, 1, 2)
-    .setBorder(true, false, true, true, false, false, '#cccccc', SpreadsheetApp.BorderStyle.SOLID);
-  sh.setRowHeight(row, 26); row++;
-
-  // Bottom navy bar
-  sh.getRange(row, 1, 1, 6).merge().setBackground(COLORS.navy);
-  sh.setRowHeight(row, 3); row++;
-
-  // Spacer
+  // Row 4: spacer
   sh.setRowHeight(row, 8); row++;
+
+  // Row 5: thin navy rule — full content width B–F
+  sh.getRange(row, C.STUB_L, 1, SPAN.FULL).merge().setBackground(COLORS.navy);
+  sh.setRowHeight(row, 2); row++;
+
+  // Row 6: spacer
+  sh.setRowHeight(row, 8); row++;
+
+  // Rows 7–8: 2×2 meta grid — left half = B–D, right half = E–F
+  // Row 7: Location label | GM fill-in
+  sh.getRange(row, C.STUB_L, 1, 3).merge()
+    .setValue('Location:    ' + cfg.locationDisplay)
+    .setFontFamily(FONTS.body).setFontSize(9.5).setFontColor('#444444')
+    .setVerticalAlignment('middle').setHorizontalAlignment('left').setBackground(COLORS.white)
+    .setBorder(true, true, true, false, false, false, '#cccccc', SpreadsheetApp.BorderStyle.SOLID);
+  sh.getRange(row, C.SCORE, 1, 2).merge()
+    .setValue('GM:')
+    .setFontFamily(FONTS.body).setFontSize(9.5).setFontColor('#444444')
+    .setVerticalAlignment('middle').setHorizontalAlignment('left').setBackground(COLORS.white)
+    .setBorder(true, false, true, true, false, false, '#cccccc', SpreadsheetApp.BorderStyle.SOLID);
+  setFillFont_(sh.getRange(row, C.SCORE, 1, 2));
+  sh.setRowHeight(row, 28); row++;
+
+  // Row 8: Date fill-in | Evaluator fill-in
+  sh.getRange(row, C.STUB_L, 1, 3).merge()
+    .setValue('Date:')
+    .setFontFamily(FONTS.fill).setFontSize(9.5).setFontColor('#444444')
+    .setVerticalAlignment('middle').setHorizontalAlignment('left').setBackground(COLORS.white)
+    .setBorder(true, true, true, false, false, false, '#cccccc', SpreadsheetApp.BorderStyle.SOLID);
+  sh.getRange(row, C.SCORE, 1, 2).merge()
+    .setValue('Evaluator:')
+    .setFontFamily(FONTS.fill).setFontSize(9.5).setFontColor('#444444')
+    .setVerticalAlignment('middle').setHorizontalAlignment('left').setBackground(COLORS.white)
+    .setBorder(true, false, true, true, false, false, '#cccccc', SpreadsheetApp.BorderStyle.SOLID);
+  sh.setRowHeight(row, 28); row++;
+
+  // Row 9: spacer
+  sh.setRowHeight(row, 14); row++;
 
   return row;
 }
 
 function styleMetaCell_(range) {
-  range.setFontFamily(FONTS.header).setFontSize(9.5).setFontWeight('bold')
-    .setFontColor(COLORS.navy).setHorizontalAlignment('left').setVerticalAlignment('middle');
+  range.setFontFamily(FONTS.body).setFontSize(9.5)
+    .setFontColor('#444444').setHorizontalAlignment('left').setVerticalAlignment('middle');
 }
 
 // ============================================================
@@ -215,8 +225,7 @@ function styleMetaCell_(range) {
 // ============================================================
 
 function buildKeyBlock_(sh, row) {
-  // Title
-  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
+  sh.getRange(row, C.STUB_L, 1, SPAN.FULL).merge()
     .setValue('SCORING KEY — 0–4 POINT SCALE (applies to all scored rows)')
     .setBackground(COLORS.keyBg)
     .setFontFamily(FONTS.header).setFontSize(10).setFontWeight('bold')
@@ -234,31 +243,27 @@ function buildKeyBlock_(sh, row) {
 
   keyRows.forEach((kr, i) => {
     const bg = i % 2 === 0 ? COLORS.keyBg : '#dce8f5';
-    sh.getRange(row, COL.YN)
+    sh.getRange(row, C.STUB_L)
       .setValue(kr[0])
       .setBackground(bg).setFontFamily(FONTS.header).setFontSize(10).setFontWeight('bold')
       .setFontColor(COLORS.navy).setHorizontalAlignment('center').setVerticalAlignment('middle')
       .setBorder(true, true, true, false, false, false, '#b0c4de', SpreadsheetApp.BorderStyle.SOLID);
-
-    sh.getRange(row, COL.TEXT, 1, 3).merge()
+    sh.getRange(row, C.TEXT, 1, 4).merge()
       .setValue(kr[1])
       .setBackground(bg).setFontFamily(FONTS.body).setFontSize(9).setFontColor(COLORS.text)
       .setVerticalAlignment('middle').setHorizontalAlignment('left')
       .setBorder(true, false, true, true, false, false, '#b0c4de', SpreadsheetApp.BorderStyle.SOLID);
-
     sh.setRowHeight(row, 18); row++;
   });
 
-  // Note about skipping
-  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
+  sh.getRange(row, C.STUB_L, 1, SPAN.FULL).merge()
     .setValue('⚠  If a criterion was genuinely not observable this shift, skip the row and note it in Section 4.')
     .setBackground('#fff8e1')
     .setFontFamily(FONTS.body).setFontSize(8.5).setFontColor('#5d4037').setFontStyle('italic')
     .setVerticalAlignment('middle')
     .setBorder(true, true, true, true, false, false, '#ffe082', SpreadsheetApp.BorderStyle.SOLID);
   sh.setRowHeight(row, 18); row++;
-
-  sh.setRowHeight(row, 8); row++; // spacer
+  sh.setRowHeight(row, 8); row++;
   return row;
 }
 
@@ -278,18 +283,16 @@ function buildSection0_(sh, row, role) {
 
   fields.forEach((f, i) => {
     const bg = i % 2 === 0 ? COLORS.white : COLORS.rowAlt;
-    sh.getRange(row, COL.YN, 1, 2).merge()
+    sh.getRange(row, C.STUB_L, 1, SPAN.LEFT).merge()
       .setValue(f[0])
       .setBackground(bg).setFontFamily(FONTS.header).setFontSize(9).setFontWeight('bold')
       .setFontColor(COLORS.text).setVerticalAlignment('middle')
       .setBorder(true, true, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
-
-    sh.getRange(row, COL.SCORE, 1, 2).merge()
+    sh.getRange(row, C.SCORE, 1, SPAN.RIGHT).merge()
       .setValue(f[1])
       .setBackground(bg).setFontFamily(FONTS.fill).setFontSize(9).setFontColor(COLORS.text)
       .setVerticalAlignment('middle')
       .setBorder(true, false, true, true, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
-
     sh.setRowHeight(row, 24); row++;
   });
 
@@ -420,14 +423,14 @@ function buildSection4_(sh, row) {
   noteFields.forEach((label, i) => {
     const bg = i % 2 === 0 ? COLORS.white : COLORS.rowAlt;
 
-    sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
+    sh.getRange(row, C.STUB_L, 1, SPAN.FULL).merge()
       .setValue(label)
       .setBackground(bg).setFontFamily(FONTS.header).setFontSize(9).setFontWeight('bold')
       .setFontColor(COLORS.text).setVerticalAlignment('middle')
       .setBorder(true, true, false, true, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
     sh.setRowHeight(row, 18); row++;
 
-    sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
+    sh.getRange(row, C.STUB_L, 1, SPAN.FULL).merge()
       .setValue('')
       .setBackground(bg)
       .setBorder(false, true, true, true, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
@@ -467,14 +470,12 @@ function buildSection5_(sh, row) {
   ];
 
   // Issues header (left)
-  sh.getRange(row, COL.YN, 1, 2).merge()
+  sh.getRange(row, C.STUB_L, 1, SPAN.LEFT).merge()
     .setValue('Issues Observed')
     .setBackground('#d6dce4').setFontFamily(FONTS.header).setFontSize(9).setFontWeight('bold')
     .setFontColor(COLORS.navy).setVerticalAlignment('middle').setHorizontalAlignment('center')
     .setBorder(true, true, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
-
-  // Action header (right)
-  sh.getRange(row, COL.SCORE, 1, 2).merge()
+  sh.getRange(row, C.SCORE, 1, SPAN.RIGHT).merge()
     .setValue('Action Required')
     .setBackground('#d6dce4').setFontFamily(FONTS.header).setFontSize(9).setFontWeight('bold')
     .setFontColor(COLORS.navy).setVerticalAlignment('middle').setHorizontalAlignment('center')
@@ -484,19 +485,16 @@ function buildSection5_(sh, row) {
   const maxRows = Math.max(issues.length, actions.length);
   for (let i = 0; i < maxRows; i++) {
     const bg = i % 2 === 0 ? COLORS.white : COLORS.rowAlt;
-
-    sh.getRange(row, COL.YN, 1, 2).merge()
+    sh.getRange(row, C.STUB_L, 1, SPAN.LEFT).merge()
       .setValue(issues[i] || '')
       .setBackground(bg).setFontFamily(FONTS.body).setFontSize(9).setFontColor(COLORS.text)
       .setVerticalAlignment('middle')
       .setBorder(true, true, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
-
-    sh.getRange(row, COL.SCORE, 1, 2).merge()
+    sh.getRange(row, C.SCORE, 1, SPAN.RIGHT).merge()
       .setValue(actions[i] || '')
       .setBackground(bg).setFontFamily(FONTS.body).setFontSize(9).setFontColor(COLORS.text)
       .setVerticalAlignment('middle')
       .setBorder(true, false, true, true, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
-
     sh.setRowHeight(row, 20); row++;
   }
 
@@ -519,15 +517,15 @@ function buildSection6_(sh, row) {
   ];
 
   // Header
-  sh.getRange(row, COL.YN, 1, 2).merge()
+  sh.getRange(row, C.STUB_L, 1, SPAN.LEFT).merge()
     .setValue('Section').setBackground('#d6dce4').setFontFamily(FONTS.header).setFontSize(9)
     .setFontWeight('bold').setFontColor(COLORS.navy).setVerticalAlignment('middle')
     .setBorder(true, true, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
-  sh.getRange(row, COL.SCORE)
+  sh.getRange(row, C.SCORE)
     .setValue('Max').setBackground('#d6dce4').setFontFamily(FONTS.header).setFontSize(9)
     .setFontWeight('bold').setFontColor(COLORS.navy).setHorizontalAlignment('center').setVerticalAlignment('middle')
     .setBorder(true, false, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
-  sh.getRange(row, COL.NOTES)
+  sh.getRange(row, C.NOTES)
     .setValue('Score').setBackground('#d6dce4').setFontFamily(FONTS.header).setFontSize(9)
     .setFontWeight('bold').setFontColor(COLORS.navy).setHorizontalAlignment('center').setVerticalAlignment('middle')
     .setBorder(true, false, true, true, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
@@ -535,13 +533,13 @@ function buildSection6_(sh, row) {
 
   scoreRows.forEach((r, i) => {
     const bg = i % 2 === 0 ? COLORS.white : COLORS.rowAlt;
-    sh.getRange(row, COL.YN, 1, 2).merge().setValue(r[0])
+    sh.getRange(row, C.STUB_L, 1, SPAN.LEFT).merge().setValue(r[0])
       .setBackground(bg).setFontFamily(FONTS.body).setFontSize(9).setFontColor(COLORS.text).setVerticalAlignment('middle')
       .setBorder(true, true, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
-    sh.getRange(row, COL.SCORE).setValue(r[1])
+    sh.getRange(row, C.SCORE).setValue(r[1])
       .setBackground(bg).setFontFamily(FONTS.body).setFontSize(9).setHorizontalAlignment('center').setVerticalAlignment('middle')
       .setBorder(true, false, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
-    sh.getRange(row, COL.NOTES).setValue(r[2])
+    sh.getRange(row, C.NOTES).setValue(r[2])
       .setBackground('#fffde7').setFontFamily(FONTS.fill).setFontSize(11).setFontWeight('bold')
       .setFontColor(COLORS.navy).setHorizontalAlignment('center').setVerticalAlignment('middle')
       .setBorder(true, false, true, true, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
@@ -549,19 +547,19 @@ function buildSection6_(sh, row) {
   });
 
   // Total row
-  sh.getRange(row, COL.YN, 1, 2).merge().setValue('TOTAL')
+  sh.getRange(row, C.STUB_L, 1, SPAN.LEFT).merge().setValue('TOTAL')
     .setBackground(COLORS.navy).setFontFamily(FONTS.header).setFontSize(10).setFontWeight('bold').setFontColor(COLORS.white).setVerticalAlignment('middle')
     .setBorder(true, true, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
-  sh.getRange(row, COL.SCORE).setValue('60')
+  sh.getRange(row, C.SCORE).setValue('60')
     .setBackground(COLORS.navy).setFontFamily(FONTS.header).setFontSize(10).setFontWeight('bold').setFontColor(COLORS.white).setHorizontalAlignment('center').setVerticalAlignment('middle')
     .setBorder(true, false, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
-  sh.getRange(row, COL.NOTES).setValue('/ 60')
+  sh.getRange(row, C.NOTES).setValue('/ 60')
     .setBackground(COLORS.navy).setFontFamily(FONTS.fill).setFontSize(10).setFontWeight('bold').setFontColor(COLORS.gold).setHorizontalAlignment('center').setVerticalAlignment('middle')
     .setBorder(true, false, true, true, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
   sh.setRowHeight(row, 28); row++;
 
   // Percentage row
-  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
+  sh.getRange(row, C.STUB_L, 1, SPAN.FULL).merge()
     .setValue('Percentage:       %')
     .setBackground(COLORS.lightBg).setFontFamily(FONTS.fill).setFontSize(10).setFontWeight('bold').setFontColor(COLORS.navy).setVerticalAlignment('middle')
     .setBorder(true, true, true, true, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
@@ -577,12 +575,12 @@ function buildSection6_(sh, row) {
   ];
 
   outcomes.forEach(o => {
-    sh.getRange(row, COL.YN, 1, 2).merge()
+    sh.getRange(row, C.STUB_L, 1, SPAN.LEFT).merge()
       .setValue(o.range)
       .setBackground(o.bg).setFontFamily(FONTS.header).setFontSize(9).setFontWeight('bold')
       .setFontColor(o.color).setVerticalAlignment('middle')
       .setBorder(true, true, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
-    sh.getRange(row, COL.SCORE, 1, 2).merge()
+    sh.getRange(row, C.SCORE, 1, SPAN.RIGHT).merge()
       .setValue(o.label)
       .setBackground(o.bg).setFontFamily(FONTS.body).setFontSize(9).setFontColor(o.color)
       .setVerticalAlignment('middle').setWrap(true)
@@ -593,14 +591,14 @@ function buildSection6_(sh, row) {
   sh.setRowHeight(row, 6); row++;
 
   // Outcome selection
-  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
+  sh.getRange(row, C.STUB_L, 1, SPAN.FULL).merge()
     .setValue('Outcome:   ☐ Pass — Trainer Eligible     ☐ Pass — Standard Development     ☐ Conditional Pass     ☐ Does Not Meet Standard')
     .setBackground(COLORS.lightBg).setFontFamily(FONTS.body).setFontSize(9).setFontColor(COLORS.text)
     .setVerticalAlignment('middle').setWrap(true)
     .setBorder(true, true, true, true, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
   sh.setRowHeight(row, 24); row++;
 
-  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
+  sh.getRange(row, C.STUB_L, 1, SPAN.FULL).merge()
     .setValue('Re-Evaluation Date (if applicable):')
     .setBackground(COLORS.lightBg).setFontFamily(FONTS.fill).setFontSize(9).setFontColor(COLORS.text).setVerticalAlignment('middle')
     .setBorder(true, true, true, true, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
@@ -618,7 +616,7 @@ function buildSection7_(sh, row) {
   row = writeSectionHeader_(sh, row, '7', 'SIGN-OFF');
 
   const sigLabels = ['Role', 'Printed Name', 'Signature', 'Date'];
-  const sigCols   = [COL.YN, COL.TEXT, COL.SCORE, COL.NOTES];
+  const sigCols   = [C.STUB_L, C.TEXT, C.SCORE, C.NOTES];
 
   // Sign-off header
   sigLabels.forEach((h, i) => {
@@ -643,7 +641,7 @@ function buildSection7_(sh, row) {
 
   // Acknowledgment
   sh.setRowHeight(row, 6); row++;
-  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
+  sh.getRange(row, C.STUB_L, 1, SPAN.FULL).merge()
     .setValue('Employee signature confirms review of this evaluation and acknowledgment of any required next steps.')
     .setBackground(COLORS.lightBg).setFontFamily(FONTS.body).setFontSize(8.5).setFontStyle('italic')
     .setFontColor('#888888').setVerticalAlignment('middle')
@@ -658,7 +656,7 @@ function buildSection7_(sh, row) {
 // ============================================================
 
 function writeSectionHeader_(sh, row, num, title) {
-  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
+  sh.getRange(row, C.STUB_L, 1, SPAN.FULL).merge()
     .setValue(`${num}. ${title}`)
     .setBackground(COLORS.navy)
     .setFontFamily(FONTS.header).setFontSize(11).setFontWeight('bold').setFontColor(COLORS.white)
@@ -669,15 +667,15 @@ function writeSectionHeader_(sh, row, num, title) {
 }
 
 function writeColumnHeaders_(sh, row, col1, col2, col3) {
-  sh.getRange(row, COL.YN, 1, 2).merge().setValue(col1)
+  sh.getRange(row, C.STUB_L, 1, SPAN.LEFT).merge().setValue(col1)
     .setBackground('#8fa4a7').setFontFamily(FONTS.header).setFontSize(8.5).setFontWeight('bold')
     .setFontColor(COLORS.white).setVerticalAlignment('middle')
     .setBorder(true, true, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
-  sh.getRange(row, COL.SCORE).setValue(col2)
+  sh.getRange(row, C.SCORE).setValue(col2)
     .setBackground('#8fa4a7').setFontFamily(FONTS.header).setFontSize(8.5).setFontWeight('bold')
     .setFontColor(COLORS.white).setHorizontalAlignment('center').setVerticalAlignment('middle')
     .setBorder(true, false, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
-  sh.getRange(row, COL.NOTES).setValue(col3)
+  sh.getRange(row, C.NOTES).setValue(col3)
     .setBackground('#8fa4a7').setFontFamily(FONTS.header).setFontSize(8.5).setFontWeight('bold')
     .setFontColor(COLORS.white).setVerticalAlignment('middle')
     .setBorder(true, false, true, true, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
@@ -693,20 +691,20 @@ function writeScoredRow_(sh, row, label, description, bg) {
   rich.setTextStyle(0, label.length, bold);
   rich.setTextStyle(label.length, label.length + description.length + 1, normal);
 
-  sh.getRange(row, COL.YN, 1, 2).merge()
+  sh.getRange(row, C.STUB_L, 1, SPAN.LEFT).merge()
     .setRichTextValue(rich.build())
     .setBackground(bg).setVerticalAlignment('middle').setWrap(true)
     .setBorder(true, true, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
 
   // Score cell
-  sh.getRange(row, COL.SCORE)
+  sh.getRange(row, C.SCORE)
     .setValue('')
     .setBackground('#fffde7').setFontFamily(FONTS.header).setFontSize(12).setFontWeight('bold')
     .setFontColor(COLORS.navy).setHorizontalAlignment('center').setVerticalAlignment('middle')
     .setBorder(true, true, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
 
   // Notes cell
-  sh.getRange(row, COL.NOTES)
+  sh.getRange(row, C.NOTES)
     .setValue('')
     .setBackground(bg).setFontFamily(FONTS.body).setFontSize(9)
     .setVerticalAlignment('middle')
@@ -714,7 +712,6 @@ function writeScoredRow_(sh, row, label, description, bg) {
 }
 
 function writeQuestionRow_(sh, row, num, question, answer, bg) {
-  // Num + question in B+C
   const fullText = num + '  ' + question + '\n' + answer;
   const rich = SpreadsheetApp.newRichTextValue().setText(fullText);
   const bold = SpreadsheetApp.newTextStyle().setFontFamily(FONTS.body).setFontSize(9).setBold(true).setForegroundColor(COLORS.text).build();
@@ -723,18 +720,18 @@ function writeQuestionRow_(sh, row, num, question, answer, bg) {
   rich.setTextStyle(0, numLen, bold);
   rich.setTextStyle(numLen, fullText.length, normal);
 
-  sh.getRange(row, COL.YN, 1, 2).merge()
+  sh.getRange(row, C.STUB_L, 1, SPAN.LEFT).merge()
     .setRichTextValue(rich.build())
     .setBackground(bg).setVerticalAlignment('middle').setWrap(true)
     .setBorder(true, true, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
 
-  sh.getRange(row, COL.SCORE)
+  sh.getRange(row, C.SCORE)
     .setValue('')
     .setBackground('#fffde7').setFontFamily(FONTS.header).setFontSize(12).setFontWeight('bold')
     .setFontColor(COLORS.navy).setHorizontalAlignment('center').setVerticalAlignment('middle')
     .setBorder(true, true, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
 
-  sh.getRange(row, COL.NOTES)
+  sh.getRange(row, C.NOTES)
     .setValue('')
     .setBackground(bg).setFontFamily(FONTS.body).setFontSize(9)
     .setVerticalAlignment('middle')
@@ -742,7 +739,7 @@ function writeQuestionRow_(sh, row, num, question, answer, bg) {
 }
 
 function writeQuestionSetHeader_(sh, row, title, instruction) {
-  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
+  sh.getRange(row, C.STUB_L, 1, SPAN.FULL).merge()
     .setValue(title + '\n' + instruction)
     .setBackground('#4a6fa5').setFontFamily(FONTS.header).setFontSize(9.5).setFontWeight('bold')
     .setFontColor(COLORS.white).setVerticalAlignment('middle').setWrap(true)
@@ -752,7 +749,7 @@ function writeQuestionSetHeader_(sh, row, title, instruction) {
 }
 
 function writeRoleBankHeader_(sh, row, label) {
-  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
+  sh.getRange(row, C.STUB_L, 1, SPAN.FULL).merge()
     .setValue(label)
     .setBackground('#c9daf8').setFontFamily(FONTS.header).setFontSize(9).setFontWeight('bold')
     .setFontColor('#1a237e').setVerticalAlignment('middle')
@@ -762,7 +759,7 @@ function writeRoleBankHeader_(sh, row, label) {
 }
 
 function writeRoleInsertHeader_(sh, row, label) {
-  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
+  sh.getRange(row, C.STUB_L, 1, SPAN.FULL).merge()
     .setValue(label)
     .setBackground('#3a5276').setFontFamily(FONTS.header).setFontSize(10).setFontWeight('bold')
     .setFontColor(COLORS.white).setVerticalAlignment('middle')
@@ -773,7 +770,7 @@ function writeRoleInsertHeader_(sh, row, label) {
 
 function writeActiveTest_(sh, row, title, instructions, rubric, notes) {
   // Test title
-  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
+  sh.getRange(row, C.STUB_L, 1, SPAN.FULL).merge()
     .setValue(title)
     .setBackground('#dce8f8').setFontFamily(FONTS.header).setFontSize(9).setFontWeight('bold')
     .setFontColor(COLORS.navy).setVerticalAlignment('middle')
@@ -781,7 +778,7 @@ function writeActiveTest_(sh, row, title, instructions, rubric, notes) {
   sh.setRowHeight(row, 20); row++;
 
   // Instructions
-  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
+  sh.getRange(row, C.STUB_L, 1, SPAN.FULL).merge()
     .setValue(instructions)
     .setBackground(COLORS.white).setFontFamily(FONTS.body).setFontSize(9).setFontColor(COLORS.text)
     .setVerticalAlignment('middle').setWrap(true)
@@ -791,15 +788,15 @@ function writeActiveTest_(sh, row, title, instructions, rubric, notes) {
   // Rubric rows (4 → 1) with score column
   rubric.forEach((r, i) => {
     const bg = i % 2 === 0 ? COLORS.white : COLORS.rowAlt;
-    sh.getRange(row, COL.YN).setValue(String(4 - i))
+    sh.getRange(row, C.STUB_L).setValue(String(4 - i))
       .setBackground('#fffde7').setFontFamily(FONTS.header).setFontSize(10).setFontWeight('bold')
       .setFontColor(COLORS.navy).setHorizontalAlignment('center').setVerticalAlignment('middle')
       .setBorder(true, true, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
-    sh.getRange(row, COL.TEXT).setValue(r)
+    sh.getRange(row, C.TEXT, 1, 2).merge().setValue(r)
       .setBackground(bg).setFontFamily(FONTS.body).setFontSize(9).setFontColor(COLORS.text)
       .setVerticalAlignment('middle').setWrap(true)
       .setBorder(true, false, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
-    sh.getRange(row, COL.SCORE, 1, 2).merge().setValue(i === 0 ? 'Score: ___' : '')
+    sh.getRange(row, C.SCORE, 1, SPAN.RIGHT).merge().setValue(i === 0 ? 'Score: ___' : '')
       .setBackground(i === 0 ? '#fffde7' : bg).setFontFamily(FONTS.header).setFontSize(10).setFontWeight(i === 0 ? 'bold' : 'normal')
       .setFontColor(COLORS.navy).setHorizontalAlignment('center').setVerticalAlignment('middle')
       .setBorder(true, false, true, true, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
@@ -808,7 +805,7 @@ function writeActiveTest_(sh, row, title, instructions, rubric, notes) {
 
   // Notes field if specified
   if (notes) {
-    sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
+    sh.getRange(row, C.STUB_L, 1, SPAN.FULL).merge()
       .setValue(notes + '  _______________________________________________')
       .setBackground(COLORS.rowAlt).setFontFamily(FONTS.fill).setFontSize(9).setFontColor(COLORS.text)
       .setVerticalAlignment('middle')
@@ -821,7 +818,7 @@ function writeActiveTest_(sh, row, title, instructions, rubric, notes) {
 }
 
 function writeQuestionsUsed_(sh, row) {
-  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
+  sh.getRange(row, C.STUB_L, 1, SPAN.FULL).merge()
     .setValue('Questions Used: _______  ,  _______          Evaluator Notes: _______________________________________________')
     .setBackground(COLORS.rowAlt).setFontFamily(FONTS.fill).setFontSize(9).setFontColor(COLORS.text)
     .setVerticalAlignment('middle')
@@ -831,11 +828,11 @@ function writeQuestionsUsed_(sh, row) {
 }
 
 function writeSetSubtotal_(sh, row, label, max) {
-  sh.getRange(row, COL.YN, 1, 2).merge().setValue(label + ':  ___ / ' + max)
+  sh.getRange(row, C.STUB_L, 1, SPAN.LEFT).merge().setValue(label + ':  ___ / ' + max)
     .setBackground('#e8f0fb').setFontFamily(FONTS.fill).setFontSize(9).setFontWeight('bold')
     .setFontColor(COLORS.navy).setVerticalAlignment('middle')
     .setBorder(true, true, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
-  sh.getRange(row, COL.SCORE, 1, 2).merge().setValue('')
+  sh.getRange(row, C.SCORE, 1, SPAN.RIGHT).merge().setValue('')
     .setBackground('#e8f0fb')
     .setBorder(true, false, true, true, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
   sh.setRowHeight(row, 20); row++;
@@ -843,11 +840,11 @@ function writeSetSubtotal_(sh, row, label, max) {
 }
 
 function writeSectionTotal_(sh, row, label, max) {
-  sh.getRange(row, COL.YN, 1, 2).merge().setValue(label + ':  ___ / ' + max)
+  sh.getRange(row, C.STUB_L, 1, SPAN.LEFT).merge().setValue(label + ':  ___ / ' + max)
     .setBackground('#1f4e8c').setFontFamily(FONTS.fill).setFontSize(10).setFontWeight('bold')
     .setFontColor(COLORS.white).setVerticalAlignment('middle')
     .setBorder(true, true, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
-  sh.getRange(row, COL.SCORE, 1, 2).merge().setValue('')
+  sh.getRange(row, C.SCORE, 1, SPAN.RIGHT).merge().setValue('')
     .setBackground('#1f4e8c')
     .setBorder(true, false, true, true, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
   sh.setRowHeight(row, 22); row++;
@@ -855,11 +852,11 @@ function writeSectionTotal_(sh, row, label, max) {
 }
 
 function writeInsertTotal_(sh, row, label, max) {
-  sh.getRange(row, COL.YN, 1, 2).merge().setValue(label + ':  ___ / ' + max)
+  sh.getRange(row, C.STUB_L, 1, SPAN.LEFT).merge().setValue(label + ':  ___ / ' + max)
     .setBackground('#3a5276').setFontFamily(FONTS.fill).setFontSize(9.5).setFontWeight('bold')
     .setFontColor(COLORS.gold).setVerticalAlignment('middle')
     .setBorder(true, true, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
-  sh.getRange(row, COL.SCORE, 1, 2).merge().setValue('')
+  sh.getRange(row, C.SCORE, 1, SPAN.RIGHT).merge().setValue('')
     .setBackground('#3a5276')
     .setBorder(true, false, true, true, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
   sh.setRowHeight(row, 20); row++;
