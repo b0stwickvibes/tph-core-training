@@ -173,22 +173,26 @@ function buildHeader_(sh, cfg, role) {
   // Row 6: Location + Date
   sh.getRange(row, COL.YN, 1, 2).merge().setValue('Location:  ' + cfg.locationDisplay);
   metaStyle(sh.getRange(row, COL.YN));
+  sh.getRange(row, COL.YN, 1, 2)
+    .setBorder(true, true, true, false, false, false, '#cccccc', SpreadsheetApp.BorderStyle.SOLID);
   sh.getRange(row, COL.SCORE, 1, 2).merge().setValue('Date:');
   metaStyle(sh.getRange(row, COL.SCORE));
   setFillFont_(sh.getRange(row, COL.SCORE));
-  sh.getRange(row, COL.YN, 1, SPAN.FULL)
-    .setBorder(true, true, true, true, true, false, '#cccccc', SpreadsheetApp.BorderStyle.SOLID);
+  sh.getRange(row, COL.SCORE, 1, 2)
+    .setBorder(true, false, true, true, false, false, '#cccccc', SpreadsheetApp.BorderStyle.SOLID);
   sh.setRowHeight(row, 26); row++;
 
   // Row 7: Evaluator + GM Present
   sh.getRange(row, COL.YN, 1, 2).merge().setValue('Evaluator:');
   metaStyle(sh.getRange(row, COL.YN));
   setFillFont_(sh.getRange(row, COL.YN));
+  sh.getRange(row, COL.YN, 1, 2)
+    .setBorder(true, true, true, false, false, false, '#cccccc', SpreadsheetApp.BorderStyle.SOLID);
   sh.getRange(row, COL.SCORE, 1, 2).merge().setValue('GM:');
   metaStyle(sh.getRange(row, COL.SCORE));
   setFillFont_(sh.getRange(row, COL.SCORE));
-  sh.getRange(row, COL.YN, 1, SPAN.FULL)
-    .setBorder(true, true, true, true, true, false, '#cccccc', SpreadsheetApp.BorderStyle.SOLID);
+  sh.getRange(row, COL.SCORE, 1, 2)
+    .setBorder(true, false, true, true, false, false, '#cccccc', SpreadsheetApp.BorderStyle.SOLID);
   sh.setRowHeight(row, 26); row++;
 
   // Bottom navy bar
@@ -654,7 +658,7 @@ function buildSection7_(sh, row) {
 // ============================================================
 
 function writeSectionHeader_(sh, row, num, title) {
-  sh.getRange(row, COL.YN, 1, 5).merge()
+  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
     .setValue(`${num}. ${title}`)
     .setBackground(COLORS.navy)
     .setFontFamily(FONTS.header).setFontSize(11).setFontWeight('bold').setFontColor(COLORS.white)
@@ -699,7 +703,7 @@ function writeScoredRow_(sh, row, label, description, bg) {
     .setValue('')
     .setBackground('#fffde7').setFontFamily(FONTS.header).setFontSize(12).setFontWeight('bold')
     .setFontColor(COLORS.navy).setHorizontalAlignment('center').setVerticalAlignment('middle')
-    .setBorder(true, false, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID_MEDIUM);
+    .setBorder(true, true, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
 
   // Notes cell
   sh.getRange(row, COL.NOTES)
@@ -728,7 +732,7 @@ function writeQuestionRow_(sh, row, num, question, answer, bg) {
     .setValue('')
     .setBackground('#fffde7').setFontFamily(FONTS.header).setFontSize(12).setFontWeight('bold')
     .setFontColor(COLORS.navy).setHorizontalAlignment('center').setVerticalAlignment('middle')
-    .setBorder(true, false, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID_MEDIUM);
+    .setBorder(true, true, true, false, false, false, COLORS.border, SpreadsheetApp.BorderStyle.SOLID);
 
   sh.getRange(row, COL.NOTES)
     .setValue('')
@@ -738,7 +742,7 @@ function writeQuestionRow_(sh, row, num, question, answer, bg) {
 }
 
 function writeQuestionSetHeader_(sh, row, title, instruction) {
-  sh.getRange(row, COL.YN, 1, 5).merge()
+  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
     .setValue(title + '\n' + instruction)
     .setBackground('#4a6fa5').setFontFamily(FONTS.header).setFontSize(9.5).setFontWeight('bold')
     .setFontColor(COLORS.white).setVerticalAlignment('middle').setWrap(true)
@@ -748,7 +752,7 @@ function writeQuestionSetHeader_(sh, row, title, instruction) {
 }
 
 function writeRoleBankHeader_(sh, row, label) {
-  sh.getRange(row, COL.YN, 1, 5).merge()
+  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
     .setValue(label)
     .setBackground('#c9daf8').setFontFamily(FONTS.header).setFontSize(9).setFontWeight('bold')
     .setFontColor('#1a237e').setVerticalAlignment('middle')
@@ -758,7 +762,7 @@ function writeRoleBankHeader_(sh, row, label) {
 }
 
 function writeRoleInsertHeader_(sh, row, label) {
-  sh.getRange(row, COL.YN, 1, 5).merge()
+  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
     .setValue(label)
     .setBackground('#3a5276').setFontFamily(FONTS.header).setFontSize(10).setFontWeight('bold')
     .setFontColor(COLORS.white).setVerticalAlignment('middle')
@@ -769,7 +773,7 @@ function writeRoleInsertHeader_(sh, row, label) {
 
 function writeActiveTest_(sh, row, title, instructions, rubric, notes) {
   // Test title
-  sh.getRange(row, COL.YN, 1, 5).merge()
+  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
     .setValue(title)
     .setBackground('#dce8f8').setFontFamily(FONTS.header).setFontSize(9).setFontWeight('bold')
     .setFontColor(COLORS.navy).setVerticalAlignment('middle')
@@ -777,7 +781,7 @@ function writeActiveTest_(sh, row, title, instructions, rubric, notes) {
   sh.setRowHeight(row, 20); row++;
 
   // Instructions
-  sh.getRange(row, COL.YN, 1, 5).merge()
+  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
     .setValue(instructions)
     .setBackground(COLORS.white).setFontFamily(FONTS.body).setFontSize(9).setFontColor(COLORS.text)
     .setVerticalAlignment('middle').setWrap(true)
@@ -804,7 +808,7 @@ function writeActiveTest_(sh, row, title, instructions, rubric, notes) {
 
   // Notes field if specified
   if (notes) {
-    sh.getRange(row, COL.YN, 1, 5).merge()
+    sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
       .setValue(notes + '  _______________________________________________')
       .setBackground(COLORS.rowAlt).setFontFamily(FONTS.fill).setFontSize(9).setFontColor(COLORS.text)
       .setVerticalAlignment('middle')
@@ -817,7 +821,7 @@ function writeActiveTest_(sh, row, title, instructions, rubric, notes) {
 }
 
 function writeQuestionsUsed_(sh, row) {
-  sh.getRange(row, COL.YN, 1, 5).merge()
+  sh.getRange(row, COL.YN, 1, SPAN.FULL).merge()
     .setValue('Questions Used: _______  ,  _______          Evaluator Notes: _______________________________________________')
     .setBackground(COLORS.rowAlt).setFontFamily(FONTS.fill).setFontSize(9).setFontColor(COLORS.text)
     .setVerticalAlignment('middle')
