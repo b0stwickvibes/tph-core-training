@@ -74,10 +74,10 @@
 |---|----------|--------|
 | C-1 | Who owns section balance during service? | **Host + manager** — shared responsibility |
 | C-2 | How often should you scan the floor map or physically scan the room? | Every **10 minutes** minimum |
-| C-3 | During your 10-Second Scan, what are you looking for at Flag #1? | A table with **no server presence in 10+ minutes** |
-| C-4 | During your 10-Second Scan, what are you looking for at Flag #2? | **Frustration signals** — guests looking around, phones out, body language shifted |
-| C-5 | During your 10-Second Scan, what are you looking for at Flag #3? | **Section overload** — one server buried while others are light |
-| C-6 | During your 10-Second Scan, what are you looking for at Flag #4? | A table **stuck in the same stage** too long (drinks never came, food sitting, no check) |
+| C-3 | How do you decide which section to seat a new party in? | Check **server rotation tracker** and current section loads — seat to balance workload and prevent overload |
+| C-4 | What should you do if a server is clearly overloaded during service? | **Skip them in rotation** temporarily and communicate the reason to the manager |
+| C-5 | How do you announce a seated guest to their server? | Say **"I just sat you"** with party details (size, special requests) — every time, no silent seats |
+| C-6 | What is the standard for table turnover during peak service? | Pace seats to allow **10-15 minutes** between new tables in a section, preventing kitchen/server overload |
 | C-7 | If your scan reveals a problem, what is the rule? | **Act immediately** — do not wait to see if it resolves |
 | C-8 | What is the most common host error that damages the entire room? | **Overseating one section** |
 | C-9 | When can you honor a guest's table change request? | If the table is available **and** it doesn't disrupt floor balance |
